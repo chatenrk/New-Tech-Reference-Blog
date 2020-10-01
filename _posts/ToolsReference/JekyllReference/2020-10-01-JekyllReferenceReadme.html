@@ -1,0 +1,249 @@
+---
+layout: post
+title: 'Jekyll Reference'
+subtitle: 'Build static sites using Jekyll and Github Pages'
+date: 2020-10-01
+background: '/img/bg-jekyll.jpg'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li><a href="#prerequsites">Pre-requisites</a></li>
+      <li><a href="#instructions">Instructions</a></li>
+      <li><a href="#quicktips">Quick Tips and Tricks</a></li>
+      <li><a href="#usingImages">Using Images</a></li>
+      <li>
+        <a href="#adding-clean-blog-theme-to-jekyll-site"
+          >Clean Blog Theme Related</a
+        >
+      </li>
+      <li>
+        <a href="#create-gh-pages-for-unsupported-themes"
+          >Push Unsupported themes to Github Pages</a
+        >
+      </li>
+      <li><a href="#blogs">Blogs</a></li>
+    </ul>
+
+    <!-- Prerequsites Section -->
+    <h2 id="prerequsites">Pre-requisites</h2>
+    <p>Jekyll requires the following:</p>
+    <ol>
+      <li>Ruby version 2.5.0 or higher</li>
+      <li>RubyGems</li>
+      <li>GCC and Make</li>
+    </ol>
+    <p>
+      See
+      <a href="https://jekyllrb.com/docs/installation/#requirements"
+        >Requirements</a
+      >
+      for guides and details
+    </p>
+
+    <!-- Instructions Section -->
+    <h2 id="instructions">Instructions</h2>
+
+    <ol>
+      <li>Install all <a href="#prerequisites">prerequisites</a>.</li>
+      <li>
+        Install the jekyll and bundler
+        <a href="https://jekyllrb.com/docs/ruby-101/#gems">gems</a>.<br />
+        <code>gem install jekyll bundler</code>
+      </li>
+      <li>
+        Create a new Jekyll site at <kbd>./myblog</kbd> <br />
+        <code>jekyll new myblog</code>
+      </li>
+      <li>
+        Change into your new directory <br />
+        <code>cd myblog</code>
+      </li>
+      <li>
+        Build the site and make it available on a local server <br />
+        <code>bundle exec jekyll serve</code>
+      </li>
+      <li>
+        Browse to <a href="http://localhost:4000">http://localhost:4000</a>
+      </li>
+    </ol>
+    <!-- Quick Tips and tricks sections -->
+    <h2 id="quicktips">Quick Tips and tricks</h2>
+    <table class="table table-sm table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tip</th>
+          <th>Usage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Escape Liquid Tags from parsing</td>
+          <td>
+            Use the liquid tag between <code> raw </code> and
+            <code> endraw </code> using liquid syntax.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Using Images Section -->
+    <h2 id="usingImages">Using Images in Jekyll</h2>
+    <p>
+      To use images in Jekyll pass the <kbd>img src</kbd> url as <br />
+      {% raw %}
+      <code>{{ site.url }}/{{site.baseurl}}/path/to/the/image/file</code> {%
+      endraw %}
+    </p>
+
+    <!-- Clean Blog Theme Related Section -->
+    <h2 id="adding-clean-blog-theme-to-jekyll-site">
+      Adding Clean blog theme to Jekyll Site
+    </h2>
+    <ol>
+      <li>
+        Replace the current theme in your Gemfile with gem <br />
+        <code>&quot;jekyll-theme-clean-blog&quot;</code>.
+      </li>
+      <li>Run <br /><code>bundle install</code></li>
+      <li>
+        Replace the current theme in your <kbd>_config.yml</kbd> file with
+        theme: <br />
+        <code>jekyll-theme-clean-blog</code>
+      </li>
+      <li>
+        Build your site: <br />
+        <code>bundle exec jekyll serve</code>
+      </li>
+    </ol>
+
+    <!-- Pushing Unsupported themes and plugins to Github Pages Section -->
+    <h2 id="create-gh-pages-for-unsupported-themes">
+      Create gh-pages for unsupported themes
+    </h2>
+    <p>
+      Depending if you deal with a User/Organization (UO) site or a Project site
+      (P), do :
+    </p>
+    <ol>
+      <li>
+        From your working folder execute the following command <br />
+        <code>git init</code>
+      </li>
+      <li>
+        Add a remote repository to your parent folder using the following
+        command
+        <br />
+        <code
+          >git remote add origin git@github.com:userName/userName.github.io.git
+          (UO) or git remote add origin
+          git@github.com:userName/repositoryName.git (P)</code
+        >
+      </li>
+      <li>
+        Create a new code base using the following Jekyll command <br />
+        <code>jekyll new</code>
+      </li>
+      <li>
+        In <kbd>_config.yml</kbd>, set the <code>baseurl</code> parameter to
+        <code>baseurl: '' </code>(UO) or
+        <code> baseurl: '/repositoryName' </code>(P)
+      </li>
+      <li>
+        In <kbd>gitignore</kbd> add <code>_site</code>, as it would be versioned
+        in the other branch
+      </li>
+      <li>
+        Perform <code>jekyll build</code> to create the destination folder and
+        build site.
+      </li>
+      <li>
+        Checkout the repository <br />
+        <code>git checkout -b sources (UO) or git checkout master (P)</code>
+      </li>
+      <li>Add all the files for commiting<br /><code>git add -A</code></li>
+      <li>
+        Commit the code with a proper commit message <br />
+        <code>git commit -m &quot;jekyll base sources&quot;</code>
+      </li>
+      <li>
+        Push the code to remote repository <br />
+        <code>git push origin sources (UO) or git push origin master (P)</code>
+      </li>
+      <li>
+        Traverse to the <kbd>_site</kbd> directory <br />
+        <code>cd _site</code>
+      </li>
+      <li>
+        Create an empty file called <kbd>.nojekyll</kbd>. This file tells
+        gh-pages that there is no need to build <br />
+        <code>touch .nojekyll</code>
+      </li>
+      <li>
+        Initialize the repo <br />
+        <code>git init</code>
+      </li>
+      <li>
+        Add a remote repository to your _site folder using the following command
+        <br />
+
+        <code
+          >git remote add origin git@github.com:userName/userName.github.io.git
+          (UO) or git remote add origin
+          git@github.com:userName/repositoryName.git (P)</code
+        >
+      </li>
+      <li>
+        Checkout the relevant branch <br />
+
+        <code>git checkout master (UO) or git checkout -b gh-pages (P)</code>
+      </li>
+      <li>
+        Add all files in the _site directory <br />
+        <code>git add -A</code>
+      </li>
+      <li>
+        Commit the changes with proper commit message <br />
+        <code>git commit -m &quot;jekyll first build&quot;</code>
+      </li>
+      <li>
+        Push to the remote repo, to <kbd>gh-pages</kbd> branch, which will be
+        used to build the github pages site <br />
+        <code>git push origin master (UO) or git push origin gh-pages (P)</code>
+      </li>
+    </ol>
+
+    <!-- Blogs Section -->
+    <h2 id="blogs">Blogs</h2>
+    <table class="table table-sm table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Blog</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Clean Blog Jekyll Theme</td>
+          <td>
+            <a
+              href="https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll"
+              >https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,3 +1,426 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-01T17:12:05+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technology Ready Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Sample Test Post</title><link href="/New-Tech-Reference-Blog/sample/2020/10/01/SampleTestPost.html" rel="alternate" type="text/html" title="Sample Test Post" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/sample/2020/10/01/SampleTestPost</id><content type="html" xml:base="/New-Tech-Reference-Blog/sample/2020/10/01/SampleTestPost.html">&lt;h1 id=&quot;this-is-a-sample-post-for-testing&quot;&gt;This is a sample post for testing&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-01T20:34:26+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Jekyll Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html" rel="alternate" type="text/html" title="Jekyll Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#prerequsites&quot;&gt;Pre-requisites&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#instructions&quot;&gt;Instructions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#quicktips&quot;&gt;Quick Tips and Tricks&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#usingImages&quot;&gt;Using Images&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#adding-clean-blog-theme-to-jekyll-site&quot;
+          &gt;Clean Blog Theme Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#create-gh-pages-for-unsupported-themes&quot;
+          &gt;Push Unsupported themes to Github Pages&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
 
-&lt;p&gt;Sample post by Chaitanya&lt;/p&gt;</content><author><name></name></author><category term="sample" /><category term="jekyll-test" /><summary type="html">This is a sample post for testing</summary></entry></feed>
+    &lt;!-- Prerequsites Section --&gt;
+    &lt;h2 id=&quot;prerequsites&quot;&gt;Pre-requisites&lt;/h2&gt;
+    &lt;p&gt;Jekyll requires the following:&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Ruby version 2.5.0 or higher&lt;/li&gt;
+      &lt;li&gt;RubyGems&lt;/li&gt;
+      &lt;li&gt;GCC and Make&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;
+      See
+      &lt;a href=&quot;https://jekyllrb.com/docs/installation/#requirements&quot;
+        &gt;Requirements&lt;/a
+      &gt;
+      for guides and details
+    &lt;/p&gt;
+
+    &lt;!-- Instructions Section --&gt;
+    &lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Install all &lt;a href=&quot;#prerequisites&quot;&gt;prerequisites&lt;/a&gt;.&lt;/li&gt;
+      &lt;li&gt;
+        Install the jekyll and bundler
+        &lt;a href=&quot;https://jekyllrb.com/docs/ruby-101/#gems&quot;&gt;gems&lt;/a&gt;.&lt;br /&gt;
+        &lt;code&gt;gem install jekyll bundler&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Create a new Jekyll site at &lt;kbd&gt;./myblog&lt;/kbd&gt; &lt;br /&gt;
+        &lt;code&gt;jekyll new myblog&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Change into your new directory &lt;br /&gt;
+        &lt;code&gt;cd myblog&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Build the site and make it available on a local server &lt;br /&gt;
+        &lt;code&gt;bundle exec jekyll serve&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Browse to &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;!-- Quick Tips and tricks sections --&gt;
+    &lt;h2 id=&quot;quicktips&quot;&gt;Quick Tips and tricks&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Tip&lt;/th&gt;
+          &lt;th&gt;Usage&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+          &lt;td&gt;Escape Liquid Tags from parsing&lt;/td&gt;
+          &lt;td&gt;
+            Use the liquid tag between &lt;code&gt; raw &lt;/code&gt; and
+            &lt;code&gt; endraw &lt;/code&gt; using liquid syntax.
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;!-- Using Images Section --&gt;
+    &lt;h2 id=&quot;usingImages&quot;&gt;Using Images in Jekyll&lt;/h2&gt;
+    &lt;p&gt;
+      To use images in Jekyll pass the &lt;kbd&gt;img src&lt;/kbd&gt; url as &lt;br /&gt;
+      
+      &lt;code&gt;{{ site.url }}/{{site.baseurl}}/path/to/the/image/file&lt;/code&gt; 
+    &lt;/p&gt;
+
+    &lt;!-- Clean Blog Theme Related Section --&gt;
+    &lt;h2 id=&quot;adding-clean-blog-theme-to-jekyll-site&quot;&gt;
+      Adding Clean blog theme to Jekyll Site
+    &lt;/h2&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        Replace the current theme in your Gemfile with gem &lt;br /&gt;
+        &lt;code&gt;&amp;quot;jekyll-theme-clean-blog&amp;quot;&lt;/code&gt;.
+      &lt;/li&gt;
+      &lt;li&gt;Run &lt;br /&gt;&lt;code&gt;bundle install&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;
+        Replace the current theme in your &lt;kbd&gt;_config.yml&lt;/kbd&gt; file with
+        theme: &lt;br /&gt;
+        &lt;code&gt;jekyll-theme-clean-blog&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Build your site: &lt;br /&gt;
+        &lt;code&gt;bundle exec jekyll serve&lt;/code&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;!-- Pushing Unsupported themes and plugins to Github Pages Section --&gt;
+    &lt;h2 id=&quot;create-gh-pages-for-unsupported-themes&quot;&gt;
+      Create gh-pages for unsupported themes
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Depending if you deal with a User/Organization (UO) site or a Project site
+      (P), do :
+    &lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;
+        From your working folder execute the following command &lt;br /&gt;
+        &lt;code&gt;git init&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Add a remote repository to your parent folder using the following
+        command
+        &lt;br /&gt;
+        &lt;code
+          &gt;git remote add origin git@github.com:userName/userName.github.io.git
+          (UO) or git remote add origin
+          git@github.com:userName/repositoryName.git (P)&lt;/code
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Create a new code base using the following Jekyll command &lt;br /&gt;
+        &lt;code&gt;jekyll new&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        In &lt;kbd&gt;_config.yml&lt;/kbd&gt;, set the &lt;code&gt;baseurl&lt;/code&gt; parameter to
+        &lt;code&gt;baseurl: '' &lt;/code&gt;(UO) or
+        &lt;code&gt; baseurl: '/repositoryName' &lt;/code&gt;(P)
+      &lt;/li&gt;
+      &lt;li&gt;
+        In &lt;kbd&gt;gitignore&lt;/kbd&gt; add &lt;code&gt;_site&lt;/code&gt;, as it would be versioned
+        in the other branch
+      &lt;/li&gt;
+      &lt;li&gt;
+        Perform &lt;code&gt;jekyll build&lt;/code&gt; to create the destination folder and
+        build site.
+      &lt;/li&gt;
+      &lt;li&gt;
+        Checkout the repository &lt;br /&gt;
+        &lt;code&gt;git checkout -b sources (UO) or git checkout master (P)&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Add all the files for commiting&lt;br /&gt;&lt;code&gt;git add -A&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;
+        Commit the code with a proper commit message &lt;br /&gt;
+        &lt;code&gt;git commit -m &amp;quot;jekyll base sources&amp;quot;&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Push the code to remote repository &lt;br /&gt;
+        &lt;code&gt;git push origin sources (UO) or git push origin master (P)&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Traverse to the &lt;kbd&gt;_site&lt;/kbd&gt; directory &lt;br /&gt;
+        &lt;code&gt;cd _site&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Create an empty file called &lt;kbd&gt;.nojekyll&lt;/kbd&gt;. This file tells
+        gh-pages that there is no need to build &lt;br /&gt;
+        &lt;code&gt;touch .nojekyll&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Initialize the repo &lt;br /&gt;
+        &lt;code&gt;git init&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Add a remote repository to your _site folder using the following command
+        &lt;br /&gt;
+
+        &lt;code
+          &gt;git remote add origin git@github.com:userName/userName.github.io.git
+          (UO) or git remote add origin
+          git@github.com:userName/repositoryName.git (P)&lt;/code
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Checkout the relevant branch &lt;br /&gt;
+
+        &lt;code&gt;git checkout master (UO) or git checkout -b gh-pages (P)&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Add all files in the _site directory &lt;br /&gt;
+        &lt;code&gt;git add -A&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Commit the changes with proper commit message &lt;br /&gt;
+        &lt;code&gt;git commit -m &amp;quot;jekyll first build&amp;quot;&lt;/code&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Push to the remote repo, to &lt;kbd&gt;gh-pages&lt;/kbd&gt; branch, which will be
+        used to build the github pages site &lt;br /&gt;
+        &lt;code&gt;git push origin master (UO) or git push origin gh-pages (P)&lt;/code&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+
+    &lt;!-- Blogs Section --&gt;
+    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Blog&lt;/th&gt;
+          &lt;th&gt;Link&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+          &lt;td&gt;Clean Blog Jekyll Theme&lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll&quot;
+              &gt;https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Pre-requisites Instructions Quick Tips and Tricks Using Images Clean Blog Theme Related Push Unsupported themes to Github Pages Blogs</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html&quot;
+          &gt;Jekyll Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html&quot;
+          &gt;Git and Github Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Jekyll Reference Git and Github Reference</summary></entry><entry><title type="html">Lets Git this party started</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html" rel="alternate" type="text/html" title="Lets Git this party started" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html&quot;&gt;Quick Reference&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;!-- Quick Reference Section. Refer to other file --&gt;
+   
+
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Quick Reference</summary></entry><entry><title type="html">Git Commands Quick Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html" rel="alternate" type="text/html" title="Git Commands Quick Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">&lt;!-- Quick Reference Section --&gt;
+  &lt;h2 id=&quot;Quick Reference&quot;&gt;Quick Reference&lt;/h2&gt;
+  &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Description&lt;/th&gt;
+        &lt;th&gt;Command&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+        &lt;td&gt;Initialise a local git repository&lt;/td&gt;
+        &lt;td&gt;
+          Create a new directory, open it and perform a &lt;br /&gt;
+          &lt;code&gt;git init&lt;/code&gt; &lt;br /&gt;
+          to create a new git repository
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+        &lt;td&gt;Check status&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git status&lt;/code&gt; &lt;br /&gt;
+          &lt;img
+            src=&quot;//New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitStatus.png&quot;
+            class=&quot;img-fluid&quot;
+            alt=&quot;Responsive image&quot;
+          /&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+        &lt;td&gt;Get log of git commits&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git log&lt;/code&gt; &lt;br /&gt;
+          &lt;img
+            src=&quot;//New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log.png&quot;
+            class=&quot;img-fluid&quot;
+            alt=&quot;Git Log&quot;
+          /&gt;
+          &lt;br /&gt;
+          To get concise log use the command &lt;br /&gt;
+          &lt;code&gt;git log --oneline&lt;/code&gt; &lt;br /&gt;
+          &lt;img
+            src=&quot;//New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log-oneline.png&quot;
+            class=&quot;img-fluid&quot;
+            alt=&quot;Git Log Oneline&quot;
+          /&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+        &lt;td&gt;Clone a repository&lt;/td&gt;
+        &lt;td&gt;
+          Create a working copy of a local repository by running the command
+          &lt;br /&gt;
+          &lt;code&gt;git clone /path/to/repository&lt;/code&gt; &lt;br /&gt;
+          &lt;br /&gt;
+          when using a remote server, your command will be &lt;br /&gt;
+          &lt;code&gt;git clone username@host:/path/to/ &lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+        &lt;td&gt;Clone a specific branch of a repository&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git clone -b name/of/the/branch name/of/the/remote/repo&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
+        &lt;td&gt;Add and Commit&lt;/td&gt;
+        &lt;td&gt;
+          You can propose changes (add it to the Index) using &lt;br /&gt;
+          &lt;code&gt;git add filename&lt;/code&gt; &lt;br /&gt;
+          or &lt;code&gt;git add *&lt;/code&gt; to add all files &lt;br /&gt;This is the first
+          step in the basic git workflow. To actually commit these changes use
+          &lt;br /&gt;
+          &lt;code&gt;git commit -m &quot;Commit message&quot;&lt;/code&gt;` &lt;br /&gt;
+          Now the file is committed to the HEAD, but not in your remote
+          repository yet
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
+        &lt;td&gt;Push changes to remote repository&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git push -u origin master&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
+        &lt;td&gt;List all git branches&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git branch -- list&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;9&lt;/th&gt;
+        &lt;td&gt;Create new git branch&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git branch name/of/the/new/git/branch&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;10&lt;/th&gt;
+        &lt;td&gt;Checkout to another branch&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git checkout name/of/the/new/git/branch&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;11&lt;/th&gt;
+        &lt;td&gt;Merge changes to another branch&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git merge name/of/the/new/git/branch&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;12&lt;/th&gt;
+        &lt;td&gt;Delete a branch&lt;/td&gt;
+        &lt;td&gt;
+          &lt;code&gt;git branch -D name/of/the/new/git/branch&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;13&lt;/th&gt;
+        &lt;td&gt;Replace local changes&lt;/td&gt;
+        &lt;td&gt;
+          If you want to drop all your local changes and commits, fetch the
+          latest history from the server and point your local master branch at
+          it like this &lt;br /&gt;
+          &lt;code&gt;git fetch origin&lt;/code&gt; &lt;br /&gt;
+          &lt;code&gt;git reset --hard origin/master&lt;/code&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th scope=&quot;row&quot;&gt;14&lt;/th&gt;
+        &lt;td&gt;Get remote repo details&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/body&gt;</content><author><name></name></author><summary type="html">Quick Reference # Description Command 1 Initialise a local git repository Create a new directory, open it and perform a git init to create a new git repository 2 Check status git status 3 Get log of git commits git log To get concise log use the command git log --oneline 4 Clone a repository Create a working copy of a local repository by running the command git clone /path/to/repository when using a remote server, your command will be git clone username@host:/path/to/ 5 Clone a specific branch of a repository git clone -b name/of/the/branch name/of/the/remote/repo 6 Add and Commit You can propose changes (add it to the Index) using git add filename or git add * to add all files This is the first step in the basic git workflow. To actually commit these changes use git commit -m &quot;Commit message&quot;` Now the file is committed to the HEAD, but not in your remote repository yet 7 Push changes to remote repository git push -u origin master 8 List all git branches git branch -- list 9 Create new git branch git branch name/of/the/new/git/branch 10 Checkout to another branch git checkout name/of/the/new/git/branch 11 Merge changes to another branch git merge name/of/the/new/git/branch 12 Delete a branch git branch -D name/of/the/new/git/branch 13 Replace local changes If you want to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it like this git fetch origin git reset --hard origin/master 14 Get remote repo details git remote -v</summary></entry></feed>

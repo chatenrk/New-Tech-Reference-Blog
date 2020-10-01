@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>
-    Search - New Technology Ready Reckoner
+    Search - New Technologies Reckoner
     
   </title>
 
@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
   <link rel="canonical" href="/New-Tech-Reference-Blog/search.html">
-  <link rel="alternate" type="application/rss+xml" title="New Technology Ready Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
 
 </head>
 
@@ -33,7 +33,7 @@
   <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="/New-Tech-Reference-Blog/">New Technology Ready Reckoner</a>
+      <a class="navbar-brand" href="/New-Tech-Reference-Blog/">New Technologies Reckoner</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fa fa-bars"></i>
@@ -98,7 +98,7 @@
       "id": 2,
       "url": "/posts/",
       "title": "Posts",
-      "body": "   Sample Test Post:        This is a sample post for testing  :       Posted by  on October 01, 2020 &middot;   1 min read  "
+      "body": "   Jekyll Reference:     Build static sites using Jekyll and Github Pages:       Posted by  on October 01, 2020 &middot;   5 mins read     Git Commands Quick Reference:     Copy and Paste:       Posted by  on October 01, 2020 &middot;   2 mins read     Lets Git this party started:     An introduction to Git and Github:       Posted by  on October 01, 2020 &middot;   1 min read     Tools Ready Reckoner:     Tools that help us build:       Posted by  on October 01, 2020 &middot;   1 min read  "
       }, {
       "id": 3,
       "url": "/search.html",
@@ -106,9 +106,24 @@
       "body": "{% include search-lunr. html %} "
       }, {
       "id": 4,
-      "url": "/New-Tech-Reference-Blog/sample/2020/10/01/SampleTestPost.html",
-      "title": "Sample Test Post",
-      "body": "2020/10/01 - This is a sample post for testingSample post by Chaitanya "
+      "url": "/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html",
+      "title": "Jekyll Reference",
+      "body": "2020/10/01 - &lt;!DOCTYPE html&gt;        Document    [Table of Contents]      Pre-requisites   Instructions   Quick Tips and Tricks   Using Images       Clean Blog Theme Related          Push Unsupported themes to Github Pages      Blogs      Pre-requisites:   Jekyll requires the following:      Ruby version 2. 5. 0 or higher   RubyGems   GCC and Make       See   Requirements   for guides and details       Instructions:      Install all prerequisites.        Install the jekyll and bundler    gems.     gem install jekyll bundler          Create a new Jekyll site at . /myblog     jekyll new myblog          Change into your new directory     cd myblog          Build the site and make it available on a local server     bundle exec jekyll serve          Browse to http://localhost:4000         Quick Tips and tricks:               #     Tip     Usage                   1     Escape Liquid Tags from parsing           Use the liquid tag between raw and       endraw using liquid syntax.                   Using Images in Jekyll:      To use images in Jekyll pass the img src url as       {{ site. url }}/{{site. baseurl}}/path/to/the/image/file          Adding Clean blog theme to Jekyll Site  :          Replace the current theme in your Gemfile with gem     &quot;jekyll-theme-clean-blog&quot;.       Run bundle install       Replace the current theme in your _config. yml file with    theme:     jekyll-theme-clean-blog          Build your site:     bundle exec jekyll serve            Create gh-pages for unsupported themes  :      Depending if you deal with a User/Organization (UO) site or a Project site   (P), do :            From your working folder execute the following command     git init          Add a remote repository to your parent folder using the following    command        git remote add origin git@github. com:userName/userName. github. io. git     (UO) or git remote add origin     git@github. com:userName/repositoryName. git (P)          Create a new code base using the following Jekyll command     jekyll new          In _config. yml, set the baseurl parameter to    baseurl: '' (UO) or     baseurl: '/repositoryName' (P)          In gitignore add _site, as it would be versioned    in the other branch          Perform jekyll build to create the destination folder and    build site.           Checkout the repository     git checkout -b sources (UO) or git checkout master (P)      Add all the files for commitinggit add -A       Commit the code with a proper commit message     git commit -m &quot;jekyll base sources&quot;          Push the code to remote repository     git push origin sources (UO) or git push origin master (P)          Traverse to the _site directory     cd _site          Create an empty file called . nojekyll. This file tells    gh-pages that there is no need to build     touch . nojekyll          Initialize the repo     git init          Add a remote repository to your _site folder using the following command        git remote add origin git@github. com:userName/userName. github. io. git     (UO) or git remote add origin     git@github. com:userName/repositoryName. git (P)          Checkout the relevant branch     git checkout master (UO) or git checkout -b gh-pages (P)          Add all files in the _site directory     git add -A          Commit the changes with proper commit message     git commit -m &quot;jekyll first build&quot;          Push to the remote repo, to gh-pages branch, which will be    used to build the github pages site     git push origin master (UO) or git push origin gh-pages (P)         Blogs:               #     Blog     Link                   1     Clean Blog Jekyll Theme           https://github. com/StartBootstrap/startbootstrap-clean-blog-jekyll               "
+      }, {
+      "id": 5,
+      "url": "/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html",
+      "title": "Git Commands Quick Reference",
+      "body": "2020/10/01 -  Quick Reference:          #    Description    Command              1    Initialise a local git repository         Create a new directory, open it and perform a      git init      to create a new git repository              2    Check status         git status                    3    Get log of git commits         git log                To get concise log use the command      git log --oneline                    4    Clone a repository         Create a working copy of a local repository by running the command          git clone /path/to/repository           when using a remote server, your command will be      git clone username@host:/path/to/               5    Clone a specific branch of a repository         git clone -b name/of/the/branch name/of/the/remote/repo              6    Add and Commit         You can propose changes (add it to the Index) using      git add filename      or git add * to add all files This is the first     step in the basic git workflow. To actually commit these changes use          git commit -m  Commit message `      Now the file is committed to the HEAD, but not in your remote     repository yet              7    Push changes to remote repository         git push -u origin master              8    List all git branches         git branch -- list              9    Create new git branch         git branch name/of/the/new/git/branch              10    Checkout to another branch         git checkout name/of/the/new/git/branch              11    Merge changes to another branch         git merge name/of/the/new/git/branch              12    Delete a branch         git branch -D name/of/the/new/git/branch              13    Replace local changes         If you want to drop all your local changes and commits, fetch the     latest history from the server and point your local master branch at     it like this      git fetch origin      git reset --hard origin/master              14    Get remote repo details    git remote -v      &lt;/body&gt; "
+      }, {
+      "id": 6,
+      "url": "/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html",
+      "title": "Lets Git this party started",
+      "body": "2020/10/01 - &lt;!DOCTYPE html&gt;        Document    [Table of Contents]      Quick Reference      &lt;/html&gt;"
+      }, {
+      "id": 7,
+      "url": "/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html",
+      "title": "Tools Ready Reckoner",
+      "body": "2020/10/01 - &lt;!DOCTYPE html&gt;        Document    [Table of Contents]      Introduction       Jekyll Reference          Git and Github Reference      "
       }];
 
   var idx = lunr(function () {

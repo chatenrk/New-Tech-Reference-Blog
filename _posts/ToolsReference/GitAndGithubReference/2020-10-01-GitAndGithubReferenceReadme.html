@@ -17,9 +17,56 @@ background: '/img/bg-github.jpg'
     <p><strong>[Table of Contents]</strong></p>
     <ul>
       <li><a href="{% link _posts/ToolsReference/GitAndGithubReference/2020-10-01-GitCommandsQuickReference.html %}">Quick Reference</a></li>
+      <li><a href="#generalinfo">General Information</a></li>
+      <ul>
+        <li><a href="#git-workflow">Git Workflow</a></li>
+        <li><a href="#git-branching">Git Branching</a></li>
+        </ul>
+        <li><a href="#github-reference">Github Reference</a></li>
+        <ul>
+          <li><a href="#github-actions">Git Actions</a></li>
+          </ul>  
     </ul>
 
     <!-- Quick Reference Section. Refer to other file -->
-   
+   <!-- General Information Section -->
+   <h1 id="generalinfo">General Information</h1>
+    <h2 id="gitWorkflow">Git Workflow</h2>
+    <p>The local repository consists of three "trees" maintained by git. the first one is the <b>Working Directory</b> which holds the actual files. <br> The second one is the <b>Index</b>  which acts as a staging area and finally the <b>HEAD</b> which points to the last commit made.
+    <br>
+      <img
+    src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/gitWorkflow.png"
+    class="img-fluid"
+    alt="Git Workflow"
+  />
+  </p>
 
+  <h2 id="git-branching">Git Branching</h2>
+<p>Branches are used to develop features isolated from each other. The master branch is the &quot;default&quot; branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
+  <img
+  src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/gitBranching.png"
+  class="img-fluid"
+  alt="Git Branching"
+/>
+  </p>
+<h1 id="github-reference">Github Reference</h1>
+<h2 id="github-actions">Github actions</h2>
+<table class="table table-sm table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Blog</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Markdown Link Check Action</td>
+      <td>
+        <a href="https://github.com/gaurav-nelson/github-action-markdown-link-check.git">https://github.com/gaurav-nelson/github-action-markdown-link-check.git</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 </html>

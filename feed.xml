@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-02T12:19:26+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Jekyll Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html" rel="alternate" type="text/html" title="Jekyll Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-02T12:50:06+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Jekyll Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html" rel="alternate" type="text/html" title="Jekyll Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -93,7 +93,7 @@
     &lt;p&gt;
       To use images in Jekyll pass the &lt;kbd&gt;img src&lt;/kbd&gt; url as &lt;br /&gt;
       
-      &lt;code&gt;{{ site.url }}/{{site.baseurl}}/path/to/the/image/file&lt;/code&gt; 
+      &lt;code&gt;{{site.baseurl}}/path/to/the/image/file&lt;/code&gt; 
     &lt;/p&gt;
 
     &lt;!-- Clean Blog Theme Related Section --&gt;
@@ -237,7 +237,7 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Pre-requisites Instructions Quick Tips and Tricks Using Images Clean Blog Theme Related Push Unsupported themes to Github Pages Blogs</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Pre-requisites Instructions Quick Tips and Tricks Using Images Clean Blog Theme Related Push Unsupported themes to Github Pages Blogs</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -262,7 +262,7 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Jekyll Reference Git and Github Reference</summary></entry><entry><title type="html">Lets Git this party started</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html" rel="alternate" type="text/html" title="Lets Git this party started" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Jekyll Reference Git and Github Reference</summary></entry><entry><title type="html">Lets Git this party started</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html" rel="alternate" type="text/html" title="Lets Git this party started" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -273,12 +273,59 @@
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html&quot;&gt;Quick Reference&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#generalinfo&quot;&gt;General Information&lt;/a&gt;&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#git-workflow&quot;&gt;Git Workflow&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#git-branching&quot;&gt;Git Branching&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#github-reference&quot;&gt;Github Reference&lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#github-actions&quot;&gt;Git Actions&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;  
     &lt;/ul&gt;
 
     &lt;!-- Quick Reference Section. Refer to other file --&gt;
-   
+   &lt;!-- General Information Section --&gt;
+   &lt;h1 id=&quot;generalinfo&quot;&gt;General Information&lt;/h1&gt;
+    &lt;h2 id=&quot;gitWorkflow&quot;&gt;Git Workflow&lt;/h2&gt;
+    &lt;p&gt;The local repository consists of three &quot;trees&quot; maintained by git. the first one is the &lt;b&gt;Working Directory&lt;/b&gt; which holds the actual files. &lt;br&gt; The second one is the &lt;b&gt;Index&lt;/b&gt;  which acts as a staging area and finally the &lt;b&gt;HEAD&lt;/b&gt; which points to the last commit made.
+    &lt;br&gt;
+      &lt;img
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitWorkflow.png&quot;
+    class=&quot;img-fluid&quot;
+    alt=&quot;Git Workflow&quot;
+  /&gt;
+  &lt;/p&gt;
 
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Quick Reference</summary></entry><entry><title type="html">Git Commands Quick Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html" rel="alternate" type="text/html" title="Git Commands Quick Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">&lt;!-- Quick Reference Section --&gt;
+  &lt;h2 id=&quot;git-branching&quot;&gt;Git Branching&lt;/h2&gt;
+&lt;p&gt;Branches are used to develop features isolated from each other. The master branch is the &amp;quot;default&amp;quot; branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
+  &lt;img
+  src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitBranching.png&quot;
+  class=&quot;img-fluid&quot;
+  alt=&quot;Git Branching&quot;
+/&gt;
+  &lt;/p&gt;
+&lt;h1 id=&quot;github-reference&quot;&gt;Github Reference&lt;/h1&gt;
+&lt;h2 id=&quot;github-actions&quot;&gt;Github actions&lt;/h2&gt;
+&lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;Blog&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Markdown Link Check Action&lt;/td&gt;
+      &lt;td&gt;
+        &lt;a href=&quot;https://github.com/gaurav-nelson/github-action-markdown-link-check.git&quot;&gt;https://github.com/gaurav-nelson/github-action-markdown-link-check.git&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Quick Reference General Information Git Workflow Git Branching Github Reference Git Actions</summary></entry><entry><title type="html">Git Commands Quick Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html" rel="alternate" type="text/html" title="Git Commands Quick Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">&lt;!-- Quick Reference Section --&gt;
   &lt;h2 id=&quot;Quick Reference&quot;&gt;Quick Reference&lt;/h2&gt;
   &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
     &lt;thead&gt;

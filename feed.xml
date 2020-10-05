@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-05T19:32:40+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">HTML Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html" rel="alternate" type="text/html" title="HTML Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-05T21:19:37+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">VSCode Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme.html" rel="alternate" type="text/html" title="VSCode Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -8,15 +8,488 @@
   &lt;body&gt;
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#favext&quot;&gt;Frequently used extensions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;
         &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html&quot;
-          &gt;HTML Snippets&lt;/a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode.html&quot;
+          &gt;ADT Using VSCode&lt;/a
         &gt;
       &lt;/li&gt;
     &lt;/ul&gt;
+
+    &lt;h1 id=&quot;favext&quot;&gt;Frequently used extensions&lt;/h1&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Extension&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+          &lt;td&gt;Markdown Preview Enhanced&lt;/td&gt;
+          &lt;td&gt;
+            This extension provides you with many useful functionalities such as
+            automatic scroll sync, math typesetting, mermaid, PlantUML, pandoc,
+            PDF export, code chunk, presentation writer, etc. &lt;br /&gt;
+            &lt;br /&gt;
+            Mainly useful for markdown files reading and writing
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+          &lt;td&gt;Bracket Pair Colorizer 2&lt;/td&gt;
+          &lt;td&gt;
+            Allows matching brackets to be identified with colors. The user can
+            define which tokens to match, and which colors to use
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+          &lt;td&gt;.gitignore Generator&lt;/td&gt;
+          &lt;td&gt;
+            Lets you easily and quickly generate .gitignore file for your
+            project using gitignore.io
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+          &lt;td&gt;YAML&lt;/td&gt;
+          &lt;td&gt;Provides comprehensive YAML support to VS Code&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
+          &lt;td&gt;GitLens – Git Supercharged&lt;/td&gt;
+          &lt;td&gt;
+            This extension supercharges the Git capabilities built into VS Code.
+            It helps you to visualize code authorship at a glance via Git blame
+            annotations and code lens, and so much more
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;h1 id=&quot;blogs&quot;&gt;Blogs to explore&lt;/h1&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Blog Description&lt;/th&gt;
+          &lt;th&gt;Link&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;&lt;/tbody&gt;
+    &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] HTML Snippets</summary></entry><entry><title type="html">Jekyll Tips and Tricks</title><link href="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html" rel="alternate" type="text/html" title="Jekyll Tips and Tricks" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Frequently used extensions Blogs to explore ADT Using VSCode</summary></entry><entry><title type="html">HTML Snippets for reference</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html" rel="alternate" type="text/html" title="HTML Snippets for reference" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#csscode&quot;&gt;CSS Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h1 id=&quot;htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/h1&gt;
+    &lt;h2 id=&quot;b4table&quot;&gt;Bootstrap 4 table&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/b8d6cca82e57b7c77edc1bbee6391eba.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;b4toc&quot;&gt;Bootstrap 4 TOC&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/4cf0a52c460d8d093f697e83da7dd319.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;hljshighlight&quot;&gt;Highlight String using Highlight JS&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/ec815d5eb9393d4d0d14c64ef43cb941.js&quot;&gt;&lt;/script&gt;
+
+    &lt;h1 id=&quot;csscode&quot;&gt;CSS Quick Cut and Paste&lt;/h1&gt;
+    &lt;h2 id=&quot;hljscss&quot;&gt;Highlight js CSS&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/af2c64ed1a32feeb5145ccb702ce4c4b.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">ABAP Development using VSCode</title><link href="/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode.html" rel="alternate" type="text/html" title="ABAP Development using VSCode" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#plugins&quot;&gt;Getting the right plugins&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#configuresap&quot;&gt;Configuring the SAP system&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#configurevscode&quot;&gt;Configuring VS Code&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;a href=&quot;#blogs&quot;&gt;Blogs to Explore&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;plugins&quot;&gt;Getting the right plugins&lt;/h1&gt;
+&lt;p&gt;
+    The following VS Code plugins are required
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=murbani.vscode-abap-remote-fs&quot;&gt;ABAP Remote FileSystem&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=larshp.vscode-abap&quot;&gt;ABAP Syntax Highlighting&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=hudakf.cds&quot;&gt;ABAP CDS Language Support&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=frehu.abap-snippets&quot;&gt;ABAP Snippets&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+    Once you have installed these plugins you can begin configuring your SAP System as a Remote FileSystem
+    &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/VSCodeRelated/ABAPUsingVSCode/install-vscode-plugins.png&quot; alt=&quot;Install VSCode Plugins&quot;&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&quot;configuresap&quot;&gt;Configuring the SAP system&lt;/h1&gt;
+&lt;p&gt;
+    In order to connect to your SAP system you will need to enable the ABAP Development Tools (ADT) ICF node, this is the same service that tools such as the SAP Hana Studio use.
+&lt;/p&gt;
+
+&lt;p&gt;
+    Open your SAP GUI and connect to the target system, run the transaction SICF and then activate the ADT_SRV service as shown below
+    &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/VSCodeRelated/ABAPUsingVSCode/adt-service-activate.png&quot; alt=&quot;Install VSCode Plugins&quot;&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&quot;configurevscode&quot;&gt;Configuring VS Code&lt;/h1&gt;
+&lt;p&gt;
+    Configuring this plugin to connect to your SAP system is straightforward, just open up your VS Code settings by pressing “Control/Command + ,” select “Extensions” in the menu and then in the “ABAP-FS” plugin, click on “Edit in settings.json”.
+    &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/VSCodeRelated/ABAPUsingVSCode/edit-settings.png&quot; alt=&quot;Install VSCode Plugins&quot;&gt;
+    
+&lt;/p&gt;
+&lt;p&gt;
+    Add the following code, and update the fields below as applicable
+    &lt;script src=&quot;https://gist.github.com/chatenrk/e938045810a34952bb1c6dfeb3e779fe.js&quot;&gt;&lt;/script&gt;
+
+    The file system is now open and can be used. For more information, refer to this &lt;a class=&quot;badge badge-info&quot; href=&quot;https://blogs.sap.com/2019/12/06/abap-development-in-vs-code/&quot;&gt;blog&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&quot;blogs&quot;&gt;Blogs to explore&lt;/h1&gt;
+&lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;Blog Description&lt;/th&gt;
+      &lt;th&gt;Link&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Getting the right plugins Configuring the SAP system Configuring VS Code Blogs to Explore Getting the right plugins The following VS Code plugins are required ABAP Remote FileSystem ABAP Syntax Highlighting ABAP CDS Language Support ABAP Snippets</summary></entry><entry><title type="html">Setup Cloud Platform Trial</title><link href="/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html" rel="alternate" type="text/html" title="Setup Cloud Platform Trial" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#login&quot;&gt;Log into the SAP website&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#register&quot;&gt;Register at sap.com&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#activate&quot;&gt;Activate your account&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#logon&quot;&gt;Log on to SAP Cloud Platform&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#verify&quot;&gt;Verify your account&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#access&quot;&gt;Access the welcome screen&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h1 id=&quot;login&quot;&gt;Log into the SAP website&lt;/h1&gt;
+    &lt;p&gt;
+      Visit &lt;a href=&quot;https://www.sap.com&quot;&gt;https://www.sap.com&lt;/a&gt; and click the
+      Log On icon in the upper-right corner.
+
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/homepage.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      If you have an account on www.sap.com (e.g. an S, C, D or I number) you
+      can enter it or the associated email along with your password. If you
+      don’t have an account yet, you can select one of the other login methods
+      or click Register to create an account.
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/option-logon.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+    &lt;h1 id=&quot;register&quot;&gt;Register at sap.com&lt;/h1&gt;
+    &lt;p&gt;
+      If you don’t have an account you will see a register dialog on the
+      left-hand side of the dialog. Fill in the required fields, and click
+      Submit.
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/option-register.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      You will get a message that an activation link has been sent to you.
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/register_confirm.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+    &lt;h2 id=&quot;activate&quot;&gt;Activate your account&lt;/h2&gt;
+    &lt;p&gt;
+      Check your emails to find the activation button Click to activate your
+      account.
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/log-into-sap.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+
+      After activating your account, you will see the following screen
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/successful-activation.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+
+    &lt;h1 id=&quot;logon&quot;&gt;Log on to SAP Cloud Platform&lt;/h1&gt;
+    &lt;p&gt;
+      After activation, or if you already had an SAP account, go to the
+      &lt;a href=&quot;https://account.hanatrial.ondemand.com/&quot;
+        &gt;SAP Cloud Platform Trial&lt;/a
+      &gt;
+      page and click &lt;b&gt;Log On&lt;/b&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      You will see an dialog to confirm the terms and condition for the SAP
+      Cloud Platform Developer Edition. Check the check boxes and click
+      &lt;b&gt;Accept&lt;/b&gt;. This simply adds the SAP.com registration to your login
+      account on SAP Cloud Identity. There is no cost associated with this
+      upgrade
+
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/legal-disclaimer.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+    &lt;h1 id=&quot;verify&quot;&gt;Verify your account&lt;/h1&gt;
+    &lt;p&gt;
+      You will see a message that you need to verify your account with a phone
+      number. Click Verify your phone number to trigger that flow.
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/verification.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;br /&gt;
+      Enter your phone number and click New Code to retrieve a code. Please
+      enter this code as well and click Continue to verify your account. After
+      the verification, you will be logged off automatically
+
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/number.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+
+    &lt;h1 id=&quot;access&quot;&gt;Access the welcome screen&lt;/h1&gt;
+    &lt;p&gt;
+      Click on Log on to log on to your verified account.
+      &lt;img
+        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/logon-again.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      You will see one main button on the welcome screen of the SAP Cloud
+      Platform Cockpit. Click on Enter Your Trial Account to navigate to your
+      global account.
+
+      &lt;img
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/SAPCPTrial/CreateAccount.gif&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Log into the SAP website Register at sap.com Activate your account Log on to SAP Cloud Platform Verify your account Access the welcome screen Log into the SAP website Visit https://www.sap.com and click the Log On icon in the upper-right corner.</summary></entry><entry><title type="html">API Testing via postman</title><link href="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html" rel="alternate" type="text/html" title="API Testing via postman" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&quot;intro&quot;&gt;Introduction&lt;/h1&gt;
+    &lt;h2 id=&quot;introjwt&quot;&gt;What is a JWT Token&lt;/h2&gt;
+    &lt;p&gt;
+      JWT (pronounced: jot) tokens are the de-facto standard for authentication
+      in modern web applications
+    &lt;/p&gt;
+
+    &lt;blockquote&gt;
+      A JWT token is a manipulation-proof, signed JSON object that contains
+      standardized properties like user information and access rights
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;
+      In Cloud Foundry, this token is issued by the User Account and
+      Authentication (UAA) server. In the case of SAP CP Cloud Foundry and SAP
+      HANA XSA, we call this service also XSUAA
+    &lt;/p&gt;
+
+    &lt;h2 id=&quot;jwtViaPostman&quot;&gt;Retrieve the JWT Token with Postman&lt;/h2&gt;
+    &lt;h3 id=&quot;deployapp&quot;&gt;Deploy Sample App&lt;/h3&gt;
+    For the purpose of a demo, we are going to deploy an exisitng CAP app.
+    Details are as below
+    &lt;br /&gt;
+
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;
+        git clone &lt;a href=&quot;https://github.com/gregorwolf/bookshop-demo&quot;&gt;https://github.com/gregorwolf/bookshop-demo&lt;/a&gt;
+        bookshop-demo 
+        mbt build  
+        cf deploy mta_archives/bookshop-demo_0.0.1.mtar
+      &lt;/code&gt;&lt;/pre&gt;
+    &lt;h3 id=&quot;rolecoll&quot;&gt;Create a role collection and assign it to your user&lt;/h3&gt;
+    &lt;p&gt;Perform the below steps
+        &lt;ul&gt;
+            &lt;li&gt;Create a new role collection
+                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll1.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Assign bookshop admin role
+                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll2.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Assign role collection to SAP User ID
+                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll3.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+
+    &lt;h3 id=&quot;readdata&quot;&gt;Read Data&lt;/h3&gt;
+    &lt;p&gt;Perform the below steps 
+        &lt;ul&gt;
+            &lt;li&gt;get the URL of the server application using SAP CF CLI &lt;br&gt;
+            &lt;code&gt;cf apps | grep bookshop-demo-srv&lt;/code&gt;
+            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/app-info.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+            &lt;li&gt;test the srv admin/Books in postman&lt;br&gt;
+            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test1.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+
+    &lt;h3 id=&quot;accesstoken&quot;&gt;Get access token via postman&lt;/h3&gt;
+    &lt;p&gt;
+        Open new access token dialog in postman and enter the following
+        &lt;ol&gt;
+            &lt;li&gt;Token name as required&lt;/li&gt;
+            &lt;li&gt;Grant Type as &lt;code&gt;Password Credentials&lt;/code&gt; &lt;/li&gt;
+            &lt;li&gt;Access token URL as below&lt;/li&gt;
+           &lt;li&gt;UserName - &lt;b&gt;User id of trial account&lt;/b&gt; &lt;/li&gt; 
+           &lt;li&gt;Password - &lt;b&gt;Password of trial account&lt;/b&gt; &lt;/li&gt;
+           &lt;li&gt;Client ID as below&lt;/li&gt;
+           &lt;li&gt;Client secret as below&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        To read other value we make use of environment variables of the app. For the same execute the below command
+        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; cf env bookshop-demo-srv&lt;/code&gt;&lt;/pre&gt;
+
+        This will print a large JSON file. In there, find the object VCAP_SERVICES.xsuaa.Enter the missing values in the dialog as below
+        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; Access Token URL = xsuaa[0].credentials.url &lt;br&gt; Client ID = xsuaa[0].credentials.clientid &lt;br&gt; Client Secret = xsuaa[0].credentials.clientsecret
+        &lt;/code&gt;&lt;/pre&gt;
+
+        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test2.png&quot; alt=&quot;&quot;&gt;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        Store the returned access token in postman and use the same when querying the service on SAP Cloud platform
+        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test3.png&quot; alt=&quot;&quot;&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Introduction What is a JWT Token JWT (pronounced: jot) tokens are the de-facto standard for authentication in modern web applications</summary></entry><entry><title type="html">Jekyll Tips and Tricks</title><link href="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html" rel="alternate" type="text/html" title="Jekyll Tips and Tricks" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -139,107 +612,7 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">HTML Snippets for reference</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html" rel="alternate" type="text/html" title="HTML Snippets for reference" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      /* Tomorrow Theme */
-      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-      /* Tomorrow Comment */
-      .hljs-comment,
-      .hljs-quote {
-        color: #8e908c;
-      }
-
-      /* Tomorrow Red */
-      .hljs-variable,
-      .hljs-template-variable,
-      .hljs-tag,
-      .hljs-name,
-      .hljs-selector-id,
-      .hljs-selector-class,
-      .hljs-regexp,
-      .hljs-deletion {
-        color: #c82829;
-      }
-
-      /* Tomorrow Orange */
-      .hljs-number,
-      .hljs-built_in,
-      .hljs-builtin-name,
-      .hljs-literal,
-      .hljs-type,
-      .hljs-params,
-      .hljs-meta,
-      .hljs-link {
-        color: #f5871f;
-      }
-
-      /* Tomorrow Yellow */
-      .hljs-attribute {
-        color: #eab700;
-      }
-
-      /* Tomorrow Green */
-      .hljs-string,
-      .hljs-symbol,
-      .hljs-bullet,
-      .hljs-addition {
-        color: #718c00;
-      }
-
-      /* Tomorrow Blue */
-      .hljs-title,
-      .hljs-section {
-        color: #4271ae;
-      }
-
-      /* Tomorrow Purple */
-      .hljs-keyword,
-      .hljs-selector-tag {
-        color: #8959a8;
-      }
-      .hljs {
-        display: block;
-        overflow-x: auto;
-        color: #4d4d4c;
-        padding: 0.5em;
-      }
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#csscode&quot;&gt;CSS Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h1 id=&quot;htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/h1&gt;
-    &lt;h2 id=&quot;b4table&quot;&gt;Bootstrap 4 table&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/b8d6cca82e57b7c77edc1bbee6391eba.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;b4toc&quot;&gt;Bootstrap 4 TOC&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/4cf0a52c460d8d093f697e83da7dd319.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;hljshighlight&quot;&gt;Highlight String using Highlight JS&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/ec815d5eb9393d4d0d14c64ef43cb941.js&quot;&gt;&lt;/script&gt;
-
-    &lt;h1 id=&quot;csscode&quot;&gt;CSS Quick Cut and Paste&lt;/h1&gt;
-    &lt;h2 id=&quot;hljscss&quot;&gt;Highlight js CSS&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/af2c64ed1a32feeb5145ccb702ce4c4b.js&quot;&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">When it comes to data analysis I Excel</title><link href="/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html" rel="alternate" type="text/html" title="When it comes to data analysis I Excel" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">Postman Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/PostmanReferenceReadme.html" rel="alternate" type="text/html" title="Postman Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/PostmanReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/PostmanReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -249,40 +622,51 @@
   &lt;body&gt;
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#uuid-capm&quot;&gt;Generate UUID in Excel&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;
         &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html&quot;
-          &gt;Macro Reference&lt;/a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html&quot;
+          &gt;API Testing via postman&lt;/a
         &gt;
       &lt;/li&gt;
-      &lt;!-- &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html&quot;
-          &gt;Jekyll Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html&quot;
-          &gt;Git and Github Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html&quot;
-          &gt;Excel Reference&lt;/a
-        &gt;
-      &lt;/li&gt; --&gt;
     &lt;/ul&gt;
-
-    &lt;h1 id=&quot;uuid-capm&quot;&gt;Generate UUID in Excel&lt;/h1&gt;
-    Use the following formula to generate a UUID for CAPM
-    &lt;code&gt;
-      =CONCATENATE(DEC2HEX(RANDBETWEEN(0,4294967295),8),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,4294967295),8),DEC2HEX(RANDBETWEEN(0,42949),4))
-    &lt;/code&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="uuid" /><category term="excel" /><summary type="html">Document [Table of Contents] Generate UUID in Excel Macro Reference</summary></entry><entry><title type="html">Macros are game changers</title><link href="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html" rel="alternate" type="text/html" title="Macros are game changers" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] API Testing via postman</summary></entry><entry><title type="html">HTML Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html" rel="alternate" type="text/html" title="HTML Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html&quot;
+          &gt;HTML Snippets&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] HTML Snippets</summary></entry><entry><title type="html">Tools For SAP</title><link href="/New-Tech-Reference-Blog/2020/10/05/ToolsForSAPReadme.html" rel="alternate" type="text/html" title="Tools For SAP" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/ToolsForSAPReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/ToolsForSAPReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html&quot;
+          &gt;Setup Cloud Platform Trial&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Setup Cloud Platform Trial</summary></entry><entry><title type="html">Macros are game changers</title><link href="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html" rel="alternate" type="text/html" title="Macros are game changers" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -330,561 +714,4 @@
     &lt;h2 id=&quot;amfiGetData&quot;&gt;Get data from AMFI Portal&lt;/h2&gt;
     &lt;script src=&quot;https://gist.github.com/chatenrk/6cb80b8bbd8c0156382b50c5bffa872c.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="macro" /><category term="excel" /><summary type="html">Document [Table of Contents] Row Handling Date Handling Worksheet Handling Excel Files Related Macro Application Related Misc. Macros Row Handling Get Last Row Delete When Row is empty Delete Rows when specific column is empty Date Handling Format Date Worksheet Handling Worksheet Created Check Excel Files Related Open Excel file dialog Save Worksheet as Text File</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html&quot;
-          &gt;Excel Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html&quot;
-          &gt;Git and Github Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html&quot;
-          &gt;HTML Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html&quot;
-          &gt;Jekyll Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Excel Reference Git and Github Reference HTML Reference Jekyll Reference</summary></entry><entry><title type="html">Jekyll Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html" rel="alternate" type="text/html" title="Jekyll Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#prerequsites&quot;&gt;Pre-requisites&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#instructions&quot;&gt;Instructions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#usingImages&quot;&gt;Using Images&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#adding-clean-blog-theme-to-jekyll-site&quot;
-          &gt;Clean Blog Theme Related&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#create-gh-pages-for-unsupported-themes&quot;
-          &gt;Push Unsupported themes to Github Pages&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;!-- Prerequsites Section --&gt;
-    &lt;h2 id=&quot;prerequsites&quot;&gt;Pre-requisites&lt;/h2&gt;
-    &lt;p&gt;Jekyll requires the following:&lt;/p&gt;
-    &lt;ol&gt;
-      &lt;li&gt;Ruby version 2.5.0 or higher&lt;/li&gt;
-      &lt;li&gt;RubyGems&lt;/li&gt;
-      &lt;li&gt;GCC and Make&lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;p&gt;
-      See
-      &lt;a href=&quot;https://jekyllrb.com/docs/installation/#requirements&quot;
-        &gt;Requirements&lt;/a
-      &gt;
-      for guides and details
-    &lt;/p&gt;
-
-    &lt;!-- Instructions Section --&gt;
-    &lt;h2 id=&quot;instructions&quot;&gt;Instructions&lt;/h2&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;Install all &lt;a href=&quot;#prerequisites&quot;&gt;prerequisites&lt;/a&gt;.&lt;/li&gt;
-      &lt;li&gt;
-        Install the jekyll and bundler
-        &lt;a href=&quot;https://jekyllrb.com/docs/ruby-101/#gems&quot;&gt;gems&lt;/a&gt;.&lt;br /&gt;
-        &lt;code&gt;gem install jekyll bundler&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Create a new Jekyll site at &lt;kbd&gt;./myblog&lt;/kbd&gt; &lt;br /&gt;
-        &lt;code&gt;jekyll new myblog&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Change into your new directory &lt;br /&gt;
-        &lt;code&gt;cd myblog&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Build the site and make it available on a local server &lt;br /&gt;
-        &lt;code&gt;bundle exec jekyll serve&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Browse to &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-    &lt;!-- Quick Tips and tricks sections - Refer to other file --&gt;
-    &lt;!-- Using Images Section --&gt;
-    &lt;h2 id=&quot;usingImages&quot;&gt;Using Images in Jekyll&lt;/h2&gt;
-    &lt;p&gt;
-      To use images in Jekyll pass the &lt;kbd&gt;img src&lt;/kbd&gt; url as &lt;br /&gt;
-      
-      &lt;code&gt;{{site.baseurl}}/path/to/the/image/file&lt;/code&gt; 
-    &lt;/p&gt;
-
-    &lt;!-- Clean Blog Theme Related Section --&gt;
-    &lt;h2 id=&quot;adding-clean-blog-theme-to-jekyll-site&quot;&gt;
-      Adding Clean blog theme to Jekyll Site
-    &lt;/h2&gt;
-    &lt;ol&gt;
-      &lt;li&gt;
-        Replace the current theme in your Gemfile with gem &lt;br /&gt;
-        &lt;code&gt;&amp;quot;jekyll-theme-clean-blog&amp;quot;&lt;/code&gt;.
-      &lt;/li&gt;
-      &lt;li&gt;Run &lt;br /&gt;&lt;code&gt;bundle install&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;
-        Replace the current theme in your &lt;kbd&gt;_config.yml&lt;/kbd&gt; file with
-        theme: &lt;br /&gt;
-        &lt;code&gt;jekyll-theme-clean-blog&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Build your site: &lt;br /&gt;
-        &lt;code&gt;bundle exec jekyll serve&lt;/code&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;!-- Pushing Unsupported themes and plugins to Github Pages Section --&gt;
-    &lt;h2 id=&quot;create-gh-pages-for-unsupported-themes&quot;&gt;
-      Create gh-pages for unsupported themes
-    &lt;/h2&gt;
-    &lt;p&gt;
-      Depending if you deal with a User/Organization (UO) site or a Project site
-      (P), do :
-    &lt;/p&gt;
-    &lt;ol&gt;
-      &lt;li&gt;
-        From your working folder execute the following command &lt;br /&gt;
-        &lt;code&gt;git init&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Add a remote repository to your parent folder using the following
-        command
-        &lt;br /&gt;
-        &lt;code
-          &gt;git remote add origin git@github.com:userName/userName.github.io.git
-          (UO) or git remote add origin
-          git@github.com:userName/repositoryName.git (P)&lt;/code
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Create a new code base using the following Jekyll command &lt;br /&gt;
-        &lt;code&gt;jekyll new&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        In &lt;kbd&gt;_config.yml&lt;/kbd&gt;, set the &lt;code&gt;baseurl&lt;/code&gt; parameter to
-        &lt;code&gt;baseurl: '' &lt;/code&gt;(UO) or
-        &lt;code&gt; baseurl: '/repositoryName' &lt;/code&gt;(P)
-      &lt;/li&gt;
-      &lt;li&gt;
-        In &lt;kbd&gt;gitignore&lt;/kbd&gt; add &lt;code&gt;_site&lt;/code&gt;, as it would be versioned
-        in the other branch
-      &lt;/li&gt;
-      &lt;li&gt;
-        Perform &lt;code&gt;jekyll build&lt;/code&gt; to create the destination folder and
-        build site.
-      &lt;/li&gt;
-      &lt;li&gt;
-        Checkout the repository &lt;br /&gt;
-        &lt;code&gt;git checkout -b sources (UO) or git checkout master (P)&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Add all the files for commiting&lt;br /&gt;&lt;code&gt;git add -A&lt;/code&gt;&lt;/li&gt;
-      &lt;li&gt;
-        Commit the code with a proper commit message &lt;br /&gt;
-        &lt;code&gt;git commit -m &amp;quot;jekyll base sources&amp;quot;&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Push the code to remote repository &lt;br /&gt;
-        &lt;code&gt;git push origin sources (UO) or git push origin master (P)&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Traverse to the &lt;kbd&gt;_site&lt;/kbd&gt; directory &lt;br /&gt;
-        &lt;code&gt;cd _site&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Create an empty file called &lt;kbd&gt;.nojekyll&lt;/kbd&gt;. This file tells
-        gh-pages that there is no need to build &lt;br /&gt;
-        &lt;code&gt;touch .nojekyll&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Initialize the repo &lt;br /&gt;
-        &lt;code&gt;git init&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Add a remote repository to your _site folder using the following command
-        &lt;br /&gt;
-
-        &lt;code
-          &gt;git remote add origin git@github.com:userName/userName.github.io.git
-          (UO) or git remote add origin
-          git@github.com:userName/repositoryName.git (P)&lt;/code
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Checkout the relevant branch &lt;br /&gt;
-
-        &lt;code&gt;git checkout master (UO) or git checkout -b gh-pages (P)&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Add all files in the _site directory &lt;br /&gt;
-        &lt;code&gt;git add -A&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Commit the changes with proper commit message &lt;br /&gt;
-        &lt;code&gt;git commit -m &amp;quot;jekyll first build&amp;quot;&lt;/code&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Push to the remote repo, to &lt;kbd&gt;gh-pages&lt;/kbd&gt; branch, which will be
-        used to build the github pages site &lt;br /&gt;
-        &lt;code&gt;git push origin master (UO) or git push origin gh-pages (P)&lt;/code&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-
-    &lt;!-- Blogs Section --&gt;
-    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Blog&lt;/th&gt;
-          &lt;th&gt;Link&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-          &lt;td&gt;Clean Blog Jekyll Theme&lt;/td&gt;
-          &lt;td&gt;
-            &lt;a
-              href=&quot;https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll&quot;
-              &gt;https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll&lt;/a
-            &gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Pre-requisites Instructions Using Images Clean Blog Theme Related Push Unsupported themes to Github Pages Blogs</summary></entry><entry><title type="html">Git Commands Quick Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html" rel="alternate" type="text/html" title="Git Commands Quick Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      /* Tomorrow Theme */
-      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-      /* Tomorrow Comment */
-      .hljs-comment,
-      .hljs-quote {
-        color: #8e908c;
-      }
-
-      /* Tomorrow Red */
-      .hljs-variable,
-      .hljs-template-variable,
-      .hljs-tag,
-      .hljs-name,
-      .hljs-selector-id,
-      .hljs-selector-class,
-      .hljs-regexp,
-      .hljs-deletion {
-        color: #c82829;
-      }
-
-      /* Tomorrow Orange */
-      .hljs-number,
-      .hljs-built_in,
-      .hljs-builtin-name,
-      .hljs-literal,
-      .hljs-type,
-      .hljs-params,
-      .hljs-meta,
-      .hljs-link {
-        color: #f5871f;
-      }
-
-      /* Tomorrow Yellow */
-      .hljs-attribute {
-        color: #eab700;
-      }
-
-      /* Tomorrow Green */
-      .hljs-string,
-      .hljs-symbol,
-      .hljs-bullet,
-      .hljs-addition {
-        color: #718c00;
-      }
-
-      /* Tomorrow Blue */
-      .hljs-title,
-      .hljs-section {
-        color: #4271ae;
-      }
-
-      /* Tomorrow Purple */
-      .hljs-keyword,
-      .hljs-selector-tag {
-        color: #8959a8;
-      }
-      .hljs {
-        display: block;
-        overflow-x: auto;
-        color: #4d4d4c;
-        padding: 0.5em;
-      }
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;!-- Quick Reference Section --&gt;
-    &lt;h2 id=&quot;Quick Reference&quot;&gt;Quick Reference&lt;/h2&gt;
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Description&lt;/th&gt;
-          &lt;th&gt;Command&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-          &lt;td&gt;Initialise a local git repository&lt;/td&gt;
-          &lt;td&gt;
-            Create a new directory, open it and perform a &lt;br /&gt;
-            &lt;code&gt;git init&lt;/code&gt; &lt;br /&gt;
-            to create a new git repository
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-          &lt;td&gt;Check status&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git status&lt;/code&gt; &lt;br /&gt;
-            &lt;img
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitStatus.png&quot;
-              class=&quot;img-fluid&quot;
-              alt=&quot;Responsive image&quot;
-            /&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-          &lt;td&gt;Get log of git commits&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git log&lt;/code&gt; &lt;br /&gt;
-            &lt;img
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log.png&quot;
-              class=&quot;img-fluid&quot;
-              alt=&quot;Git Log&quot;
-            /&gt;
-            &lt;br /&gt;
-            To get concise log use the command &lt;br /&gt;
-            &lt;code&gt;git log --oneline&lt;/code&gt; &lt;br /&gt;
-            &lt;img
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log-oneline.png&quot;
-              class=&quot;img-fluid&quot;
-              alt=&quot;Git Log Oneline&quot;
-            /&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
-          &lt;td&gt;Clone a repository&lt;/td&gt;
-          &lt;td&gt;
-            Create a working copy of a local repository by running the command
-            &lt;br /&gt;
-            &lt;code&gt;git clone /path/to/repository&lt;/code&gt; &lt;br /&gt;
-            &lt;br /&gt;
-            when using a remote server, your command will be &lt;br /&gt;
-            &lt;code&gt;git clone username@host:/path/to/ &lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
-          &lt;td&gt;Clone a specific branch of a repository&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git clone -b name/of/the/branch name/of/the/remote/repo&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
-          &lt;td&gt;Add and Commit&lt;/td&gt;
-          &lt;td&gt;
-            You can propose changes (add it to the Index) using &lt;br /&gt;
-            &lt;code&gt;git add filename&lt;/code&gt; &lt;br /&gt;
-            or &lt;code&gt;git add *&lt;/code&gt; to add all files &lt;br /&gt;This is the first
-            step in the basic git workflow. To actually commit these changes use
-            &lt;br /&gt;
-            &lt;code&gt;git commit -m &quot;Commit message&quot;&lt;/code&gt;` &lt;br /&gt;
-            Now the file is committed to the HEAD, but not in your remote
-            repository yet
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
-          &lt;td&gt;Push changes to remote repository&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git push -u origin master&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
-          &lt;td&gt;List all git branches&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git branch -- list&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;9&lt;/th&gt;
-          &lt;td&gt;Create new git branch&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git branch name/of/the/new/git/branch&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;10&lt;/th&gt;
-          &lt;td&gt;Checkout to another branch&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git checkout name/of/the/new/git/branch&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;11&lt;/th&gt;
-          &lt;td&gt;Merge changes to another branch&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git merge name/of/the/new/git/branch&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;12&lt;/th&gt;
-          &lt;td&gt;Delete a branch&lt;/td&gt;
-          &lt;td&gt;
-            &lt;code&gt;git branch -D name/of/the/new/git/branch&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;13&lt;/th&gt;
-          &lt;td&gt;Replace local changes&lt;/td&gt;
-          &lt;td&gt;
-            If you want to drop all your local changes and commits, fetch the
-            latest history from the server and point your local master branch at
-            it like this &lt;br /&gt;
-            &lt;code&gt;git fetch origin&lt;/code&gt; &lt;br /&gt;
-            &lt;code&gt;git reset --hard origin/master&lt;/code&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;14&lt;/th&gt;
-          &lt;td&gt;Get remote repo details&lt;/td&gt;
-          &lt;td&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">Lets Git this party started</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html" rel="alternate" type="text/html" title="Lets Git this party started" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html&quot;&gt;Quick Reference&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#generalinfo&quot;&gt;General Information&lt;/a&gt;&lt;/li&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#git-workflow&quot;&gt;Git Workflow&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#git-branching&quot;&gt;Git Branching&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#github-reference&quot;&gt;Github Reference&lt;/a&gt;&lt;/li&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#github-actions&quot;&gt;Git Actions&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;  
-    &lt;/ul&gt;
-
-    &lt;!-- Quick Reference Section. Refer to other file --&gt;
-   &lt;!-- General Information Section --&gt;
-   &lt;h1 id=&quot;generalinfo&quot;&gt;General Information&lt;/h1&gt;
-    &lt;h2 id=&quot;gitWorkflow&quot;&gt;Git Workflow&lt;/h2&gt;
-    &lt;p&gt;The local repository consists of three &quot;trees&quot; maintained by git. the first one is the &lt;b&gt;Working Directory&lt;/b&gt; which holds the actual files. &lt;br&gt; The second one is the &lt;b&gt;Index&lt;/b&gt;  which acts as a staging area and finally the &lt;b&gt;HEAD&lt;/b&gt; which points to the last commit made.
-    &lt;br&gt;
-      &lt;img
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitWorkflow.png&quot;
-    class=&quot;img-fluid&quot;
-    alt=&quot;Git Workflow&quot;
-  /&gt;
-  &lt;/p&gt;
-
-  &lt;h2 id=&quot;git-branching&quot;&gt;Git Branching&lt;/h2&gt;
-&lt;p&gt;Branches are used to develop features isolated from each other. The master branch is the &amp;quot;default&amp;quot; branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
-  &lt;img
-  src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitBranching.png&quot;
-  class=&quot;img-fluid&quot;
-  alt=&quot;Git Branching&quot;
-/&gt;
-  &lt;/p&gt;
-&lt;h1 id=&quot;github-reference&quot;&gt;Github Reference&lt;/h1&gt;
-&lt;h2 id=&quot;github-actions&quot;&gt;Github actions&lt;/h2&gt;
-&lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;#&lt;/th&gt;
-      &lt;th&gt;Blog&lt;/th&gt;
-      &lt;th&gt;Link&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-      &lt;td&gt;Markdown Link Check Action&lt;/td&gt;
-      &lt;td&gt;
-        &lt;a href=&quot;https://github.com/gaurav-nelson/github-action-markdown-link-check.git&quot;&gt;https://github.com/gaurav-nelson/github-action-markdown-link-check.git&lt;/a&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Quick Reference General Information Git Workflow Git Branching Github Reference Git Actions</summary></entry><entry><title type="html">VSCode Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/VSCodeReferenceReadme.html" rel="alternate" type="text/html" title="VSCode Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/VSCodeReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/VSCodeReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;&lt;/ul&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><category term="macro" /><category term="excel" /><summary type="html">Document [Table of Contents] Row Handling Date Handling Worksheet Handling Excel Files Related Macro Application Related Misc. Macros Row Handling Get Last Row Delete When Row is empty Delete Rows when specific column is empty Date Handling Format Date Worksheet Handling Worksheet Created Check Excel Files Related Open Excel file dialog Save Worksheet as Text File</summary></entry></feed>

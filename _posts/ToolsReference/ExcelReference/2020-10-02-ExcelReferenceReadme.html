@@ -1,0 +1,53 @@
+---
+layout: post
+title: 'When it comes to data analysis I Excel'
+subtitle: 'Excel Ready reckoner'
+date: 2020-10-02
+background: '/img/bg-excel1.jpg'
+tags: [uuid, excel]
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li><a href="#uuid-capm">Generate UUID in Excel</a></li>
+      <li>
+        <a
+          href="{% link _posts/ToolsReference/ExcelReference/2020-10-02-MacroReferenceReadme.html %}"
+          >Macro Reference</a
+        >
+      </li>
+      <!-- <li>
+        <a
+          href="{% link _posts/ToolsReference/JekyllReference/2020-10-01-JekyllReferenceReadme.html %}"
+          >Jekyll Reference</a
+        >
+      </li>
+      <li>
+        <a
+          href="{% link _posts/ToolsReference/GitAndGithubReference/2020-10-01-GitAndGithubReferenceReadme.html %}"
+          >Git and Github Reference</a
+        >
+      </li>
+      <li>
+        <a
+          href="{% link _posts/ToolsReference/ExcelReference/2020-10-02-ExcelReferenceReadme.html %}"
+          >Excel Reference</a
+        >
+      </li> -->
+    </ul>
+
+    <h1 id="uuid-capm">Generate UUID in Excel</h1>
+    Use the following formula to generate a UUID for CAPM
+    <code>
+      =CONCATENATE(DEC2HEX(RANDBETWEEN(0,4294967295),8),"-",DEC2HEX(RANDBETWEEN(0,42949),4),"-",DEC2HEX(RANDBETWEEN(0,42949),4),"-",DEC2HEX(RANDBETWEEN(0,42949),4),"-",DEC2HEX(RANDBETWEEN(0,4294967295),8),DEC2HEX(RANDBETWEEN(0,42949),4))
+    </code>
+  </body>
+</html>

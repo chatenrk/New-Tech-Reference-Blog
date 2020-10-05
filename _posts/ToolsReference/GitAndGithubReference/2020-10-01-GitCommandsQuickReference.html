@@ -6,149 +6,232 @@ date: 2020-10-01
 background: '/img/git-commands.jpg'
 ---
 
-  <!-- Quick Reference Section -->
-  <h2 id="Quick Reference">Quick Reference</h2>
-  <table class="table table-sm table-bordered">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Description</th>
-        <th>Command</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Initialise a local git repository</td>
-        <td>
-          Create a new directory, open it and perform a <br />
-          <code>git init</code> <br />
-          to create a new git repository
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Check status</td>
-        <td>
-          <code>git status</code> <br />
-          <img
-            src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/gitStatus.png"
-            class="img-fluid"
-            alt="Responsive image"
-          />
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Get log of git commits</td>
-        <td>
-          <code>git log</code> <br />
-          <img
-            src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/git-log.png"
-            class="img-fluid"
-            alt="Git Log"
-          />
-          <br />
-          To get concise log use the command <br />
-          <code>git log --oneline</code> <br />
-          <img
-            src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/git-log-oneline.png"
-            class="img-fluid"
-            alt="Git Log Oneline"
-          />
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Clone a repository</td>
-        <td>
-          Create a working copy of a local repository by running the command
-          <br />
-          <code>git clone /path/to/repository</code> <br />
-          <br />
-          when using a remote server, your command will be <br />
-          <code>git clone username@host:/path/to/ </code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Clone a specific branch of a repository</td>
-        <td>
-          <code>git clone -b name/of/the/branch name/of/the/remote/repo</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Add and Commit</td>
-        <td>
-          You can propose changes (add it to the Index) using <br />
-          <code>git add filename</code> <br />
-          or <code>git add *</code> to add all files <br />This is the first
-          step in the basic git workflow. To actually commit these changes use
-          <br />
-          <code>git commit -m "Commit message"</code>` <br />
-          Now the file is committed to the HEAD, but not in your remote
-          repository yet
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">7</th>
-        <td>Push changes to remote repository</td>
-        <td>
-          <code>git push -u origin master</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">8</th>
-        <td>List all git branches</td>
-        <td>
-          <code>git branch -- list</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td>Create new git branch</td>
-        <td>
-          <code>git branch name/of/the/new/git/branch</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">10</th>
-        <td>Checkout to another branch</td>
-        <td>
-          <code>git checkout name/of/the/new/git/branch</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">11</th>
-        <td>Merge changes to another branch</td>
-        <td>
-          <code>git merge name/of/the/new/git/branch</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">12</th>
-        <td>Delete a branch</td>
-        <td>
-          <code>git branch -D name/of/the/new/git/branch</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">13</th>
-        <td>Replace local changes</td>
-        <td>
-          If you want to drop all your local changes and commits, fetch the
-          latest history from the server and point your local master branch at
-          it like this <br />
-          <code>git fetch origin</code> <br />
-          <code>git reset --hard origin/master</code>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">14</th>
-        <td>Get remote repo details</td>
-        <td><code>git remote -v</code></td>
-      </tr>
-    </tbody>
-  </table>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Quick Reference Section -->
+    <h2 id="Quick Reference">Quick Reference</h2>
+    <table class="table table-sm table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Description</th>
+          <th>Command</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Initialise a local git repository</td>
+          <td>
+            Create a new directory, open it and perform a <br />
+            <code>git init</code> <br />
+            to create a new git repository
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Check status</td>
+          <td>
+            <code>git status</code> <br />
+            <img
+              src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/gitStatus.png"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Get log of git commits</td>
+          <td>
+            <code>git log</code> <br />
+            <img
+              src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/git-log.png"
+              class="img-fluid"
+              alt="Git Log"
+            />
+            <br />
+            To get concise log use the command <br />
+            <code>git log --oneline</code> <br />
+            <img
+              src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/git-log-oneline.png"
+              class="img-fluid"
+              alt="Git Log Oneline"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Clone a repository</td>
+          <td>
+            Create a working copy of a local repository by running the command
+            <br />
+            <code>git clone /path/to/repository</code> <br />
+            <br />
+            when using a remote server, your command will be <br />
+            <code>git clone username@host:/path/to/ </code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Clone a specific branch of a repository</td>
+          <td>
+            <code>git clone -b name/of/the/branch name/of/the/remote/repo</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Add and Commit</td>
+          <td>
+            You can propose changes (add it to the Index) using <br />
+            <code>git add filename</code> <br />
+            or <code>git add *</code> to add all files <br />This is the first
+            step in the basic git workflow. To actually commit these changes use
+            <br />
+            <code>git commit -m "Commit message"</code>` <br />
+            Now the file is committed to the HEAD, but not in your remote
+            repository yet
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Push changes to remote repository</td>
+          <td>
+            <code>git push -u origin master</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>List all git branches</td>
+          <td>
+            <code>git branch -- list</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>Create new git branch</td>
+          <td>
+            <code>git branch name/of/the/new/git/branch</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Checkout to another branch</td>
+          <td>
+            <code>git checkout name/of/the/new/git/branch</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">11</th>
+          <td>Merge changes to another branch</td>
+          <td>
+            <code>git merge name/of/the/new/git/branch</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">12</th>
+          <td>Delete a branch</td>
+          <td>
+            <code>git branch -D name/of/the/new/git/branch</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">13</th>
+          <td>Replace local changes</td>
+          <td>
+            If you want to drop all your local changes and commits, fetch the
+            latest history from the server and point your local master branch at
+            it like this <br />
+            <code>git fetch origin</code> <br />
+            <code>git reset --hard origin/master</code>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">14</th>
+          <td>Get remote repo details</td>
+          <td><code>git remote -v</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

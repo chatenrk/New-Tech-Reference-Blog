@@ -1,4 +1,374 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-02T12:50:06+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Jekyll Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html" rel="alternate" type="text/html" title="Jekyll Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-05T18:47:29+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">HTML Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html" rel="alternate" type="text/html" title="HTML Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html&quot;
+          &gt;HTML Snippets&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] HTML Snippets</summary></entry><entry><title type="html">Jekyll Tips and Tricks</title><link href="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html" rel="alternate" type="text/html" title="Jekyll Tips and Tricks" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;style&gt;
+    /* Tomorrow Theme */
+    /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+    /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+    /* Tomorrow Comment */
+    .hljs-comment,
+    .hljs-quote {
+      color: #8e908c;
+    }
+
+    /* Tomorrow Red */
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-tag,
+    .hljs-name,
+    .hljs-selector-id,
+    .hljs-selector-class,
+    .hljs-regexp,
+    .hljs-deletion {
+      color: #c82829;
+    }
+
+    /* Tomorrow Orange */
+    .hljs-number,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-literal,
+    .hljs-type,
+    .hljs-params,
+    .hljs-meta,
+    .hljs-link {
+      color: #f5871f;
+    }
+
+    /* Tomorrow Yellow */
+    .hljs-attribute {
+      color: #eab700;
+    }
+
+    /* Tomorrow Green */
+    .hljs-string,
+    .hljs-symbol,
+    .hljs-bullet,
+    .hljs-addition {
+      color: #718c00;
+    }
+
+    /* Tomorrow Blue */
+    .hljs-title,
+    .hljs-section {
+      color: #4271ae;
+    }
+
+    /* Tomorrow Purple */
+    .hljs-keyword,
+    .hljs-selector-tag {
+      color: #8959a8;
+    }
+    .hljs {
+      display: block;
+      overflow-x: auto;
+      color: #4d4d4c;
+      padding: 0.5em;
+    }
+    pre {
+      background-color: #f8f8f8;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+  &lt;/style&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#quicktips&quot;&gt;Quick Tips and Tricks&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2 id=&quot;quicktips&quot;&gt;Quick Tips and tricks&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Tip&lt;/th&gt;
+          &lt;th&gt;Usage&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+          &lt;td&gt;Escape Liquid Tags from parsing&lt;/td&gt;
+          &lt;td&gt;
+            Use the liquid tag between &lt;code&gt; raw &lt;/code&gt; and
+            &lt;code&gt; endraw &lt;/code&gt; using liquid syntax.
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+          &lt;td&gt;Syntax Highlighting using Rouge&lt;/td&gt;
+          &lt;td&gt;
+            &lt;p&gt;
+              Syntax highlighting can be performed via Rouge using the following
+              syntax and changing the language as required
+            &lt;/p&gt;
+
+            &lt;pre
+              class=&quot;hljs&quot;
+            &gt;&lt;code&gt;&lt;div&gt;&amp;lt;p&amp;gt;&lt;br&gt;&amp;lt;code&amp;gt;&lt;br&gt;&amp;lt;figure class=&lt;span class=&quot;hljs-string&quot;&gt;&quot;highlight&quot;&lt;/span&gt;&amp;gt;&lt;br&gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&lt;span class=&quot;hljs-string&quot;&gt;&quot;language-sql&quot;&lt;/span&gt; data-lang=&lt;span class=&quot;hljs-string&quot;&gt;&quot;sql&quot;&lt;/span&gt;&amp;gt;&lt;br&gt;SELECT * FROM `users` WHERE `user`.`id` = 1&lt;br&gt;&amp;lt;/code&amp;gt;&lt;br&gt;&amp;lt;/pre&amp;gt;&lt;br&gt;&amp;lt;/figure&amp;gt;&lt;br&gt;&amp;lt;/code&amp;gt;&lt;br&gt;&amp;lt;/p&amp;gt;
+  &lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">HTML Snippets for reference</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html" rel="alternate" type="text/html" title="HTML Snippets for reference" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#csscode&quot;&gt;CSS Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h1 id=&quot;htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/h1&gt;
+    &lt;h2 id=&quot;b4table&quot;&gt;Bootstrap 4 table&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/b8d6cca82e57b7c77edc1bbee6391eba.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;b4toc&quot;&gt;Bootstrap 4 TOC&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/4cf0a52c460d8d093f697e83da7dd319.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;hljshighlight&quot;&gt;Highlight String using Highlight JS&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/ec815d5eb9393d4d0d14c64ef43cb941.js&quot;&gt;&lt;/script&gt;
+
+    &lt;h1 id=&quot;csscode&quot;&gt;CSS Quick Cut and Paste&lt;/h1&gt;
+    &lt;h2 id=&quot;hljscss&quot;&gt;Highlight js CSS&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/af2c64ed1a32feeb5145ccb702ce4c4b.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">When it comes to data analysis I Excel</title><link href="/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html" rel="alternate" type="text/html" title="When it comes to data analysis I Excel" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#uuid-capm&quot;&gt;Generate UUID in Excel&lt;/a&gt;&lt;/li&gt;
+      &lt;!-- &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html&quot;
+          &gt;Jekyll Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html&quot;
+          &gt;Git and Github Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html&quot;
+          &gt;Excel Reference&lt;/a
+        &gt;
+      &lt;/li&gt; --&gt;
+    &lt;/ul&gt;
+
+    &lt;h1 id=&quot;uuid-capm&quot;&gt;Generate UUID in Excel&lt;/h1&gt;
+    Use the following formula to generate a UUID for CAPM
+    &lt;code&gt;
+      =CONCATENATE(DEC2HEX(RANDBETWEEN(0,4294967295),8),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,4294967295),8),DEC2HEX(RANDBETWEEN(0,42949),4))
+    &lt;/code&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="uuid" /><category term="excel" /><summary type="html">Document [Table of Contents] Generate UUID in Excel</summary></entry><entry><title type="html">Macros are game changers</title><link href="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html" rel="alternate" type="text/html" title="Macros are game changers" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#delete-all-empty-rows&quot;&gt;Delete all empty rows&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#delete-row-on-empty-column&quot;&gt;Delete row on empty column&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#get-last-row&quot;&gt;Get last row&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#format-date&quot;&gt;Format Date&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#check-if-worksheet-is-already-available&quot;
+          &gt;Check if worksheet is already available&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#open-excel-file-dialog&quot;&gt;Open Excel file dialog&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#save-file-as-txt&quot;&gt;Save file as txt&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#application-parameters-enable--disable&quot;
+          &gt;Application Parameters Enable / Disable&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#macro-to-get-data-from-amfi-portal&quot;
+          &gt;Macro to get data from AMFI Portal&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#adjust-rows-macro&quot;&gt;Adjust rows macro&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h1 id=&quot;delete-all-empty-rows&quot;&gt;Delete all empty rows&lt;/h1&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;Sub DeleteAllEmptyRows()
+    Dim LastRowIndex As Integer
+    Dim RowIndex As Integer
+    Dim UsedRng As Range
+ 
+    Set UsedRng = ActiveSheet.UsedRange
+    LastRowIndex = UsedRng.Row - 1 + UsedRng.Rows.Count
+    Application.ScreenUpdating = False
+ 
+    For RowIndex = LastRowIndex To 1 Step -1
+        If Application.CountA(Rows(RowIndex)) = 0 Then
+            Rows(RowIndex).Delete
+        End If
+    Next RowIndex
+ 
+    Application.ScreenUpdating = True
+End Sub
+&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="macro" /><category term="excel" /><summary type="html">Document [Table of Contents] Delete all empty rows Delete row on empty column Get last row Format Date Check if worksheet is already available Open Excel file dialog Save file as txt Application Parameters Enable / Disable Macro to get data from AMFI Portal Adjust rows macro Delete all empty rows Sub DeleteAllEmptyRows() Dim LastRowIndex As Integer Dim RowIndex As Integer Dim UsedRng As Range Set UsedRng = ActiveSheet.UsedRange LastRowIndex = UsedRng.Row - 1 + UsedRng.Rows.Count Application.ScreenUpdating = False For RowIndex = LastRowIndex To 1 Step -1 If Application.CountA(Rows(RowIndex)) = 0 Then Rows(RowIndex).Delete End If Next RowIndex Application.ScreenUpdating = True End Sub</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html&quot;
+          &gt;Excel Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html&quot;
+          &gt;Git and Github Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html&quot;
+          &gt;HTML Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html&quot;
+          &gt;Jekyll Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Excel Reference Git and Github Reference HTML Reference Jekyll Reference</summary></entry><entry><title type="html">Jekyll Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html" rel="alternate" type="text/html" title="Jekyll Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -10,7 +380,6 @@
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#prerequsites&quot;&gt;Pre-requisites&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#instructions&quot;&gt;Instructions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#quicktips&quot;&gt;Quick Tips and Tricks&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#usingImages&quot;&gt;Using Images&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;
         &lt;a href=&quot;#adding-clean-blog-theme-to-jekyll-site&quot;
@@ -67,27 +436,7 @@
         Browse to &lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;
       &lt;/li&gt;
     &lt;/ol&gt;
-    &lt;!-- Quick Tips and tricks sections --&gt;
-    &lt;h2 id=&quot;quicktips&quot;&gt;Quick Tips and tricks&lt;/h2&gt;
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Tip&lt;/th&gt;
-          &lt;th&gt;Usage&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-          &lt;td&gt;Escape Liquid Tags from parsing&lt;/td&gt;
-          &lt;td&gt;
-            Use the liquid tag between &lt;code&gt; raw &lt;/code&gt; and
-            &lt;code&gt; endraw &lt;/code&gt; using liquid syntax.
-          &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+    &lt;!-- Quick Tips and tricks sections - Refer to other file --&gt;
     &lt;!-- Using Images Section --&gt;
     &lt;h2 id=&quot;usingImages&quot;&gt;Using Images in Jekyll&lt;/h2&gt;
     &lt;p&gt;
@@ -237,32 +586,235 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Pre-requisites Instructions Quick Tips and Tricks Using Images Clean Blog Theme Related Push Unsupported themes to Github Pages Blogs</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Pre-requisites Instructions Using Images Clean Blog Theme Related Push Unsupported themes to Github Pages Blogs</summary></entry><entry><title type="html">Git Commands Quick Reference</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html" rel="alternate" type="text/html" title="Git Commands Quick Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
     &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html&quot;
-          &gt;Jekyll Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html&quot;
-          &gt;Git and Github Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
+    &lt;!-- Quick Reference Section --&gt;
+    &lt;h2 id=&quot;Quick Reference&quot;&gt;Quick Reference&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+          &lt;th&gt;Command&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+          &lt;td&gt;Initialise a local git repository&lt;/td&gt;
+          &lt;td&gt;
+            Create a new directory, open it and perform a &lt;br /&gt;
+            &lt;code&gt;git init&lt;/code&gt; &lt;br /&gt;
+            to create a new git repository
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+          &lt;td&gt;Check status&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git status&lt;/code&gt; &lt;br /&gt;
+            &lt;img
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitStatus.png&quot;
+              class=&quot;img-fluid&quot;
+              alt=&quot;Responsive image&quot;
+            /&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+          &lt;td&gt;Get log of git commits&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git log&lt;/code&gt; &lt;br /&gt;
+            &lt;img
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log.png&quot;
+              class=&quot;img-fluid&quot;
+              alt=&quot;Git Log&quot;
+            /&gt;
+            &lt;br /&gt;
+            To get concise log use the command &lt;br /&gt;
+            &lt;code&gt;git log --oneline&lt;/code&gt; &lt;br /&gt;
+            &lt;img
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log-oneline.png&quot;
+              class=&quot;img-fluid&quot;
+              alt=&quot;Git Log Oneline&quot;
+            /&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
+          &lt;td&gt;Clone a repository&lt;/td&gt;
+          &lt;td&gt;
+            Create a working copy of a local repository by running the command
+            &lt;br /&gt;
+            &lt;code&gt;git clone /path/to/repository&lt;/code&gt; &lt;br /&gt;
+            &lt;br /&gt;
+            when using a remote server, your command will be &lt;br /&gt;
+            &lt;code&gt;git clone username@host:/path/to/ &lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
+          &lt;td&gt;Clone a specific branch of a repository&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git clone -b name/of/the/branch name/of/the/remote/repo&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
+          &lt;td&gt;Add and Commit&lt;/td&gt;
+          &lt;td&gt;
+            You can propose changes (add it to the Index) using &lt;br /&gt;
+            &lt;code&gt;git add filename&lt;/code&gt; &lt;br /&gt;
+            or &lt;code&gt;git add *&lt;/code&gt; to add all files &lt;br /&gt;This is the first
+            step in the basic git workflow. To actually commit these changes use
+            &lt;br /&gt;
+            &lt;code&gt;git commit -m &quot;Commit message&quot;&lt;/code&gt;` &lt;br /&gt;
+            Now the file is committed to the HEAD, but not in your remote
+            repository yet
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
+          &lt;td&gt;Push changes to remote repository&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git push -u origin master&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
+          &lt;td&gt;List all git branches&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git branch -- list&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;9&lt;/th&gt;
+          &lt;td&gt;Create new git branch&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git branch name/of/the/new/git/branch&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;10&lt;/th&gt;
+          &lt;td&gt;Checkout to another branch&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git checkout name/of/the/new/git/branch&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;11&lt;/th&gt;
+          &lt;td&gt;Merge changes to another branch&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git merge name/of/the/new/git/branch&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;12&lt;/th&gt;
+          &lt;td&gt;Delete a branch&lt;/td&gt;
+          &lt;td&gt;
+            &lt;code&gt;git branch -D name/of/the/new/git/branch&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;13&lt;/th&gt;
+          &lt;td&gt;Replace local changes&lt;/td&gt;
+          &lt;td&gt;
+            If you want to drop all your local changes and commits, fetch the
+            latest history from the server and point your local master branch at
+            it like this &lt;br /&gt;
+            &lt;code&gt;git fetch origin&lt;/code&gt; &lt;br /&gt;
+            &lt;code&gt;git reset --hard origin/master&lt;/code&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;th scope=&quot;row&quot;&gt;14&lt;/th&gt;
+          &lt;td&gt;Get remote repo details&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Jekyll Reference Git and Github Reference</summary></entry><entry><title type="html">Lets Git this party started</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html" rel="alternate" type="text/html" title="Lets Git this party started" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">Lets Git this party started</title><link href="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html" rel="alternate" type="text/html" title="Lets Git this party started" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -325,149 +877,15 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Quick Reference General Information Git Workflow Git Branching Github Reference Git Actions</summary></entry><entry><title type="html">Git Commands Quick Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html" rel="alternate" type="text/html" title="Git Commands Quick Reference" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">&lt;!-- Quick Reference Section --&gt;
-  &lt;h2 id=&quot;Quick Reference&quot;&gt;Quick Reference&lt;/h2&gt;
-  &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;#&lt;/th&gt;
-        &lt;th&gt;Description&lt;/th&gt;
-        &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-        &lt;td&gt;Initialise a local git repository&lt;/td&gt;
-        &lt;td&gt;
-          Create a new directory, open it and perform a &lt;br /&gt;
-          &lt;code&gt;git init&lt;/code&gt; &lt;br /&gt;
-          to create a new git repository
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-        &lt;td&gt;Check status&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git status&lt;/code&gt; &lt;br /&gt;
-          &lt;img
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitStatus.png&quot;
-            class=&quot;img-fluid&quot;
-            alt=&quot;Responsive image&quot;
-          /&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-        &lt;td&gt;Get log of git commits&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git log&lt;/code&gt; &lt;br /&gt;
-          &lt;img
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log.png&quot;
-            class=&quot;img-fluid&quot;
-            alt=&quot;Git Log&quot;
-          /&gt;
-          &lt;br /&gt;
-          To get concise log use the command &lt;br /&gt;
-          &lt;code&gt;git log --oneline&lt;/code&gt; &lt;br /&gt;
-          &lt;img
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/git-log-oneline.png&quot;
-            class=&quot;img-fluid&quot;
-            alt=&quot;Git Log Oneline&quot;
-          /&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;4&lt;/th&gt;
-        &lt;td&gt;Clone a repository&lt;/td&gt;
-        &lt;td&gt;
-          Create a working copy of a local repository by running the command
-          &lt;br /&gt;
-          &lt;code&gt;git clone /path/to/repository&lt;/code&gt; &lt;br /&gt;
-          &lt;br /&gt;
-          when using a remote server, your command will be &lt;br /&gt;
-          &lt;code&gt;git clone username@host:/path/to/ &lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;5&lt;/th&gt;
-        &lt;td&gt;Clone a specific branch of a repository&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git clone -b name/of/the/branch name/of/the/remote/repo&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;6&lt;/th&gt;
-        &lt;td&gt;Add and Commit&lt;/td&gt;
-        &lt;td&gt;
-          You can propose changes (add it to the Index) using &lt;br /&gt;
-          &lt;code&gt;git add filename&lt;/code&gt; &lt;br /&gt;
-          or &lt;code&gt;git add *&lt;/code&gt; to add all files &lt;br /&gt;This is the first
-          step in the basic git workflow. To actually commit these changes use
-          &lt;br /&gt;
-          &lt;code&gt;git commit -m &quot;Commit message&quot;&lt;/code&gt;` &lt;br /&gt;
-          Now the file is committed to the HEAD, but not in your remote
-          repository yet
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;7&lt;/th&gt;
-        &lt;td&gt;Push changes to remote repository&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git push -u origin master&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;8&lt;/th&gt;
-        &lt;td&gt;List all git branches&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git branch -- list&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;9&lt;/th&gt;
-        &lt;td&gt;Create new git branch&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git branch name/of/the/new/git/branch&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;10&lt;/th&gt;
-        &lt;td&gt;Checkout to another branch&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git checkout name/of/the/new/git/branch&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;11&lt;/th&gt;
-        &lt;td&gt;Merge changes to another branch&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git merge name/of/the/new/git/branch&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;12&lt;/th&gt;
-        &lt;td&gt;Delete a branch&lt;/td&gt;
-        &lt;td&gt;
-          &lt;code&gt;git branch -D name/of/the/new/git/branch&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;13&lt;/th&gt;
-        &lt;td&gt;Replace local changes&lt;/td&gt;
-        &lt;td&gt;
-          If you want to drop all your local changes and commits, fetch the
-          latest history from the server and point your local master branch at
-          it like this &lt;br /&gt;
-          &lt;code&gt;git fetch origin&lt;/code&gt; &lt;br /&gt;
-          &lt;code&gt;git reset --hard origin/master&lt;/code&gt;
-        &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;th scope=&quot;row&quot;&gt;14&lt;/th&gt;
-        &lt;td&gt;Get remote repo details&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;git remote -v&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/body&gt;</content><author><name></name></author><summary type="html">Quick Reference # Description Command 1 Initialise a local git repository Create a new directory, open it and perform a git init to create a new git repository 2 Check status git status 3 Get log of git commits git log To get concise log use the command git log --oneline 4 Clone a repository Create a working copy of a local repository by running the command git clone /path/to/repository when using a remote server, your command will be git clone username@host:/path/to/ 5 Clone a specific branch of a repository git clone -b name/of/the/branch name/of/the/remote/repo 6 Add and Commit You can propose changes (add it to the Index) using git add filename or git add * to add all files This is the first step in the basic git workflow. To actually commit these changes use git commit -m &quot;Commit message&quot;` Now the file is committed to the HEAD, but not in your remote repository yet 7 Push changes to remote repository git push -u origin master 8 List all git branches git branch -- list 9 Create new git branch git branch name/of/the/new/git/branch 10 Checkout to another branch git checkout name/of/the/new/git/branch 11 Merge changes to another branch git merge name/of/the/new/git/branch 12 Delete a branch git branch -D name/of/the/new/git/branch 13 Replace local changes If you want to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it like this git fetch origin git reset --hard origin/master 14 Get remote repo details git remote -v</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Quick Reference General Information Git Workflow Git Branching Github Reference Git Actions</summary></entry><entry><title type="html">VSCode Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/VSCodeReferenceReadme.html" rel="alternate" type="text/html" title="VSCode Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/VSCodeReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/VSCodeReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;&lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry></feed>

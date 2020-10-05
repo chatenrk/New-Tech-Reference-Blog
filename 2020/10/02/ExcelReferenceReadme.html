@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>
-    Lets Git this party started - New Technologies Reckoner
+    When it comes to data analysis I Excel - New Technologies Reckoner
     
   </title>
 
-  <meta name="description" content="Document [Table of Contents] Quick Reference General Information Git Workflow Git Branching Github Reference Git Actions">
+  <meta name="description" content="Document [Table of Contents] Generate UUID in Excel">
 
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/fontawesome-free/css/all.min.css">
 
   <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
-  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">
+  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html">
   <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
 
 </head>
@@ -61,7 +61,7 @@
 
 <header
   class="masthead"
-  style="background-image: url('/New-Tech-Reference-Blog/img/bg-github.jpg')"
+  style="background-image: url('/New-Tech-Reference-Blog/img/bg-excel1.jpg')"
 >
   
     <div class="overlay"></div>
@@ -69,16 +69,16 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Lets Git this party started</h1>
+            <h1>When it comes to data analysis I Excel</h1>
             
-            <h2 class="subheading">An introduction to Git and Github</h2>
+            <h2 class="subheading">Excel Ready reckoner</h2>
             
             <span class="meta"
               >Posted by
               <a href="#"
                 ></a
               >
-              on October 01, 2020 &middot; <span class="reading-time" title="Estimated read time">
+              on October 02, 2020 &middot; <span class="reading-time" title="Estimated read time">
   
    1 min  read </span>
 
@@ -102,59 +102,33 @@
   <body>
     <p><strong>[Table of Contents]</strong></p>
     <ul>
-      <li><a href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">Quick Reference</a></li>
-      <li><a href="#generalinfo">General Information</a></li>
-      <ul>
-        <li><a href="#git-workflow">Git Workflow</a></li>
-        <li><a href="#git-branching">Git Branching</a></li>
-        </ul>
-        <li><a href="#github-reference">Github Reference</a></li>
-        <ul>
-          <li><a href="#github-actions">Git Actions</a></li>
-          </ul>  
+      <li><a href="#uuid-capm">Generate UUID in Excel</a></li>
+      <!-- <li>
+        <a
+          href="/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html"
+          >Jekyll Reference</a
+        >
+      </li>
+      <li>
+        <a
+          href="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html"
+          >Git and Github Reference</a
+        >
+      </li>
+      <li>
+        <a
+          href="/New-Tech-Reference-Blog/2020/10/02/ExcelReferenceReadme.html"
+          >Excel Reference</a
+        >
+      </li> -->
     </ul>
 
-    <!-- Quick Reference Section. Refer to other file -->
-   <!-- General Information Section -->
-   <h1 id="generalinfo">General Information</h1>
-    <h2 id="gitWorkflow">Git Workflow</h2>
-    <p>The local repository consists of three "trees" maintained by git. the first one is the <b>Working Directory</b> which holds the actual files. <br> The second one is the <b>Index</b>  which acts as a staging area and finally the <b>HEAD</b> which points to the last commit made.
-    <br>
-      <img
-    src="/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitWorkflow.png"
-    class="img-fluid"
-    alt="Git Workflow"
-  />
-  </p>
-
-  <h2 id="git-branching">Git Branching</h2>
-<p>Branches are used to develop features isolated from each other. The master branch is the &quot;default&quot; branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
-  <img
-  src="/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitBranching.png"
-  class="img-fluid"
-  alt="Git Branching"
-/>
-  </p>
-<h1 id="github-reference">Github Reference</h1>
-<h2 id="github-actions">Github actions</h2>
-<table class="table table-sm table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Blog</th>
-      <th>Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Markdown Link Check Action</td>
-      <td>
-        <a href="https://github.com/gaurav-nelson/github-action-markdown-link-check.git">https://github.com/gaurav-nelson/github-action-markdown-link-check.git</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+    <h1 id="uuid-capm">Generate UUID in Excel</h1>
+    Use the following formula to generate a UUID for CAPM
+    <code>
+      =CONCATENATE(DEC2HEX(RANDBETWEEN(0,4294967295),8),"-",DEC2HEX(RANDBETWEEN(0,42949),4),"-",DEC2HEX(RANDBETWEEN(0,42949),4),"-",DEC2HEX(RANDBETWEEN(0,42949),4),"-",DEC2HEX(RANDBETWEEN(0,4294967295),8),DEC2HEX(RANDBETWEEN(0,42949),4))
+    </code>
+  </body>
 </html>
 
 
@@ -164,19 +138,19 @@
           
           <a
             class="btn btn-primary float-left"
-            href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html"
+            href="/New-Tech-Reference-Blog/2020/10/01/VSCodeReferenceReadme.html"
             data-toggle="tooltip"
             data-placement="top"
-            title="Tools Ready Reckoner"
+            title="VSCode Ready Reckoner"
             >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
           >
            
           <a
             class="btn btn-primary float-right"
-            href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html"
+            href="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html"
             data-toggle="tooltip"
             data-placement="top"
-            title="Git Commands Quick Reference"
+            title="Macros are game changers"
             >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
           >
           

@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>
-    Lets Git this party started - New Technologies Reckoner
+    Jekyll Tips and Tricks - New Technologies Reckoner
     
   </title>
 
-  <meta name="description" content="Document [Table of Contents] Quick Reference General Information Git Workflow Git Branching Github Reference Git Actions">
+  <meta name="description" content="Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tom...">
 
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/fontawesome-free/css/all.min.css">
 
   <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
-  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/01/GitAndGithubReferenceReadme.html">
+  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html">
   <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
 
 </head>
@@ -61,7 +61,7 @@
 
 <header
   class="masthead"
-  style="background-image: url('/New-Tech-Reference-Blog/img/bg-github.jpg')"
+  style="background-image: url('/New-Tech-Reference-Blog/img/bg-jekyll.jpg')"
 >
   
     <div class="overlay"></div>
@@ -69,16 +69,16 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Lets Git this party started</h1>
+            <h1>Jekyll Tips and Tricks</h1>
             
-            <h2 class="subheading">An introduction to Git and Github</h2>
+            <h2 class="subheading">Snippets for Jekyll Quick Use</h2>
             
             <span class="meta"
               >Posted by
               <a href="#"
                 ></a
               >
-              on October 01, 2020 &middot; <span class="reading-time" title="Estimated read time">
+              on October 05, 2020 &middot; <span class="reading-time" title="Estimated read time">
   
    1 min  read </span>
 
@@ -99,62 +99,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    /* Tomorrow Theme */
+    /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+    /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+    /* Tomorrow Comment */
+    .hljs-comment,
+    .hljs-quote {
+      color: #8e908c;
+    }
+
+    /* Tomorrow Red */
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-tag,
+    .hljs-name,
+    .hljs-selector-id,
+    .hljs-selector-class,
+    .hljs-regexp,
+    .hljs-deletion {
+      color: #c82829;
+    }
+
+    /* Tomorrow Orange */
+    .hljs-number,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-literal,
+    .hljs-type,
+    .hljs-params,
+    .hljs-meta,
+    .hljs-link {
+      color: #f5871f;
+    }
+
+    /* Tomorrow Yellow */
+    .hljs-attribute {
+      color: #eab700;
+    }
+
+    /* Tomorrow Green */
+    .hljs-string,
+    .hljs-symbol,
+    .hljs-bullet,
+    .hljs-addition {
+      color: #718c00;
+    }
+
+    /* Tomorrow Blue */
+    .hljs-title,
+    .hljs-section {
+      color: #4271ae;
+    }
+
+    /* Tomorrow Purple */
+    .hljs-keyword,
+    .hljs-selector-tag {
+      color: #8959a8;
+    }
+    .hljs {
+      display: block;
+      overflow-x: auto;
+      color: #4d4d4c;
+      padding: 0.5em;
+    }
+    pre {
+      background-color: #f8f8f8;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+    }
+  </style>
   <body>
     <p><strong>[Table of Contents]</strong></p>
     <ul>
-      <li><a href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html">Quick Reference</a></li>
-      <li><a href="#generalinfo">General Information</a></li>
-      <ul>
-        <li><a href="#git-workflow">Git Workflow</a></li>
-        <li><a href="#git-branching">Git Branching</a></li>
-        </ul>
-        <li><a href="#github-reference">Github Reference</a></li>
-        <ul>
-          <li><a href="#github-actions">Git Actions</a></li>
-          </ul>  
+      <li><a href="#quicktips">Quick Tips and Tricks</a></li>
     </ul>
 
-    <!-- Quick Reference Section. Refer to other file -->
-   <!-- General Information Section -->
-   <h1 id="generalinfo">General Information</h1>
-    <h2 id="gitWorkflow">Git Workflow</h2>
-    <p>The local repository consists of three "trees" maintained by git. the first one is the <b>Working Directory</b> which holds the actual files. <br> The second one is the <b>Index</b>  which acts as a staging area and finally the <b>HEAD</b> which points to the last commit made.
-    <br>
-      <img
-    src="/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitWorkflow.png"
-    class="img-fluid"
-    alt="Git Workflow"
-  />
-  </p>
+    <h2 id="quicktips">Quick Tips and tricks</h2>
+    <table class="table table-sm table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tip</th>
+          <th>Usage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Escape Liquid Tags from parsing</td>
+          <td>
+            Use the liquid tag between <code> raw </code> and
+            <code> endraw </code> using liquid syntax.
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Syntax Highlighting using Rouge</td>
+          <td>
+            <p>
+              Syntax highlighting can be performed via Rouge using the following
+              syntax and changing the language as required
+            </p>
 
-  <h2 id="git-branching">Git Branching</h2>
-<p>Branches are used to develop features isolated from each other. The master branch is the &quot;default&quot; branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
-  <img
-  src="/New-Tech-Reference-Blog/img/ContentRelated/GitAndGitHubRelated/gitBranching.png"
-  class="img-fluid"
-  alt="Git Branching"
-/>
-  </p>
-<h1 id="github-reference">Github Reference</h1>
-<h2 id="github-actions">Github actions</h2>
-<table class="table table-sm table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Blog</th>
-      <th>Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Markdown Link Check Action</td>
-      <td>
-        <a href="https://github.com/gaurav-nelson/github-action-markdown-link-check.git">https://github.com/gaurav-nelson/github-action-markdown-link-check.git</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+            <pre
+              class="hljs"
+            ><code><div>&lt;p&gt;<br>&lt;code&gt;<br>&lt;figure class=<span class="hljs-string">"highlight"</span>&gt;<br>&lt;pre&gt;&lt;code class=<span class="hljs-string">"language-sql"</span> data-lang=<span class="hljs-string">"sql"</span>&gt;<br>SELECT * FROM `users` WHERE `user`.`id` = 1<br>&lt;/code&gt;<br>&lt;/pre&gt;<br>&lt;/figure&gt;<br>&lt;/code&gt;<br>&lt;/p&gt;
+  </div></code></pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
 
 
@@ -164,22 +224,13 @@
           
           <a
             class="btn btn-primary float-left"
-            href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html"
+            href="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html"
             data-toggle="tooltip"
             data-placement="top"
-            title="Tools Ready Reckoner"
+            title="HTML Snippets for reference"
             >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
           >
            
-          <a
-            class="btn btn-primary float-right"
-            href="/New-Tech-Reference-Blog/2020/10/01/GitCommandsQuickReference.html"
-            data-toggle="tooltip"
-            data-placement="top"
-            title="Git Commands Quick Reference"
-            >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
-          >
-          
         </div> -->
       </div>
     </div>

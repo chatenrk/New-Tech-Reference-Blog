@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-05T18:47:29+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">HTML Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html" rel="alternate" type="text/html" title="HTML Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-05T19:32:40+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">HTML Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html" rel="alternate" type="text/html" title="HTML Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -250,6 +250,12 @@
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#uuid-capm&quot;&gt;Generate UUID in Excel&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html&quot;
+          &gt;Macro Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
       &lt;!-- &lt;li&gt;
         &lt;a
           href=&quot;/New-Tech-Reference-Blog/2020/10/01/JekyllReferenceReadme.html&quot;
@@ -276,7 +282,7 @@
       =CONCATENATE(DEC2HEX(RANDBETWEEN(0,4294967295),8),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,42949),4),&quot;-&quot;,DEC2HEX(RANDBETWEEN(0,4294967295),8),DEC2HEX(RANDBETWEEN(0,42949),4))
     &lt;/code&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="uuid" /><category term="excel" /><summary type="html">Document [Table of Contents] Generate UUID in Excel</summary></entry><entry><title type="html">Macros are game changers</title><link href="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html" rel="alternate" type="text/html" title="Macros are game changers" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="uuid" /><category term="excel" /><summary type="html">Document [Table of Contents] Generate UUID in Excel Macro Reference</summary></entry><entry><title type="html">Macros are game changers</title><link href="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html" rel="alternate" type="text/html" title="Macros are game changers" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -286,52 +292,45 @@
   &lt;body&gt;
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#delete-all-empty-rows&quot;&gt;Delete all empty rows&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#rowhandling&quot;&gt;Row Handling&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;
-        &lt;a href=&quot;#delete-row-on-empty-column&quot;&gt;Delete row on empty column&lt;/a&gt;
+        &lt;a href=&quot;#formatDate&quot;&gt;Date Handling&lt;/a&gt;
       &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#get-last-row&quot;&gt;Get last row&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#format-date&quot;&gt;Format Date&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#worksheethandling&quot;&gt;Worksheet Handling&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#excelFileRelated&quot;&gt;Excel Files Related&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;
-        &lt;a href=&quot;#check-if-worksheet-is-already-available&quot;
-          &gt;Check if worksheet is already available&lt;/a
-        &gt;
+        &lt;a href=&quot;#macroapplrelated&quot;&gt;Macro Application Related&lt;/a&gt;
       &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#open-excel-file-dialog&quot;&gt;Open Excel file dialog&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#save-file-as-txt&quot;&gt;Save file as txt&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#application-parameters-enable--disable&quot;
-          &gt;Application Parameters Enable / Disable&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#macro-to-get-data-from-amfi-portal&quot;
-          &gt;Macro to get data from AMFI Portal&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#adjust-rows-macro&quot;&gt;Adjust rows macro&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#miscmacros&quot;&gt;Misc. Macros&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
-    &lt;h1 id=&quot;delete-all-empty-rows&quot;&gt;Delete all empty rows&lt;/h1&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;Sub DeleteAllEmptyRows()
-    Dim LastRowIndex As Integer
-    Dim RowIndex As Integer
-    Dim UsedRng As Range
- 
-    Set UsedRng = ActiveSheet.UsedRange
-    LastRowIndex = UsedRng.Row - 1 + UsedRng.Rows.Count
-    Application.ScreenUpdating = False
- 
-    For RowIndex = LastRowIndex To 1 Step -1
-        If Application.CountA(Rows(RowIndex)) = 0 Then
-            Rows(RowIndex).Delete
-        End If
-    Next RowIndex
- 
-    Application.ScreenUpdating = True
-End Sub
-&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;h1 id=&quot;rowhandling&quot;&gt;Row Handling&lt;/h1&gt;
+    &lt;h2 id=&quot;getLastRow&quot;&gt;Get Last Row&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/d45803ac0c192907c62a70fdee388aa1.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;deleteemptyrows&quot;&gt;Delete When Row is empty&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/ff006c14071a664939f339689b4b494b.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;deleterowemptycol&quot;&gt;Delete Rows when specific column is empty&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/4bda8c629b14d39972f34f175e0290a0.js&quot;&gt;&lt;/script&gt;
+    &lt;h1 id=&quot;datehandling&quot;&gt;Date Handling&lt;/h1&gt;
+    &lt;h2 id=&quot;formatDate&quot;&gt;Format Date&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/c3ccc1c818413c3c6fe53ca1cd53989f.js&quot;&gt;&lt;/script&gt;
+    &lt;h1 id=&quot;worksheethandling&quot;&gt;Worksheet Handling&lt;/h1&gt;
+    &lt;h2 id=&quot;checkworksheetexists&quot;&gt;Worksheet Created Check&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/f0529aa71ee66c70d7eae7f21efeb5d9.js&quot;&gt;&lt;/script&gt;
+    &lt;h1 id=&quot;excelFileRelated&quot;&gt;Excel Files Related&lt;/h1&gt;
+    &lt;h2 id=&quot;openexcelfile&quot;&gt;Open Excel file dialog&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/3401f33b0c19d0d593033ff5464225ab.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;savewsastxt&quot;&gt;Save Worksheet as Text File&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/06146ee46cc5831fe4187d57d8946f16.js&quot;&gt;&lt;/script&gt;
+
+    &lt;h1 id=&quot;macroapplrelated&quot;&gt;Macro Application Related&lt;/h1&gt;
+    &lt;h2 id=&quot;applparams&quot;&gt;Application Parameters&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/24f7a175259fb68afed75ab0e904bd6c.js&quot;&gt;&lt;/script&gt;
+
+    &lt;h1 id=&quot;miscmacros&quot;&gt;Misc. Macros&lt;/h1&gt;
+    &lt;h2 id=&quot;amfiGetData&quot;&gt;Get data from AMFI Portal&lt;/h2&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/6cb80b8bbd8c0156382b50c5bffa872c.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="macro" /><category term="excel" /><summary type="html">Document [Table of Contents] Delete all empty rows Delete row on empty column Get last row Format Date Check if worksheet is already available Open Excel file dialog Save file as txt Application Parameters Enable / Disable Macro to get data from AMFI Portal Adjust rows macro Delete all empty rows Sub DeleteAllEmptyRows() Dim LastRowIndex As Integer Dim RowIndex As Integer Dim UsedRng As Range Set UsedRng = ActiveSheet.UsedRange LastRowIndex = UsedRng.Row - 1 + UsedRng.Rows.Count Application.ScreenUpdating = False For RowIndex = LastRowIndex To 1 Step -1 If Application.CountA(Rows(RowIndex)) = 0 Then Rows(RowIndex).Delete End If Next RowIndex Application.ScreenUpdating = True End Sub</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><category term="macro" /><category term="excel" /><summary type="html">Document [Table of Contents] Row Handling Date Handling Worksheet Handling Excel Files Related Macro Application Related Misc. Macros Row Handling Get Last Row Delete When Row is empty Delete Rows when specific column is empty Date Handling Format Date Worksheet Handling Worksheet Created Check Excel Files Related Open Excel file dialog Save Worksheet as Text File</summary></entry><entry><title type="html">Tools Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html" rel="alternate" type="text/html" title="Tools Ready Reckoner" /><published>2020-10-01T00:00:00+05:30</published><updated>2020-10-01T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/01/ToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;

@@ -1,4 +1,405 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-05T21:19:37+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">VSCode Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme.html" rel="alternate" type="text/html" title="VSCode Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-06T15:48:16+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Emmet Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html" rel="alternate" type="text/html" title="Emmet Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+     &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#elements&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+         &lt;ul&gt;
+             &lt;li&gt;&lt;a href=&quot;#nesting&quot;&gt;Nesting operators&lt;/a&gt;&lt;/li&gt;
+             &lt;ul&gt;
+                 &lt;li&gt;&lt;a href=&quot;#child&quot;&gt;Child: &gt;&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;##sibling&quot;&gt;Sibling: +&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#climb-up&quot;&gt;Climb-up: ^&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#multi&quot;&gt;Multiplication: *&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#group&quot;&gt;Grouping: ()&lt;/a&gt;&lt;/li&gt;
+             &lt;/ul&gt;
+             &lt;li&gt;&lt;a href=&quot;#attribute&quot;&gt;Attribute operators&lt;/a&gt;&lt;/li&gt;
+             &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#id-class&quot;&gt;ID and CLASS&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#customattr&quot;&gt;Custom attributes&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#item-no&quot;&gt;Item numbering: $&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#text&quot;&gt;Text: {}&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+     &lt;/ul&gt; 
+    &lt;h1 id=&quot;elements&quot;&gt;Elements&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use elements’ names like div or p to generate HTML tags. Emmet
+        doesn’t have a predefined set of available tag names, you can write any
+        word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;nesting&quot;&gt;Nesting operators&lt;/h2&gt;
+    Nesting operators are used to position abbreviation elements inside
+    generated tree: whether it should be placed inside or near the context
+    element
+    &lt;h3 id=&quot;child&quot;&gt;Child: &gt;&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use &gt; operator to nest elements inside each other
+        &lt;script src=&quot;https://gist.github.com/chatenrk/0d5cddbd361fc5e33c8283ccc934de51.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;sibling&quot;&gt;Sibling: +&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Use + operator to place elements near each other, on the same level:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/45209b9d5eb8a15a0116e7f35835cfe5.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;climb-up&quot;&gt;Climb-up: ^&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        With &gt; operator you’re descending down the generated tree and positions
+        of all sibling elements will be resolved against the most deepest
+        element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/330657a94c25974bf2f1792bb58df49b.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        With ^ operator, you can climb one level up the tree and change context
+        where following elements should appear
+        &lt;script src=&quot;https://gist.github.com/chatenrk/6af995ed2557cf23c385619d68002057.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        You can use as many ^ operators as you like, each operator will move one
+        level up:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/52a1e42d5edb3adb77a790be27d2bc1f.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;multi&quot;&gt;Multiplication: *&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        With * operator you can define how many times element should be
+        outputted:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/7a499dbecefaa269b52aabb1d9815ec2.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;group&quot;&gt;Grouping: ()&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Parenthesises are used by Emmets’ power users for grouping subtrees in
+        complex abbreviations:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/e9939987da2aa59cf39d989ae6d0073c.js&quot;&gt;&lt;/script&gt;
+
+        If you’re working with browser’s DOM, you may think of groups as
+        Document Fragments: each group contains abbreviation subtree and all the
+        following elements are inserted at the same level as the first element
+        of group. You can nest groups inside each other and combine them with
+        multiplication * operator:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/05a040fdbf79f7e2abd4cf029cb3a930.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;attribute&quot;&gt;Attribute operators&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Attribute operators are used to modify attributes of outputted elements.
+        For example, in HTML and XML you can quickly add class attribute to
+        generated element
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;id-class&quot;&gt;ID and CLASS&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        In CSS, you use elem#id and elem.class notation to reach the elements
+        with specified id or class attributes. In Emmet, you can use the very
+        same syntax to add these attributes to specified element
+        &lt;script src=&quot;https://gist.github.com/chatenrk/95101d2847a554537759828cc07676c8.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;customattr&quot;&gt;Custom attributes&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use [attr] notation (as in CSS) to add custom attributes to your
+        element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/e4dc893faffdb2b3f272c491e1b80fff.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+          &lt;ul&gt;
+              &lt;li&gt;You can place as many attributes as you like inside square brackets.
+                &lt;/li&gt;
+              &lt;li&gt;You don’t have to specify attribute values: td[colspan title] will produce &amp;lt;td colspan=&quot;&quot; title=&quot;&quot;&amp;gt; with tabstops inside each empty attribute (if your editor supports them).
+               &lt;/li&gt;
+              &lt;li&gt; You can use single or double quotes for quoting attribute values.
+                &lt;/li&gt;
+              &lt;li&gt;You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work.&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;itemno&quot;&gt;Item numbering: $&lt;/h3&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            With multiplication * operator you can repeat elements, but with $ you can number them. Place $ operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:
+            &lt;script src=&quot;https://gist.github.com/chatenrk/7dabca195f8e77af749864976993a9d1.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            You can use multiple $ in a row to pad number with zeroes:
+            &lt;script src=&quot;https://gist.github.com/chatenrk/b70ff9e65beb97ad28253737e8f55ed2.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;text&quot;&gt;Text: {}&lt;/h2&gt;
+    &lt;div&gt;&lt;p&gt;
+        You can use curly braces to add text to element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/ad7642ae3c91aad17bba059caa016cb3.js&quot;&gt;&lt;/script&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+    Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a&gt;{click} will produce the same output, but a{click}+b{here} and a&gt;{click}+b{here} won’t:
+    &lt;script src=&quot;https://gist.github.com/chatenrk/0ac6ec128ed69d5cbd5faa2d217a513a.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Elements Nesting operators Child: &gt; Sibling: + Climb-up: ^ Multiplication: * Grouping: () Attribute operators ID and CLASS Custom attributes Item numbering: $ Text: {} Elements You can use elements’ names like div or p to generate HTML tags. Emmet doesn’t have a predefined set of available tag names, you can write any word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; Nesting operators Nesting operators are used to position abbreviation elements inside generated tree: whether it should be placed inside or near the context element Child: &gt; You can use &gt; operator to nest elements inside each other Sibling: + Use + operator to place elements near each other, on the same level: Climb-up: ^ With &gt; operator you’re descending down the generated tree and positions of all sibling elements will be resolved against the most deepest element: With ^ operator, you can climb one level up the tree and change context where following elements should appear You can use as many ^ operators as you like, each operator will move one level up: Multiplication: * With * operator you can define how many times element should be outputted: Grouping: () Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:</summary></entry><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+       /* Tomorrow Theme */
+    /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+    /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+    /* Tomorrow Comment */
+    .hljs-comment,
+    .hljs-quote {
+      color: #8e908c;
+    }
+
+    /* Tomorrow Red */
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-tag,
+    .hljs-name,
+    .hljs-selector-id,
+    .hljs-selector-class,
+    .hljs-regexp,
+    .hljs-deletion {
+      color: #c82829;
+    }
+
+    /* Tomorrow Orange */
+    .hljs-number,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-literal,
+    .hljs-type,
+    .hljs-params,
+    .hljs-meta,
+    .hljs-link {
+      color: #f5871f;
+    }
+
+    /* Tomorrow Yellow */
+    .hljs-attribute {
+      color: #eab700;
+    }
+
+    /* Tomorrow Green */
+    .hljs-string,
+    .hljs-symbol,
+    .hljs-bullet,
+    .hljs-addition {
+      color: #718c00;
+    }
+
+    /* Tomorrow Blue */
+    .hljs-title,
+    .hljs-section {
+      color: #4271ae;
+    }
+
+    /* Tomorrow Purple */
+    .hljs-keyword,
+    .hljs-selector-tag {
+      color: #8959a8;
+    }
+    .hljs {
+      display: block;
+      overflow-x: auto;
+      color: #4d4d4c;
+      padding: 0.5em;
+    }
+    
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+  &lt;a href=&quot;#setup&quot;&gt;Business Application Studio Setup&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+    &lt;h1 id=&quot;setup&quot;&gt;Business Application Studio Setup&lt;/h1&gt;
+    &lt;p&gt;
+      Login to SAP Cloud Platform trial and navigate to subaccount
+      &lt;img
+        class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_accnt.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      Select the Subscriptions menu item on the left hand side. Find and select
+      the &quot;SAP Business Application Studio&quot; tile and use the &quot;Subscribe&quot; button
+      to create a subscription to it in your account
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_bas.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;br /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_bas1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+      Once subscribed, the &quot;Go to Application&quot; link become active. But before
+      launching it, ensure that appropriate App Studio roles are available. Jump
+      to the subaccount overview page, and select the &quot;Trust Configuration&quot; item
+      within the &quot;Security&quot; entry in the menu on the left hand side. Select the
+      &quot;sap.default&quot; entry as shown in the screenshot (it may be a different
+      name, but it is usually going to be the only entry to select anyway), and
+      in the following screen, enter your ID - the email address associated with
+      your account - and select the &quot;Show Assignments&quot; button to bring up the
+      current list, and to give you the ability to assign further Role
+      Collections
+
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Go back to the App Studio subscription page, and use the &quot;Go to
+      Application&quot; link.
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      Select the &quot;Create Dev Space&quot; button and should specify a name for your
+      space, and the extensions you want. Give a name to the workspace and
+      select the appropriate options as required
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      There's one final activity to complete at this stage, and that's to point
+      tge new Dev Space to your CF organization and space. In the bar at the
+      bottom, there'll be a message along these lines: &quot;The organization and
+      space in Cloud Foundry have not been set&quot;. Select this message to initiate
+      a short UI interaction at the top of the screen to allow you to confirm
+      the settings. Specify the following:
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Setting&lt;/th&gt;
+            &lt;th&gt;Value to set&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;Cloud Foundry endpoint&lt;/td&gt;
+            &lt;td&gt;This is the endpoint in the form &lt;pre class=&quot;hljs-string&quot;&gt;https://api.cf.&amp;lt;region&amp;gt;.hana.ondemand.com&lt;/pre&gt;Refer to the details shown in your Trial Subaccount overview page
+              &lt;img
+              class=&quot;border border-dark m-1&quot;
+              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space.png&quot;
+              alt=&quot;&quot;
+            /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;Email address&lt;/td&gt;
+            &lt;td&gt;This is the email address associated with the Cloud Platform account.
+              &lt;img
+              class=&quot;border border-dark m-1&quot;
+              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space1.png&quot;
+              alt=&quot;&quot;
+            /&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+            &lt;td&gt;Password &lt;/td&gt;
+            &lt;td&gt;This is the password associated with the email address and this account.
+              &lt;img
+              class=&quot;border border-dark m-1&quot;
+              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space2.png&quot;
+              alt=&quot;&quot;
+            /&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+            &lt;td&gt;Organization &lt;/td&gt;
+            &lt;td&gt;This is the CF organization associated with your trial subaccount
+              &lt;img
+              class=&quot;border border-dark m-1&quot;
+              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space3.png&quot;
+              alt=&quot;&quot;
+            /&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
+            &lt;td&gt;Space&lt;/td&gt;
+            &lt;td&gt;This is the space within the organization
+              &lt;img
+              class=&quot;border border-dark m-1&quot;
+              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space4.png&quot;
+              alt=&quot;&quot;
+            /&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Business Application Studio</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -8,69 +409,14 @@
   &lt;body&gt;
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#favext&quot;&gt;Frequently used extensions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;&lt;/a&gt;Blogs to explore&lt;/li&gt;
       &lt;li&gt;
         &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode.html&quot;
-          &gt;ADT Using VSCode&lt;/a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html &quot;
+          &gt;Setup Related&lt;/a
         &gt;
       &lt;/li&gt;
     &lt;/ul&gt;
-
-    &lt;h1 id=&quot;favext&quot;&gt;Frequently used extensions&lt;/h1&gt;
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Extension&lt;/th&gt;
-          &lt;th&gt;Description&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-          &lt;td&gt;Markdown Preview Enhanced&lt;/td&gt;
-          &lt;td&gt;
-            This extension provides you with many useful functionalities such as
-            automatic scroll sync, math typesetting, mermaid, PlantUML, pandoc,
-            PDF export, code chunk, presentation writer, etc. &lt;br /&gt;
-            &lt;br /&gt;
-            Mainly useful for markdown files reading and writing
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-          &lt;td&gt;Bracket Pair Colorizer 2&lt;/td&gt;
-          &lt;td&gt;
-            Allows matching brackets to be identified with colors. The user can
-            define which tokens to match, and which colors to use
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-          &lt;td&gt;.gitignore Generator&lt;/td&gt;
-          &lt;td&gt;
-            Lets you easily and quickly generate .gitignore file for your
-            project using gitignore.io
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-          &lt;td&gt;YAML&lt;/td&gt;
-          &lt;td&gt;Provides comprehensive YAML support to VS Code&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
-          &lt;td&gt;GitLens – Git Supercharged&lt;/td&gt;
-          &lt;td&gt;
-            This extension supercharges the Git capabilities built into VS Code.
-            It helps you to visualize code authorship at a glance via Git blame
-            annotations and code lens, and so much more
-          &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
     &lt;h1 id=&quot;blogs&quot;&gt;Blogs to explore&lt;/h1&gt;
     &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
       &lt;thead&gt;
@@ -80,10 +426,551 @@
           &lt;th&gt;Link&lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
-      &lt;tbody&gt;&lt;/tbody&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+          &lt;td&gt;
+            How to Install a VS Code Extension to SAP Business Application
+            Studio
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/&quot;
+              &gt;https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Frequently used extensions Blogs to explore ADT Using VSCode</summary></entry><entry><title type="html">HTML Snippets for reference</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html" rel="alternate" type="text/html" title="HTML Snippets for reference" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Setup Related Blogs to explore # Blog Description Link 1 How to Install a VS Code Extension to SAP Business Application Studio https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/</summary></entry><entry><title type="html">Hana CLI Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html" rel="alternate" type="text/html" title="Hana CLI Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+        /* Tomorrow Theme */
+        /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+        /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+    
+        /* Tomorrow Comment */
+        .hljs-comment,
+        .hljs-quote {
+          color: #8e908c;
+        }
+    
+        /* Tomorrow Red */
+        .hljs-variable,
+        .hljs-template-variable,
+        .hljs-tag,
+        .hljs-name,
+        .hljs-selector-id,
+        .hljs-selector-class,
+        .hljs-regexp,
+        .hljs-deletion {
+          color: #c82829;
+        }
+    
+        /* Tomorrow Orange */
+        .hljs-number,
+        .hljs-built_in,
+        .hljs-builtin-name,
+        .hljs-literal,
+        .hljs-type,
+        .hljs-params,
+        .hljs-meta,
+        .hljs-link {
+          color: #f5871f;
+        }
+    
+        /* Tomorrow Yellow */
+        .hljs-attribute {
+          color: #eab700;
+        }
+    
+        /* Tomorrow Green */
+        .hljs-string,
+        .hljs-symbol,
+        .hljs-bullet,
+        .hljs-addition {
+          color: #718c00;
+        }
+    
+        /* Tomorrow Blue */
+        .hljs-title,
+        .hljs-section {
+          color: #4271ae;
+        }
+    
+        /* Tomorrow Purple */
+        .hljs-keyword,
+        .hljs-selector-tag {
+          color: #8959a8;
+        }
+        .hljs {
+          display: block;
+          overflow-x: auto;
+          color: #4d4d4c;
+          padding: 0.5em;
+        }
+        pre {
+          background-color: #f8f8f8;
+          border: 1px solid #cccccc;
+          border-radius: 3px;
+          overflow-x: auto;
+          white-space: pre-wrap;
+          overflow-wrap: break-word;
+        }
+      &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+   &lt;a href=&quot;#intro&quot;&gt;Introduction&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#requirements&quot;&gt;Requirements / Download and Installation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tips&quot;&gt;Tips and Tricks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+    &lt;h1 id=&quot;intro&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;
+  A developer-centric HANA command line tool, particularly designed to be used
+  when performing local HANA development in non-SAP tooling (like VSCode). It
+  utilizes the default-env.json that is often used in local development for
+  connectivity to a remote HANA DB (although it can of course be used with a
+  local HANA Express instance as well). There is no intention to replacing the
+  hdbsql tool as a generic SQL console. Instead this sample will focus on
+  simplifying and grouping common and complex commands that otherwise might a
+  lot of separate scripts
+&lt;/p&gt;
+&lt;h1 id=&quot;requirements&quot;&gt;Requirements / Download and Installation&lt;/h1&gt;
+&lt;p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Install Node.js&lt;/li&gt;
+        &lt;li&gt;
+            &lt;p&gt;
+                @sap Node.js packages have moved from  https://npm.sap.com  to the default registry https://registry.npmjs.org. As future versions of @sap modules are going to be published only there, please make sure to adjust your registry with &lt;code&gt;npm config delete @sap:registry&lt;/code&gt;
+            &lt;/p&gt;
+            
+        &lt;/li&gt;
+        &lt;li&gt;Install via &lt;code&gt;npm install -g hana-cli&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/p&gt;
+&lt;h1 id=&quot;tips&quot;&gt;Tips and Tricks&lt;/h1&gt;
+&lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Description&lt;/th&gt;
+        &lt;th&gt;Command&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;HANA CLI Help&lt;/span&gt; &lt;br&gt;List all Commands and their Aliases&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;hana-cli help&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;HANA CLI Connect&lt;/span&gt; &lt;br&gt;Connects to a HANA DB and writes connection information to a default-env-admin.json&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;hana-cli connect&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Open database explorer&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;hana-cli opendbx&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Create Module&lt;/span&gt;&lt;br&gt;Create or adjust DB Module in your local project structure. If the folder already exists the files .build.js and package.json will be replaced with updated content designed to allow for local hdi-deploy run&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;hana-cli createModule&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
+        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Check status of Hana Database&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;hana-cli status&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td scope=&quot;row&quot;&gt;6&lt;/td&gt;
+        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;serviceKey&lt;/span&gt;&lt;br&gt;Connect and write default-env.json via cf/xs service key&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;hana-cli serviceKey [instance] [key]&lt;/code&gt;&lt;br&gt; &lt;b&gt;where&lt;/b&gt; &lt;br&gt; - &lt;span class=&quot;hljs-string&quot;&gt;instance&lt;/span&gt; is the name of the hana service instance created in cloud platform(via CLI or directly) &lt;br&gt; - &lt;span class=&quot;hljs-string&quot;&gt;key&lt;/span&gt; is the service created for the above service&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td scope=&quot;row&quot;&gt;7&lt;/td&gt;
+        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Inspect a table&lt;/span&gt;&lt;br&gt; Return metadata about a DB table &lt;br&gt;&lt;br&gt; Use option &lt;code&gt;-o cds&lt;/code&gt; to generate cds data model that can be added to CDS&lt;/td&gt;
+        &lt;td&gt;&lt;code&gt;hana-cli inspectTable [Insert Schema Name] [Insert Table Name]&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Requirements / Download and Installation Tips and Tricks Introduction A developer-centric HANA command line tool, particularly designed to be used when performing local HANA development in non-SAP tooling (like VSCode). It utilizes the default-env.json that is often used in local development for connectivity to a remote HANA DB (although it can of course be used with a local HANA Express instance as well). There is no intention to replacing the hdbsql tool as a generic SQL console. Instead this sample will focus on simplifying and grouping common and complex commands that otherwise might a lot of separate scripts Requirements / Download and Installation Install Node.js @sap Node.js packages have moved from https://npm.sap.com to the default registry https://registry.npmjs.org. As future versions of @sap modules are going to be published only there, please make sure to adjust your registry with npm config delete @sap:registry Install via npm install -g hana-cli Tips and Tricks # Description Command 1 HANA CLI Help List all Commands and their Aliases hana-cli help 2 HANA CLI Connect Connects to a HANA DB and writes connection information to a default-env-admin.json hana-cli connect 3 Open database explorer hana-cli opendbx 4 Create ModuleCreate or adjust DB Module in your local project structure. If the folder already exists the files .build.js and package.json will be replaced with updated content designed to allow for local hdi-deploy run hana-cli createModule 5 Check status of Hana Database hana-cli status 6 serviceKeyConnect and write default-env.json via cf/xs service key hana-cli serviceKey [instance] [key] where - instance is the name of the hana service instance created in cloud platform(via CLI or directly) - key is the service created for the above service 7 Inspect a table Return metadata about a DB table Use option -o cds to generate cds data model that can be added to CDS hana-cli inspectTable [Insert Schema Name] [Insert Table Name]</summary></entry><entry><title type="html">Bootstrap 4 Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/06/Bootstrap4Readme.html" rel="alternate" type="text/html" title="Bootstrap 4 Ready Reckoner" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/Bootstrap4Readme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/Bootstrap4Readme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html&quot;
+          &gt;Spacing Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#images&quot;&gt;Images Related&lt;/a&gt;&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#cssforimages&quot;&gt;CSS for Images&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme.html&quot;
+          &gt;Borders Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;#colors&quot;&gt;Colors Related&lt;/a&gt;&lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;#typography&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;Block Quote&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#naming-a-source&quot;&gt;Naming a source&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/ul&gt;
+
+    &lt;h1 id=&quot;images&quot;&gt;Images Related&lt;/h1&gt;
+    &lt;h2 id=&quot;cssforimages&quot;&gt;CSS for Images&lt;/h2&gt;
+    Images in Bootstrap are made responsive with
+    &lt;code&gt;.img-fluid. max-width: 100%; and height: auto;&lt;/code&gt; are applied to
+    the image so that it scales with the parent element
+
+    &lt;h1 id=&quot;colors&quot;&gt;Colors Related&lt;/h1&gt;
+    &lt;div class=&quot;border border-dark&quot;&gt;
+      &lt;p class=&quot;text-primary&quot;&gt;.text-primary&lt;/p&gt;
+      &lt;p class=&quot;text-secondary&quot;&gt;.text-secondary&lt;/p&gt;
+      &lt;p class=&quot;text-success&quot;&gt;.text-success&lt;/p&gt;
+      &lt;p class=&quot;text-danger&quot;&gt;.text-danger&lt;/p&gt;
+      &lt;p class=&quot;text-warning&quot;&gt;.text-warning&lt;/p&gt;
+      &lt;p class=&quot;text-info&quot;&gt;.text-info&lt;/p&gt;
+      &lt;p class=&quot;text-light bg-dark&quot;&gt;.text-light&lt;/p&gt;
+      &lt;p class=&quot;text-dark&quot;&gt;.text-dark&lt;/p&gt;
+      &lt;p class=&quot;text-muted&quot;&gt;.text-muted&lt;/p&gt;
+      &lt;p class=&quot;text-white bg-dark&quot;&gt;.text-white&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mt-3&quot;&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/e99a0635e033f21f3d1d95345dc2e84e.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+
+    &lt;h1 id=&quot;typography&quot;&gt;Typography&lt;/h1&gt;
+    &lt;h2 id=&quot;blockquote&quot;&gt;Block Quote&lt;/h2&gt;
+    &lt;blockquote class=&quot;blockquote&quot;&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+        erat a ante.
+      &lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/dae0f7a5d646884335b84cd623e96834.js&quot;&gt;&lt;/script&gt;
+    &lt;h2 id=&quot;naming-a-source&quot;&gt;Naming a source&lt;/h2&gt;
+    &lt;blockquote class=&quot;blockquote&quot;&gt;
+      &lt;p class=&quot;mb-0&quot;&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+        erat a ante.
+      &lt;/p&gt;
+      &lt;footer class=&quot;blockquote-footer&quot;&gt;
+        Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
+      &lt;/footer&gt;
+    &lt;/blockquote&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/94678913394f38fabe72a051eb8ad354.js&quot;&gt;&lt;/script&gt;
+    &lt;h1 id=&quot;list-related&quot;&gt;List Related&lt;/h1&gt;
+    &lt;h2 id=&quot;desc-list-align&quot;&gt;Description list alignment&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Align terms and descriptions horizontally by using our grid system’s
+        predefined classes (or semantic mixins). For longer terms, you can
+        optionally add a .text-truncate class to truncate the text with an
+        ellipsis
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;dl class=&quot;row border border-dark&quot;&gt;
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Description lists&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;
+          A description list is perfect for defining terms.
+        &lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Euismod&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;
+          &lt;p&gt;
+            Vestibulum id ligula porta felis euismod semper eget lacinia odio
+            sem nec elit.
+          &lt;/p&gt;
+          &lt;p&gt;Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
+        &lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Malesuada porta&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;
+          Etiam porta sem malesuada magna mollis euismod.
+        &lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3 text-truncate&quot;&gt;Truncated term is truncated&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+          nibh, ut fermentum massa justo sit amet risus.
+        &lt;/dd&gt;
+
+        &lt;dt class=&quot;col-sm-3&quot;&gt;Nesting&lt;/dt&gt;
+        &lt;dd class=&quot;col-sm-9&quot;&gt;
+          &lt;dl class=&quot;row&quot;&gt;
+            &lt;dt class=&quot;col-sm-4&quot;&gt;Nested definition list&lt;/dt&gt;
+            &lt;dd class=&quot;col-sm-8&quot;&gt;
+              Aenean posuere, tortor sed cursus feugiat, nunc augue blandit
+              nunc.
+            &lt;/dd&gt;
+          &lt;/dl&gt;
+        &lt;/dd&gt;
+      &lt;/dl&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/c0000076a3897a9bbb76ea501ee032f6.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Spacing Related Images Related CSS for Images</summary></entry><entry><title type="html">Bootstrap 4 Spacing</title><link href="/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html" rel="alternate" type="text/html" title="Bootstrap 4 Spacing" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#spacing&quot;&gt;Spacing&lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#notation&quot;&gt;Notation&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#hori-centring&quot;&gt;Horizontal Centering&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;     
+  &lt;!-- Spacing Section --&gt;
+ &lt;h1 id=&quot;spacing&quot;&gt;Spacing Related&lt;/h1&gt;
+ &lt;h2 id=&quot;notation&quot;&gt;Notation&lt;/h2&gt;
+ &lt;div&gt;
+   &lt;p&gt;
+     Spacing utilities that apply to all breakpoints, from &lt;code&gt;xs&lt;/code&gt; to
+     &lt;code&gt;xl&lt;/code&gt;, have no breakpoint abbreviation in them. This is
+     because those classes are applied from &lt;code&gt;min-width: 0&lt;/code&gt; and up,
+     and thus are not bound by a media query. The remaining breakpoints,
+     however, do include a breakpoint abbreviation. The classes are named
+     using the &lt;code&gt;format {property}{sides}-{size}&lt;/code&gt; for
+     &lt;code&gt;xs&lt;/code&gt; and
+     &lt;code&gt;{property}{sides}-{breakpoint}-{size}&lt;/code&gt; for
+     &lt;code&gt;sm&lt;/code&gt;,&lt;code&gt;md&lt;/code&gt;,&lt;code&gt;lg&lt;/code&gt; and &lt;code&gt;xl&lt;/code&gt;
+   &lt;/p&gt;
+   &lt;p&gt;
+     Where property is one of:
+     &lt;ul&gt;
+         &lt;li&gt;&lt;code&gt;m&lt;/code&gt; - for classes that set &lt;code&gt;margin&lt;/code&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;code&gt;p&lt;/code&gt; - for classes that set &lt;code&gt;padding&lt;/code&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/p&gt;
+ &lt;p&gt;
+     Where sides is one of:
+     &lt;ul&gt;
+         &lt;li&gt;
+             &lt;code&gt;t&lt;/code&gt;  - for classes that set 
+             &lt;code&gt;margin-top&lt;/code&gt; or
+             &lt;code&gt;padding-top&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;b&lt;/code&gt; - for classes that set
+             &lt;code&gt;margin-bottom&lt;/code&gt; or
+             &lt;code&gt;padding-bottom&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;l&lt;/code&gt; - for classes that set
+             &lt;code&gt;margin-left&lt;/code&gt; or
+             &lt;code&gt;padding-left&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;r&lt;/code&gt; - for classes that set
+             &lt;code&gt;margin-right&lt;/code&gt; or
+             &lt;code&gt;padding-right&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;x&lt;/code&gt; - for classes that set
+             &lt;code&gt;*-left&lt;/code&gt; or
+             &lt;code&gt;*-right&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;y&lt;/code&gt; - for classes that set
+             &lt;code&gt;*-top&lt;/code&gt; or
+             &lt;code&gt;*-bottom&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             blank - for classes that set a 
+             &lt;code&gt;margin &lt;/code&gt; or
+             &lt;code&gt;padding&lt;/code&gt; on all 4 sides of the element
+         &lt;/li&gt;
+     &lt;/ul&gt;
+ &lt;/p&gt;
+
+ &lt;p&gt;
+     Where size is one of:
+    
+     &lt;li&gt;
+         &lt;code&gt;0&lt;/code&gt; - for classes that eliminate the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; by setting it to
+         &lt;code&gt;0&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;1&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt;$spacer * .25&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;2&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt; $spacer * .5&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;3&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt; $spacer&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;4&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt;$spacer * 1.5&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;5&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt;$spacer * 3&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;auto&lt;/code&gt;  - for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; to auto
+     &lt;/li&gt;
+ &lt;/p&gt;
+ &lt;p&gt;
+     (You can add more sizes by adding entries to the &lt;code&gt;$spacers&lt;/code&gt;  Sass map variable.)
+ &lt;/p&gt;
+
+ &lt;h2 id=&quot;hori-centring&quot;&gt;Horizontal centering&lt;/h2&gt;
+ &lt;p&gt;Additionally, Bootstrap also includes an &lt;code&gt;.mx-auto&lt;/code&gt;  class for horizontally centering fixed-width block level content—that is, content that has &lt;code&gt;display: block&lt;/code&gt;  and a &lt;code&gt;width&lt;/code&gt;  set—by setting the horizontal margins to &lt;code&gt;auto&lt;/code&gt;&lt;/p&gt;
+ &lt;div class=&quot;mx-auto&quot; style=&quot;width: 200px;&quot;&gt;
+     Centered element
+   &lt;/div&gt;
+   &lt;div&gt;
+     &lt;script src=&quot;https://gist.github.com/chatenrk/b532024908ca0bb01838073ece97e0dd.js&quot;&gt;&lt;/script&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;  
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Spacing Notation Horizontal Centering Spacing Related Notation Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation. The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm,md,lg and xl Where property is one of: m - for classes that set margin p - for classes that set padding Where sides is one of: t - for classes that set margin-top or padding-top b - for classes that set margin-bottom or padding-bottom l - for classes that set margin-left or padding-left r - for classes that set margin-right or padding-right x - for classes that set *-left or *-right y - for classes that set *-top or *-bottom blank - for classes that set a margin or padding on all 4 sides of the element</summary></entry><entry><title type="html">Bootstrap 4 Borders</title><link href="/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme.html" rel="alternate" type="text/html" title="Bootstrap 4 Borders" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme.html">&lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#borders&quot;&gt;Borders Related&lt;/a&gt;&lt;/li&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#additive&quot;&gt;Additive&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#subtractive&quot;&gt;Subtractive&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#border-color&quot;&gt;Border color&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#border-radius&quot;&gt;Border radius&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;borders&quot;&gt;Borders Related&lt;/h1&gt;
+&lt;h2 id=&quot;additive&quot;&gt;Additive&lt;/h2&gt;
+&lt;div&gt;
+  &lt;p&gt;
+    Use border utilities to add or remove an element’s borders. Choose from all
+    borders or one at a time
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;script src=&quot;https://gist.github.com/chatenrk/4fb4528a64676050f66fed0cbeff29eb.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;subtractive&quot;&gt;Subtractive&lt;/h2&gt;
+&lt;div&gt;
+  &lt;script src=&quot;https://gist.github.com/chatenrk/f8d397083ea069ea7fb4b65d2d6fac77.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;border-color&quot;&gt;Border color&lt;/h2&gt;
+
+&lt;span class=&quot;border border-primary m-1&quot;&gt;Border Primary&lt;/span&gt;
+&lt;span class=&quot;border border-secondary m-1&quot;&gt;Border Secondary&lt;/span&gt;
+&lt;span class=&quot;border border-success m-1&quot;&gt;Border Success&lt;/span&gt;
+&lt;span class=&quot;border border-danger m-1&quot;&gt;Border Danger&lt;/span&gt;
+&lt;span class=&quot;border border-warning m-1&quot;&gt;Border Warning&lt;/span&gt;
+&lt;span class=&quot;border border-info m-1&quot;&gt;Border Info&lt;/span&gt;
+&lt;span class=&quot;border border-light m-1&quot;&gt;Border Light&lt;/span&gt;
+&lt;span class=&quot;border border-dark m-1&quot;&gt;Border Dark&lt;/span&gt;
+&lt;span class=&quot;border border-white m-1&quot;&gt;Border White&lt;/span&gt;
+
+&lt;div&gt;
+  &lt;script src=&quot;https://gist.github.com/chatenrk/abbef4734b905ec95b913ec66d8051d9.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;border-radius&quot;&gt;Border-radius&lt;/h2&gt;
+&lt;div&gt;
+  &lt;div&gt;
+    &lt;img
+      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
+      alt=&quot;...&quot;
+      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded mb-2&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;img
+      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
+      alt=&quot;...&quot;
+      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-top mb-2&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;img
+      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
+      alt=&quot;...&quot;
+      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-right mb-2&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;img
+      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
+      alt=&quot;...&quot;
+      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-bottom mb-2&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;img
+      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
+      alt=&quot;...&quot;
+      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-left mb-2&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;img
+      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
+      alt=&quot;...&quot;
+      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-circle mb-2&quot;
+    /&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;img
+      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
+      alt=&quot;...&quot;
+      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-0 mb-2&quot;
+    /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;script src=&quot;https://gist.github.com/chatenrk/78b5af5972342ba08c9b377b682a8158.js&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">[Table of Contents] Borders Related Additive Subtractive Border color Border radius Borders Related Additive Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time Subtractive Border color</summary></entry><entry><title type="html">HTML Snippets for reference</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html" rel="alternate" type="text/html" title="HTML Snippets for reference" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -172,6 +1059,12 @@
     &lt;/ul&gt;
 
     &lt;h1 id=&quot;htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/h1&gt;
+    &lt;h2 id=&quot;fitimages&quot;&gt;Fit Images to screen size&lt;/h2&gt;
+    &lt;p&gt;
+      Apply the following style attributes to &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag.
+      &lt;br /&gt;
+      &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; style='height: 100%; width: 100%; object-fit: contain'&lt;/code&gt; &lt;/pre&gt;
+    &lt;/p&gt;
     &lt;h2 id=&quot;b4table&quot;&gt;Bootstrap 4 table&lt;/h2&gt;
     &lt;script src=&quot;https://gist.github.com/chatenrk/b8d6cca82e57b7c77edc1bbee6391eba.js&quot;&gt;&lt;/script&gt;
     &lt;h2 id=&quot;b4toc&quot;&gt;Bootstrap 4 TOC&lt;/h2&gt;
@@ -183,313 +1076,7 @@
     &lt;h2 id=&quot;hljscss&quot;&gt;Highlight js CSS&lt;/h2&gt;
     &lt;script src=&quot;https://gist.github.com/chatenrk/af2c64ed1a32feeb5145ccb702ce4c4b.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">ABAP Development using VSCode</title><link href="/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode.html" rel="alternate" type="text/html" title="ABAP Development using VSCode" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/ADTUsingVSCode.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;#plugins&quot;&gt;Getting the right plugins&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;#configuresap&quot;&gt;Configuring the SAP system&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;#configurevscode&quot;&gt;Configuring VS Code&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;a href=&quot;#blogs&quot;&gt;Blogs to Explore&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;plugins&quot;&gt;Getting the right plugins&lt;/h1&gt;
-&lt;p&gt;
-    The following VS Code plugins are required
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=murbani.vscode-abap-remote-fs&quot;&gt;ABAP Remote FileSystem&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=larshp.vscode-abap&quot;&gt;ABAP Syntax Highlighting&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=hudakf.cds&quot;&gt;ABAP CDS Language Support&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=frehu.abap-snippets&quot;&gt;ABAP Snippets&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-    Once you have installed these plugins you can begin configuring your SAP System as a Remote FileSystem
-    &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/VSCodeRelated/ABAPUsingVSCode/install-vscode-plugins.png&quot; alt=&quot;Install VSCode Plugins&quot;&gt;
-&lt;/p&gt;
-
-&lt;h1 id=&quot;configuresap&quot;&gt;Configuring the SAP system&lt;/h1&gt;
-&lt;p&gt;
-    In order to connect to your SAP system you will need to enable the ABAP Development Tools (ADT) ICF node, this is the same service that tools such as the SAP Hana Studio use.
-&lt;/p&gt;
-
-&lt;p&gt;
-    Open your SAP GUI and connect to the target system, run the transaction SICF and then activate the ADT_SRV service as shown below
-    &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/VSCodeRelated/ABAPUsingVSCode/adt-service-activate.png&quot; alt=&quot;Install VSCode Plugins&quot;&gt;
-&lt;/p&gt;
-
-&lt;h1 id=&quot;configurevscode&quot;&gt;Configuring VS Code&lt;/h1&gt;
-&lt;p&gt;
-    Configuring this plugin to connect to your SAP system is straightforward, just open up your VS Code settings by pressing “Control/Command + ,” select “Extensions” in the menu and then in the “ABAP-FS” plugin, click on “Edit in settings.json”.
-    &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/VSCodeRelated/ABAPUsingVSCode/edit-settings.png&quot; alt=&quot;Install VSCode Plugins&quot;&gt;
-    
-&lt;/p&gt;
-&lt;p&gt;
-    Add the following code, and update the fields below as applicable
-    &lt;script src=&quot;https://gist.github.com/chatenrk/e938045810a34952bb1c6dfeb3e779fe.js&quot;&gt;&lt;/script&gt;
-
-    The file system is now open and can be used. For more information, refer to this &lt;a class=&quot;badge badge-info&quot; href=&quot;https://blogs.sap.com/2019/12/06/abap-development-in-vs-code/&quot;&gt;blog&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;h1 id=&quot;blogs&quot;&gt;Blogs to explore&lt;/h1&gt;
-&lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;#&lt;/th&gt;
-      &lt;th&gt;Blog Description&lt;/th&gt;
-      &lt;th&gt;Link&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Getting the right plugins Configuring the SAP system Configuring VS Code Blogs to Explore Getting the right plugins The following VS Code plugins are required ABAP Remote FileSystem ABAP Syntax Highlighting ABAP CDS Language Support ABAP Snippets</summary></entry><entry><title type="html">Setup Cloud Platform Trial</title><link href="/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html" rel="alternate" type="text/html" title="Setup Cloud Platform Trial" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#login&quot;&gt;Log into the SAP website&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#register&quot;&gt;Register at sap.com&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#activate&quot;&gt;Activate your account&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#logon&quot;&gt;Log on to SAP Cloud Platform&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#verify&quot;&gt;Verify your account&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#access&quot;&gt;Access the welcome screen&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;login&quot;&gt;Log into the SAP website&lt;/h1&gt;
-    &lt;p&gt;
-      Visit &lt;a href=&quot;https://www.sap.com&quot;&gt;https://www.sap.com&lt;/a&gt; and click the
-      Log On icon in the upper-right corner.
-
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/homepage.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-      If you have an account on www.sap.com (e.g. an S, C, D or I number) you
-      can enter it or the associated email along with your password. If you
-      don’t have an account yet, you can select one of the other login methods
-      or click Register to create an account.
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/option-logon.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-    &lt;h1 id=&quot;register&quot;&gt;Register at sap.com&lt;/h1&gt;
-    &lt;p&gt;
-      If you don’t have an account you will see a register dialog on the
-      left-hand side of the dialog. Fill in the required fields, and click
-      Submit.
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/option-register.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      You will get a message that an activation link has been sent to you.
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/register_confirm.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-    &lt;h2 id=&quot;activate&quot;&gt;Activate your account&lt;/h2&gt;
-    &lt;p&gt;
-      Check your emails to find the activation button Click to activate your
-      account.
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/log-into-sap.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-
-      After activating your account, you will see the following screen
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/successful-activation.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-
-    &lt;h1 id=&quot;logon&quot;&gt;Log on to SAP Cloud Platform&lt;/h1&gt;
-    &lt;p&gt;
-      After activation, or if you already had an SAP account, go to the
-      &lt;a href=&quot;https://account.hanatrial.ondemand.com/&quot;
-        &gt;SAP Cloud Platform Trial&lt;/a
-      &gt;
-      page and click &lt;b&gt;Log On&lt;/b&gt;
-    &lt;/p&gt;
-
-    &lt;p&gt;
-      You will see an dialog to confirm the terms and condition for the SAP
-      Cloud Platform Developer Edition. Check the check boxes and click
-      &lt;b&gt;Accept&lt;/b&gt;. This simply adds the SAP.com registration to your login
-      account on SAP Cloud Identity. There is no cost associated with this
-      upgrade
-
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/legal-disclaimer.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-    &lt;h1 id=&quot;verify&quot;&gt;Verify your account&lt;/h1&gt;
-    &lt;p&gt;
-      You will see a message that you need to verify your account with a phone
-      number. Click Verify your phone number to trigger that flow.
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/verification.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;br /&gt;
-      Enter your phone number and click New Code to retrieve a code. Please
-      enter this code as well and click Continue to verify your account. After
-      the verification, you will be logged off automatically
-
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/number.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-
-    &lt;h1 id=&quot;access&quot;&gt;Access the welcome screen&lt;/h1&gt;
-    &lt;p&gt;
-      Click on Log on to log on to your verified account.
-      &lt;img
-        src=&quot;https://developers.sap.com/tutorials/hcp-create-trial-account/_jcr_content.github-proxy.1594886410.file/logon-again.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      You will see one main button on the welcome screen of the SAP Cloud
-      Platform Cockpit. Click on Enter Your Trial Account to navigate to your
-      global account.
-
-      &lt;img
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/SAPCPTrial/CreateAccount.gif&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Log into the SAP website Register at sap.com Activate your account Log on to SAP Cloud Platform Verify your account Access the welcome screen Log into the SAP website Visit https://www.sap.com and click the Log On icon in the upper-right corner.</summary></entry><entry><title type="html">API Testing via postman</title><link href="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html" rel="alternate" type="text/html" title="API Testing via postman" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1 id=&quot;intro&quot;&gt;Introduction&lt;/h1&gt;
-    &lt;h2 id=&quot;introjwt&quot;&gt;What is a JWT Token&lt;/h2&gt;
-    &lt;p&gt;
-      JWT (pronounced: jot) tokens are the de-facto standard for authentication
-      in modern web applications
-    &lt;/p&gt;
-
-    &lt;blockquote&gt;
-      A JWT token is a manipulation-proof, signed JSON object that contains
-      standardized properties like user information and access rights
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;
-      In Cloud Foundry, this token is issued by the User Account and
-      Authentication (UAA) server. In the case of SAP CP Cloud Foundry and SAP
-      HANA XSA, we call this service also XSUAA
-    &lt;/p&gt;
-
-    &lt;h2 id=&quot;jwtViaPostman&quot;&gt;Retrieve the JWT Token with Postman&lt;/h2&gt;
-    &lt;h3 id=&quot;deployapp&quot;&gt;Deploy Sample App&lt;/h3&gt;
-    For the purpose of a demo, we are going to deploy an exisitng CAP app.
-    Details are as below
-    &lt;br /&gt;
-
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;
-        git clone &lt;a href=&quot;https://github.com/gregorwolf/bookshop-demo&quot;&gt;https://github.com/gregorwolf/bookshop-demo&lt;/a&gt;
-        bookshop-demo 
-        mbt build  
-        cf deploy mta_archives/bookshop-demo_0.0.1.mtar
-      &lt;/code&gt;&lt;/pre&gt;
-    &lt;h3 id=&quot;rolecoll&quot;&gt;Create a role collection and assign it to your user&lt;/h3&gt;
-    &lt;p&gt;Perform the below steps
-        &lt;ul&gt;
-            &lt;li&gt;Create a new role collection
-                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll1.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Assign bookshop admin role
-                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll2.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Assign role collection to SAP User ID
-                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll3.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/p&gt;
-
-    &lt;h3 id=&quot;readdata&quot;&gt;Read Data&lt;/h3&gt;
-    &lt;p&gt;Perform the below steps 
-        &lt;ul&gt;
-            &lt;li&gt;get the URL of the server application using SAP CF CLI &lt;br&gt;
-            &lt;code&gt;cf apps | grep bookshop-demo-srv&lt;/code&gt;
-            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/app-info.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-            &lt;li&gt;test the srv admin/Books in postman&lt;br&gt;
-            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test1.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/p&gt;
-
-    &lt;h3 id=&quot;accesstoken&quot;&gt;Get access token via postman&lt;/h3&gt;
-    &lt;p&gt;
-        Open new access token dialog in postman and enter the following
-        &lt;ol&gt;
-            &lt;li&gt;Token name as required&lt;/li&gt;
-            &lt;li&gt;Grant Type as &lt;code&gt;Password Credentials&lt;/code&gt; &lt;/li&gt;
-            &lt;li&gt;Access token URL as below&lt;/li&gt;
-           &lt;li&gt;UserName - &lt;b&gt;User id of trial account&lt;/b&gt; &lt;/li&gt; 
-           &lt;li&gt;Password - &lt;b&gt;Password of trial account&lt;/b&gt; &lt;/li&gt;
-           &lt;li&gt;Client ID as below&lt;/li&gt;
-           &lt;li&gt;Client secret as below&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        To read other value we make use of environment variables of the app. For the same execute the below command
-        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; cf env bookshop-demo-srv&lt;/code&gt;&lt;/pre&gt;
-
-        This will print a large JSON file. In there, find the object VCAP_SERVICES.xsuaa.Enter the missing values in the dialog as below
-        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; Access Token URL = xsuaa[0].credentials.url &lt;br&gt; Client ID = xsuaa[0].credentials.clientid &lt;br&gt; Client Secret = xsuaa[0].credentials.clientsecret
-        &lt;/code&gt;&lt;/pre&gt;
-
-        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test2.png&quot; alt=&quot;&quot;&gt;
-
-    &lt;/p&gt;
-
-    &lt;p&gt;
-        Store the returned access token in postman and use the same when querying the service on SAP Cloud platform
-        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test3.png&quot; alt=&quot;&quot;&gt;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Introduction What is a JWT Token JWT (pronounced: jot) tokens are the de-facto standard for authentication in modern web applications</summary></entry><entry><title type="html">Jekyll Tips and Tricks</title><link href="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html" rel="alternate" type="text/html" title="Jekyll Tips and Tricks" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">Jekyll Tips and Tricks</title><link href="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html" rel="alternate" type="text/html" title="Jekyll Tips and Tricks" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -612,106 +1199,110 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">Postman Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/PostmanReferenceReadme.html" rel="alternate" type="text/html" title="Postman Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/PostmanReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/PostmanReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">API Testing via postman</title><link href="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html" rel="alternate" type="text/html" title="API Testing via postman" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
     &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html&quot;
-          &gt;API Testing via postman&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] API Testing via postman</summary></entry><entry><title type="html">HTML Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html" rel="alternate" type="text/html" title="HTML Ready Reckoner" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html&quot;
-          &gt;HTML Snippets&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] HTML Snippets</summary></entry><entry><title type="html">Tools For SAP</title><link href="/New-Tech-Reference-Blog/2020/10/05/ToolsForSAPReadme.html" rel="alternate" type="text/html" title="Tools For SAP" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/ToolsForSAPReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/ToolsForSAPReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html&quot;
-          &gt;Setup Cloud Platform Trial&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Setup Cloud Platform Trial</summary></entry><entry><title type="html">Macros are game changers</title><link href="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html" rel="alternate" type="text/html" title="Macros are game changers" /><published>2020-10-02T00:00:00+05:30</published><updated>2020-10-02T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/02/MacroReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#rowhandling&quot;&gt;Row Handling&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#formatDate&quot;&gt;Date Handling&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#worksheethandling&quot;&gt;Worksheet Handling&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#excelFileRelated&quot;&gt;Excel Files Related&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#macroapplrelated&quot;&gt;Macro Application Related&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#miscmacros&quot;&gt;Misc. Macros&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;rowhandling&quot;&gt;Row Handling&lt;/h1&gt;
-    &lt;h2 id=&quot;getLastRow&quot;&gt;Get Last Row&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/d45803ac0c192907c62a70fdee388aa1.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;deleteemptyrows&quot;&gt;Delete When Row is empty&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/ff006c14071a664939f339689b4b494b.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;deleterowemptycol&quot;&gt;Delete Rows when specific column is empty&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/4bda8c629b14d39972f34f175e0290a0.js&quot;&gt;&lt;/script&gt;
-    &lt;h1 id=&quot;datehandling&quot;&gt;Date Handling&lt;/h1&gt;
-    &lt;h2 id=&quot;formatDate&quot;&gt;Format Date&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/c3ccc1c818413c3c6fe53ca1cd53989f.js&quot;&gt;&lt;/script&gt;
-    &lt;h1 id=&quot;worksheethandling&quot;&gt;Worksheet Handling&lt;/h1&gt;
-    &lt;h2 id=&quot;checkworksheetexists&quot;&gt;Worksheet Created Check&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/f0529aa71ee66c70d7eae7f21efeb5d9.js&quot;&gt;&lt;/script&gt;
-    &lt;h1 id=&quot;excelFileRelated&quot;&gt;Excel Files Related&lt;/h1&gt;
-    &lt;h2 id=&quot;openexcelfile&quot;&gt;Open Excel file dialog&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/3401f33b0c19d0d593033ff5464225ab.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;savewsastxt&quot;&gt;Save Worksheet as Text File&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/06146ee46cc5831fe4187d57d8946f16.js&quot;&gt;&lt;/script&gt;
+    &lt;h1 id=&quot;intro&quot;&gt;Introduction&lt;/h1&gt;
+    &lt;h2 id=&quot;introjwt&quot;&gt;What is a JWT Token&lt;/h2&gt;
+    &lt;p&gt;
+      JWT (pronounced: jot) tokens are the de-facto standard for authentication
+      in modern web applications
+    &lt;/p&gt;
 
-    &lt;h1 id=&quot;macroapplrelated&quot;&gt;Macro Application Related&lt;/h1&gt;
-    &lt;h2 id=&quot;applparams&quot;&gt;Application Parameters&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/24f7a175259fb68afed75ab0e904bd6c.js&quot;&gt;&lt;/script&gt;
+    &lt;blockquote&gt;
+      A JWT token is a manipulation-proof, signed JSON object that contains
+      standardized properties like user information and access rights
+    &lt;/blockquote&gt;
 
-    &lt;h1 id=&quot;miscmacros&quot;&gt;Misc. Macros&lt;/h1&gt;
-    &lt;h2 id=&quot;amfiGetData&quot;&gt;Get data from AMFI Portal&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/6cb80b8bbd8c0156382b50c5bffa872c.js&quot;&gt;&lt;/script&gt;
+    &lt;p&gt;
+      In Cloud Foundry, this token is issued by the User Account and
+      Authentication (UAA) server. In the case of SAP CP Cloud Foundry and SAP
+      HANA XSA, we call this service also XSUAA
+    &lt;/p&gt;
+
+    &lt;h2 id=&quot;jwtViaPostman&quot;&gt;Retrieve the JWT Token with Postman&lt;/h2&gt;
+    &lt;h3 id=&quot;deployapp&quot;&gt;Deploy Sample App&lt;/h3&gt;
+    For the purpose of a demo, we are going to deploy an exisitng CAP app.
+    Details are as below
+    &lt;br /&gt;
+
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;
+        git clone &lt;a href=&quot;https://github.com/gregorwolf/bookshop-demo&quot;&gt;https://github.com/gregorwolf/bookshop-demo&lt;/a&gt;
+        bookshop-demo 
+        mbt build  
+        cf deploy mta_archives/bookshop-demo_0.0.1.mtar
+      &lt;/code&gt;&lt;/pre&gt;
+    &lt;h3 id=&quot;rolecoll&quot;&gt;Create a role collection and assign it to your user&lt;/h3&gt;
+    &lt;p&gt;Perform the below steps
+        &lt;ul&gt;
+            &lt;li&gt;Create a new role collection
+                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll1.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Assign bookshop admin role
+                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll2.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+            &lt;li&gt;Assign role collection to SAP User ID
+                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll3.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+
+    &lt;h3 id=&quot;readdata&quot;&gt;Read Data&lt;/h3&gt;
+    &lt;p&gt;Perform the below steps 
+        &lt;ul&gt;
+            &lt;li&gt;get the URL of the server application using SAP CF CLI &lt;br&gt;
+            &lt;code&gt;cf apps | grep bookshop-demo-srv&lt;/code&gt;
+            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/app-info.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+            &lt;li&gt;test the srv admin/Books in postman&lt;br&gt;
+            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test1.png&quot; alt=&quot;&quot;&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/p&gt;
+
+    &lt;h3 id=&quot;accesstoken&quot;&gt;Get access token via postman&lt;/h3&gt;
+    &lt;p&gt;
+        Open new access token dialog in postman and enter the following
+        &lt;ol&gt;
+            &lt;li&gt;Token name as required&lt;/li&gt;
+            &lt;li&gt;Grant Type as &lt;code&gt;Password Credentials&lt;/code&gt; &lt;/li&gt;
+            &lt;li&gt;Access token URL as below&lt;/li&gt;
+           &lt;li&gt;UserName - &lt;b&gt;User id of trial account&lt;/b&gt; &lt;/li&gt; 
+           &lt;li&gt;Password - &lt;b&gt;Password of trial account&lt;/b&gt; &lt;/li&gt;
+           &lt;li&gt;Client ID as below&lt;/li&gt;
+           &lt;li&gt;Client secret as below&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+        To read other value we make use of environment variables of the app. For the same execute the below command
+        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; cf env bookshop-demo-srv&lt;/code&gt;&lt;/pre&gt;
+
+        This will print a large JSON file. In there, find the object VCAP_SERVICES.xsuaa.Enter the missing values in the dialog as below
+        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; Access Token URL = xsuaa[0].credentials.url &lt;br&gt; Client ID = xsuaa[0].credentials.clientid &lt;br&gt; Client Secret = xsuaa[0].credentials.clientsecret
+        &lt;/code&gt;&lt;/pre&gt;
+
+        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test2.png&quot; alt=&quot;&quot;&gt;
+
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        Store the returned access token in postman and use the same when querying the service on SAP Cloud platform
+        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test3.png&quot; alt=&quot;&quot;&gt;
+    &lt;/p&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><category term="macro" /><category term="excel" /><summary type="html">Document [Table of Contents] Row Handling Date Handling Worksheet Handling Excel Files Related Macro Application Related Misc. Macros Row Handling Get Last Row Delete When Row is empty Delete Rows when specific column is empty Date Handling Format Date Worksheet Handling Worksheet Created Check Excel Files Related Open Excel file dialog Save Worksheet as Text File</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Introduction What is a JWT Token JWT (pronounced: jot) tokens are the de-facto standard for authentication in modern web applications</summary></entry></feed>

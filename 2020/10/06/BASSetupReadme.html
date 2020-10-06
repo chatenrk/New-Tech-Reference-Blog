@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    SAP Business Application Studio Setup - New Technologies Reckoner
+    
+  </title>
+
+  <meta name="description" content="Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tom...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
+  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">
+  <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="/New-Tech-Reference-Blog/">New Technologies Reckoner</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="/New-Tech-Reference-Blog/about">About</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/posts">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/search">Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+
+<header
+  class="masthead"
+  style="background-image: url('/New-Tech-Reference-Blog/img/bg-bas.jpg')"
+>
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>SAP Business Application Studio Setup</h1>
+            
+            <h2 class="subheading">Code your MTA Applications here</h2>
+            
+            <span class="meta"
+              >Posted by
+              <a href="#"
+                ></a
+              >
+              on October 06, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   5 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+       /* Tomorrow Theme */
+    /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+    /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+    /* Tomorrow Comment */
+    .hljs-comment,
+    .hljs-quote {
+      color: #8e908c;
+    }
+
+    /* Tomorrow Red */
+    .hljs-variable,
+    .hljs-template-variable,
+    .hljs-tag,
+    .hljs-name,
+    .hljs-selector-id,
+    .hljs-selector-class,
+    .hljs-regexp,
+    .hljs-deletion {
+      color: #c82829;
+    }
+
+    /* Tomorrow Orange */
+    .hljs-number,
+    .hljs-built_in,
+    .hljs-builtin-name,
+    .hljs-literal,
+    .hljs-type,
+    .hljs-params,
+    .hljs-meta,
+    .hljs-link {
+      color: #f5871f;
+    }
+
+    /* Tomorrow Yellow */
+    .hljs-attribute {
+      color: #eab700;
+    }
+
+    /* Tomorrow Green */
+    .hljs-string,
+    .hljs-symbol,
+    .hljs-bullet,
+    .hljs-addition {
+      color: #718c00;
+    }
+
+    /* Tomorrow Blue */
+    .hljs-title,
+    .hljs-section {
+      color: #4271ae;
+    }
+
+    /* Tomorrow Purple */
+    .hljs-keyword,
+    .hljs-selector-tag {
+      color: #8959a8;
+    }
+    .hljs {
+      display: block;
+      overflow-x: auto;
+      color: #4d4d4c;
+      padding: 0.5em;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+<ul>
+  <li>
+  <a href="#setup">Business Application Studio Setup</a>
+  </li>
+</ul>
+    <h1 id="setup">Business Application Studio Setup</h1>
+    <p>
+      Login to SAP Cloud Platform trial and navigate to subaccount
+      <img
+        class="img-fluid max-width: 100%; and height: auto; border border-dark rounded"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_accnt.png"
+        alt=""
+      />
+      Select the Subscriptions menu item on the left hand side. Find and select
+      the "SAP Business Application Studio" tile and use the "Subscribe" button
+      to create a subscription to it in your account
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_bas.png"
+        alt=""
+      />
+      <br />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_bas1.png"
+        alt=""
+      />
+    </p>
+
+    <p>
+      Once subscribed, the "Go to Application" link become active. But before
+      launching it, ensure that appropriate App Studio roles are available. Jump
+      to the subaccount overview page, and select the "Trust Configuration" item
+      within the "Security" entry in the menu on the left hand side. Select the
+      "sap.default" entry as shown in the screenshot (it may be a different
+      name, but it is usually going to be the only entry to select anyway), and
+      in the following screen, enter your ID - the email address associated with
+      your account - and select the "Show Assignments" button to bring up the
+      current list, and to give you the ability to assign further Role
+      Collections
+
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles1.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles2.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles3.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles4.png"
+        alt=""
+      />
+    </p>
+    <p>
+      Go back to the App Studio subscription page, and use the "Go to
+      Application" link.
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space.png"
+        alt=""
+      />
+      Select the "Create Dev Space" button and should specify a name for your
+      space, and the extensions you want. Give a name to the workspace and
+      select the appropriate options as required
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space2.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space3.png"
+        alt=""
+      />
+    </p>
+    <p>
+      There's one final activity to complete at this stage, and that's to point
+      tge new Dev Space to your CF organization and space. In the bar at the
+      bottom, there'll be a message along these lines: "The organization and
+      space in Cloud Foundry have not been set". Select this message to initiate
+      a short UI interaction at the top of the screen to allow you to confirm
+      the settings. Specify the following:
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Setting</th>
+            <th>Value to set</th>
+          </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td scope="row">1</td>
+            <td>Cloud Foundry endpoint</td>
+            <td>This is the endpoint in the form <pre class="hljs-string">https://api.cf.&lt;region&gt;.hana.ondemand.com</pre>Refer to the details shown in your Trial Subaccount overview page
+              <img
+              class="border border-dark m-1"
+              style="height: 100%; width: 100%; object-fit: contain"
+              src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space.png"
+              alt=""
+            /></td>
+          </tr>
+         <tr>
+            <td scope="row">2</td>
+            <td>Email address</td>
+            <td>This is the email address associated with the Cloud Platform account.
+              <img
+              class="border border-dark m-1"
+              style="height: 100%; width: 100%; object-fit: contain"
+              src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space1.png"
+              alt=""
+            />
+            </td>
+          </tr>
+         <tr>
+            <td scope="row">3</td>
+            <td>Password </td>
+            <td>This is the password associated with the email address and this account.
+              <img
+              class="border border-dark m-1"
+              style="height: 100%; width: 100%; object-fit: contain"
+              src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space2.png"
+              alt=""
+            />
+            </td>
+          </tr>
+         <tr>
+            <td scope="row">4</td>
+            <td>Organization </td>
+            <td>This is the CF organization associated with your trial subaccount
+              <img
+              class="border border-dark m-1"
+              style="height: 100%; width: 100%; object-fit: contain"
+              src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space3.png"
+              alt=""
+            />
+            </td>
+          </tr>
+         <tr>
+            <td scope="row">5</td>
+            <td>Space</td>
+            <td>This is the space within the organization
+              <img
+              class="border border-dark m-1"
+              style="height: 100%; width: 100%; object-fit: contain"
+              src="/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space4.png"
+              alt=""
+            />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  </body>
+</html>
+
+
+        <hr />
+
+        <!-- <div class="clearfix">
+          
+          <a
+            class="btn btn-primary float-left"
+            href="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="SAP Business Application Studio"
+            >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
+          >
+           
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:chaitanya.rayabharam@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy;  2020</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/New-Tech-Reference-Blog/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/New-Tech-Reference-Blog/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
+
+</body>
+
+</html>

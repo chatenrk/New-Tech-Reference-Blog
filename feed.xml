@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-06T17:31:53+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-06T19:01:54+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -431,7 +431,357 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Provision Hana Cloud</summary></entry><entry><title type="html">Setup Cloud Platform Destination</title><link href="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html" rel="alternate" type="text/html" title="Setup Cloud Platform Destination" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Provision Hana Cloud</summary></entry><entry><title type="html">Docker for Cloud Connector</title><link href="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html" rel="alternate" type="text/html" title="Docker for Cloud Connector" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#prep-env&quot;&gt;Prepare environment for Docker Image&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#build-docker&quot;&gt;Build the Docker image&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#instantiate&quot;&gt;Instantiate a container&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#connect&quot;
+          &gt;Connect to perform initial setup of the SAP Cloud Connector&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#backend-sys&quot;&gt;Make the SAP backend system available&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#expose-resources&quot;
+          &gt;Expose a set of resources in the backend system&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h1 id=&quot;prep-env&quot;&gt;Prepare environment for Docker Image&lt;/h1&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Check if docker is installed&lt;/li&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-setup-check.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;li&gt;
+        Create a new Directory and subdirectory called
+        &lt;code&gt;container-scc/&lt;/code&gt; and &lt;code&gt;sapdownloads/&lt;/code&gt; respectively
+      &lt;/li&gt;
+      &lt;li&gt;
+        Go to the cloud section of the&lt;a
+          href=&quot;https://tools.hana.ondemand.com/#cloud&quot;
+          &gt;SAP Development Tools website&lt;/a
+        &gt;
+        and download the latest Cloud Connector component, placing it into the
+        sapdownloads/ directory. Regardless of your local machine's operating
+        system, you will need to download for Linux, as that is what the
+        container will be running
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download1.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        From the same page, now download the latest SAP Java Virtual Machine
+        (JVM) into the sapdownloads/ directory, again for Linux, and
+        specifically the .rpm component
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download2.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Finally create a new file called Dockerfile in the container-scc/
+        directory (noting the capitalization and lack of extension on this file
+        name)
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-file-creation.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Into this file, copy the contents of the
+        &lt;a href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/DockerFileSample.txt&quot;
+          &gt;Dockerfile&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h1 id=&quot;build-docker&quot;&gt;Build the Docker image&lt;/h1&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        Build the image, and after that you can instantiate a container from
+        that image. In the &lt;b&gt;container-scc&lt;/b&gt; directory (where the Dockerfile
+        file is located), build the image as follows in this repository
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image1.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        On successful completion the cloud connector should be installed
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image4.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        Look for the image that's produced, with the following command
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/show-docker-image.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h1 id=&quot;instantiate&quot;&gt;Instantiate a container&lt;/h1&gt;
+    &lt;li&gt;
+      Now you have an image, it's time to instantiate a container from it. This
+      will have Cloud Connector running inside it. Instantiate the container as
+      follows
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/instantiate-docker-container.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Briefly, the parameters used here do the following:
+      &lt;ul&gt;
+        &lt;li&gt;
+          &lt;b&gt;-p 8443:8443&lt;/b&gt;: make port 8443 in the container available on the
+          host machine (remember, SAP Cloud Connector listens by default on port
+          8443 and you want to be able to connect to it with your browser on
+          your host machine)
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;b&gt;--name myscc&lt;/b&gt;: this gives a human-friendly name to the container
+          that can be used to refer to it in any subsequent commands
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;b&gt;-d&lt;/b&gt;: run the container in &quot;detached&quot; mode, i.e. in the
+          background
+        &lt;/li&gt;
+        &lt;li&gt;
+          &lt;b&gt;scc&lt;/b&gt;: this is the name of the image from which the container is
+          to be created
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Check that the container is running, with another Docker command
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-running-check.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/li&gt;
+    &lt;h1 id=&quot;connect&quot;&gt;
+      Connect to perform initial setup of the SAP Cloud Connector
+    &lt;/h1&gt;
+    &lt;li&gt;
+      Log on to the SAP Cloud Connector in your browser, and use the
+      administration interface to perform some initial setup, in particular,
+      connecting it to the SAP Cloud Platform
+    &lt;/li&gt;
+    &lt;li&gt;
+      Open your browser and go to the SAP Cloud Connector administration UI at
+      &lt;a href=&quot;https://localhost:8443&quot;&gt;https://localhost:8443&lt;/a&gt;. Remember that
+      this is only possible because, with the -p 8443:8443 parameter earlier,
+      you specified that port 8443 in the container (which is where SAP Cloud
+      Connector is actually running and listening) should be exposed to your
+      machine, the container's host (where Docker is running), also on port
+      8443.
+      &lt;blockquote&gt;
+        If this does not work on Chrome, try running on Internet Explorer
+      &lt;/blockquote&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      At the &quot;Cloud Connector Login&quot; page, log in with the default username and
+      password &lt;b&gt;Administrator&lt;/b&gt; and &lt;b&gt;manage&lt;/b&gt;. You're then prompted to
+      change this password which you should do, selecting the &quot;Save&quot; icon on the
+      right hand side to proceed (leave other options as they are)
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      Next, you're asked to specify an initial subaccount that you want the SAP
+      Cloud Connector to connect to
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/li&gt;
+    &lt;h1 id=&quot;backend-sys&quot;&gt;Make the SAP backend system available&lt;/h1&gt;
+    &lt;li&gt;
+      Now that the connection is established, you can define access to the
+      on-prem backend SAP system that the SAP Cloud Connector will facilitate
+    &lt;/li&gt;
+    &lt;li&gt;
+      Select the &quot;Cloud To On-Premise&quot; item in the navigation menu on the left
+      hand side, and in the &quot;Mapping Virtual To Internal System&quot; section, create
+      a new system mapping entry with the &quot;+&quot; icon. In the dialog that follows,
+      you can specify the details of your backend SAP system, i.e. the ES5
+      system
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem5.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem6.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem7.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem8.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/li&gt;
+    &lt;h1 id=&quot;expose-resources&quot;&gt;
+      Expose a set of resources in the backend system
+    &lt;/h1&gt;
+    &lt;li&gt;
+      While you've established a mapping of a virtual host (that is visible at
+      the SAP Cloud Platform level) to an internal (on-prem) host, there are
+      still no accessible resources available on that host. You must specify
+      these explicitly
+    &lt;/li&gt;
+    &lt;li&gt;
+      In the new &quot;Resources of virtuales5:8000&quot; section that is now visible, add
+      a new resource entry with the &quot;+&quot; icon, specifying the following values
+      and finishing with the &quot;Save&quot; button\
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Setting&lt;/th&gt;
+            &lt;th&gt;Value&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;URL Path&lt;/td&gt;
+            &lt;td&gt;/sap/opu/odata&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;Active&lt;/td&gt;
+            &lt;td&gt;(checked)&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+            &lt;td&gt;WebSocket Upgrade&lt;/td&gt;
+            &lt;td&gt;(leave unchecked)&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+            &lt;td&gt;Access Policy&lt;/td&gt;
+            &lt;td&gt;Path and all sub-paths&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/li&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Prepare environment for Docker Image Build the Docker image Instantiate a container Connect to perform initial setup of the SAP Cloud Connector Make the SAP backend system available Expose a set of resources in the backend system Prepare environment for Docker Image Check if docker is installed Create a new Directory and subdirectory called container-scc/ and sapdownloads/ respectively Go to the cloud section of theSAP Development Tools website and download the latest Cloud Connector component, placing it into the sapdownloads/ directory. Regardless of your local machine's operating system, you will need to download for Linux, as that is what the container will be running From the same page, now download the latest SAP Java Virtual Machine (JVM) into the sapdownloads/ directory, again for Linux, and specifically the .rpm component Finally create a new file called Dockerfile in the container-scc/ directory (noting the capitalization and lack of extension on this file name) Into this file, copy the contents of the Dockerfile Build the Docker image Build the image, and after that you can instantiate a container from that image. In the container-scc directory (where the Dockerfile file is located), build the image as follows in this repository On successful completion the cloud connector should be installed Look for the image that's produced, with the following command Instantiate a container Now you have an image, it's time to instantiate a container from it. This will have Cloud Connector running inside it. Instantiate the container as follows Briefly, the parameters used here do the following: -p 8443:8443: make port 8443 in the container available on the host machine (remember, SAP Cloud Connector listens by default on port 8443 and you want to be able to connect to it with your browser on your host machine) --name myscc: this gives a human-friendly name to the container that can be used to refer to it in any subsequent commands -d: run the container in &quot;detached&quot; mode, i.e. in the background scc: this is the name of the image from which the container is to be created Check that the container is running, with another Docker command Connect to perform initial setup of the SAP Cloud Connector Log on to the SAP Cloud Connector in your browser, and use the administration interface to perform some initial setup, in particular, connecting it to the SAP Cloud Platform Open your browser and go to the SAP Cloud Connector administration UI at https://localhost:8443. Remember that this is only possible because, with the -p 8443:8443 parameter earlier, you specified that port 8443 in the container (which is where SAP Cloud Connector is actually running and listening) should be exposed to your machine, the container's host (where Docker is running), also on port 8443. If this does not work on Chrome, try running on Internet Explorer At the &quot;Cloud Connector Login&quot; page, log in with the default username and password Administrator and manage. You're then prompted to change this password which you should do, selecting the &quot;Save&quot; icon on the right hand side to proceed (leave other options as they are) Next, you're asked to specify an initial subaccount that you want the SAP Cloud Connector to connect to Make the SAP backend system available Now that the connection is established, you can define access to the on-prem backend SAP system that the SAP Cloud Connector will facilitate Select the &quot;Cloud To On-Premise&quot; item in the navigation menu on the left hand side, and in the &quot;Mapping Virtual To Internal System&quot; section, create a new system mapping entry with the &quot;+&quot; icon. In the dialog that follows, you can specify the details of your backend SAP system, i.e. the ES5 system</summary></entry><entry><title type="html">Setup Cloud Platform Destination</title><link href="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html" rel="alternate" type="text/html" title="Setup Cloud Platform Destination" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -1230,157 +1580,4 @@ Navigate to the &quot;dev&quot; space in your Cloud Foundry (CF) organization.
 &lt;/div&gt;
 &lt;div&gt;
   &lt;script src=&quot;https://gist.github.com/chatenrk/78b5af5972342ba08c9b377b682a8158.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">[Table of Contents] Borders Related Additive Subtractive Border color Border radius Borders Related Additive Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time Subtractive Border color</summary></entry><entry><title type="html">Emmet Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html" rel="alternate" type="text/html" title="Emmet Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-     &lt;ul&gt;
-         &lt;li&gt;&lt;a href=&quot;#elements&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
-         &lt;ul&gt;
-             &lt;li&gt;&lt;a href=&quot;#nesting&quot;&gt;Nesting operators&lt;/a&gt;&lt;/li&gt;
-             &lt;ul&gt;
-                 &lt;li&gt;&lt;a href=&quot;#child&quot;&gt;Child: &gt;&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;##sibling&quot;&gt;Sibling: +&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#climb-up&quot;&gt;Climb-up: ^&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#multi&quot;&gt;Multiplication: *&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#group&quot;&gt;Grouping: ()&lt;/a&gt;&lt;/li&gt;
-             &lt;/ul&gt;
-             &lt;li&gt;&lt;a href=&quot;#attribute&quot;&gt;Attribute operators&lt;/a&gt;&lt;/li&gt;
-             &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;#id-class&quot;&gt;ID and CLASS&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#customattr&quot;&gt;Custom attributes&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#item-no&quot;&gt;Item numbering: $&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;li&gt;&lt;a href=&quot;#text&quot;&gt;Text: {}&lt;/a&gt;&lt;/li&gt;
-         &lt;/ul&gt;
-     &lt;/ul&gt; 
-    &lt;h1 id=&quot;elements&quot;&gt;Elements&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        You can use elements’ names like div or p to generate HTML tags. Emmet
-        doesn’t have a predefined set of available tag names, you can write any
-        word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;nesting&quot;&gt;Nesting operators&lt;/h2&gt;
-    Nesting operators are used to position abbreviation elements inside
-    generated tree: whether it should be placed inside or near the context
-    element
-    &lt;h3 id=&quot;child&quot;&gt;Child: &gt;&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        You can use &gt; operator to nest elements inside each other
-        &lt;script src=&quot;https://gist.github.com/chatenrk/0d5cddbd361fc5e33c8283ccc934de51.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;sibling&quot;&gt;Sibling: +&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Use + operator to place elements near each other, on the same level:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/45209b9d5eb8a15a0116e7f35835cfe5.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;climb-up&quot;&gt;Climb-up: ^&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        With &gt; operator you’re descending down the generated tree and positions
-        of all sibling elements will be resolved against the most deepest
-        element:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/330657a94c25974bf2f1792bb58df49b.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        With ^ operator, you can climb one level up the tree and change context
-        where following elements should appear
-        &lt;script src=&quot;https://gist.github.com/chatenrk/6af995ed2557cf23c385619d68002057.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        You can use as many ^ operators as you like, each operator will move one
-        level up:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/52a1e42d5edb3adb77a790be27d2bc1f.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;multi&quot;&gt;Multiplication: *&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        With * operator you can define how many times element should be
-        outputted:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/7a499dbecefaa269b52aabb1d9815ec2.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;group&quot;&gt;Grouping: ()&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Parenthesises are used by Emmets’ power users for grouping subtrees in
-        complex abbreviations:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/e9939987da2aa59cf39d989ae6d0073c.js&quot;&gt;&lt;/script&gt;
-
-        If you’re working with browser’s DOM, you may think of groups as
-        Document Fragments: each group contains abbreviation subtree and all the
-        following elements are inserted at the same level as the first element
-        of group. You can nest groups inside each other and combine them with
-        multiplication * operator:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/05a040fdbf79f7e2abd4cf029cb3a930.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;attribute&quot;&gt;Attribute operators&lt;/h2&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Attribute operators are used to modify attributes of outputted elements.
-        For example, in HTML and XML you can quickly add class attribute to
-        generated element
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;id-class&quot;&gt;ID and CLASS&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        In CSS, you use elem#id and elem.class notation to reach the elements
-        with specified id or class attributes. In Emmet, you can use the very
-        same syntax to add these attributes to specified element
-        &lt;script src=&quot;https://gist.github.com/chatenrk/95101d2847a554537759828cc07676c8.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;customattr&quot;&gt;Custom attributes&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        You can use [attr] notation (as in CSS) to add custom attributes to your
-        element:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/e4dc893faffdb2b3f272c491e1b80fff.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-          &lt;ul&gt;
-              &lt;li&gt;You can place as many attributes as you like inside square brackets.
-                &lt;/li&gt;
-              &lt;li&gt;You don’t have to specify attribute values: td[colspan title] will produce &amp;lt;td colspan=&quot;&quot; title=&quot;&quot;&amp;gt; with tabstops inside each empty attribute (if your editor supports them).
-               &lt;/li&gt;
-              &lt;li&gt; You can use single or double quotes for quoting attribute values.
-                &lt;/li&gt;
-              &lt;li&gt;You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work.&lt;/li&gt;
-          &lt;/ul&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;itemno&quot;&gt;Item numbering: $&lt;/h3&gt;
-    &lt;div&gt;
-        &lt;p&gt;
-            With multiplication * operator you can repeat elements, but with $ you can number them. Place $ operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:
-            &lt;script src=&quot;https://gist.github.com/chatenrk/7dabca195f8e77af749864976993a9d1.js&quot;&gt;&lt;/script&gt;
-        &lt;/p&gt;
-        &lt;p&gt;
-            You can use multiple $ in a row to pad number with zeroes:
-            &lt;script src=&quot;https://gist.github.com/chatenrk/b70ff9e65beb97ad28253737e8f55ed2.js&quot;&gt;&lt;/script&gt;
-        &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;text&quot;&gt;Text: {}&lt;/h2&gt;
-    &lt;div&gt;&lt;p&gt;
-        You can use curly braces to add text to element:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/ad7642ae3c91aad17bba059caa016cb3.js&quot;&gt;&lt;/script&gt;
-    &lt;/p&gt;
-&lt;p&gt;
-    Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a&gt;{click} will produce the same output, but a{click}+b{here} and a&gt;{click}+b{here} won’t:
-    &lt;script src=&quot;https://gist.github.com/chatenrk/0ac6ec128ed69d5cbd5faa2d217a513a.js&quot;&gt;&lt;/script&gt;
-&lt;/p&gt;&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Elements Nesting operators Child: &gt; Sibling: + Climb-up: ^ Multiplication: * Grouping: () Attribute operators ID and CLASS Custom attributes Item numbering: $ Text: {} Elements You can use elements’ names like div or p to generate HTML tags. Emmet doesn’t have a predefined set of available tag names, you can write any word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; Nesting operators Nesting operators are used to position abbreviation elements inside generated tree: whether it should be placed inside or near the context element Child: &gt; You can use &gt; operator to nest elements inside each other Sibling: + Use + operator to place elements near each other, on the same level: Climb-up: ^ With &gt; operator you’re descending down the generated tree and positions of all sibling elements will be resolved against the most deepest element: With ^ operator, you can climb one level up the tree and change context where following elements should appear You can use as many ^ operators as you like, each operator will move one level up: Multiplication: * With * operator you can define how many times element should be outputted: Grouping: () Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:</summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">[Table of Contents] Borders Related Additive Subtractive Border color Border radius Borders Related Additive Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time Subtractive Border color</summary></entry></feed>

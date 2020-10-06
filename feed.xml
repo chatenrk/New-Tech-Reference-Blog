@@ -1,157 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-06T15:48:16+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Emmet Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html" rel="alternate" type="text/html" title="Emmet Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-     &lt;ul&gt;
-         &lt;li&gt;&lt;a href=&quot;#elements&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
-         &lt;ul&gt;
-             &lt;li&gt;&lt;a href=&quot;#nesting&quot;&gt;Nesting operators&lt;/a&gt;&lt;/li&gt;
-             &lt;ul&gt;
-                 &lt;li&gt;&lt;a href=&quot;#child&quot;&gt;Child: &gt;&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;##sibling&quot;&gt;Sibling: +&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#climb-up&quot;&gt;Climb-up: ^&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#multi&quot;&gt;Multiplication: *&lt;/a&gt;&lt;/li&gt;
-                 &lt;li&gt;&lt;a href=&quot;#group&quot;&gt;Grouping: ()&lt;/a&gt;&lt;/li&gt;
-             &lt;/ul&gt;
-             &lt;li&gt;&lt;a href=&quot;#attribute&quot;&gt;Attribute operators&lt;/a&gt;&lt;/li&gt;
-             &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;#id-class&quot;&gt;ID and CLASS&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#customattr&quot;&gt;Custom attributes&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#item-no&quot;&gt;Item numbering: $&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;li&gt;&lt;a href=&quot;#text&quot;&gt;Text: {}&lt;/a&gt;&lt;/li&gt;
-         &lt;/ul&gt;
-     &lt;/ul&gt; 
-    &lt;h1 id=&quot;elements&quot;&gt;Elements&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        You can use elements’ names like div or p to generate HTML tags. Emmet
-        doesn’t have a predefined set of available tag names, you can write any
-        word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;nesting&quot;&gt;Nesting operators&lt;/h2&gt;
-    Nesting operators are used to position abbreviation elements inside
-    generated tree: whether it should be placed inside or near the context
-    element
-    &lt;h3 id=&quot;child&quot;&gt;Child: &gt;&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        You can use &gt; operator to nest elements inside each other
-        &lt;script src=&quot;https://gist.github.com/chatenrk/0d5cddbd361fc5e33c8283ccc934de51.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;sibling&quot;&gt;Sibling: +&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Use + operator to place elements near each other, on the same level:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/45209b9d5eb8a15a0116e7f35835cfe5.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;climb-up&quot;&gt;Climb-up: ^&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        With &gt; operator you’re descending down the generated tree and positions
-        of all sibling elements will be resolved against the most deepest
-        element:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/330657a94c25974bf2f1792bb58df49b.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        With ^ operator, you can climb one level up the tree and change context
-        where following elements should appear
-        &lt;script src=&quot;https://gist.github.com/chatenrk/6af995ed2557cf23c385619d68002057.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        You can use as many ^ operators as you like, each operator will move one
-        level up:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/52a1e42d5edb3adb77a790be27d2bc1f.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;multi&quot;&gt;Multiplication: *&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        With * operator you can define how many times element should be
-        outputted:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/7a499dbecefaa269b52aabb1d9815ec2.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;group&quot;&gt;Grouping: ()&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Parenthesises are used by Emmets’ power users for grouping subtrees in
-        complex abbreviations:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/e9939987da2aa59cf39d989ae6d0073c.js&quot;&gt;&lt;/script&gt;
-
-        If you’re working with browser’s DOM, you may think of groups as
-        Document Fragments: each group contains abbreviation subtree and all the
-        following elements are inserted at the same level as the first element
-        of group. You can nest groups inside each other and combine them with
-        multiplication * operator:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/05a040fdbf79f7e2abd4cf029cb3a930.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;attribute&quot;&gt;Attribute operators&lt;/h2&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Attribute operators are used to modify attributes of outputted elements.
-        For example, in HTML and XML you can quickly add class attribute to
-        generated element
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;id-class&quot;&gt;ID and CLASS&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        In CSS, you use elem#id and elem.class notation to reach the elements
-        with specified id or class attributes. In Emmet, you can use the very
-        same syntax to add these attributes to specified element
-        &lt;script src=&quot;https://gist.github.com/chatenrk/95101d2847a554537759828cc07676c8.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;customattr&quot;&gt;Custom attributes&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        You can use [attr] notation (as in CSS) to add custom attributes to your
-        element:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/e4dc893faffdb2b3f272c491e1b80fff.js&quot;&gt;&lt;/script&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-          &lt;ul&gt;
-              &lt;li&gt;You can place as many attributes as you like inside square brackets.
-                &lt;/li&gt;
-              &lt;li&gt;You don’t have to specify attribute values: td[colspan title] will produce &amp;lt;td colspan=&quot;&quot; title=&quot;&quot;&amp;gt; with tabstops inside each empty attribute (if your editor supports them).
-               &lt;/li&gt;
-              &lt;li&gt; You can use single or double quotes for quoting attribute values.
-                &lt;/li&gt;
-              &lt;li&gt;You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work.&lt;/li&gt;
-          &lt;/ul&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;itemno&quot;&gt;Item numbering: $&lt;/h3&gt;
-    &lt;div&gt;
-        &lt;p&gt;
-            With multiplication * operator you can repeat elements, but with $ you can number them. Place $ operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:
-            &lt;script src=&quot;https://gist.github.com/chatenrk/7dabca195f8e77af749864976993a9d1.js&quot;&gt;&lt;/script&gt;
-        &lt;/p&gt;
-        &lt;p&gt;
-            You can use multiple $ in a row to pad number with zeroes:
-            &lt;script src=&quot;https://gist.github.com/chatenrk/b70ff9e65beb97ad28253737e8f55ed2.js&quot;&gt;&lt;/script&gt;
-        &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;text&quot;&gt;Text: {}&lt;/h2&gt;
-    &lt;div&gt;&lt;p&gt;
-        You can use curly braces to add text to element:
-        &lt;script src=&quot;https://gist.github.com/chatenrk/ad7642ae3c91aad17bba059caa016cb3.js&quot;&gt;&lt;/script&gt;
-    &lt;/p&gt;
-&lt;p&gt;
-    Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a&gt;{click} will produce the same output, but a{click}+b{here} and a&gt;{click}+b{here} won’t:
-    &lt;script src=&quot;https://gist.github.com/chatenrk/0ac6ec128ed69d5cbd5faa2d217a513a.js&quot;&gt;&lt;/script&gt;
-&lt;/p&gt;&lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Elements Nesting operators Child: &gt; Sibling: + Climb-up: ^ Multiplication: * Grouping: () Attribute operators ID and CLASS Custom attributes Item numbering: $ Text: {} Elements You can use elements’ names like div or p to generate HTML tags. Emmet doesn’t have a predefined set of available tag names, you can write any word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; Nesting operators Nesting operators are used to position abbreviation elements inside generated tree: whether it should be placed inside or near the context element Child: &gt; You can use &gt; operator to nest elements inside each other Sibling: + Use + operator to place elements near each other, on the same level: Climb-up: ^ With &gt; operator you’re descending down the generated tree and positions of all sibling elements will be resolved against the most deepest element: With ^ operator, you can climb one level up the tree and change context where following elements should appear You can use as many ^ operators as you like, each operator will move one level up: Multiplication: * With * operator you can define how many times element should be outputted: Grouping: () Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:</summary></entry><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-06T17:31:53+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -409,7 +256,7 @@
   &lt;body&gt;
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;&lt;/a&gt;Blogs to explore&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;
         &lt;a
           href=&quot;/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html &quot;
@@ -443,7 +290,420 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Setup Related Blogs to explore # Blog Description Link 1 How to Install a VS Code Extension to SAP Business Application Studio https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/</summary></entry><entry><title type="html">Hana CLI Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html" rel="alternate" type="text/html" title="Hana CLI Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Setup Related Blogs to explore # Blog Description Link 1 How to Install a VS Code Extension to SAP Business Application Studio https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/</summary></entry><entry><title type="html">Provision Hana Cloud</title><link href="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html" rel="alternate" type="text/html" title="Provision Hana Cloud" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#cptrial&quot;&gt;Setup CP Trial Account&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#entitle&quot;&gt;Check Entitlements&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#instance&quot;&gt;Create Instance of Hana Cloud&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;sflight&quot;&gt;Import SFLIGHT Schema&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h1 id=&quot;cptrial&quot;&gt;Setup CP Trial Account&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        For information related to creating a new SAP Cloud Platform account
+        refer to this
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html&quot;
+          &gt;Section&lt;/a
+        &gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h1 id=&quot;entitle&quot;&gt;Check Entitlements&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Check entitlements are available as expected
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/check-entitlements.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h1 id=&quot;instance&quot;&gt;Create Instance of Hana Cloud&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Create an instance as shown below
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud1.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud2.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud3.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud4.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud5.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        New Hana Cloud Instance is created
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/new-instance.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        Open database explorer and add the new database instance
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/database-explorer.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h1 id=&quot;sflight&quot;&gt;Import SFLIGHT Schema&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Download SFLIGHT from
+        &lt;a
+          href=&quot;https://github.com/SAP/hana-xsa-opensap-hana7/raw/snippets_2.3.2/ex2/sflight_hana.tar.gz&quot;
+          &gt;SAP Samples&lt;/a
+        &gt;
+        GITHUB repository. Once it is saved locally, right-click on the database
+        created above and click Import Catalog Objects
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/sflight1.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/sflight2.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/sflight3.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Setup CP Trial Account Check Entitlements Create Instance of Hana Cloud Import SFLIGHT Schema Setup CP Trial Account For information related to creating a new SAP Cloud Platform account refer to this Section Check Entitlements Check entitlements are available as expected Create Instance of Hana Cloud Create an instance as shown below New Hana Cloud Instance is created Open database explorer and add the new database instance Import SFLIGHT Schema Download SFLIGHT from SAP Samples GITHUB repository. Once it is saved locally, right-click on the database created above and click Import Catalog Objects</summary></entry><entry><title type="html">Hana Cloud Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/HanaCloudReadme.html" rel="alternate" type="text/html" title="Hana Cloud Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/HanaCloudReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/HanaCloudReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html&quot;
+          &gt;Provision Hana Cloud&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Provision Hana Cloud</summary></entry><entry><title type="html">Setup Cloud Platform Destination</title><link href="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html" rel="alternate" type="text/html" title="Setup Cloud Platform Destination" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1 id=&quot;data-source&quot;&gt;Check the data source&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Before creating the destination, which is effectively a pointer to a
+        data source, it's worth checking that data source manually and directly.
+        First, so you can see for yourself what you're aiming to get to from
+        within the SAP Cloud Platform, and second, so you know what you're
+        looking for when you access that data source indirectly (through the
+        destination). Open up the
+        &lt;a
+          href=&quot;https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/?sap-client=002&quot;
+          &gt;OData&lt;/a
+        &gt;
+        service, taking care to specify client 002 in the URL
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/check-es5-gateway-service.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h1 id=&quot;new-dest-def&quot;&gt;Create a new destination definition&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Go to your &quot;Trial Subaccount Home&quot; page, and select the &quot;Destinations&quot;
+        menu item within the &quot;Connectivity&quot; item
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        Select the &quot;New Destination&quot; option, and in the configuration specify
+        values for the appropriate parameters
+        &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Property&lt;/th&gt;
+                &lt;th&gt;Value&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+                &lt;td&gt;Name&lt;/td&gt;
+                &lt;td&gt;shopinfo&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+                &lt;td&gt;Type&lt;/td&gt;
+                &lt;td&gt;HTTP&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+                &lt;td&gt;Description&lt;/td&gt;
+                &lt;td&gt;Virtual Event Shop Info&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+                &lt;td&gt;URL&lt;/td&gt;
+                &lt;td&gt;&lt;a href=&quot;http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/&quot;&gt;http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/&lt;/a&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
+                &lt;td&gt;Proxy Type&lt;/td&gt;
+                &lt;td&gt;OnPremise&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;6&lt;/td&gt;
+                &lt;td&gt;Location ID&lt;/td&gt;
+                &lt;td&gt;(leave blank)&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;7&lt;/td&gt;
+                &lt;td&gt;Authentication&lt;/td&gt;
+                &lt;td&gt;Basic Authentication&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;8&lt;/td&gt;
+                &lt;td&gt;User&lt;/td&gt;
+                &lt;td&gt;(your ES5 username)&lt;/td&gt;
+              &lt;/tr&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;9&lt;/td&gt;
+                &lt;td&gt;Password&lt;/td&gt;
+                &lt;td&gt;(your ES5 password)&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        Add the following property / value pair in the &quot;Additional Properties&quot; section using the &quot;New Property&quot; button, and then save the entire destination definition with the &quot;Save&quot; button
+        &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Property&lt;/th&gt;
+                &lt;th&gt;Value&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+             &lt;tr&gt;
+                &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+                &lt;td&gt;sap-client &lt;/td&gt;
+                &lt;td&gt;002&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest1.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h1 id=&quot;testapp&quot;&gt;Deploy a simple app to test the destination connection&lt;/h1&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            At this stage you have the destination definition set up. But will everything work when everything is wired up, including from the workflow definition you'll define later? It's worth testing that new destination with a small app that just routes incoming requests via that destination to the data source (the OData service in ES5) using the Connectivity service
+
+        &lt;/p&gt;
+        &lt;p&gt;You will do that in this step, by deploying the simplest app definition (and its corresponding manifest file), and then testing the destination via that app's routing. While you would normally deploy applications from your editor or IDE, you can actually deploy an application archive, along with its corresponding descriptor file (the &quot;manifest&quot;) manually from within the SAP Cloud Platform Cockpit
+&lt;/p&gt;
+&lt;p&gt;For reference, the entire app and configuration is in the &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/tree/master/cpDestinationTestApp&quot;&gt;Github&lt;/a&gt; repo, as follows
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;File&lt;/th&gt;
+            &lt;th&gt;Description&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;manifest.yml&lt;/td&gt;
+            &lt;td&gt;the descriptor file describing how the application is to be deployed, and upon which services it relies&lt;/td&gt;
+          &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;package.json&lt;/td&gt;
+            &lt;td&gt;the Node.js package description for the app, describing essentially what the app relies upon (the &lt;code&gt;@sap/approuter&lt;/code&gt; package) and how to start it up&lt;/td&gt;
+          &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+            &lt;td&gt;xs-app.json&lt;/td&gt;
+            &lt;td&gt;The approuter configuration, in the form of a single route that uses the &lt;code&gt;shopinfo&lt;/code&gt; destination &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+&lt;/p&gt;
+&lt;p&gt;The files &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;xs-app.json&lt;/code&gt; have been bundled together into the archive file &lt;code&gt;app.zip&lt;/code&gt; (also in the same &lt;code&gt;dest-test-app&lt;/code&gt; ). There's also an &lt;code&gt;xs-security.json&lt;/code&gt; file which describes how the &lt;code&gt;xsuaa&lt;/code&gt; service should be configured, a service upon which the app relies&lt;/p&gt;
+&lt;p&gt;
+    Download the &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/app.zip&quot;&gt;app.zip&lt;/a&gt; and &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/manifest.yml&quot;&gt;manifest.yml&lt;/a&gt; files. Download the &lt;code&gt;xsuaa&lt;/code&gt; service parameter file &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/xs-security.json&quot;&gt;xs-security.json&lt;/a&gt; file too
+&lt;/p&gt;
+
+&lt;p&gt;
+    In fact, the successful operation of the app relies on not one but three services:
+
+    &lt;ul&gt;
+        &lt;li&gt;Authorization &amp; Trust Management (&lt;code&gt;xsuaa&lt;/code&gt;)&lt;/li&gt;
+        &lt;li&gt;Connectivity (&lt;code&gt;connectivity&lt;/code&gt;)&lt;/li&gt;
+        &lt;li&gt;Destination (&lt;code&gt;destination&lt;/code&gt;)&lt;/li&gt;
+    &lt;/ul&gt;
+
+Set up two of these (&lt;code&gt;xsuaa&lt;/code&gt; and &lt;code&gt;destination&lt;/code&gt;) manually, now, before deploying the app
+
+Navigate to the &quot;dev&quot; space in your Cloud Foundry (CF) organization.
+&lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/dev-space.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+
+      Setup the services in Cloud Platform.
+      
+      Next to deploy the app, navigate to dev space and select the &quot;Applications&quot; menu item and use the &quot;Deploy Application&quot; button. 
+&lt;/p&gt;&lt;p&gt;
+      For the &quot;File Location&quot;, browse to and select the app.zip archive that you previously downloaded. Ensure that the &quot;Use Manifest&quot; checkbox is selected, then browse to and select the manifest.yml file that you also previously downloaded for the &quot;Manifest Location&quot;. Then use the &quot;Deploy&quot; button
+      
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app4.png&quot;
+        alt=&quot;&quot;
+      /&gt;  
+&lt;/p&gt;&lt;p&gt;
+    Select its name (&quot;my-dest-test&quot;) and select the URL in the &quot;Application Routes&quot; section of the app's &quot;Overview&quot; page; the URL will contain a random string in the first part, to ensure that each of your apps deployed have unique hostnames
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app5.png&quot;
+    alt=&quot;&quot;
+  /&gt;  
+    
+      
+      After authenticating with your trial user email address and password, you'll be presented with the resource you saw at the start of this exercise. But this time, you're accessing it through the SAP Cloud Platform, via the Connectivity service and a destination definition, instead of directly. Moreover, if you've set up the Cloud Connector, this access is going through that too.
+      
+
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app6.png&quot;
+        alt=&quot;&quot;
+      /&gt;  
+    &lt;/p&gt;
+&lt;/div&gt;
+      &lt;h1 id=&quot;explore&quot;&gt;Explore the Products entityset&lt;/h1&gt;
+      
+      &lt;div&gt;&lt;p&gt;
+        You'll be using data from the Products entityset in the OData service you've just exposed, so use this step to explore the data in that entityset, so you're at least a little bit familiar with it
+        
+        &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/entity-products.png&quot;
+        alt=&quot;&quot;
+      /&gt;  
+       
+        
+        Explore the data that is returned - you should see a list of products, with the sort of properties you'd expect from a product database, such as an ID, name, description, information about stock quantity, and so on.
+        
+        If you prefer looking at JSON rather than XML, append the query parameter $format=json to the URL
+        &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/entity-products2.png&quot;
+        alt=&quot;&quot;
+      /&gt;  
+      &lt;/p&gt;&lt;/div&gt;
+         
+
+
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Check the data source Before creating the destination, which is effectively a pointer to a data source, it's worth checking that data source manually and directly. First, so you can see for yourself what you're aiming to get to from within the SAP Cloud Platform, and second, so you know what you're looking for when you access that data source indirectly (through the destination). Open up the OData service, taking care to specify client 002 in the URL Create a new destination definition Go to your &quot;Trial Subaccount Home&quot; page, and select the &quot;Destinations&quot; menu item within the &quot;Connectivity&quot; item Select the &quot;New Destination&quot; option, and in the configuration specify values for the appropriate parameters # Property Value 1 Name shopinfo 2 Type HTTP 3 Description Virtual Event Shop Info 4 URL http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/ 5 Proxy Type OnPremise 6 Location ID (leave blank) 7 Authentication Basic Authentication 8 User (your ES5 username) 9 Password (your ES5 password) Add the following property / value pair in the &quot;Additional Properties&quot; section using the &quot;New Property&quot; button, and then save the entire destination definition with the &quot;Save&quot; button # Property Value 1 sap-client 002 Deploy a simple app to test the destination connection At this stage you have the destination definition set up. But will everything work when everything is wired up, including from the workflow definition you'll define later? It's worth testing that new destination with a small app that just routes incoming requests via that destination to the data source (the OData service in ES5) using the Connectivity service</summary></entry><entry><title type="html">Hana CLI Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html" rel="alternate" type="text/html" title="Hana CLI Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -970,339 +1230,157 @@
 &lt;/div&gt;
 &lt;div&gt;
   &lt;script src=&quot;https://gist.github.com/chatenrk/78b5af5972342ba08c9b377b682a8158.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">[Table of Contents] Borders Related Additive Subtractive Border color Border radius Borders Related Additive Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time Subtractive Border color</summary></entry><entry><title type="html">HTML Snippets for reference</title><link href="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html" rel="alternate" type="text/html" title="HTML Snippets for reference" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/HTMLSnippets.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      /* Tomorrow Theme */
-      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-      /* Tomorrow Comment */
-      .hljs-comment,
-      .hljs-quote {
-        color: #8e908c;
-      }
-
-      /* Tomorrow Red */
-      .hljs-variable,
-      .hljs-template-variable,
-      .hljs-tag,
-      .hljs-name,
-      .hljs-selector-id,
-      .hljs-selector-class,
-      .hljs-regexp,
-      .hljs-deletion {
-        color: #c82829;
-      }
-
-      /* Tomorrow Orange */
-      .hljs-number,
-      .hljs-built_in,
-      .hljs-builtin-name,
-      .hljs-literal,
-      .hljs-type,
-      .hljs-params,
-      .hljs-meta,
-      .hljs-link {
-        color: #f5871f;
-      }
-
-      /* Tomorrow Yellow */
-      .hljs-attribute {
-        color: #eab700;
-      }
-
-      /* Tomorrow Green */
-      .hljs-string,
-      .hljs-symbol,
-      .hljs-bullet,
-      .hljs-addition {
-        color: #718c00;
-      }
-
-      /* Tomorrow Blue */
-      .hljs-title,
-      .hljs-section {
-        color: #4271ae;
-      }
-
-      /* Tomorrow Purple */
-      .hljs-keyword,
-      .hljs-selector-tag {
-        color: #8959a8;
-      }
-      .hljs {
-        display: block;
-        overflow-x: auto;
-        color: #4d4d4c;
-        padding: 0.5em;
-      }
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#csscode&quot;&gt;CSS Quick Cut and Paste&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h1 id=&quot;htmlcode&quot;&gt;HTML Quick Cut and Paste&lt;/h1&gt;
-    &lt;h2 id=&quot;fitimages&quot;&gt;Fit Images to screen size&lt;/h2&gt;
-    &lt;p&gt;
-      Apply the following style attributes to &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; tag.
-      &lt;br /&gt;
-      &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; style='height: 100%; width: 100%; object-fit: contain'&lt;/code&gt; &lt;/pre&gt;
-    &lt;/p&gt;
-    &lt;h2 id=&quot;b4table&quot;&gt;Bootstrap 4 table&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/b8d6cca82e57b7c77edc1bbee6391eba.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;b4toc&quot;&gt;Bootstrap 4 TOC&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/4cf0a52c460d8d093f697e83da7dd319.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;hljshighlight&quot;&gt;Highlight String using Highlight JS&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/ec815d5eb9393d4d0d14c64ef43cb941.js&quot;&gt;&lt;/script&gt;
-
-    &lt;h1 id=&quot;csscode&quot;&gt;CSS Quick Cut and Paste&lt;/h1&gt;
-    &lt;h2 id=&quot;hljscss&quot;&gt;Highlight js CSS&lt;/h2&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/af2c64ed1a32feeb5145ccb702ce4c4b.js&quot;&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">Jekyll Tips and Tricks</title><link href="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html" rel="alternate" type="text/html" title="Jekyll Tips and Tricks" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/QuickTipsAndTricksJekyll.html">&lt;!DOCTYPE html&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html">[Table of Contents] Borders Related Additive Subtractive Border color Border radius Borders Related Additive Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time Subtractive Border color</summary></entry><entry><title type="html">Emmet Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html" rel="alternate" type="text/html" title="Emmet Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
     &lt;title&gt;Document&lt;/title&gt;
   &lt;/head&gt;
-  &lt;style&gt;
-    /* Tomorrow Theme */
-    /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-    /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-    /* Tomorrow Comment */
-    .hljs-comment,
-    .hljs-quote {
-      color: #8e908c;
-    }
-
-    /* Tomorrow Red */
-    .hljs-variable,
-    .hljs-template-variable,
-    .hljs-tag,
-    .hljs-name,
-    .hljs-selector-id,
-    .hljs-selector-class,
-    .hljs-regexp,
-    .hljs-deletion {
-      color: #c82829;
-    }
-
-    /* Tomorrow Orange */
-    .hljs-number,
-    .hljs-built_in,
-    .hljs-builtin-name,
-    .hljs-literal,
-    .hljs-type,
-    .hljs-params,
-    .hljs-meta,
-    .hljs-link {
-      color: #f5871f;
-    }
-
-    /* Tomorrow Yellow */
-    .hljs-attribute {
-      color: #eab700;
-    }
-
-    /* Tomorrow Green */
-    .hljs-string,
-    .hljs-symbol,
-    .hljs-bullet,
-    .hljs-addition {
-      color: #718c00;
-    }
-
-    /* Tomorrow Blue */
-    .hljs-title,
-    .hljs-section {
-      color: #4271ae;
-    }
-
-    /* Tomorrow Purple */
-    .hljs-keyword,
-    .hljs-selector-tag {
-      color: #8959a8;
-    }
-    .hljs {
-      display: block;
-      overflow-x: auto;
-      color: #4d4d4c;
-      padding: 0.5em;
-    }
-    pre {
-      background-color: #f8f8f8;
-      border: 1px solid #cccccc;
-      border-radius: 3px;
-      overflow-x: auto;
-      white-space: pre-wrap;
-      overflow-wrap: break-word;
-    }
-  &lt;/style&gt;
   &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#quicktips&quot;&gt;Quick Tips and Tricks&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
+     &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#elements&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+         &lt;ul&gt;
+             &lt;li&gt;&lt;a href=&quot;#nesting&quot;&gt;Nesting operators&lt;/a&gt;&lt;/li&gt;
+             &lt;ul&gt;
+                 &lt;li&gt;&lt;a href=&quot;#child&quot;&gt;Child: &gt;&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;##sibling&quot;&gt;Sibling: +&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#climb-up&quot;&gt;Climb-up: ^&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#multi&quot;&gt;Multiplication: *&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#group&quot;&gt;Grouping: ()&lt;/a&gt;&lt;/li&gt;
+             &lt;/ul&gt;
+             &lt;li&gt;&lt;a href=&quot;#attribute&quot;&gt;Attribute operators&lt;/a&gt;&lt;/li&gt;
+             &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#id-class&quot;&gt;ID and CLASS&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#customattr&quot;&gt;Custom attributes&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#item-no&quot;&gt;Item numbering: $&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#text&quot;&gt;Text: {}&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+     &lt;/ul&gt; 
+    &lt;h1 id=&quot;elements&quot;&gt;Elements&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use elements’ names like div or p to generate HTML tags. Emmet
+        doesn’t have a predefined set of available tag names, you can write any
+        word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;nesting&quot;&gt;Nesting operators&lt;/h2&gt;
+    Nesting operators are used to position abbreviation elements inside
+    generated tree: whether it should be placed inside or near the context
+    element
+    &lt;h3 id=&quot;child&quot;&gt;Child: &gt;&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use &gt; operator to nest elements inside each other
+        &lt;script src=&quot;https://gist.github.com/chatenrk/0d5cddbd361fc5e33c8283ccc934de51.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;sibling&quot;&gt;Sibling: +&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Use + operator to place elements near each other, on the same level:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/45209b9d5eb8a15a0116e7f35835cfe5.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;climb-up&quot;&gt;Climb-up: ^&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        With &gt; operator you’re descending down the generated tree and positions
+        of all sibling elements will be resolved against the most deepest
+        element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/330657a94c25974bf2f1792bb58df49b.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        With ^ operator, you can climb one level up the tree and change context
+        where following elements should appear
+        &lt;script src=&quot;https://gist.github.com/chatenrk/6af995ed2557cf23c385619d68002057.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        You can use as many ^ operators as you like, each operator will move one
+        level up:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/52a1e42d5edb3adb77a790be27d2bc1f.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;multi&quot;&gt;Multiplication: *&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        With * operator you can define how many times element should be
+        outputted:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/7a499dbecefaa269b52aabb1d9815ec2.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;group&quot;&gt;Grouping: ()&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Parenthesises are used by Emmets’ power users for grouping subtrees in
+        complex abbreviations:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/e9939987da2aa59cf39d989ae6d0073c.js&quot;&gt;&lt;/script&gt;
 
-    &lt;h2 id=&quot;quicktips&quot;&gt;Quick Tips and tricks&lt;/h2&gt;
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Tip&lt;/th&gt;
-          &lt;th&gt;Usage&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-          &lt;td&gt;Escape Liquid Tags from parsing&lt;/td&gt;
-          &lt;td&gt;
-            Use the liquid tag between &lt;code&gt; raw &lt;/code&gt; and
-            &lt;code&gt; endraw &lt;/code&gt; using liquid syntax.
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-          &lt;td&gt;Syntax Highlighting using Rouge&lt;/td&gt;
-          &lt;td&gt;
-            &lt;p&gt;
-              Syntax highlighting can be performed via Rouge using the following
-              syntax and changing the language as required
-            &lt;/p&gt;
-
-            &lt;pre
-              class=&quot;hljs&quot;
-            &gt;&lt;code&gt;&lt;div&gt;&amp;lt;p&amp;gt;&lt;br&gt;&amp;lt;code&amp;gt;&lt;br&gt;&amp;lt;figure class=&lt;span class=&quot;hljs-string&quot;&gt;&quot;highlight&quot;&lt;/span&gt;&amp;gt;&lt;br&gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&lt;span class=&quot;hljs-string&quot;&gt;&quot;language-sql&quot;&lt;/span&gt; data-lang=&lt;span class=&quot;hljs-string&quot;&gt;&quot;sql&quot;&lt;/span&gt;&amp;gt;&lt;br&gt;SELECT * FROM `users` WHERE `user`.`id` = 1&lt;br&gt;&amp;lt;/code&amp;gt;&lt;br&gt;&amp;lt;/pre&amp;gt;&lt;br&gt;&amp;lt;/figure&amp;gt;&lt;br&gt;&amp;lt;/code&amp;gt;&lt;br&gt;&amp;lt;/p&amp;gt;
-  &lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+        If you’re working with browser’s DOM, you may think of groups as
+        Document Fragments: each group contains abbreviation subtree and all the
+        following elements are inserted at the same level as the first element
+        of group. You can nest groups inside each other and combine them with
+        multiplication * operator:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/05a040fdbf79f7e2abd4cf029cb3a930.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;attribute&quot;&gt;Attribute operators&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Attribute operators are used to modify attributes of outputted elements.
+        For example, in HTML and XML you can quickly add class attribute to
+        generated element
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;id-class&quot;&gt;ID and CLASS&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        In CSS, you use elem#id and elem.class notation to reach the elements
+        with specified id or class attributes. In Emmet, you can use the very
+        same syntax to add these attributes to specified element
+        &lt;script src=&quot;https://gist.github.com/chatenrk/95101d2847a554537759828cc07676c8.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;customattr&quot;&gt;Custom attributes&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use [attr] notation (as in CSS) to add custom attributes to your
+        element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/e4dc893faffdb2b3f272c491e1b80fff.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+          &lt;ul&gt;
+              &lt;li&gt;You can place as many attributes as you like inside square brackets.
+                &lt;/li&gt;
+              &lt;li&gt;You don’t have to specify attribute values: td[colspan title] will produce &amp;lt;td colspan=&quot;&quot; title=&quot;&quot;&amp;gt; with tabstops inside each empty attribute (if your editor supports them).
+               &lt;/li&gt;
+              &lt;li&gt; You can use single or double quotes for quoting attribute values.
+                &lt;/li&gt;
+              &lt;li&gt;You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work.&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;itemno&quot;&gt;Item numbering: $&lt;/h3&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            With multiplication * operator you can repeat elements, but with $ you can number them. Place $ operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:
+            &lt;script src=&quot;https://gist.github.com/chatenrk/7dabca195f8e77af749864976993a9d1.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            You can use multiple $ in a row to pad number with zeroes:
+            &lt;script src=&quot;https://gist.github.com/chatenrk/b70ff9e65beb97ad28253737e8f55ed2.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;text&quot;&gt;Text: {}&lt;/h2&gt;
+    &lt;div&gt;&lt;p&gt;
+        You can use curly braces to add text to element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/ad7642ae3c91aad17bba059caa016cb3.js&quot;&gt;&lt;/script&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+    Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a&gt;{click} will produce the same output, but a{click}+b{here} and a&gt;{click}+b{here} won’t:
+    &lt;script src=&quot;https://gist.github.com/chatenrk/0ac6ec128ed69d5cbd5faa2d217a513a.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;&lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">API Testing via postman</title><link href="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html" rel="alternate" type="text/html" title="API Testing via postman" /><published>2020-10-05T00:00:00+05:30</published><updated>2020-10-05T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/05/APITestingViaPostman.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1 id=&quot;intro&quot;&gt;Introduction&lt;/h1&gt;
-    &lt;h2 id=&quot;introjwt&quot;&gt;What is a JWT Token&lt;/h2&gt;
-    &lt;p&gt;
-      JWT (pronounced: jot) tokens are the de-facto standard for authentication
-      in modern web applications
-    &lt;/p&gt;
-
-    &lt;blockquote&gt;
-      A JWT token is a manipulation-proof, signed JSON object that contains
-      standardized properties like user information and access rights
-    &lt;/blockquote&gt;
-
-    &lt;p&gt;
-      In Cloud Foundry, this token is issued by the User Account and
-      Authentication (UAA) server. In the case of SAP CP Cloud Foundry and SAP
-      HANA XSA, we call this service also XSUAA
-    &lt;/p&gt;
-
-    &lt;h2 id=&quot;jwtViaPostman&quot;&gt;Retrieve the JWT Token with Postman&lt;/h2&gt;
-    &lt;h3 id=&quot;deployapp&quot;&gt;Deploy Sample App&lt;/h3&gt;
-    For the purpose of a demo, we are going to deploy an exisitng CAP app.
-    Details are as below
-    &lt;br /&gt;
-
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;
-        git clone &lt;a href=&quot;https://github.com/gregorwolf/bookshop-demo&quot;&gt;https://github.com/gregorwolf/bookshop-demo&lt;/a&gt;
-        bookshop-demo 
-        mbt build  
-        cf deploy mta_archives/bookshop-demo_0.0.1.mtar
-      &lt;/code&gt;&lt;/pre&gt;
-    &lt;h3 id=&quot;rolecoll&quot;&gt;Create a role collection and assign it to your user&lt;/h3&gt;
-    &lt;p&gt;Perform the below steps
-        &lt;ul&gt;
-            &lt;li&gt;Create a new role collection
-                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll1.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Assign bookshop admin role
-                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll2.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Assign role collection to SAP User ID
-                &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/role-coll3.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/p&gt;
-
-    &lt;h3 id=&quot;readdata&quot;&gt;Read Data&lt;/h3&gt;
-    &lt;p&gt;Perform the below steps 
-        &lt;ul&gt;
-            &lt;li&gt;get the URL of the server application using SAP CF CLI &lt;br&gt;
-            &lt;code&gt;cf apps | grep bookshop-demo-srv&lt;/code&gt;
-            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/app-info.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-            &lt;li&gt;test the srv admin/Books in postman&lt;br&gt;
-            &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test1.png&quot; alt=&quot;&quot;&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/p&gt;
-
-    &lt;h3 id=&quot;accesstoken&quot;&gt;Get access token via postman&lt;/h3&gt;
-    &lt;p&gt;
-        Open new access token dialog in postman and enter the following
-        &lt;ol&gt;
-            &lt;li&gt;Token name as required&lt;/li&gt;
-            &lt;li&gt;Grant Type as &lt;code&gt;Password Credentials&lt;/code&gt; &lt;/li&gt;
-            &lt;li&gt;Access token URL as below&lt;/li&gt;
-           &lt;li&gt;UserName - &lt;b&gt;User id of trial account&lt;/b&gt; &lt;/li&gt; 
-           &lt;li&gt;Password - &lt;b&gt;Password of trial account&lt;/b&gt; &lt;/li&gt;
-           &lt;li&gt;Client ID as below&lt;/li&gt;
-           &lt;li&gt;Client secret as below&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        To read other value we make use of environment variables of the app. For the same execute the below command
-        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; cf env bookshop-demo-srv&lt;/code&gt;&lt;/pre&gt;
-
-        This will print a large JSON file. In there, find the object VCAP_SERVICES.xsuaa.Enter the missing values in the dialog as below
-        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt; Access Token URL = xsuaa[0].credentials.url &lt;br&gt; Client ID = xsuaa[0].credentials.clientid &lt;br&gt; Client Secret = xsuaa[0].credentials.clientsecret
-        &lt;/code&gt;&lt;/pre&gt;
-
-        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test2.png&quot; alt=&quot;&quot;&gt;
-
-    &lt;/p&gt;
-
-    &lt;p&gt;
-        Store the returned access token in postman and use the same when querying the service on SAP Cloud platform
-        &lt;img src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanApiTesting/postman-test3.png&quot; alt=&quot;&quot;&gt;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Introduction What is a JWT Token JWT (pronounced: jot) tokens are the de-facto standard for authentication in modern web applications</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Elements Nesting operators Child: &gt; Sibling: + Climb-up: ^ Multiplication: * Grouping: () Attribute operators ID and CLASS Custom attributes Item numbering: $ Text: {} Elements You can use elements’ names like div or p to generate HTML tags. Emmet doesn’t have a predefined set of available tag names, you can write any word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; Nesting operators Nesting operators are used to position abbreviation elements inside generated tree: whether it should be placed inside or near the context element Child: &gt; You can use &gt; operator to nest elements inside each other Sibling: + Use + operator to place elements near each other, on the same level: Climb-up: ^ With &gt; operator you’re descending down the generated tree and positions of all sibling elements will be resolved against the most deepest element: With ^ operator, you can climb one level up the tree and change context where following elements should appear You can use as many ^ operators as you like, each operator will move one level up: Multiplication: * With * operator you can define how many times element should be outputted: Grouping: () Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:</summary></entry></feed>

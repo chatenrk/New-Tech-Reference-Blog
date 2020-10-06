@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>
-    SAP Business Application Studio - New Technologies Reckoner
+    Provision Hana Cloud - New Technologies Reckoner
     
   </title>
 
-  <meta name="description" content="Document [Table of Contents] Blogs to explore Setup Related Blogs to explore # Blog Description Link 1 How to Install a VS Code Extension to SAP Business App...">
+  <meta name="description" content="Document [Table of Contents] Setup CP Trial Account Check Entitlements Create Instance of Hana Cloud Import SFLIGHT Schema Setup CP Trial Account For informa...">
 
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/fontawesome-free/css/all.min.css">
 
   <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
-  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html">
+  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html">
   <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
 
 </head>
@@ -61,7 +61,7 @@
 
 <header
   class="masthead"
-  style="background-image: url('/New-Tech-Reference-Blog/img/bg-bas.jpg')"
+  style="background-image: url('/New-Tech-Reference-Blog/img/bg-hana.png')"
 >
   
     <div class="overlay"></div>
@@ -69,9 +69,9 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>SAP Business Application Studio</h1>
+            <h1>Provision Hana Cloud</h1>
             
-            <h2 class="subheading">Code your MTA Applications here</h2>
+            <h2 class="subheading">Database in the cloud</h2>
             
             <span class="meta"
               >Posted by
@@ -80,7 +80,7 @@
               >
               on October 06, 2020 &middot; <span class="reading-time" title="Estimated read time">
   
-   1 min  read </span>
+   2 mins  read </span>
 
             </span>
           </div>
@@ -102,39 +102,118 @@
   <body>
     <p><strong>[Table of Contents]</strong></p>
     <ul>
-      <li><a href="#blogs">Blogs to explore</a></li>
-      <li>
-        <a
-          href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html "
-          >Setup Related</a
-        >
-      </li>
+      <li><a href="#cptrial">Setup CP Trial Account</a></li>
+      <li><a href="#entitle">Check Entitlements</a></li>
+      <li><a href="#instance">Create Instance of Hana Cloud</a></li>
+      <li><a href="sflight">Import SFLIGHT Schema</a></li>
     </ul>
-    <h1 id="blogs">Blogs to explore</h1>
-    <table class="table table-sm table-bordered">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Blog Description</th>
-          <th>Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td scope="row">1</td>
-          <td>
-            How to Install a VS Code Extension to SAP Business Application
-            Studio
-          </td>
-          <td>
-            <a
-              href="https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/"
-              >https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/</a
-            >
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <h1 id="cptrial">Setup CP Trial Account</h1>
+    <div>
+      <p>
+        For information related to creating a new SAP Cloud Platform account
+        refer to this
+        <a
+          href="/New-Tech-Reference-Blog/2020/10/05/SetupCPTrialReadme.html"
+          >Section</a
+        >
+      </p>
+    </div>
+    <h1 id="entitle">Check Entitlements</h1>
+    <div>
+      <p>
+        Check entitlements are available as expected
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/check-entitlements.png"
+          alt=""
+        />
+      </p>
+    </div>
+    <h1 id="instance">Create Instance of Hana Cloud</h1>
+    <div>
+      <p>
+        Create an instance as shown below
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud1.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud2.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud3.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud4.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud5.png"
+          alt=""
+        />
+      </p>
+      <p>
+        New Hana Cloud Instance is created
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/new-instance.png"
+          alt=""
+        />
+      </p>
+      <p>
+        Open database explorer and add the new database instance
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/database-explorer.png"
+          alt=""
+        />
+      </p>
+    </div>
+    <h1 id="sflight">Import SFLIGHT Schema</h1>
+    <div>
+      <p>
+        Download SFLIGHT from
+        <a
+          href="https://github.com/SAP/hana-xsa-opensap-hana7/raw/snippets_2.3.2/ex2/sflight_hana.tar.gz"
+          >SAP Samples</a
+        >
+        GITHUB repository. Once it is saved locally, right-click on the database
+        created above and click Import Catalog Objects
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/sflight1.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/sflight2.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/HanaCloudProvisioning/sflight3.png"
+          alt=""
+        />
+      </p>
+    </div>
   </body>
 </html>
 
@@ -145,19 +224,19 @@
           
           <a
             class="btn btn-primary float-left"
-            href="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html"
+            href="/New-Tech-Reference-Blog/2020/10/06/HanaCloudReadme.html"
             data-toggle="tooltip"
             data-placement="top"
-            title="Provision Hana Cloud"
+            title="Hana Cloud Reference"
             >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
           >
            
           <a
             class="btn btn-primary float-right"
-            href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html"
+            href="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html"
             data-toggle="tooltip"
             data-placement="top"
-            title="SAP Business Application Studio Setup"
+            title="SAP Business Application Studio"
             >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
           >
           

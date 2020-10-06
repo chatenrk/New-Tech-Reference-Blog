@@ -1,0 +1,147 @@
+---
+layout: post
+title: 'Bootstrap 4 Spacing'
+date: 2020-10-06
+background: '/img/bg-bootstrap.png'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+        <li><a href="#spacing">Spacing</a></li>
+        <ul>
+            <li><a href="#notation">Notation</a></li>
+            <li><a href="#hori-centring">Horizontal Centering</a></li>
+        </ul>
+    </ul>     
+  <!-- Spacing Section -->
+ <h1 id="spacing">Spacing Related</h1>
+ <h2 id="notation">Notation</h2>
+ <div>
+   <p>
+     Spacing utilities that apply to all breakpoints, from <code>xs</code> to
+     <code>xl</code>, have no breakpoint abbreviation in them. This is
+     because those classes are applied from <code>min-width: 0</code> and up,
+     and thus are not bound by a media query. The remaining breakpoints,
+     however, do include a breakpoint abbreviation. The classes are named
+     using the <code>format {property}{sides}-{size}</code> for
+     <code>xs</code> and
+     <code>{property}{sides}-{breakpoint}-{size}</code> for
+     <code>sm</code>,<code>md</code>,<code>lg</code> and <code>xl</code>
+   </p>
+   <p>
+     Where property is one of:
+     <ul>
+         <li><code>m</code> - for classes that set <code>margin</code></li>
+         <li><code>p</code> - for classes that set <code>padding</code></li>
+     </ul>
+   </p>
+ <p>
+     Where sides is one of:
+     <ul>
+         <li>
+             <code>t</code>  - for classes that set 
+             <code>margin-top</code> or
+             <code>padding-top</code>
+         </li>
+         <li>
+             <code>b</code> - for classes that set
+             <code>margin-bottom</code> or
+             <code>padding-bottom</code>
+         </li>
+         <li>
+             <code>l</code> - for classes that set
+             <code>margin-left</code> or
+             <code>padding-left</code>
+         </li>
+         <li>
+             <code>r</code> - for classes that set
+             <code>margin-right</code> or
+             <code>padding-right</code>
+         </li>
+         <li>
+             <code>x</code> - for classes that set
+             <code>*-left</code> or
+             <code>*-right</code>
+         </li>
+         <li>
+             <code>y</code> - for classes that set
+             <code>*-top</code> or
+             <code>*-bottom</code>
+         </li>
+         <li>
+             blank - for classes that set a 
+             <code>margin </code> or
+             <code>padding</code> on all 4 sides of the element
+         </li>
+     </ul>
+ </p>
+
+ <p>
+     Where size is one of:
+    
+     <li>
+         <code>0</code> - for classes that eliminate the
+         <code>margin</code> or
+         <code>padding</code> by setting it to
+         <code>0</code>
+     </li>
+     <li>
+         <code>1</code>  - (by default) for classes that set the
+         <code>margin</code> or
+         <code>padding</code> to
+         <code>$spacer * .25</code>
+     </li>
+     <li>
+         <code>2</code>  - (by default) for classes that set the
+         <code>margin</code> or
+         <code>padding</code> to
+         <code> $spacer * .5</code>
+     </li>
+     <li>
+         <code>3</code>  - (by default) for classes that set the
+         <code>margin</code> or
+         <code>padding</code> to
+         <code> $spacer</code>
+     </li>
+     <li>
+         <code>4</code>  - (by default) for classes that set the
+         <code>margin</code> or
+         <code>padding</code> to
+         <code>$spacer * 1.5</code>
+     </li>
+     <li>
+         <code>5</code>  - (by default) for classes that set the
+         <code>margin</code> or
+         <code>padding</code> to
+         <code>$spacer * 3</code>
+     </li>
+     <li>
+         <code>auto</code>  - for classes that set the
+         <code>margin</code> to auto
+     </li>
+ </p>
+ <p>
+     (You can add more sizes by adding entries to the <code>$spacers</code>  Sass map variable.)
+ </p>
+
+ <h2 id="hori-centring">Horizontal centering</h2>
+ <p>Additionally, Bootstrap also includes an <code>.mx-auto</code>  class for horizontally centering fixed-width block level content—that is, content that has <code>display: block</code>  and a <code>width</code>  set—by setting the horizontal margins to <code>auto</code></p>
+ <div class="mx-auto" style="width: 200px;">
+     Centered element
+   </div>
+   <div>
+     <script src="https://gist.github.com/chatenrk/b532024908ca0bb01838073ece97e0dd.js"></script>
+   </div>
+ </div>  
+</body>
+</html>
+ 
+ 

@@ -1,0 +1,161 @@
+---
+layout: post
+title: 'Emmet Reference'
+date: 2020-10-06
+background: '/img/bg-html.png'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+     <ul>
+         <li><a href="#elements">Elements</a></li>
+         <ul>
+             <li><a href="#nesting">Nesting operators</a></li>
+             <ul>
+                 <li><a href="#child">Child: ></a></li>
+                 <li><a href="##sibling">Sibling: +</a></li>
+                 <li><a href="#climb-up">Climb-up: ^</a></li>
+                 <li><a href="#multi">Multiplication: *</a></li>
+                 <li><a href="#group">Grouping: ()</a></li>
+             </ul>
+             <li><a href="#attribute">Attribute operators</a></li>
+             <ul>
+                <li><a href="#id-class">ID and CLASS</a></li>
+                <li><a href="#customattr">Custom attributes</a></li>
+                <li><a href="#item-no">Item numbering: $</a></li>
+            </ul>
+            <li><a href="#text">Text: {}</a></li>
+         </ul>
+     </ul> 
+    <h1 id="elements">Elements</h1>
+    <div>
+      <p>
+        You can use elements’ names like div or p to generate HTML tags. Emmet
+        doesn’t have a predefined set of available tag names, you can write any
+        word and transform it into a tag: div → &lt;div&gt;&lt;/div&gt;
+      </p>
+    </div>
+    <h2 id="nesting">Nesting operators</h2>
+    Nesting operators are used to position abbreviation elements inside
+    generated tree: whether it should be placed inside or near the context
+    element
+    <h3 id="child">Child: ></h3>
+    <div>
+      <p>
+        You can use > operator to nest elements inside each other
+        <script src="https://gist.github.com/chatenrk/0d5cddbd361fc5e33c8283ccc934de51.js"></script>
+      </p>
+    </div>
+    <h3 id="sibling">Sibling: +</h3>
+    <div>
+      <p>
+        Use + operator to place elements near each other, on the same level:
+        <script src="https://gist.github.com/chatenrk/45209b9d5eb8a15a0116e7f35835cfe5.js"></script>
+      </p>
+    </div>
+    <h3 id="climb-up">Climb-up: ^</h3>
+    <div>
+      <p>
+        With > operator you’re descending down the generated tree and positions
+        of all sibling elements will be resolved against the most deepest
+        element:
+        <script src="https://gist.github.com/chatenrk/330657a94c25974bf2f1792bb58df49b.js"></script>
+      </p>
+      <p>
+        With ^ operator, you can climb one level up the tree and change context
+        where following elements should appear
+        <script src="https://gist.github.com/chatenrk/6af995ed2557cf23c385619d68002057.js"></script>
+      </p>
+      <p>
+        You can use as many ^ operators as you like, each operator will move one
+        level up:
+        <script src="https://gist.github.com/chatenrk/52a1e42d5edb3adb77a790be27d2bc1f.js"></script>
+      </p>
+    </div>
+    <h3 id="multi">Multiplication: *</h3>
+    <div>
+      <p>
+        With * operator you can define how many times element should be
+        outputted:
+        <script src="https://gist.github.com/chatenrk/7a499dbecefaa269b52aabb1d9815ec2.js"></script>
+      </p>
+    </div>
+    <h3 id="group">Grouping: ()</h3>
+    <div>
+      <p>
+        Parenthesises are used by Emmets’ power users for grouping subtrees in
+        complex abbreviations:
+        <script src="https://gist.github.com/chatenrk/e9939987da2aa59cf39d989ae6d0073c.js"></script>
+
+        If you’re working with browser’s DOM, you may think of groups as
+        Document Fragments: each group contains abbreviation subtree and all the
+        following elements are inserted at the same level as the first element
+        of group. You can nest groups inside each other and combine them with
+        multiplication * operator:
+        <script src="https://gist.github.com/chatenrk/05a040fdbf79f7e2abd4cf029cb3a930.js"></script>
+      </p>
+    </div>
+    <h2 id="attribute">Attribute operators</h2>
+    <div>
+      <p>
+        Attribute operators are used to modify attributes of outputted elements.
+        For example, in HTML and XML you can quickly add class attribute to
+        generated element
+      </p>
+    </div>
+    <h3 id="id-class">ID and CLASS</h3>
+    <div>
+      <p>
+        In CSS, you use elem#id and elem.class notation to reach the elements
+        with specified id or class attributes. In Emmet, you can use the very
+        same syntax to add these attributes to specified element
+        <script src="https://gist.github.com/chatenrk/95101d2847a554537759828cc07676c8.js"></script>
+      </p>
+    </div>
+    <h3 id="customattr">Custom attributes</h3>
+    <div>
+      <p>
+        You can use [attr] notation (as in CSS) to add custom attributes to your
+        element:
+        <script src="https://gist.github.com/chatenrk/e4dc893faffdb2b3f272c491e1b80fff.js"></script>
+      </p>
+      <p>
+          <ul>
+              <li>You can place as many attributes as you like inside square brackets.
+                </li>
+              <li>You don’t have to specify attribute values: td[colspan title] will produce &lt;td colspan="" title=""&gt; with tabstops inside each empty attribute (if your editor supports them).
+               </li>
+              <li> You can use single or double quotes for quoting attribute values.
+                </li>
+              <li>You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work.</li>
+          </ul>
+      </p>
+    </div>
+    <h3 id="itemno">Item numbering: $</h3>
+    <div>
+        <p>
+            With multiplication * operator you can repeat elements, but with $ you can number them. Place $ operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:
+            <script src="https://gist.github.com/chatenrk/7dabca195f8e77af749864976993a9d1.js"></script>
+        </p>
+        <p>
+            You can use multiple $ in a row to pad number with zeroes:
+            <script src="https://gist.github.com/chatenrk/b70ff9e65beb97ad28253737e8f55ed2.js"></script>
+        </p>
+    </div>
+    <h2 id="text">Text: {}</h2>
+    <div><p>
+        You can use curly braces to add text to element:
+        <script src="https://gist.github.com/chatenrk/ad7642ae3c91aad17bba059caa016cb3.js"></script>
+    </p>
+<p>
+    Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a>{click} will produce the same output, but a{click}+b{here} and a>{click}+b{here} won’t:
+    <script src="https://gist.github.com/chatenrk/0ac6ec128ed69d5cbd5faa2d217a513a.js"></script>
+</p></div>
+  </body>
+</html>

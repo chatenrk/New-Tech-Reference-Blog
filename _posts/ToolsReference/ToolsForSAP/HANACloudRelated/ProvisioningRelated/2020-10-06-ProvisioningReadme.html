@@ -1,0 +1,132 @@
+---
+layout: post
+title: 'Provision Hana Cloud'
+subtitle: 'Database in the cloud'
+date: 2020-10-06
+background: '/img/bg-hana.png'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li><a href="#cptrial">Setup CP Trial Account</a></li>
+      <li><a href="#entitle">Check Entitlements</a></li>
+      <li><a href="#instance">Create Instance of Hana Cloud</a></li>
+      <li><a href="sflight">Import SFLIGHT Schema</a></li>
+    </ul>
+    <h1 id="cptrial">Setup CP Trial Account</h1>
+    <div>
+      <p>
+        For information related to creating a new SAP Cloud Platform account
+        refer to this
+        <a
+          href="{%link _posts/ToolsReference/ToolsForSAP/SetupCPTrial/2020-10-05-SetupCPTrialReadme.html %}"
+          >Section</a
+        >
+      </p>
+    </div>
+    <h1 id="entitle">Check Entitlements</h1>
+    <div>
+      <p>
+        Check entitlements are available as expected
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/check-entitlements.png"
+          alt=""
+        />
+      </p>
+    </div>
+    <h1 id="instance">Create Instance of Hana Cloud</h1>
+    <div>
+      <p>
+        Create an instance as shown below
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud1.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud2.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud3.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud4.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/provision-hana-cloud5.png"
+          alt=""
+        />
+      </p>
+      <p>
+        New Hana Cloud Instance is created
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/new-instance.png"
+          alt=""
+        />
+      </p>
+      <p>
+        Open database explorer and add the new database instance
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/database-explorer.png"
+          alt=""
+        />
+      </p>
+    </div>
+    <h1 id="sflight">Import SFLIGHT Schema</h1>
+    <div>
+      <p>
+        Download SFLIGHT from
+        <a
+          href="https://github.com/SAP/hana-xsa-opensap-hana7/raw/snippets_2.3.2/ex2/sflight_hana.tar.gz"
+          >SAP Samples</a
+        >
+        GITHUB repository. Once it is saved locally, right-click on the database
+        created above and click Import Catalog Objects
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/sflight1.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/sflight2.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}/img/ContentRelated/HanaCloudProvisioning/sflight3.png"
+          alt=""
+        />
+      </p>
+    </div>
+  </body>
+</html>

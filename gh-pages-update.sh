@@ -11,13 +11,12 @@ echo -------------------------
 echo Creating nojekyll file
 touch .nojekyll
 echo ------------------------
-echo Git Current Status
-echo ------------------------
-git status
-echo ------------------------
 echo Adding all changes to Git gh-pages branch
+echo ------------------------
 git add .
 git commit -m "Update gh-pages branch"
+echo ------------------------
+echo Git Current Status
 echo ------------------------
 git status
 echo ------------------------

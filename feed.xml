@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-07T10:23:50+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-09T10:10:51+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Add Entitlements in Cloud Platform</title><link href="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html" rel="alternate" type="text/html" title="Add Entitlements in Cloud Platform" /><published>2020-10-08T00:00:00+05:30</published><updated>2020-10-08T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#login&quot;&gt;Login and Add entitlement&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#subscribe&quot;&gt;Check and Subscribe&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h1 id=&quot;login&quot;&gt;Login and Add entitlement&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/EntitlementsInCP/add-entitlement.gif&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+
+    &lt;h1 id=&quot;subscribe&quot;&gt;Check and Subscribe&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/EntitlementsInCP/subscribe-and-open.gif&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Login and Add entitlement Check and Subscribe Login and Add entitlement</summary></entry><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -1486,98 +1519,4 @@ Navigate to the &quot;dev&quot; space in your Cloud Foundry (CF) organization.
    &lt;/div&gt;
  &lt;/div&gt;  
 &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Spacing Notation Horizontal Centering Spacing Related Notation Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation. The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm,md,lg and xl Where property is one of: m - for classes that set margin p - for classes that set padding Where sides is one of: t - for classes that set margin-top or padding-top b - for classes that set margin-bottom or padding-bottom l - for classes that set margin-left or padding-left r - for classes that set margin-right or padding-right x - for classes that set *-left or *-right y - for classes that set *-top or *-bottom blank - for classes that set a margin or padding on all 4 sides of the element</summary></entry><entry><title type="html">Bootstrap 4 Borders</title><link href="/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme.html" rel="alternate" type="text/html" title="Bootstrap 4 Borders" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme.html">&lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#borders&quot;&gt;Borders Related&lt;/a&gt;&lt;/li&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;#additive&quot;&gt;Additive&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#subtractive&quot;&gt;Subtractive&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#border-color&quot;&gt;Border color&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;#border-radius&quot;&gt;Border radius&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/ul&gt;
-&lt;h1 id=&quot;borders&quot;&gt;Borders Related&lt;/h1&gt;
-&lt;h2 id=&quot;additive&quot;&gt;Additive&lt;/h2&gt;
-&lt;div&gt;
-  &lt;p&gt;
-    Use border utilities to add or remove an element’s borders. Choose from all
-    borders or one at a time
-  &lt;/p&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  &lt;script src=&quot;https://gist.github.com/chatenrk/4fb4528a64676050f66fed0cbeff29eb.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;h2 id=&quot;subtractive&quot;&gt;Subtractive&lt;/h2&gt;
-&lt;div&gt;
-  &lt;script src=&quot;https://gist.github.com/chatenrk/f8d397083ea069ea7fb4b65d2d6fac77.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;h2 id=&quot;border-color&quot;&gt;Border color&lt;/h2&gt;
-
-&lt;span class=&quot;border border-primary m-1&quot;&gt;Border Primary&lt;/span&gt;
-&lt;span class=&quot;border border-secondary m-1&quot;&gt;Border Secondary&lt;/span&gt;
-&lt;span class=&quot;border border-success m-1&quot;&gt;Border Success&lt;/span&gt;
-&lt;span class=&quot;border border-danger m-1&quot;&gt;Border Danger&lt;/span&gt;
-&lt;span class=&quot;border border-warning m-1&quot;&gt;Border Warning&lt;/span&gt;
-&lt;span class=&quot;border border-info m-1&quot;&gt;Border Info&lt;/span&gt;
-&lt;span class=&quot;border border-light m-1&quot;&gt;Border Light&lt;/span&gt;
-&lt;span class=&quot;border border-dark m-1&quot;&gt;Border Dark&lt;/span&gt;
-&lt;span class=&quot;border border-white m-1&quot;&gt;Border White&lt;/span&gt;
-
-&lt;div&gt;
-  &lt;script src=&quot;https://gist.github.com/chatenrk/abbef4734b905ec95b913ec66d8051d9.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;
-&lt;h2 id=&quot;border-radius&quot;&gt;Border-radius&lt;/h2&gt;
-&lt;div&gt;
-  &lt;div&gt;
-    &lt;img
-      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
-      alt=&quot;...&quot;
-      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded mb-2&quot;
-    /&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;img
-      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
-      alt=&quot;...&quot;
-      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-top mb-2&quot;
-    /&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;img
-      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
-      alt=&quot;...&quot;
-      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-right mb-2&quot;
-    /&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;img
-      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
-      alt=&quot;...&quot;
-      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-bottom mb-2&quot;
-    /&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;img
-      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
-      alt=&quot;...&quot;
-      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-left mb-2&quot;
-    /&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;img
-      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
-      alt=&quot;...&quot;
-      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-circle mb-2&quot;
-    /&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;img
-      src=&quot;/New-Tech-Reference-Blog/img/test-image.png&quot;
-      alt=&quot;...&quot;
-      class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded-0 mb-2&quot;
-    /&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-  &lt;script src=&quot;https://gist.github.com/chatenrk/78b5af5972342ba08c9b377b682a8158.js&quot;&gt;&lt;/script&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">[Table of Contents] Borders Related Additive Subtractive Border color Border radius Borders Related Additive Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time Subtractive Border color</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Spacing Notation Horizontal Centering Spacing Related Notation Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation. The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm,md,lg and xl Where property is one of: m - for classes that set margin p - for classes that set padding Where sides is one of: t - for classes that set margin-top or padding-top b - for classes that set margin-bottom or padding-bottom l - for classes that set margin-left or padding-left r - for classes that set margin-right or padding-right x - for classes that set *-left or *-right y - for classes that set *-top or *-bottom blank - for classes that set a margin or padding on all 4 sides of the element</summary></entry></feed>

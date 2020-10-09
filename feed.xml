@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-09T11:28:18+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Add Entitlements in Cloud Platform</title><link href="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html" rel="alternate" type="text/html" title="Add Entitlements in Cloud Platform" /><published>2020-10-08T00:00:00+05:30</published><updated>2020-10-08T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-09T13:09:48+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Add Entitlements in Cloud Platform</title><link href="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html" rel="alternate" type="text/html" title="Add Entitlements in Cloud Platform" /><published>2020-10-08T00:00:00+05:30</published><updated>2020-10-08T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -477,7 +477,10 @@
           &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
           &lt;td&gt;OData with SAP HANA Cloud - Hands-on Video Tutorials&lt;/td&gt;
           &lt;td&gt;
-            https://blogs.sap.com/2020/10/07/odata-with-sap-hana-cloud-hands-on-video-tutorials/
+            &lt;a
+              href=&quot;https://blogs.sap.com/2020/10/07/odata-with-sap-hana-cloud-hands-on-video-tutorials/&quot;
+              &gt;https://blogs.sap.com/2020/10/07/odata-with-sap-hana-cloud-hands-on-video-tutorials/&lt;/a
+            &gt;
           &lt;/td&gt;
         &lt;/tr&gt;
       &lt;/tbody&gt;

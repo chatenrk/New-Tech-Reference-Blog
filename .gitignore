@@ -3,3 +3,9 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+# Ignore files that are used for build
+node_modules
+
+# Ignore VSCode files
+.vscode
+

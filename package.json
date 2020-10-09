@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "update-gh-pages": "node update-gh-pages.js",
+    "update-master": "node update-master.js"
+  }
+}

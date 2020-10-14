@@ -1,4 +1,346 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-09T19:12:56+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Add Entitlements in Cloud Platform</title><link href="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html" rel="alternate" type="text/html" title="Add Entitlements in Cloud Platform" /><published>2020-10-08T00:00:00+05:30</published><updated>2020-10-08T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-14T17:20:05+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Hana Client Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme.html" rel="alternate" type="text/html" title="Hana Client Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#run-commands&quot;&gt;Run Commands&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#connect-via-hdbsql&quot;&gt;Connect via HDBSQL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#check-status&quot;&gt;Check Status&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#create-user&quot;&gt;Create User&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#new-schema&quot;&gt;New Schema&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#change-user&quot;&gt;Change User&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#store-connection-details-in-secure-user-store-hdbuserstore&quot;
+          &gt;Store connection details in secure user store (hdbuserstore)&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        The SAP HANA client provides a set of utilities and drivers to connect
+        to and query a SAP HANA database from multiple programming APIs, such as
+        Node.js, Python or Java. For a complete list, see
+        &lt;a
+          href=&quot;https://help.sap.com/viewer/f1b440ded6144a54ada97ff95dac7adf/latest/en-US&quot;
+          &gt;SAP HANA Client Interface Programming Reference&lt;/a
+        &gt;.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
+      &lt;p&gt;
+        Download the client installer for your platform (Microsoft Windows,
+        Linux, or Mac) from the
+        &lt;a href=&quot;https://tools.hana.ondemand.com/#hanatools&quot;
+          &gt;SAP Development Tools&lt;/a
+        &gt;
+        website under the HANA tab and the SAP HANA Client 2.0 section
+      &lt;/p&gt;
+      &lt;p&gt;
+        Start the graphical installer &lt;code&gt;hdbsetup&lt;/code&gt; or use the command
+        line installer &lt;code&gt;hdbinst&lt;/code&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        After the installation process is completed, update your path
+        environment variable so that the SAP HANA client programs such as hdbsql
+        can be found on your path. On Microsoft Windows, click the Start icon
+        and search for environment variables
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;h3 id=&quot;run-commands&quot;&gt;Run Commands&lt;/h3&gt;
+      &lt;p&gt;
+        Run the following command in a newly opened shell to verify the
+        installation succeeded and the path is correct
+        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;hdbsql -v&lt;/code&gt;&lt;/pre&gt;
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbsql.jpg&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+    &lt;h3 id=&quot;connect-via-hdbsql&quot;&gt;Connect via HDBSQL&lt;/h3&gt;
+    &lt;p&gt;Connect to either SAP HANA Cloud or SAP HANA, express edition using host, port, and credentials&lt;/p&gt;
+    &lt;p&gt;The following is a connection example for the SAP HANA Cloud.&lt;/p&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;hdbsql -e -n &amp;lt;host name&amp;gt;:&amp;lt;port&amp;gt; -u &amp;lt;user&amp;gt; -p &amp;lt;password&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/connect-via-hdbsql.png&quot;
+    alt=&quot;&quot;
+    /&gt;   
+    &lt;/div&gt;
+    &lt;div&gt;
+    &lt;h3 id=&quot;check-status&quot;&gt;Check Status&lt;/h3&gt;
+    &lt;p&gt;To check status of connection type &lt;code&gt;\s&lt;/code&gt;&lt;/p&gt;
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbsql-check-status.png&quot;
+    alt=&quot;&quot;
+    /&gt;  
+    &lt;/div&gt;
+    &lt;div&gt;
+    &lt;h3 id=&quot;create-user&quot;&gt;Create User&lt;/h3&gt;
+    &lt;p&gt;Create a new user that will be used to read / write into the hana database tables.&lt;/p&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;CREATE USER USER1 PASSWORD Password1 no force_first_password_change SET USERGROUP DEFAULT;&lt;/code&gt;&lt;/pre&gt;
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/create-user-hdbsql.jpg&quot;
+    alt=&quot;&quot;
+    /&gt;  
+
+    &lt;p&gt;To verify that the user was created, enter the following command&lt;/p&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;SELECT USER_NAME FROM USERS;&lt;/code&gt;&lt;/pre&gt;
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/create-user-hdbsql-2.jpg&quot;
+    alt=&quot;&quot;
+    /&gt;
+    &lt;p&gt;A schema with same name is also created&lt;/p&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;SELECT SCHEMA_NAME FROM SCHEMAS;&lt;/code&gt;&lt;/pre&gt;  
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/create-user-hdbsql-3.jpg&quot;
+    alt=&quot;&quot;
+    /&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+    &lt;h3 id=&quot;new-schema&quot;&gt;New Schema&lt;/h3&gt;
+    &lt;p&gt;Create a new schema and grant &lt;code&gt;USER1&lt;/code&gt; the ability to create new objects in it&lt;/p&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;CREATE SCHEMA mfdata; &lt;br&gt;GRANT CREATE ANY ON SCHEMA mfdata TO USER1;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/new-schema-hdbsql.jpg&quot;
+    alt=&quot;&quot;
+    /&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+    &lt;h3 id=&quot;change-user&quot;&gt;Change User&lt;/h3&gt;
+    &lt;p&gt;Connect as USER1 and notice that current user changes from DBADMIN or SYSTEM to USER1.&lt;/p&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY; &lt;br&gt;CONNECT USER1 PASSWORD Password1; &lt;br&gt;SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
+    &lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/new-schema-hdbsql.jpg&quot;
+    alt=&quot;&quot;
+    /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+    &lt;h3 id=&quot;store-connection-details-in-secure-user-store-hdbuserstore&quot;&gt;Store connection details in secure user store (hdbuserstore)&lt;/h3&gt;
+    &lt;p&gt;Remembering and entering IP addresses, ports, user IDs and passwords can be difficult. &lt;a href=&quot;https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/latest/en-US/dd95ac9dbb571014a7d7f0234d762fdb.html&quot;&gt;Secure User Store&lt;/a&gt; offers a convenient means of storing this information and making it available to the SAP HANA client interfaces&lt;/p&gt;
+    &lt;p&gt;Type &lt;code&gt;hdbuserstore&lt;/code&gt; to see a list of available commands such as Set, List and Delete
+    &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbuserstore-key.png&quot;
+        alt=&quot;&quot;
+    /&gt;
+    &lt;p&gt;Connect with &lt;code&gt;USER1&lt;/code&gt; as the username&lt;/p&gt;
+    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;hdbsql -attemptencrypt -U User1UserKey&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;img
+    class=&quot;border border-dark m-1&quot;
+    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbuserstore-checkuser-key.jpg&quot;
+    alt=&quot;&quot;
+    /&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+    &lt;h3 id=&quot;connect-to-database-from-node-js&quot;&gt;Connect to database from Node JS&lt;/h3&gt;
+    &lt;p&gt;To connect to the database via node.js use the following code inside the route&lt;/p&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/4e22d613df6737c09b7ddc5a8461142e.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">MF App Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html" rel="alternate" type="text/html" title="MF App Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#code&quot;&gt;Code reference&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#last-nav-scheme&quot;&gt;Get last NAV for a particular scheme&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#last-nav-amc&quot;&gt;Get Last NavDate of each AMC&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#get-count&quot;&gt;Get count&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#insert-one-to-another-table&quot;
+              &gt;Insert into one table from another table&lt;/a
+            &gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#select-delete-table&quot;
+              &gt;Delete from table using select clause&lt;/a
+            &gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2 id=&quot;code&quot;&gt;Code Samples&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;h3 id=&quot;last-nav-scheme&quot;&gt;Get last NAV for a particular scheme&lt;/h3&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          Get the last NAV of a particular scheme by running the following code
+          snippet in the SQL console
+          &lt;script src=&quot;https://gist.github.com/chatenrk/07d27146432f0b39e89dc74fd45318ff.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h3 id=&quot;last-nav-amc&quot;&gt;Get Last NavDate of each AMC&lt;/h3&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          To get the last NAV for a particular AMC run the following snippet in
+          SQL console
+          &lt;script src=&quot;https://gist.github.com/chatenrk/fd10828fa9ae97c4fc707d095f6a2cff.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h3 id=&quot;get-count&quot;&gt;Get count&lt;/h3&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          &lt;script src=&quot;https://gist.github.com/chatenrk/db06903c920ec1f8b42254876e932add.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h3 id=&quot;insert-one-to-another-table&quot;&gt;
+        Insert into one table from another table
+      &lt;/h3&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          &lt;script src=&quot;https://gist.github.com/chatenrk/169976763235540d8b5fc05dab94db0e.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;h3 id=&quot;select-delete-table&quot;&gt;Delete from table using select clause&lt;/h3&gt;
+      &lt;div&gt;
+        &lt;p&gt;
+          &lt;script src=&quot;https://gist.github.com/chatenrk/868ec72d202a406b3003204b2927c85e.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry><entry><title type="html">Native Hana Reference</title><link href="/New-Tech-Reference-Blog/2020/10/10/NativeHanaReferenceReadme.html" rel="alternate" type="text/html" title="Native Hana Reference" /><published>2020-10-10T00:00:00+05:30</published><updated>2020-10-10T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/10/NativeHanaReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/10/NativeHanaReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme.html&quot;
+          &gt;Hana Client Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html&quot;
+          &gt;MF App Reference&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Hana Client Reference MF App Reference</summary></entry><entry><title type="html">ABAP on Hana Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/09/ABAPOnHanaReferenceReadme.html" rel="alternate" type="text/html" title="ABAP on Hana Ready Reckoner" /><published>2020-10-09T00:00:00+05:30</published><updated>2020-10-09T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/09/ABAPOnHanaReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/09/ABAPOnHanaReferenceReadme.html"></content><author><name></name></author></entry><entry><title type="html">Add Entitlements in Cloud Platform</title><link href="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html" rel="alternate" type="text/html" title="Add Entitlements in Cloud Platform" /><published>2020-10-08T00:00:00+05:30</published><updated>2020-10-08T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -31,255 +373,144 @@
       /&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Login and Add entitlement Check and Subscribe Login and Add entitlement</summary></entry><entry><title type="html">SAP Business Application Studio Setup</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio Setup" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASSetupReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Login and Add entitlement Check and Subscribe Login and Add entitlement</summary></entry><entry><title type="html">Bootstrap 4 Spacing</title><link href="/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html" rel="alternate" type="text/html" title="Bootstrap 4 Spacing" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
     &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-       /* Tomorrow Theme */
-    /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-    /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-    /* Tomorrow Comment */
-    .hljs-comment,
-    .hljs-quote {
-      color: #8e908c;
-    }
-
-    /* Tomorrow Red */
-    .hljs-variable,
-    .hljs-template-variable,
-    .hljs-tag,
-    .hljs-name,
-    .hljs-selector-id,
-    .hljs-selector-class,
-    .hljs-regexp,
-    .hljs-deletion {
-      color: #c82829;
-    }
-
-    /* Tomorrow Orange */
-    .hljs-number,
-    .hljs-built_in,
-    .hljs-builtin-name,
-    .hljs-literal,
-    .hljs-type,
-    .hljs-params,
-    .hljs-meta,
-    .hljs-link {
-      color: #f5871f;
-    }
-
-    /* Tomorrow Yellow */
-    .hljs-attribute {
-      color: #eab700;
-    }
-
-    /* Tomorrow Green */
-    .hljs-string,
-    .hljs-symbol,
-    .hljs-bullet,
-    .hljs-addition {
-      color: #718c00;
-    }
-
-    /* Tomorrow Blue */
-    .hljs-title,
-    .hljs-section {
-      color: #4271ae;
-    }
-
-    /* Tomorrow Purple */
-    .hljs-keyword,
-    .hljs-selector-tag {
-      color: #8959a8;
-    }
-    .hljs {
-      display: block;
-      overflow-x: auto;
-      color: #4d4d4c;
-      padding: 0.5em;
-    }
-    
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
+&lt;/head&gt;
+&lt;body&gt;
     &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-  &lt;a href=&quot;#setup&quot;&gt;Business Application Studio Setup&lt;/a&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-    &lt;h1 id=&quot;setup&quot;&gt;Business Application Studio Setup&lt;/h1&gt;
-    &lt;p&gt;
-      Login to SAP Cloud Platform trial and navigate to subaccount
-      &lt;img
-        class=&quot;img-fluid max-width: 100%; and height: auto; border border-dark rounded&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_accnt.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      Select the Subscriptions menu item on the left hand side. Find and select
-      the &quot;SAP Business Application Studio&quot; tile and use the &quot;Subscribe&quot; button
-      to create a subscription to it in your account
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_bas.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;br /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/sub_bas1.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#spacing&quot;&gt;Spacing&lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#notation&quot;&gt;Notation&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#hori-centring&quot;&gt;Horizontal Centering&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;     
+  &lt;!-- Spacing Section --&gt;
+ &lt;h1 id=&quot;spacing&quot;&gt;Spacing Related&lt;/h1&gt;
+ &lt;h2 id=&quot;notation&quot;&gt;Notation&lt;/h2&gt;
+ &lt;div&gt;
+   &lt;p&gt;
+     Spacing utilities that apply to all breakpoints, from &lt;code&gt;xs&lt;/code&gt; to
+     &lt;code&gt;xl&lt;/code&gt;, have no breakpoint abbreviation in them. This is
+     because those classes are applied from &lt;code&gt;min-width: 0&lt;/code&gt; and up,
+     and thus are not bound by a media query. The remaining breakpoints,
+     however, do include a breakpoint abbreviation. The classes are named
+     using the &lt;code&gt;format {property}{sides}-{size}&lt;/code&gt; for
+     &lt;code&gt;xs&lt;/code&gt; and
+     &lt;code&gt;{property}{sides}-{breakpoint}-{size}&lt;/code&gt; for
+     &lt;code&gt;sm&lt;/code&gt;,&lt;code&gt;md&lt;/code&gt;,&lt;code&gt;lg&lt;/code&gt; and &lt;code&gt;xl&lt;/code&gt;
+   &lt;/p&gt;
+   &lt;p&gt;
+     Where property is one of:
+     &lt;ul&gt;
+         &lt;li&gt;&lt;code&gt;m&lt;/code&gt; - for classes that set &lt;code&gt;margin&lt;/code&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;code&gt;p&lt;/code&gt; - for classes that set &lt;code&gt;padding&lt;/code&gt;&lt;/li&gt;
+     &lt;/ul&gt;
+   &lt;/p&gt;
+ &lt;p&gt;
+     Where sides is one of:
+     &lt;ul&gt;
+         &lt;li&gt;
+             &lt;code&gt;t&lt;/code&gt;  - for classes that set 
+             &lt;code&gt;margin-top&lt;/code&gt; or
+             &lt;code&gt;padding-top&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;b&lt;/code&gt; - for classes that set
+             &lt;code&gt;margin-bottom&lt;/code&gt; or
+             &lt;code&gt;padding-bottom&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;l&lt;/code&gt; - for classes that set
+             &lt;code&gt;margin-left&lt;/code&gt; or
+             &lt;code&gt;padding-left&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;r&lt;/code&gt; - for classes that set
+             &lt;code&gt;margin-right&lt;/code&gt; or
+             &lt;code&gt;padding-right&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;x&lt;/code&gt; - for classes that set
+             &lt;code&gt;*-left&lt;/code&gt; or
+             &lt;code&gt;*-right&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             &lt;code&gt;y&lt;/code&gt; - for classes that set
+             &lt;code&gt;*-top&lt;/code&gt; or
+             &lt;code&gt;*-bottom&lt;/code&gt;
+         &lt;/li&gt;
+         &lt;li&gt;
+             blank - for classes that set a 
+             &lt;code&gt;margin &lt;/code&gt; or
+             &lt;code&gt;padding&lt;/code&gt; on all 4 sides of the element
+         &lt;/li&gt;
+     &lt;/ul&gt;
+ &lt;/p&gt;
 
-    &lt;p&gt;
-      Once subscribed, the &quot;Go to Application&quot; link become active. But before
-      launching it, ensure that appropriate App Studio roles are available. Jump
-      to the subaccount overview page, and select the &quot;Trust Configuration&quot; item
-      within the &quot;Security&quot; entry in the menu on the left hand side. Select the
-      &quot;sap.default&quot; entry as shown in the screenshot (it may be a different
-      name, but it is usually going to be the only entry to select anyway), and
-      in the following screen, enter your ID - the email address associated with
-      your account - and select the &quot;Show Assignments&quot; button to bring up the
-      current list, and to give you the ability to assign further Role
-      Collections
+ &lt;p&gt;
+     Where size is one of:
+    
+     &lt;li&gt;
+         &lt;code&gt;0&lt;/code&gt; - for classes that eliminate the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; by setting it to
+         &lt;code&gt;0&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;1&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt;$spacer * .25&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;2&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt; $spacer * .5&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;3&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt; $spacer&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;4&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt;$spacer * 1.5&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;5&lt;/code&gt;  - (by default) for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; or
+         &lt;code&gt;padding&lt;/code&gt; to
+         &lt;code&gt;$spacer * 3&lt;/code&gt;
+     &lt;/li&gt;
+     &lt;li&gt;
+         &lt;code&gt;auto&lt;/code&gt;  - for classes that set the
+         &lt;code&gt;margin&lt;/code&gt; to auto
+     &lt;/li&gt;
+ &lt;/p&gt;
+ &lt;p&gt;
+     (You can add more sizes by adding entries to the &lt;code&gt;$spacers&lt;/code&gt;  Sass map variable.)
+ &lt;/p&gt;
 
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles1.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles3.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/add_roles4.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-      Go back to the App Studio subscription page, and use the &quot;Go to
-      Application&quot; link.
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      Select the &quot;Create Dev Space&quot; button and should specify a name for your
-      space, and the extensions you want. Give a name to the workspace and
-      select the appropriate options as required
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/create_dev_space3.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-      There's one final activity to complete at this stage, and that's to point
-      tge new Dev Space to your CF organization and space. In the bar at the
-      bottom, there'll be a message along these lines: &quot;The organization and
-      space in Cloud Foundry have not been set&quot;. Select this message to initiate
-      a short UI interaction at the top of the screen to allow you to confirm
-      the settings. Specify the following:
-      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;Setting&lt;/th&gt;
-            &lt;th&gt;Value to set&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-            &lt;td&gt;Cloud Foundry endpoint&lt;/td&gt;
-            &lt;td&gt;This is the endpoint in the form &lt;pre class=&quot;hljs-string&quot;&gt;https://api.cf.&amp;lt;region&amp;gt;.hana.ondemand.com&lt;/pre&gt;Refer to the details shown in your Trial Subaccount overview page
-              &lt;img
-              class=&quot;border border-dark m-1&quot;
-              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space.png&quot;
-              alt=&quot;&quot;
-            /&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-            &lt;td&gt;Email address&lt;/td&gt;
-            &lt;td&gt;This is the email address associated with the Cloud Platform account.
-              &lt;img
-              class=&quot;border border-dark m-1&quot;
-              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space1.png&quot;
-              alt=&quot;&quot;
-            /&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-            &lt;td&gt;Password &lt;/td&gt;
-            &lt;td&gt;This is the password associated with the email address and this account.
-              &lt;img
-              class=&quot;border border-dark m-1&quot;
-              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space2.png&quot;
-              alt=&quot;&quot;
-            /&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-            &lt;td&gt;Organization &lt;/td&gt;
-            &lt;td&gt;This is the CF organization associated with your trial subaccount
-              &lt;img
-              class=&quot;border border-dark m-1&quot;
-              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space3.png&quot;
-              alt=&quot;&quot;
-            /&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
-            &lt;td&gt;Space&lt;/td&gt;
-            &lt;td&gt;This is the space within the organization
-              &lt;img
-              class=&quot;border border-dark m-1&quot;
-              style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-              src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/BASSetup/set_org_and_space4.png&quot;
-              alt=&quot;&quot;
-            /&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Business Application Studio</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html">&lt;!DOCTYPE html&gt;
+ &lt;h2 id=&quot;hori-centring&quot;&gt;Horizontal centering&lt;/h2&gt;
+ &lt;p&gt;Additionally, Bootstrap also includes an &lt;code&gt;.mx-auto&lt;/code&gt;  class for horizontally centering fixed-width block level content—that is, content that has &lt;code&gt;display: block&lt;/code&gt;  and a &lt;code&gt;width&lt;/code&gt;  set—by setting the horizontal margins to &lt;code&gt;auto&lt;/code&gt;&lt;/p&gt;
+ &lt;div class=&quot;mx-auto&quot; style=&quot;width: 200px;&quot;&gt;
+     Centered element
+   &lt;/div&gt;
+   &lt;div&gt;
+     &lt;script src=&quot;https://gist.github.com/chatenrk/b532024908ca0bb01838073ece97e0dd.js&quot;&gt;&lt;/script&gt;
+   &lt;/div&gt;
+ &lt;/div&gt;  
+&lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Spacing Notation Horizontal Centering Spacing Related Notation Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation. The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm,md,lg and xl Where property is one of: m - for classes that set margin p - for classes that set padding Where sides is one of: t - for classes that set margin-top or padding-top b - for classes that set margin-bottom or padding-bottom l - for classes that set margin-left or padding-left r - for classes that set margin-right or padding-right x - for classes that set *-left or *-right y - for classes that set *-top or *-bottom blank - for classes that set a margin or padding on all 4 sides of the element</summary></entry><entry><title type="html">SAP Business Application Studio</title><link href="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html" rel="alternate" type="text/html" title="SAP Business Application Studio" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/BASReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/BASReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -323,7 +554,160 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Setup Related Blogs to explore # Blog Description Link 1 How to Install a VS Code Extension to SAP Business Application Studio https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/</summary></entry><entry><title type="html">Provision Hana Cloud</title><link href="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html" rel="alternate" type="text/html" title="Provision Hana Cloud" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Setup Related Blogs to explore # Blog Description Link 1 How to Install a VS Code Extension to SAP Business Application Studio https://blogs.sap.com/2020/04/12/how-to-install-a-vs-code-extension-to-sap-business-application-studio/</summary></entry><entry><title type="html">Emmet Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html" rel="alternate" type="text/html" title="Emmet Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/EmmetReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+     &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#elements&quot;&gt;Elements&lt;/a&gt;&lt;/li&gt;
+         &lt;ul&gt;
+             &lt;li&gt;&lt;a href=&quot;#nesting&quot;&gt;Nesting operators&lt;/a&gt;&lt;/li&gt;
+             &lt;ul&gt;
+                 &lt;li&gt;&lt;a href=&quot;#child&quot;&gt;Child: &gt;&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;##sibling&quot;&gt;Sibling: +&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#climb-up&quot;&gt;Climb-up: ^&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#multi&quot;&gt;Multiplication: *&lt;/a&gt;&lt;/li&gt;
+                 &lt;li&gt;&lt;a href=&quot;#group&quot;&gt;Grouping: ()&lt;/a&gt;&lt;/li&gt;
+             &lt;/ul&gt;
+             &lt;li&gt;&lt;a href=&quot;#attribute&quot;&gt;Attribute operators&lt;/a&gt;&lt;/li&gt;
+             &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#id-class&quot;&gt;ID and CLASS&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#customattr&quot;&gt;Custom attributes&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#item-no&quot;&gt;Item numbering: $&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#text&quot;&gt;Text: {}&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;
+     &lt;/ul&gt; 
+    &lt;h1 id=&quot;elements&quot;&gt;Elements&lt;/h1&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use elements’ names like div or p to generate HTML tags. Emmet
+        doesn’t have a predefined set of available tag names, you can write any
+        word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;nesting&quot;&gt;Nesting operators&lt;/h2&gt;
+    Nesting operators are used to position abbreviation elements inside
+    generated tree: whether it should be placed inside or near the context
+    element
+    &lt;h3 id=&quot;child&quot;&gt;Child: &gt;&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use &gt; operator to nest elements inside each other
+        &lt;script src=&quot;https://gist.github.com/chatenrk/0d5cddbd361fc5e33c8283ccc934de51.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;sibling&quot;&gt;Sibling: +&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Use + operator to place elements near each other, on the same level:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/45209b9d5eb8a15a0116e7f35835cfe5.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;climb-up&quot;&gt;Climb-up: ^&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        With &gt; operator you’re descending down the generated tree and positions
+        of all sibling elements will be resolved against the most deepest
+        element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/330657a94c25974bf2f1792bb58df49b.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        With ^ operator, you can climb one level up the tree and change context
+        where following elements should appear
+        &lt;script src=&quot;https://gist.github.com/chatenrk/6af995ed2557cf23c385619d68002057.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        You can use as many ^ operators as you like, each operator will move one
+        level up:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/52a1e42d5edb3adb77a790be27d2bc1f.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;multi&quot;&gt;Multiplication: *&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        With * operator you can define how many times element should be
+        outputted:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/7a499dbecefaa269b52aabb1d9815ec2.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;group&quot;&gt;Grouping: ()&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Parenthesises are used by Emmets’ power users for grouping subtrees in
+        complex abbreviations:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/e9939987da2aa59cf39d989ae6d0073c.js&quot;&gt;&lt;/script&gt;
+
+        If you’re working with browser’s DOM, you may think of groups as
+        Document Fragments: each group contains abbreviation subtree and all the
+        following elements are inserted at the same level as the first element
+        of group. You can nest groups inside each other and combine them with
+        multiplication * operator:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/05a040fdbf79f7e2abd4cf029cb3a930.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;attribute&quot;&gt;Attribute operators&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Attribute operators are used to modify attributes of outputted elements.
+        For example, in HTML and XML you can quickly add class attribute to
+        generated element
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;id-class&quot;&gt;ID and CLASS&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        In CSS, you use elem#id and elem.class notation to reach the elements
+        with specified id or class attributes. In Emmet, you can use the very
+        same syntax to add these attributes to specified element
+        &lt;script src=&quot;https://gist.github.com/chatenrk/95101d2847a554537759828cc07676c8.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;customattr&quot;&gt;Custom attributes&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        You can use [attr] notation (as in CSS) to add custom attributes to your
+        element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/e4dc893faffdb2b3f272c491e1b80fff.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+          &lt;ul&gt;
+              &lt;li&gt;You can place as many attributes as you like inside square brackets.
+                &lt;/li&gt;
+              &lt;li&gt;You don’t have to specify attribute values: td[colspan title] will produce &amp;lt;td colspan=&quot;&quot; title=&quot;&quot;&amp;gt; with tabstops inside each empty attribute (if your editor supports them).
+               &lt;/li&gt;
+              &lt;li&gt; You can use single or double quotes for quoting attribute values.
+                &lt;/li&gt;
+              &lt;li&gt;You don’t need to quote values if they don’t contain spaces: td[title=hello colspan=3] will work.&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;itemno&quot;&gt;Item numbering: $&lt;/h3&gt;
+    &lt;div&gt;
+        &lt;p&gt;
+            With multiplication * operator you can repeat elements, but with $ you can number them. Place $ operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:
+            &lt;script src=&quot;https://gist.github.com/chatenrk/7dabca195f8e77af749864976993a9d1.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            You can use multiple $ in a row to pad number with zeroes:
+            &lt;script src=&quot;https://gist.github.com/chatenrk/b70ff9e65beb97ad28253737e8f55ed2.js&quot;&gt;&lt;/script&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;text&quot;&gt;Text: {}&lt;/h2&gt;
+    &lt;div&gt;&lt;p&gt;
+        You can use curly braces to add text to element:
+        &lt;script src=&quot;https://gist.github.com/chatenrk/ad7642ae3c91aad17bba059caa016cb3.js&quot;&gt;&lt;/script&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+    Note that {text} is used and parsed as a separate element (like, div, p etc.) but has a special meaning when written right after element. For example, a{click} and a&gt;{click} will produce the same output, but a{click}+b{here} and a&gt;{click}+b{here} won’t:
+    &lt;script src=&quot;https://gist.github.com/chatenrk/0ac6ec128ed69d5cbd5faa2d217a513a.js&quot;&gt;&lt;/script&gt;
+&lt;/p&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Elements Nesting operators Child: &gt; Sibling: + Climb-up: ^ Multiplication: * Grouping: () Attribute operators ID and CLASS Custom attributes Item numbering: $ Text: {} Elements You can use elements’ names like div or p to generate HTML tags. Emmet doesn’t have a predefined set of available tag names, you can write any word and transform it into a tag: div → &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; Nesting operators Nesting operators are used to position abbreviation elements inside generated tree: whether it should be placed inside or near the context element Child: &gt; You can use &gt; operator to nest elements inside each other Sibling: + Use + operator to place elements near each other, on the same level: Climb-up: ^ With &gt; operator you’re descending down the generated tree and positions of all sibling elements will be resolved against the most deepest element: With ^ operator, you can climb one level up the tree and change context where following elements should appear You can use as many ^ operators as you like, each operator will move one level up: Multiplication: * With * operator you can define how many times element should be outputted: Grouping: () Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:</summary></entry><entry><title type="html">Provision Hana Cloud</title><link href="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html" rel="alternate" type="text/html" title="Provision Hana Cloud" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/ProvisioningReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -486,1059 +870,4 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Provision Hana Cloud Blogs to explore # Blog Link 1 OData with SAP HANA Cloud - Hands-on Video Tutorials https://blogs.sap.com/2020/10/07/odata-with-sap-hana-cloud-hands-on-video-tutorials/</summary></entry><entry><title type="html">Docker for Cloud Connector</title><link href="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html" rel="alternate" type="text/html" title="Docker for Cloud Connector" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#prep-env&quot;&gt;Prepare environment for Docker Image&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#build-docker&quot;&gt;Build the Docker image&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#instantiate&quot;&gt;Instantiate a container&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#connect&quot;
-          &gt;Connect to perform initial setup of the SAP Cloud Connector&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#backend-sys&quot;&gt;Make the SAP backend system available&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#expose-resources&quot;
-          &gt;Expose a set of resources in the backend system&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;prep-env&quot;&gt;Prepare environment for Docker Image&lt;/h1&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Check if docker is installed&lt;/li&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-setup-check.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;li&gt;
-        Create a new Directory and subdirectory called
-        &lt;code&gt;container-scc/&lt;/code&gt; and &lt;code&gt;sapdownloads/&lt;/code&gt; respectively
-      &lt;/li&gt;
-      &lt;li&gt;
-        Go to the cloud section of the&lt;a
-          href=&quot;https://tools.hana.ondemand.com/#cloud&quot;
-          &gt;SAP Development Tools website&lt;/a
-        &gt;
-        and download the latest Cloud Connector component, placing it into the
-        sapdownloads/ directory. Regardless of your local machine's operating
-        system, you will need to download for Linux, as that is what the
-        container will be running
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download1.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        From the same page, now download the latest SAP Java Virtual Machine
-        (JVM) into the sapdownloads/ directory, again for Linux, and
-        specifically the .rpm component
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download2.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Finally create a new file called Dockerfile in the container-scc/
-        directory (noting the capitalization and lack of extension on this file
-        name)
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-file-creation.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Into this file, copy the contents of the
-        &lt;a href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/DockerFileSample.txt&quot;
-          &gt;Dockerfile&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;build-docker&quot;&gt;Build the Docker image&lt;/h1&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        Build the image, and after that you can instantiate a container from
-        that image. In the &lt;b&gt;container-scc&lt;/b&gt; directory (where the Dockerfile
-        file is located), build the image as follows in this repository
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image1.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        On successful completion the cloud connector should be installed
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image4.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Look for the image that's produced, with the following command
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/show-docker-image.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;instantiate&quot;&gt;Instantiate a container&lt;/h1&gt;
-    &lt;li&gt;
-      Now you have an image, it's time to instantiate a container from it. This
-      will have Cloud Connector running inside it. Instantiate the container as
-      follows
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/instantiate-docker-container.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      Briefly, the parameters used here do the following:
-      &lt;ul&gt;
-        &lt;li&gt;
-          &lt;b&gt;-p 8443:8443&lt;/b&gt;: make port 8443 in the container available on the
-          host machine (remember, SAP Cloud Connector listens by default on port
-          8443 and you want to be able to connect to it with your browser on
-          your host machine)
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;b&gt;--name myscc&lt;/b&gt;: this gives a human-friendly name to the container
-          that can be used to refer to it in any subsequent commands
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;b&gt;-d&lt;/b&gt;: run the container in &quot;detached&quot; mode, i.e. in the
-          background
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;b&gt;scc&lt;/b&gt;: this is the name of the image from which the container is
-          to be created
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      Check that the container is running, with another Docker command
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-running-check.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;h1 id=&quot;connect&quot;&gt;
-      Connect to perform initial setup of the SAP Cloud Connector
-    &lt;/h1&gt;
-    &lt;li&gt;
-      Log on to the SAP Cloud Connector in your browser, and use the
-      administration interface to perform some initial setup, in particular,
-      connecting it to the SAP Cloud Platform
-    &lt;/li&gt;
-    &lt;li&gt;
-      Open your browser and go to the SAP Cloud Connector administration UI at
-      &lt;a href=&quot;https://localhost:8443&quot;&gt;https://localhost:8443&lt;/a&gt;. Remember that
-      this is only possible because, with the -p 8443:8443 parameter earlier,
-      you specified that port 8443 in the container (which is where SAP Cloud
-      Connector is actually running and listening) should be exposed to your
-      machine, the container's host (where Docker is running), also on port
-      8443.
-      &lt;blockquote&gt;
-        If this does not work on Chrome, try running on Internet Explorer
-      &lt;/blockquote&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      At the &quot;Cloud Connector Login&quot; page, log in with the default username and
-      password &lt;b&gt;Administrator&lt;/b&gt; and &lt;b&gt;manage&lt;/b&gt;. You're then prompted to
-      change this password which you should do, selecting the &quot;Save&quot; icon on the
-      right hand side to proceed (leave other options as they are)
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login1.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      Next, you're asked to specify an initial subaccount that you want the SAP
-      Cloud Connector to connect to
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;h1 id=&quot;backend-sys&quot;&gt;Make the SAP backend system available&lt;/h1&gt;
-    &lt;li&gt;
-      Now that the connection is established, you can define access to the
-      on-prem backend SAP system that the SAP Cloud Connector will facilitate
-    &lt;/li&gt;
-    &lt;li&gt;
-      Select the &quot;Cloud To On-Premise&quot; item in the navigation menu on the left
-      hand side, and in the &quot;Mapping Virtual To Internal System&quot; section, create
-      a new system mapping entry with the &quot;+&quot; icon. In the dialog that follows,
-      you can specify the details of your backend SAP system, i.e. the ES5
-      system
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem1.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem3.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem4.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem5.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem6.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem7.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem8.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;h1 id=&quot;expose-resources&quot;&gt;
-      Expose a set of resources in the backend system
-    &lt;/h1&gt;
-    &lt;li&gt;
-      While you've established a mapping of a virtual host (that is visible at
-      the SAP Cloud Platform level) to an internal (on-prem) host, there are
-      still no accessible resources available on that host. You must specify
-      these explicitly
-    &lt;/li&gt;
-    &lt;li&gt;
-      In the new &quot;Resources of virtuales5:8000&quot; section that is now visible, add
-      a new resource entry with the &quot;+&quot; icon, specifying the following values
-      and finishing with the &quot;Save&quot; button\
-      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;Setting&lt;/th&gt;
-            &lt;th&gt;Value&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-            &lt;td&gt;URL Path&lt;/td&gt;
-            &lt;td&gt;/sap/opu/odata&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-            &lt;td&gt;Active&lt;/td&gt;
-            &lt;td&gt;(checked)&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-            &lt;td&gt;WebSocket Upgrade&lt;/td&gt;
-            &lt;td&gt;(leave unchecked)&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-            &lt;td&gt;Access Policy&lt;/td&gt;
-            &lt;td&gt;Path and all sub-paths&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Prepare environment for Docker Image Build the Docker image Instantiate a container Connect to perform initial setup of the SAP Cloud Connector Make the SAP backend system available Expose a set of resources in the backend system Prepare environment for Docker Image Check if docker is installed Create a new Directory and subdirectory called container-scc/ and sapdownloads/ respectively Go to the cloud section of theSAP Development Tools website and download the latest Cloud Connector component, placing it into the sapdownloads/ directory. Regardless of your local machine's operating system, you will need to download for Linux, as that is what the container will be running From the same page, now download the latest SAP Java Virtual Machine (JVM) into the sapdownloads/ directory, again for Linux, and specifically the .rpm component Finally create a new file called Dockerfile in the container-scc/ directory (noting the capitalization and lack of extension on this file name) Into this file, copy the contents of the Dockerfile Build the Docker image Build the image, and after that you can instantiate a container from that image. In the container-scc directory (where the Dockerfile file is located), build the image as follows in this repository On successful completion the cloud connector should be installed Look for the image that's produced, with the following command Instantiate a container Now you have an image, it's time to instantiate a container from it. This will have Cloud Connector running inside it. Instantiate the container as follows Briefly, the parameters used here do the following: -p 8443:8443: make port 8443 in the container available on the host machine (remember, SAP Cloud Connector listens by default on port 8443 and you want to be able to connect to it with your browser on your host machine) --name myscc: this gives a human-friendly name to the container that can be used to refer to it in any subsequent commands -d: run the container in &quot;detached&quot; mode, i.e. in the background scc: this is the name of the image from which the container is to be created Check that the container is running, with another Docker command Connect to perform initial setup of the SAP Cloud Connector Log on to the SAP Cloud Connector in your browser, and use the administration interface to perform some initial setup, in particular, connecting it to the SAP Cloud Platform Open your browser and go to the SAP Cloud Connector administration UI at https://localhost:8443. Remember that this is only possible because, with the -p 8443:8443 parameter earlier, you specified that port 8443 in the container (which is where SAP Cloud Connector is actually running and listening) should be exposed to your machine, the container's host (where Docker is running), also on port 8443. If this does not work on Chrome, try running on Internet Explorer At the &quot;Cloud Connector Login&quot; page, log in with the default username and password Administrator and manage. You're then prompted to change this password which you should do, selecting the &quot;Save&quot; icon on the right hand side to proceed (leave other options as they are) Next, you're asked to specify an initial subaccount that you want the SAP Cloud Connector to connect to Make the SAP backend system available Now that the connection is established, you can define access to the on-prem backend SAP system that the SAP Cloud Connector will facilitate Select the &quot;Cloud To On-Premise&quot; item in the navigation menu on the left hand side, and in the &quot;Mapping Virtual To Internal System&quot; section, create a new system mapping entry with the &quot;+&quot; icon. In the dialog that follows, you can specify the details of your backend SAP system, i.e. the ES5 system</summary></entry><entry><title type="html">Setup Cloud Platform Destination</title><link href="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html" rel="alternate" type="text/html" title="Setup Cloud Platform Destination" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1 id=&quot;data-source&quot;&gt;Check the data source&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Before creating the destination, which is effectively a pointer to a
-        data source, it's worth checking that data source manually and directly.
-        First, so you can see for yourself what you're aiming to get to from
-        within the SAP Cloud Platform, and second, so you know what you're
-        looking for when you access that data source indirectly (through the
-        destination). Open up the
-        &lt;a
-          href=&quot;https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/?sap-client=002&quot;
-          &gt;OData&lt;/a
-        &gt;
-        service, taking care to specify client 002 in the URL
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/check-es5-gateway-service.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h1 id=&quot;new-dest-def&quot;&gt;Create a new destination definition&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Go to your &quot;Trial Subaccount Home&quot; page, and select the &quot;Destinations&quot;
-        menu item within the &quot;Connectivity&quot; item
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        Select the &quot;New Destination&quot; option, and in the configuration specify
-        values for the appropriate parameters
-        &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;#&lt;/th&gt;
-                &lt;th&gt;Property&lt;/th&gt;
-                &lt;th&gt;Value&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-                &lt;td&gt;Name&lt;/td&gt;
-                &lt;td&gt;shopinfo&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-                &lt;td&gt;Type&lt;/td&gt;
-                &lt;td&gt;HTTP&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-                &lt;td&gt;Description&lt;/td&gt;
-                &lt;td&gt;Virtual Event Shop Info&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-                &lt;td&gt;URL&lt;/td&gt;
-                &lt;td&gt;&lt;a href=&quot;http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/&quot;&gt;http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/&lt;/a&gt;&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
-                &lt;td&gt;Proxy Type&lt;/td&gt;
-                &lt;td&gt;OnPremise&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;6&lt;/td&gt;
-                &lt;td&gt;Location ID&lt;/td&gt;
-                &lt;td&gt;(leave blank)&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;7&lt;/td&gt;
-                &lt;td&gt;Authentication&lt;/td&gt;
-                &lt;td&gt;Basic Authentication&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;8&lt;/td&gt;
-                &lt;td&gt;User&lt;/td&gt;
-                &lt;td&gt;(your ES5 username)&lt;/td&gt;
-              &lt;/tr&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;9&lt;/td&gt;
-                &lt;td&gt;Password&lt;/td&gt;
-                &lt;td&gt;(your ES5 password)&lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        Add the following property / value pair in the &quot;Additional Properties&quot; section using the &quot;New Property&quot; button, and then save the entire destination definition with the &quot;Save&quot; button
-        &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;#&lt;/th&gt;
-                &lt;th&gt;Property&lt;/th&gt;
-                &lt;th&gt;Value&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-             &lt;tr&gt;
-                &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-                &lt;td&gt;sap-client &lt;/td&gt;
-                &lt;td&gt;002&lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-          &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest1.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-        &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h1 id=&quot;testapp&quot;&gt;Deploy a simple app to test the destination connection&lt;/h1&gt;
-    &lt;div&gt;
-        &lt;p&gt;
-            At this stage you have the destination definition set up. But will everything work when everything is wired up, including from the workflow definition you'll define later? It's worth testing that new destination with a small app that just routes incoming requests via that destination to the data source (the OData service in ES5) using the Connectivity service
-
-        &lt;/p&gt;
-        &lt;p&gt;You will do that in this step, by deploying the simplest app definition (and its corresponding manifest file), and then testing the destination via that app's routing. While you would normally deploy applications from your editor or IDE, you can actually deploy an application archive, along with its corresponding descriptor file (the &quot;manifest&quot;) manually from within the SAP Cloud Platform Cockpit
-&lt;/p&gt;
-&lt;p&gt;For reference, the entire app and configuration is in the &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/tree/master/cpDestinationTestApp&quot;&gt;Github&lt;/a&gt; repo, as follows
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;File&lt;/th&gt;
-            &lt;th&gt;Description&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-            &lt;td&gt;manifest.yml&lt;/td&gt;
-            &lt;td&gt;the descriptor file describing how the application is to be deployed, and upon which services it relies&lt;/td&gt;
-          &lt;/tr&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-            &lt;td&gt;package.json&lt;/td&gt;
-            &lt;td&gt;the Node.js package description for the app, describing essentially what the app relies upon (the &lt;code&gt;@sap/approuter&lt;/code&gt; package) and how to start it up&lt;/td&gt;
-          &lt;/tr&gt;
-         &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-            &lt;td&gt;xs-app.json&lt;/td&gt;
-            &lt;td&gt;The approuter configuration, in the form of a single route that uses the &lt;code&gt;shopinfo&lt;/code&gt; destination &lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-&lt;/p&gt;
-&lt;p&gt;The files &lt;code&gt;package.json&lt;/code&gt; and &lt;code&gt;xs-app.json&lt;/code&gt; have been bundled together into the archive file &lt;code&gt;app.zip&lt;/code&gt; (also in the same &lt;code&gt;dest-test-app&lt;/code&gt; ). There's also an &lt;code&gt;xs-security.json&lt;/code&gt; file which describes how the &lt;code&gt;xsuaa&lt;/code&gt; service should be configured, a service upon which the app relies&lt;/p&gt;
-&lt;p&gt;
-    Download the &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/app.zip&quot;&gt;app.zip&lt;/a&gt; and &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/manifest.yml&quot;&gt;manifest.yml&lt;/a&gt; files. Download the &lt;code&gt;xsuaa&lt;/code&gt; service parameter file &lt;a href=&quot;https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/xs-security.json&quot;&gt;xs-security.json&lt;/a&gt; file too
-&lt;/p&gt;
-
-&lt;p&gt;
-    In fact, the successful operation of the app relies on not one but three services:
-
-    &lt;ul&gt;
-        &lt;li&gt;Authorization &amp; Trust Management (&lt;code&gt;xsuaa&lt;/code&gt;)&lt;/li&gt;
-        &lt;li&gt;Connectivity (&lt;code&gt;connectivity&lt;/code&gt;)&lt;/li&gt;
-        &lt;li&gt;Destination (&lt;code&gt;destination&lt;/code&gt;)&lt;/li&gt;
-    &lt;/ul&gt;
-
-Set up two of these (&lt;code&gt;xsuaa&lt;/code&gt; and &lt;code&gt;destination&lt;/code&gt;) manually, now, before deploying the app
-
-Navigate to the &quot;dev&quot; space in your Cloud Foundry (CF) organization.
-&lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/dev-space.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-
-      Setup the services in Cloud Platform.
-      
-      Next to deploy the app, navigate to dev space and select the &quot;Applications&quot; menu item and use the &quot;Deploy Application&quot; button. 
-&lt;/p&gt;&lt;p&gt;
-      For the &quot;File Location&quot;, browse to and select the app.zip archive that you previously downloaded. Ensure that the &quot;Use Manifest&quot; checkbox is selected, then browse to and select the manifest.yml file that you also previously downloaded for the &quot;Manifest Location&quot;. Then use the &quot;Deploy&quot; button
-      
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app1.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app3.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app4.png&quot;
-        alt=&quot;&quot;
-      /&gt;  
-&lt;/p&gt;&lt;p&gt;
-    Select its name (&quot;my-dest-test&quot;) and select the URL in the &quot;Application Routes&quot; section of the app's &quot;Overview&quot; page; the URL will contain a random string in the first part, to ensure that each of your apps deployed have unique hostnames
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app5.png&quot;
-    alt=&quot;&quot;
-  /&gt;  
-    
-      
-      After authenticating with your trial user email address and password, you'll be presented with the resource you saw at the start of this exercise. But this time, you're accessing it through the SAP Cloud Platform, via the Connectivity service and a destination definition, instead of directly. Moreover, if you've set up the Cloud Connector, this access is going through that too.
-      
-
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app6.png&quot;
-        alt=&quot;&quot;
-      /&gt;  
-    &lt;/p&gt;
-&lt;/div&gt;
-      &lt;h1 id=&quot;explore&quot;&gt;Explore the Products entityset&lt;/h1&gt;
-      
-      &lt;div&gt;&lt;p&gt;
-        You'll be using data from the Products entityset in the OData service you've just exposed, so use this step to explore the data in that entityset, so you're at least a little bit familiar with it
-        
-        &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/entity-products.png&quot;
-        alt=&quot;&quot;
-      /&gt;  
-       
-        
-        Explore the data that is returned - you should see a list of products, with the sort of properties you'd expect from a product database, such as an ID, name, description, information about stock quantity, and so on.
-        
-        If you prefer looking at JSON rather than XML, append the query parameter $format=json to the URL
-        &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/entity-products2.png&quot;
-        alt=&quot;&quot;
-      /&gt;  
-      &lt;/p&gt;&lt;/div&gt;
-         
-
-
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Check the data source Before creating the destination, which is effectively a pointer to a data source, it's worth checking that data source manually and directly. First, so you can see for yourself what you're aiming to get to from within the SAP Cloud Platform, and second, so you know what you're looking for when you access that data source indirectly (through the destination). Open up the OData service, taking care to specify client 002 in the URL Create a new destination definition Go to your &quot;Trial Subaccount Home&quot; page, and select the &quot;Destinations&quot; menu item within the &quot;Connectivity&quot; item Select the &quot;New Destination&quot; option, and in the configuration specify values for the appropriate parameters # Property Value 1 Name shopinfo 2 Type HTTP 3 Description Virtual Event Shop Info 4 URL http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/ 5 Proxy Type OnPremise 6 Location ID (leave blank) 7 Authentication Basic Authentication 8 User (your ES5 username) 9 Password (your ES5 password) Add the following property / value pair in the &quot;Additional Properties&quot; section using the &quot;New Property&quot; button, and then save the entire destination definition with the &quot;Save&quot; button # Property Value 1 sap-client 002 Deploy a simple app to test the destination connection At this stage you have the destination definition set up. But will everything work when everything is wired up, including from the workflow definition you'll define later? It's worth testing that new destination with a small app that just routes incoming requests via that destination to the data source (the OData service in ES5) using the Connectivity service</summary></entry><entry><title type="html">Hana CLI Reference</title><link href="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html" rel="alternate" type="text/html" title="Hana CLI Reference" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-        /* Tomorrow Theme */
-        /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-        /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-    
-        /* Tomorrow Comment */
-        .hljs-comment,
-        .hljs-quote {
-          color: #8e908c;
-        }
-    
-        /* Tomorrow Red */
-        .hljs-variable,
-        .hljs-template-variable,
-        .hljs-tag,
-        .hljs-name,
-        .hljs-selector-id,
-        .hljs-selector-class,
-        .hljs-regexp,
-        .hljs-deletion {
-          color: #c82829;
-        }
-    
-        /* Tomorrow Orange */
-        .hljs-number,
-        .hljs-built_in,
-        .hljs-builtin-name,
-        .hljs-literal,
-        .hljs-type,
-        .hljs-params,
-        .hljs-meta,
-        .hljs-link {
-          color: #f5871f;
-        }
-    
-        /* Tomorrow Yellow */
-        .hljs-attribute {
-          color: #eab700;
-        }
-    
-        /* Tomorrow Green */
-        .hljs-string,
-        .hljs-symbol,
-        .hljs-bullet,
-        .hljs-addition {
-          color: #718c00;
-        }
-    
-        /* Tomorrow Blue */
-        .hljs-title,
-        .hljs-section {
-          color: #4271ae;
-        }
-    
-        /* Tomorrow Purple */
-        .hljs-keyword,
-        .hljs-selector-tag {
-          color: #8959a8;
-        }
-        .hljs {
-          display: block;
-          overflow-x: auto;
-          color: #4d4d4c;
-          padding: 0.5em;
-        }
-        pre {
-          background-color: #f8f8f8;
-          border: 1px solid #cccccc;
-          border-radius: 3px;
-          overflow-x: auto;
-          white-space: pre-wrap;
-          overflow-wrap: break-word;
-        }
-      &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-   &lt;a href=&quot;#intro&quot;&gt;Introduction&lt;/a&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#requirements&quot;&gt;Requirements / Download and Installation&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#tips&quot;&gt;Tips and Tricks&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    &lt;h1 id=&quot;intro&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;
-  A developer-centric HANA command line tool, particularly designed to be used
-  when performing local HANA development in non-SAP tooling (like VSCode). It
-  utilizes the default-env.json that is often used in local development for
-  connectivity to a remote HANA DB (although it can of course be used with a
-  local HANA Express instance as well). There is no intention to replacing the
-  hdbsql tool as a generic SQL console. Instead this sample will focus on
-  simplifying and grouping common and complex commands that otherwise might a
-  lot of separate scripts
-&lt;/p&gt;
-&lt;h1 id=&quot;requirements&quot;&gt;Requirements / Download and Installation&lt;/h1&gt;
-&lt;p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;Install Node.js&lt;/li&gt;
-        &lt;li&gt;
-            &lt;p&gt;
-                @sap Node.js packages have moved from  https://npm.sap.com  to the default registry https://registry.npmjs.org. As future versions of @sap modules are going to be published only there, please make sure to adjust your registry with &lt;code&gt;npm config delete @sap:registry&lt;/code&gt;
-            &lt;/p&gt;
-            
-        &lt;/li&gt;
-        &lt;li&gt;Install via &lt;code&gt;npm install -g hana-cli&lt;/code&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/p&gt;
-&lt;h1 id=&quot;tips&quot;&gt;Tips and Tricks&lt;/h1&gt;
-&lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;#&lt;/th&gt;
-        &lt;th&gt;Description&lt;/th&gt;
-        &lt;th&gt;Command&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;HANA CLI Help&lt;/span&gt; &lt;br&gt;List all Commands and their Aliases&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;hana-cli help&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;HANA CLI Connect&lt;/span&gt; &lt;br&gt;Connects to a HANA DB and writes connection information to a default-env-admin.json&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;hana-cli connect&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Open database explorer&lt;/span&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;hana-cli opendbx&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Create Module&lt;/span&gt;&lt;br&gt;Create or adjust DB Module in your local project structure. If the folder already exists the files .build.js and package.json will be replaced with updated content designed to allow for local hdi-deploy run&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;hana-cli createModule&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Check status of Hana Database&lt;/span&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;hana-cli status&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td scope=&quot;row&quot;&gt;6&lt;/td&gt;
-        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;serviceKey&lt;/span&gt;&lt;br&gt;Connect and write default-env.json via cf/xs service key&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;hana-cli serviceKey [instance] [key]&lt;/code&gt;&lt;br&gt; &lt;b&gt;where&lt;/b&gt; &lt;br&gt; - &lt;span class=&quot;hljs-string&quot;&gt;instance&lt;/span&gt; is the name of the hana service instance created in cloud platform(via CLI or directly) &lt;br&gt; - &lt;span class=&quot;hljs-string&quot;&gt;key&lt;/span&gt; is the service created for the above service&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td scope=&quot;row&quot;&gt;7&lt;/td&gt;
-        &lt;td&gt;&lt;span class=&quot;hljs-string&quot;&gt;Inspect a table&lt;/span&gt;&lt;br&gt; Return metadata about a DB table &lt;br&gt;&lt;br&gt; Use option &lt;code&gt;-o cds&lt;/code&gt; to generate cds data model that can be added to CDS&lt;/td&gt;
-        &lt;td&gt;&lt;code&gt;hana-cli inspectTable [Insert Schema Name] [Insert Table Name]&lt;/code&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Introduction Requirements / Download and Installation Tips and Tricks Introduction A developer-centric HANA command line tool, particularly designed to be used when performing local HANA development in non-SAP tooling (like VSCode). It utilizes the default-env.json that is often used in local development for connectivity to a remote HANA DB (although it can of course be used with a local HANA Express instance as well). There is no intention to replacing the hdbsql tool as a generic SQL console. Instead this sample will focus on simplifying and grouping common and complex commands that otherwise might a lot of separate scripts Requirements / Download and Installation Install Node.js @sap Node.js packages have moved from https://npm.sap.com to the default registry https://registry.npmjs.org. As future versions of @sap modules are going to be published only there, please make sure to adjust your registry with npm config delete @sap:registry Install via npm install -g hana-cli Tips and Tricks # Description Command 1 HANA CLI Help List all Commands and their Aliases hana-cli help 2 HANA CLI Connect Connects to a HANA DB and writes connection information to a default-env-admin.json hana-cli connect 3 Open database explorer hana-cli opendbx 4 Create ModuleCreate or adjust DB Module in your local project structure. If the folder already exists the files .build.js and package.json will be replaced with updated content designed to allow for local hdi-deploy run hana-cli createModule 5 Check status of Hana Database hana-cli status 6 serviceKeyConnect and write default-env.json via cf/xs service key hana-cli serviceKey [instance] [key] where - instance is the name of the hana service instance created in cloud platform(via CLI or directly) - key is the service created for the above service 7 Inspect a table Return metadata about a DB table Use option -o cds to generate cds data model that can be added to CDS hana-cli inspectTable [Insert Schema Name] [Insert Table Name]</summary></entry><entry><title type="html">Bootstrap 4 Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/06/Bootstrap4Readme.html" rel="alternate" type="text/html" title="Bootstrap 4 Ready Reckoner" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/Bootstrap4Readme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/Bootstrap4Readme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html&quot;
-          &gt;Spacing Related&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#images&quot;&gt;Images Related&lt;/a&gt;&lt;/li&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#cssforimages&quot;&gt;CSS for Images&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/06/B4BordersReadme.html&quot;
-          &gt;Borders Related&lt;/a
-        &gt;
-      &lt;/li&gt;
-
-      &lt;li&gt;&lt;a href=&quot;#colors&quot;&gt;Colors Related&lt;/a&gt;&lt;/li&gt;
-
-      &lt;li&gt;&lt;a href=&quot;#typography&quot;&gt;Typography&lt;/a&gt;&lt;/li&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;Block Quote&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&quot;#naming-a-source&quot;&gt;Naming a source&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/ul&gt;
-
-    &lt;h1 id=&quot;images&quot;&gt;Images Related&lt;/h1&gt;
-    &lt;h2 id=&quot;cssforimages&quot;&gt;CSS for Images&lt;/h2&gt;
-    Images in Bootstrap are made responsive with
-    &lt;code&gt;.img-fluid. max-width: 100%; and height: auto;&lt;/code&gt; are applied to
-    the image so that it scales with the parent element
-
-    &lt;h1 id=&quot;colors&quot;&gt;Colors Related&lt;/h1&gt;
-    &lt;div class=&quot;border border-dark&quot;&gt;
-      &lt;p class=&quot;text-primary&quot;&gt;.text-primary&lt;/p&gt;
-      &lt;p class=&quot;text-secondary&quot;&gt;.text-secondary&lt;/p&gt;
-      &lt;p class=&quot;text-success&quot;&gt;.text-success&lt;/p&gt;
-      &lt;p class=&quot;text-danger&quot;&gt;.text-danger&lt;/p&gt;
-      &lt;p class=&quot;text-warning&quot;&gt;.text-warning&lt;/p&gt;
-      &lt;p class=&quot;text-info&quot;&gt;.text-info&lt;/p&gt;
-      &lt;p class=&quot;text-light bg-dark&quot;&gt;.text-light&lt;/p&gt;
-      &lt;p class=&quot;text-dark&quot;&gt;.text-dark&lt;/p&gt;
-      &lt;p class=&quot;text-muted&quot;&gt;.text-muted&lt;/p&gt;
-      &lt;p class=&quot;text-white bg-dark&quot;&gt;.text-white&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;mt-3&quot;&gt;
-      &lt;script src=&quot;https://gist.github.com/chatenrk/e99a0635e033f21f3d1d95345dc2e84e.js&quot;&gt;&lt;/script&gt;
-    &lt;/div&gt;
-
-    &lt;h1 id=&quot;typography&quot;&gt;Typography&lt;/h1&gt;
-    &lt;h2 id=&quot;blockquote&quot;&gt;Block Quote&lt;/h2&gt;
-    &lt;blockquote class=&quot;blockquote&quot;&gt;
-      &lt;p class=&quot;mb-0&quot;&gt;
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-        erat a ante.
-      &lt;/p&gt;
-    &lt;/blockquote&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/dae0f7a5d646884335b84cd623e96834.js&quot;&gt;&lt;/script&gt;
-    &lt;h2 id=&quot;naming-a-source&quot;&gt;Naming a source&lt;/h2&gt;
-    &lt;blockquote class=&quot;blockquote&quot;&gt;
-      &lt;p class=&quot;mb-0&quot;&gt;
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-        erat a ante.
-      &lt;/p&gt;
-      &lt;footer class=&quot;blockquote-footer&quot;&gt;
-        Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;
-      &lt;/footer&gt;
-    &lt;/blockquote&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/94678913394f38fabe72a051eb8ad354.js&quot;&gt;&lt;/script&gt;
-    &lt;h1 id=&quot;list-related&quot;&gt;List Related&lt;/h1&gt;
-    &lt;h2 id=&quot;desc-list-align&quot;&gt;Description list alignment&lt;/h2&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Align terms and descriptions horizontally by using our grid system’s
-        predefined classes (or semantic mixins). For longer terms, you can
-        optionally add a .text-truncate class to truncate the text with an
-        ellipsis
-      &lt;/p&gt;
-    &lt;/div&gt;
-
-    &lt;div&gt;
-      &lt;dl class=&quot;row border border-dark&quot;&gt;
-        &lt;dt class=&quot;col-sm-3&quot;&gt;Description lists&lt;/dt&gt;
-        &lt;dd class=&quot;col-sm-9&quot;&gt;
-          A description list is perfect for defining terms.
-        &lt;/dd&gt;
-
-        &lt;dt class=&quot;col-sm-3&quot;&gt;Euismod&lt;/dt&gt;
-        &lt;dd class=&quot;col-sm-9&quot;&gt;
-          &lt;p&gt;
-            Vestibulum id ligula porta felis euismod semper eget lacinia odio
-            sem nec elit.
-          &lt;/p&gt;
-          &lt;p&gt;Donec id elit non mi porta gravida at eget metus.&lt;/p&gt;
-        &lt;/dd&gt;
-
-        &lt;dt class=&quot;col-sm-3&quot;&gt;Malesuada porta&lt;/dt&gt;
-        &lt;dd class=&quot;col-sm-9&quot;&gt;
-          Etiam porta sem malesuada magna mollis euismod.
-        &lt;/dd&gt;
-
-        &lt;dt class=&quot;col-sm-3 text-truncate&quot;&gt;Truncated term is truncated&lt;/dt&gt;
-        &lt;dd class=&quot;col-sm-9&quot;&gt;
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
-          nibh, ut fermentum massa justo sit amet risus.
-        &lt;/dd&gt;
-
-        &lt;dt class=&quot;col-sm-3&quot;&gt;Nesting&lt;/dt&gt;
-        &lt;dd class=&quot;col-sm-9&quot;&gt;
-          &lt;dl class=&quot;row&quot;&gt;
-            &lt;dt class=&quot;col-sm-4&quot;&gt;Nested definition list&lt;/dt&gt;
-            &lt;dd class=&quot;col-sm-8&quot;&gt;
-              Aenean posuere, tortor sed cursus feugiat, nunc augue blandit
-              nunc.
-            &lt;/dd&gt;
-          &lt;/dl&gt;
-        &lt;/dd&gt;
-      &lt;/dl&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;script src=&quot;https://gist.github.com/chatenrk/c0000076a3897a9bbb76ea501ee032f6.js&quot;&gt;&lt;/script&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Spacing Related Images Related CSS for Images</summary></entry><entry><title type="html">Bootstrap 4 Spacing</title><link href="/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html" rel="alternate" type="text/html" title="Bootstrap 4 Spacing" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/B4SpacingReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&quot;#spacing&quot;&gt;Spacing&lt;/a&gt;&lt;/li&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&quot;#notation&quot;&gt;Notation&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#hori-centring&quot;&gt;Horizontal Centering&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/ul&gt;     
-  &lt;!-- Spacing Section --&gt;
- &lt;h1 id=&quot;spacing&quot;&gt;Spacing Related&lt;/h1&gt;
- &lt;h2 id=&quot;notation&quot;&gt;Notation&lt;/h2&gt;
- &lt;div&gt;
-   &lt;p&gt;
-     Spacing utilities that apply to all breakpoints, from &lt;code&gt;xs&lt;/code&gt; to
-     &lt;code&gt;xl&lt;/code&gt;, have no breakpoint abbreviation in them. This is
-     because those classes are applied from &lt;code&gt;min-width: 0&lt;/code&gt; and up,
-     and thus are not bound by a media query. The remaining breakpoints,
-     however, do include a breakpoint abbreviation. The classes are named
-     using the &lt;code&gt;format {property}{sides}-{size}&lt;/code&gt; for
-     &lt;code&gt;xs&lt;/code&gt; and
-     &lt;code&gt;{property}{sides}-{breakpoint}-{size}&lt;/code&gt; for
-     &lt;code&gt;sm&lt;/code&gt;,&lt;code&gt;md&lt;/code&gt;,&lt;code&gt;lg&lt;/code&gt; and &lt;code&gt;xl&lt;/code&gt;
-   &lt;/p&gt;
-   &lt;p&gt;
-     Where property is one of:
-     &lt;ul&gt;
-         &lt;li&gt;&lt;code&gt;m&lt;/code&gt; - for classes that set &lt;code&gt;margin&lt;/code&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;code&gt;p&lt;/code&gt; - for classes that set &lt;code&gt;padding&lt;/code&gt;&lt;/li&gt;
-     &lt;/ul&gt;
-   &lt;/p&gt;
- &lt;p&gt;
-     Where sides is one of:
-     &lt;ul&gt;
-         &lt;li&gt;
-             &lt;code&gt;t&lt;/code&gt;  - for classes that set 
-             &lt;code&gt;margin-top&lt;/code&gt; or
-             &lt;code&gt;padding-top&lt;/code&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-             &lt;code&gt;b&lt;/code&gt; - for classes that set
-             &lt;code&gt;margin-bottom&lt;/code&gt; or
-             &lt;code&gt;padding-bottom&lt;/code&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-             &lt;code&gt;l&lt;/code&gt; - for classes that set
-             &lt;code&gt;margin-left&lt;/code&gt; or
-             &lt;code&gt;padding-left&lt;/code&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-             &lt;code&gt;r&lt;/code&gt; - for classes that set
-             &lt;code&gt;margin-right&lt;/code&gt; or
-             &lt;code&gt;padding-right&lt;/code&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-             &lt;code&gt;x&lt;/code&gt; - for classes that set
-             &lt;code&gt;*-left&lt;/code&gt; or
-             &lt;code&gt;*-right&lt;/code&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-             &lt;code&gt;y&lt;/code&gt; - for classes that set
-             &lt;code&gt;*-top&lt;/code&gt; or
-             &lt;code&gt;*-bottom&lt;/code&gt;
-         &lt;/li&gt;
-         &lt;li&gt;
-             blank - for classes that set a 
-             &lt;code&gt;margin &lt;/code&gt; or
-             &lt;code&gt;padding&lt;/code&gt; on all 4 sides of the element
-         &lt;/li&gt;
-     &lt;/ul&gt;
- &lt;/p&gt;
-
- &lt;p&gt;
-     Where size is one of:
-    
-     &lt;li&gt;
-         &lt;code&gt;0&lt;/code&gt; - for classes that eliminate the
-         &lt;code&gt;margin&lt;/code&gt; or
-         &lt;code&gt;padding&lt;/code&gt; by setting it to
-         &lt;code&gt;0&lt;/code&gt;
-     &lt;/li&gt;
-     &lt;li&gt;
-         &lt;code&gt;1&lt;/code&gt;  - (by default) for classes that set the
-         &lt;code&gt;margin&lt;/code&gt; or
-         &lt;code&gt;padding&lt;/code&gt; to
-         &lt;code&gt;$spacer * .25&lt;/code&gt;
-     &lt;/li&gt;
-     &lt;li&gt;
-         &lt;code&gt;2&lt;/code&gt;  - (by default) for classes that set the
-         &lt;code&gt;margin&lt;/code&gt; or
-         &lt;code&gt;padding&lt;/code&gt; to
-         &lt;code&gt; $spacer * .5&lt;/code&gt;
-     &lt;/li&gt;
-     &lt;li&gt;
-         &lt;code&gt;3&lt;/code&gt;  - (by default) for classes that set the
-         &lt;code&gt;margin&lt;/code&gt; or
-         &lt;code&gt;padding&lt;/code&gt; to
-         &lt;code&gt; $spacer&lt;/code&gt;
-     &lt;/li&gt;
-     &lt;li&gt;
-         &lt;code&gt;4&lt;/code&gt;  - (by default) for classes that set the
-         &lt;code&gt;margin&lt;/code&gt; or
-         &lt;code&gt;padding&lt;/code&gt; to
-         &lt;code&gt;$spacer * 1.5&lt;/code&gt;
-     &lt;/li&gt;
-     &lt;li&gt;
-         &lt;code&gt;5&lt;/code&gt;  - (by default) for classes that set the
-         &lt;code&gt;margin&lt;/code&gt; or
-         &lt;code&gt;padding&lt;/code&gt; to
-         &lt;code&gt;$spacer * 3&lt;/code&gt;
-     &lt;/li&gt;
-     &lt;li&gt;
-         &lt;code&gt;auto&lt;/code&gt;  - for classes that set the
-         &lt;code&gt;margin&lt;/code&gt; to auto
-     &lt;/li&gt;
- &lt;/p&gt;
- &lt;p&gt;
-     (You can add more sizes by adding entries to the &lt;code&gt;$spacers&lt;/code&gt;  Sass map variable.)
- &lt;/p&gt;
-
- &lt;h2 id=&quot;hori-centring&quot;&gt;Horizontal centering&lt;/h2&gt;
- &lt;p&gt;Additionally, Bootstrap also includes an &lt;code&gt;.mx-auto&lt;/code&gt;  class for horizontally centering fixed-width block level content—that is, content that has &lt;code&gt;display: block&lt;/code&gt;  and a &lt;code&gt;width&lt;/code&gt;  set—by setting the horizontal margins to &lt;code&gt;auto&lt;/code&gt;&lt;/p&gt;
- &lt;div class=&quot;mx-auto&quot; style=&quot;width: 200px;&quot;&gt;
-     Centered element
-   &lt;/div&gt;
-   &lt;div&gt;
-     &lt;script src=&quot;https://gist.github.com/chatenrk/b532024908ca0bb01838073ece97e0dd.js&quot;&gt;&lt;/script&gt;
-   &lt;/div&gt;
- &lt;/div&gt;  
-&lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Spacing Notation Horizontal Centering Spacing Related Notation Spacing utilities that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0 and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation. The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm,md,lg and xl Where property is one of: m - for classes that set margin p - for classes that set padding Where sides is one of: t - for classes that set margin-top or padding-top b - for classes that set margin-bottom or padding-bottom l - for classes that set margin-left or padding-left r - for classes that set margin-right or padding-right x - for classes that set *-left or *-right y - for classes that set *-top or *-bottom blank - for classes that set a margin or padding on all 4 sides of the element</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Provision Hana Cloud Blogs to explore # Blog Link 1 OData with SAP HANA Cloud - Hands-on Video Tutorials https://blogs.sap.com/2020/10/07/odata-with-sap-hana-cloud-hands-on-video-tutorials/</summary></entry></feed>

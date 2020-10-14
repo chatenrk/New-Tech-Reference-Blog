@@ -24,92 +24,152 @@ background: '/img/bg-postman.jpg'
     </style>
   </head>
   <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <ul>
+        <li><a href="#introjwt">What is a JWT Token</a></li>
+      </ul>
+
+      <li><a href="#jwtViaPostman">Retrieve the JWT Token with Postman</a></li>
+      <ul>
+        <li><a href="#deployapp">Deploy Sample App</a></li>
+        <li>
+          <a href="#rolecoll"
+            >Create a role collection and assign it to your user</a
+          >
+        </li>
+        <li><a href="#readdata">Read Data</a></li>
+        <li><a href="#accesstoken">Get access token via postman</a></li>
+      </ul>
+    </ul>
     <h1 id="intro">Introduction</h1>
     <h2 id="introjwt">What is a JWT Token</h2>
-    <p>
-      JWT (pronounced: jot) tokens are the de-facto standard for authentication
-      in modern web applications
-    </p>
+    <div>
+      <p>
+        JWT (pronounced: jot) tokens are the de-facto standard for
+        authentication in modern web applications
+      </p>
 
-    <blockquote>
-      A JWT token is a manipulation-proof, signed JSON object that contains
-      standardized properties like user information and access rights
-    </blockquote>
+      <blockquote>
+        A JWT token is a manipulation-proof, signed JSON object that contains
+        standardized properties like user information and access rights
+      </blockquote>
 
-    <p>
-      In Cloud Foundry, this token is issued by the User Account and
-      Authentication (UAA) server. In the case of SAP CP Cloud Foundry and SAP
-      HANA XSA, we call this service also XSUAA
-    </p>
-
+      <p>
+        In Cloud Foundry, this token is issued by the User Account and
+        Authentication (UAA) server. In the case of SAP CP Cloud Foundry and SAP
+        HANA XSA, we call this service also XSUAA
+      </p>
+    </div>
     <h2 id="jwtViaPostman">Retrieve the JWT Token with Postman</h2>
     <h3 id="deployapp">Deploy Sample App</h3>
-    For the purpose of a demo, we are going to deploy an exisitng CAP app.
-    Details are as below
-    <br />
-
-    <pre class="hljs"><code>
-        git clone <a href="https://github.com/gregorwolf/bookshop-demo">https://github.com/gregorwolf/bookshop-demo</a>
-        bookshop-demo 
-        mbt build  
-        cf deploy mta_archives/bookshop-demo_0.0.1.mtar
-      </code></pre>
+    <div>
+      For the purpose of a demo, we are going to deploy an exisitng CAP app.
+      Details are as below
+      <script src="https://gist.github.com/chatenrk/d3255ee56291e3ed64ff23e761c256cb.js"></script>
+    </div>
     <h3 id="rolecoll">Create a role collection and assign it to your user</h3>
-    <p>Perform the below steps
-        <ul>
-            <li>Create a new role collection
-                <img src="{{site.baseurl}}/img/ContentRelated/PostmanApiTesting/role-coll1.png" alt="">
-            </li>
-            <li>Assign bookshop admin role
-                <img src="{{site.baseurl}}/img/ContentRelated/PostmanApiTesting/role-coll2.png" alt="">
-            </li>
-            <li>Assign role collection to SAP User ID
-                <img src="{{site.baseurl}}/img/ContentRelated/PostmanApiTesting/role-coll3.png" alt="">
-            </li>
-        </ul>
-    </p>
-
+    <div>
+      <p>Perform the below steps</p>
+      <ul>
+        <li>
+          Create a new role collection
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanApiTesting/role-coll1.png"
+            alt=""
+          />
+        </li>
+        <li>
+          Assign bookshop admin role
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanApiTesting/role-coll2.png"
+            alt=""
+          />
+        </li>
+        <li>
+          Assign role collection to SAP User ID
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanApiTesting/role-coll3.png"
+            alt=""
+          />
+        </li>
+      </ul>
+    </div>
     <h3 id="readdata">Read Data</h3>
-    <p>Perform the below steps 
-        <ul>
-            <li>get the URL of the server application using SAP CF CLI <br>
-            <code>cf apps | grep bookshop-demo-srv</code>
-            <img src="{{site.baseurl}}/img/ContentRelated/PostmanApiTesting/app-info.png" alt="">
-            </li>
-            <li>test the srv admin/Books in postman<br>
-            <img src="{{site.baseurl}}/img/ContentRelated/PostmanApiTesting/postman-test1.png" alt="">
-            </li>
-        </ul>
-    </p>
-
+    <div>
+      <p>Perform the below steps</p>
+      <ul>
+        <li>
+          get the URL of the server application using SAP CF CLI <br />
+          <code>cf apps | grep bookshop-demo-srv</code>
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanApiTesting/app-info.png"
+            alt=""
+          />
+        </li>
+        <li>
+          test the srv admin/Books in postman<br />
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanApiTesting/postman-test1.png"
+            alt=""
+          />
+        </li>
+      </ul>
+    </div>
     <h3 id="accesstoken">Get access token via postman</h3>
-    <p>
-        Open new access token dialog in postman and enter the following
-        <ol>
-            <li>Token name as required</li>
-            <li>Grant Type as <code>Password Credentials</code> </li>
-            <li>Access token URL as below</li>
-           <li>UserName - <b>User id of trial account</b> </li> 
-           <li>Password - <b>Password of trial account</b> </li>
-           <li>Client ID as below</li>
-           <li>Client secret as below</li>
-        </ol>
-    </p>
-    <p>
-        To read other value we make use of environment variables of the app. For the same execute the below command
-        <pre class="hljs"><code> cf env bookshop-demo-srv</code></pre>
+    <div>
+      <p>Open new access token dialog in postman and enter the following</p>
+      <ol>
+        <li>Token name as required</li>
+        <li>Grant Type as <code>Password Credentials</code></li>
+        <li>Access token URL as below</li>
+        <li>UserName - <b>User id of trial account</b></li>
+        <li>Password - <b>Password of trial account</b></li>
+        <li>Client ID as below</li>
+        <li>Client secret as below</li>
+      </ol>
+      <p>
+        To read other value we make use of environment variables of the app. For
+        the same execute the below command
+      </p>
+      <pre class="hljs"><code> cf env bookshop-demo-srv</code></pre>
 
-        This will print a large JSON file. In there, find the object VCAP_SERVICES.xsuaa.Enter the missing values in the dialog as below
-        <pre class="hljs"><code> Access Token URL = xsuaa[0].credentials.url <br> Client ID = xsuaa[0].credentials.clientid <br> Client Secret = xsuaa[0].credentials.clientsecret
+      <p>
+        This will print a large JSON file. In there, find the object
+        VCAP_SERVICES.xsuaa.Enter the missing values in the dialog as below
+      </p>
+      <pre
+        class="hljs"
+      ><code> Access Token URL = xsuaa[0].credentials.url <br> Client ID = xsuaa[0].credentials.clientid <br> Client Secret = xsuaa[0].credentials.clientsecret
         </code></pre>
 
-        <img src="{{site.baseurl}}/img/ContentRelated/PostmanApiTesting/postman-test2.png" alt="">
-
-    </p>
-
-    <p>
-        Store the returned access token in postman and use the same when querying the service on SAP Cloud platform
-        <img src="{{site.baseurl}}/img/ContentRelated/PostmanApiTesting/postman-test3.png" alt="">
-    </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanApiTesting/postman-test2.png"
+        alt=""
+      />
+      <p>
+        Store the returned access token in postman and use the same when
+        querying the service on SAP Cloud platform
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanApiTesting/postman-test3.png"
+        alt=""
+      />
+    </div>
   </body>
 </html>

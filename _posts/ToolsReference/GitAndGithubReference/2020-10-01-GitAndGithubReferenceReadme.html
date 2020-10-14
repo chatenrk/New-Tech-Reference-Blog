@@ -16,7 +16,7 @@ background: '/img/bg-github.jpg'
   <body>
     <p><strong>[Table of Contents]</strong></p>
     <ul>
-      <li><a href="{% link _posts/ToolsReference/GitAndGithubReference/2020-10-01-GitCommandsQuickReference.html %}">Quick Reference</a></li>
+      <li><a href="{% link {{ site.data.samplelist.git_reference }}/2020-10-01-GitCommandsQuickReference.html %}">Quick Reference</a></li>
       <li><a href="#generalinfo">General Information</a></li>
       <ul>
         <li><a href="#git-workflow">Git Workflow</a></li>
@@ -35,7 +35,7 @@ background: '/img/bg-github.jpg'
     <p>The local repository consists of three "trees" maintained by git. the first one is the <b>Working Directory</b> which holds the actual files. <br> The second one is the <b>Index</b>  which acts as a staging area and finally the <b>HEAD</b> which points to the last commit made.
     <br>
       <img
-    src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/gitWorkflow.png"
+    src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GitAndGitHubRelated/gitWorkflow.png"
     class="img-fluid"
     alt="Git Workflow"
   />
@@ -44,7 +44,7 @@ background: '/img/bg-github.jpg'
   <h2 id="git-branching">Git Branching</h2>
 <p>Branches are used to develop features isolated from each other. The master branch is the &quot;default&quot; branch when you create a repository. Use other branches for development and merge them back to the master branch upon completion.
   <img
-  src="{{site.baseurl}}/img/ContentRelated/GitAndGitHubRelated/gitBranching.png"
+  src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GitAndGitHubRelated/gitBranching.png"
   class="img-fluid"
   alt="Git Branching"
 />

@@ -2,8 +2,29 @@
 native_hana_ref: '_posts/SAPHanaReference/NativeHanaReference'
 mfapp_related: '_posts/SAPHanaReference/NativeHanaReference/MFAppRelated'
 hana_client_reference: '_posts/SAPHanaReference/NativeHanaReference/HANAClientReference'
+
 abap_reference:
 abap_on_hana_reference: '_posts/SAPABAPReference/ABAPOnHanaReference'
 
+tools_reference:
+excel_reference: '_posts/ToolsReference/ExcelReference'
+git_reference: '_posts/ToolsReference/GitAndGithubReference'
+html_reference: '_posts/ToolsReference/HTMLReference'
+bootstrap4_reference: '_posts/ToolsReference/HTMLReference/Bootstrap4Related'
+postman_reference: '_posts/ToolsReference/PostmanReference'
+cptrial_ref: '_posts/ToolsReference/ToolsForSAP/SetupCPTrial'
+hana_cloud_provisioning_ref: '_posts/ToolsReference/ToolsForSAP/HANACloudRelated/ProvisioningRelated'
+bas_setup_reference: '_posts/ToolsReference/ToolsForSAP/SAPBusinessApplicationStudio/SetupRelated'
+add_entitlements_ref: '_posts/ToolsReference/ToolsForSAP/AddEntitlementsCP'
+cpdestination_ref: '_posts/ToolsReference/ToolsForSAP/CreateCPDestination'
+dockerforcc_ref: '_posts/ToolsReference/ToolsForSAP/DockerforCloudConnector'
+toolsforsap_ref: '_posts/ToolsReference/ToolsForSAP'
+hanacloud_ref: '_posts/ToolsReference/ToolsForSAP/HANACloudRelated'
+bas_ref: '_posts/ToolsReference/ToolsForSAP/SAPBusinessApplicationStudio'
+vscode_ref: '_posts/ToolsReference/VSCodeReference'
+jekyll_ref: '_posts/ToolsReference/JekyllReference'
 
 image_content: '/img/ContentRelated'
+
+#{{ site.data.samplelist.abap_on_hana_reference }}
+#{{ site.data.samplelist.image_content }}

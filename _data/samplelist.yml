@@ -1,0 +1,9 @@
+# Custom Variables
+native_hana_ref: '_posts/SAPHanaReference/NativeHanaReference'
+mfapp_related: '_posts/SAPHanaReference/NativeHanaReference/MFAppRelated'
+hana_client_reference: '_posts/SAPHanaReference/NativeHanaReference/HANAClientReference'
+abap_reference:
+abap_on_hana_reference: '_posts/SAPABAPReference/ABAPOnHanaReference'
+
+
+image_content: '/img/ContentRelated'

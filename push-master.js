@@ -1,5 +1,5 @@
 var execProcess = require('./exec_process.js');
-execProcess.result('sh push-update.sh', function (err, response) {
+execProcess.result('sh master-push.sh', function (err, response) {
   if (!err) {
     console.log(response);
   } else {

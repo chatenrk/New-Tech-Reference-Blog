@@ -1,0 +1,487 @@
+---
+layout: post
+title: 'Sample Gateway Project'
+subtitle: 'Gateway Ready Reckoner'
+date: 2020-10-15
+background: '/img/bg-abap.png'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li>
+        <a href="#create-new-project-in-gateway-builder"
+          >Create new project in Gateway Builder</a
+        >
+      </li>
+      <li><a href="#import-ddic-structure">Import DDIC Structure</a></li>
+      <li><a href="#generate-runtime-objects">Generate Runtime Objects</a></li>
+      <li>
+        <a href="#register-and-test-the-odata-service"
+          >Register and Test the OData service</a
+        >
+      </li>
+      <li>
+        <a href="#provision-the-get_entityset-method"
+          >Provision the GET_ENTITYSET method</a
+        >
+      </li>
+      <li>
+        <a href="#add-support-for-filter-to-your-code"
+          >Add support for $filter to your code</a
+        >
+      </li>
+      <li>
+        <a href="#add-support-for-additional-query-options-to-your-code"
+          >Add support for additional query options to your code</a
+        >
+      </li>
+      <li>
+        <a href="#provision-the-get_entity-method"
+          >Provision the GET_ENTITY method</a
+        >
+      </li>
+      <li>
+        <a href="#add-an-additional-entity-set-for-sales-order-items"
+          >Add an additional entity set for Sales Order Items</a
+        >
+      </li>
+    </ul>
+    <h2 id="create-new-project-in-gateway-builder">
+      Create new project in Gateway Builder
+    </h2>
+    <p>
+      Open transaction <code>SEGW</code> and click create to create a new
+      gateway project
+    </p>
+    <img
+      class="border border-dark m-1"
+      style="object-fit: contain"
+      src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/segw.png"
+      alt=""
+    />
+    <p>Click on the Create Project button</p>
+    <img
+      class="border border-dark m-1"
+      style="object-fit: contain"
+      src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/segw2.png"
+      alt=""
+    />
+    <p>Create new project with name <b>ZTEST_SEPM_ISOE</b></p>
+    <img
+      class="border border-dark m-1"
+      style="object-fit: contain"
+      src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/segw3.png"
+      alt=""
+    />
+    <img
+      class="border border-dark m-1"
+      style="object-fit: contain"
+      src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/segw4.png"
+      alt=""
+    />
+    <h2 id="import-ddic-structure">Import DDIC Structure</h2>
+    <div>
+      <p>Import DDIC Structure <strong>SEPM_ISOE</strong></p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/DDIC_IMP.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/DDIC_IMP2.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/DDIC_IMP3.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/DDIC_IMP4.png"
+        alt=""
+      />
+    </div>
+    <h2 id="generate-runtime-objects">Generate Runtime Objects</h2>
+    <div>
+      <p>
+        Press the <strong>Generate Runtime Objects</strong> to generate runtime
+        objects
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/runtime.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/runtime2.png"
+        alt=""
+      />
+    </div>
+    <h2 id="register-and-test-the-odata-service">
+      Register and Test the OData service
+    </h2>
+    <div>
+      <p>
+        Expand the node <strong>Service Maintenance</strong> and right-click on
+        <strong>GW_HUB</strong> and select <strong>Register</strong>
+      </p>
+      <div>
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}{{
+        site.data.samplelist.image_content }}/GatewayProject/register.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/register2.png"
+          alt=""
+        />
+      </div>
+      <p>
+        In the navigation tree right-click on GW_HUB and select SAP Gateway
+        Client.Alternatively click on the SAP Gateway Client button in the
+        detail section
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/test.png"
+        alt=""
+      />
+      <p>
+        This opens up the SAP Gateway Client in a new screen. The URI of the
+        service document is already
+        defaulted(<code>/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/?$format=xml</code>).
+        Press the Execute button
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/test2.png"
+        alt=""
+      />
+      <p>Press the Button “Entity Sets” and select SalesOrderSet</p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/ent_sets.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/ent_sets1.png"
+        alt=""
+      />
+      <p>
+        After pressing Execute button, you see an error message that indicates
+        that the method SALESORDERSET_GET_ENTITYSET has not yet been implemented
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/ent_sets2.png"
+        alt=""
+      />
+    </div>
+    <h2 id="provision-the-getentityset-method">
+      Provision the GET_ENTITYSET method
+    </h2>
+    <p>
+      Expand the node <strong>Service Implementation</strong> and expand
+      <strong>SalesOrderSet</strong>.Now right-click on
+      <strong>GetEntitySet(Query)</strong> and choose
+      <strong>Go to ABAP Workbench</strong>
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_entset.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_entset2.png"
+        alt=""
+      />
+    </div>
+    <p>
+      Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITYSET
+      and make sure to select it.Click on the Redefine Method button
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_entset3.png"
+        alt=""
+      />
+      <p>
+        Copy the entire coding shown below into the salesorderset_get_entityset
+        method
+      </p>
+      <script src="https://gist.github.com/chatenrk/ce78b19785260e9e48e7db31319b6faa.js"></script>
+      <div>
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_entset4.png"
+          alt=""
+        />
+      </div>
+      <p>
+        Click on Activate. Navigate back to the Service Builder main screen. In
+        the navigation tree right-click on GW_HUB and select SAP Gateway
+        Client.Press the Button “Entity Sets” and select SalesOrderSet
+      </p>
+      <div>
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_entset5.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_entset6.png"
+          alt=""
+        />
+      </div>
+      <p>
+        You can retrieve the number of sales orders by adding
+        <strong>/$count</strong> to the request URI
+      </p>
+    </div>
+    <h2 id="add-support-for-filter-to-your-code">
+      Add support for $filter to your code
+    </h2>
+    <div>
+      <p>
+        Expand the node Service Implementation and SalesOrderSet and choose the
+        entry <strong>GetEntitySet (Query)</strong>. Switch to the change mode
+        and replace the code with the code shown below.The code retrieves the
+        $filter statement as an osql statement for the where clause. The data is
+        retrieved and inserted into the return table et_entityset
+      </p>
+      <script src="https://gist.github.com/chatenrk/eaa87afa86d73d12abd99380d78cfbdc.js"></script>
+      <p>
+        Open up the SAP Gateway Client, and replace the URI as below. Further
+        execute
+        <code
+          >/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency
+          ge
+          100000&amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;$format=json</code
+        >
+      </p>
+
+      <div>
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/filter_ops.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <h2 id="add-support-for-additional-query-options-to-your-code">
+      Add support for additional query options to your code
+    </h2>
+    <p>
+      Replace the code with the code shown below. The code retrieves the values
+      for $top and $skip and the $filter statement as an osql statement for the
+      where clause.The data is retrieved and in the end it is checked whether
+      $inlinecount is used (which is a default for SAPUI5)
+    </p>
+    <script src="https://gist.github.com/chatenrk/81a448e83f1c9368a2e7a59c257a31e8.js"></script>
+    <p>
+      Open up the SAP Gateway Client, and replace the URI as below. Further
+      execute
+      <code
+        >/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency
+        ge
+        100000&amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;$top=2&amp;$skip=1&amp;$inlinecount=allpages&amp;$format=json</code
+      >
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/filter_ops2.png"
+        alt=""
+      />
+    </div>
+    <h2 id="provision-the-getentity-method">Provision the GET_ENTITY method</h2>
+    <p>
+      Expand the node Service Implementation and SalesOrderSet and choose the
+      entry
+      <strong>GetEntity (Read)</strong>
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_ent.png"
+        alt=""
+      />
+    </div>
+    <p>
+      Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITY
+      and make sure to select it.Click on the Redefine Method button
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_ent2.png"
+        alt=""
+      />
+    </div>
+    <p>Add the following code to the method.</p>
+    <script src="https://gist.github.com/chatenrk/55b08f9c3c8e37ace4b417669a181c5a.js"></script>
+    <p>
+      Click on Activate. In the navigation tree right-click on GW_HUB and select
+      SAP Gateway Client and use the following URL
+      <code
+        >/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet('500000034')​</code
+      >
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/get_ent3.png"
+        alt=""
+      />
+    </div>
+    <h2 id="add-an-additional-entity-set-for-sales-order-items">
+      Add an additional entity set for Sales Order Items
+    </h2>
+    <p>
+      Open the Service Builder Project again. We will now create a second entity
+      type for sales order items and entity set.Right-click again on Data Model
+      and select Import –&gt; DDIC Structure. Use the abap structure
+      <strong>SEPM_ISOIE</strong>
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/soitem.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/soitem2.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/soitem3.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/soitem4.png"
+        alt=""
+      />
+    </div>
+    <h2 id="add-an-association-and-navigation-properties">
+      Add an association and navigation properties
+    </h2>
+    <p>Expand Data Model and Right-click on Association and select Create</p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/asso.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/asso2.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/asso3.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/asso4.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/asso5.png"
+        alt=""
+      />
+    </div>
+    <h2
+      id="provision-the-getentityset-method-of-the-entity-set-salesorderitemset"
+    >
+      Provision the GET_ENTITY_SET method of the entity set SalesOrderItemSet
+    </h2>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/redefine1.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/redefine2.png"
+        alt=""
+      />
+      <p>Replace with the following code</p>
+      <script src="https://gist.github.com/chatenrk/3ceba1f80c5ca42b5766ca78cbffb0bf.js"></script>
+    </div>
+    <p>
+      In the navigation tree right-click on GW_HUB and select SAP Gateway
+      Client. Enter the following URI
+      <code
+        >/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet('500000034')/ToItems</code
+      >
+    </p>
+    <div>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/GatewayProject/asso6.png"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

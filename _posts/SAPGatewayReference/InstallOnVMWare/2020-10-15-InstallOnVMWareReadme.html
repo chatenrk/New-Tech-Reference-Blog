@@ -1,0 +1,100 @@
+---
+layout: post
+title: 'Install VMWare'
+subtitle: 'Installation Ready Reckoner'
+date: 2020-10-15
+background: '/img/bg-abap.png'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+
+    <ul>
+      <li><a href="#installation-reference">Installation reference</a></li>
+      <li><a href="#start-up-steps">Start-up steps</a></li>
+      <li><a href="#shut-down-steps">Shut down steps</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#abap-license-key">ABAP License Key</a></li>
+    </ul>
+    <h2 id="installation-reference">Installation reference</h2>
+    <p>
+      Use the
+      <a
+        href="{% link {{ site.data.samplelist.image_content }}/InstallVMWare/InstallVMWare.pdf %}"
+        >Link</a
+      >
+      for information regarding Installation of SAP Gateway on VMWare
+    </p>
+    <h2 id="start-up-steps">Start-up steps</h2>
+    <div>
+      <ul>
+        <li>Open <code>terminal</code> from activities menu</li>
+        <li>Run <code>su npladm</code></li>
+        <div>
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/InstallVMWare/su-npladm.png"
+            alt=""
+          />
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/InstallVMWare/su-npladm1.png"
+            alt=""
+          />
+        </div>
+        <li>Run <code>startsap</code></li>
+        <div>
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/InstallVMWare/startsap1.png"
+            alt=""
+          />
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/InstallVMWare/startsap2.png"
+            alt=""
+          />
+        </div>
+      </ul>
+    </div>
+    <h2 id="shut-down-steps">Shut down steps</h2>
+    <h2 id="credentials">Credentials</h2>
+    <div>
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>User Id</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row"></td>
+            <td>developer</td>
+            <td>Down1oad</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2 id="abap-license-key">ABAP License Key</h2>
+    <p>
+      Refer the section in
+      <a
+        href="{% link {{ site.data.samplelist.image_content }}/InstallVMWare/InstallVMWare.pdf %}"
+        >Link</a
+      >
+    </p>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+---
+layout: post
+title: 'Postman for gateway'
+subtitle: 'Postman is a lifeline'
+date: 2020-10-15
+background: '/img/bg-postman.jpg'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="#using-postman-to-query-sap-gateway"
+          >Using postman to query SAP Gateway</a
+        >
+      </li>
+      <li>
+        <a href="#storing-environment-variables"
+          >Storing environment variables</a
+        >
+      </li>
+      <li><a href="#blogs">Blogs</a></li>
+    </ul>
+    <h2 id="using-postman-to-query-sap-gateway">
+      Using postman to query SAP Gateway
+    </h2>
+    <div>
+      <p>Determine the HTTP Address of the server.</p>
+      <ul>
+        <li>Open T-Code – SMICM – &gt; in the menu Go To-&gt; Service</li>
+        <li>
+          Note the HTTP Port Name and Host name. Ping the host name in Command
+          Prompt to get the IP address
+        </li>
+        <li>
+          Use the IP Address and port from above to query the gateway system
+          <img
+            class="border border-dark m-1"
+            style="height: 100%; width: 100%; object-fit: contain"
+            src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/PostmanForGateway/metadata-call.png"
+            alt=""
+          />
+        </li>
+      </ul>
+    </div>
+    <h2 id="storing-environment-variables">Storing environment variables</h2>
+    <h2 id="blogs">Blogs</h2>
+    <table class="table table-sm table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Blog</th>
+          <th>Reference</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">1</td>
+          <td>Gateway – OData Post using Postman</td>
+          <td>
+            <a
+              href="https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/"
+              >https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td scope="row">2</td>
+          <td>
+            Using Postman For OData / Netweaver Gateway Testing CRUD Methods
+          </td>
+          <td>
+            <a
+              href="https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/"
+              >https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

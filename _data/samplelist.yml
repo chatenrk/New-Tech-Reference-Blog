@@ -7,6 +7,9 @@ abap_on_hana_reference: '_posts/SAPABAPReference/ABAPOnHanaReference'
 rap_reference: '_posts/SAPABAPReference/RAPReference'
 
 gateway_reference: '_posts/SAPGatewayReference'
+gateway_proj_ref: '_posts/SAPGatewayReference/GatewayProjects'
+vmware_install_ref: '_posts/SAPGatewayReference/InstallOnVMWare'
+postman_gateway_ref: '_posts/SAPGatewayReference/PostmanForGateway'
 
 hana_reference: '_posts/SAPHanaReference'
 native_hana_ref: '_posts/SAPHanaReference/NativeHanaReference'

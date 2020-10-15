@@ -1,12 +1,22 @@
 # Custom Variables
+
+cai_reference: '_posts/CAIReference'
+
+abap_reference: '_posts/SAPABAPReference'
+abap_on_hana_reference: '_posts/SAPABAPReference/ABAPOnHanaReference'
+rap_reference: '_posts/SAPABAPReference/RAPReference'
+
+gateway_reference: '_posts/SAPGatewayReference'
+
+hana_reference: '_posts/SAPHanaReference'
 native_hana_ref: '_posts/SAPHanaReference/NativeHanaReference'
 mfapp_related: '_posts/SAPHanaReference/NativeHanaReference/MFAppRelated'
 hana_client_reference: '_posts/SAPHanaReference/NativeHanaReference/HANAClientReference'
 
-abap_reference:
-abap_on_hana_reference: '_posts/SAPABAPReference/ABAPOnHanaReference'
 
-tools_reference:
+
+
+tools_reference: '_posts/ToolsReference'
 excel_reference: '_posts/ToolsReference/ExcelReference'
 git_reference: '_posts/ToolsReference/GitAndGithubReference'
 html_reference: '_posts/ToolsReference/HTMLReference'

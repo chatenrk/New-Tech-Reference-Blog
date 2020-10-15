@@ -5,17 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
   </head>
   <body>
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Tools Reference</h5>
             <p class="card-text">Tools Ready Reckoner</p>
             <a
-              href= "{% link _posts/ToolsReference/2020-10-01-ToolsReferenceReadme.html%}"
+              href="{% link {{ site.data.samplelist.tools_reference }}/2020-10-01-ToolsReferenceReadme.html%}"
               class="btn btn-primary"
               >Check Out..</a
             >
@@ -28,15 +27,40 @@
             <h5 class="card-title">SAP Hana Reference</h5>
             <p class="card-text">Ready Reckoner for SAP Hana</p>
             <a
-              href= "{% link _posts/SAPHanaReference/2020-10-06-SAPHanaReference.html%}"
+              href="{% link {{ site.data.samplelist.hana_reference }}/2020-10-06-SAPHanaReference.html%}"
               class="btn btn-primary"
               >Check Out..</a
             >
           </div>
         </div>
       </div>
-     
-       
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Chat Bots and Conversational AI</h5>
+            <p class="card-text">Ready Reckoner for CAI</p>
+            <a
+              href="{% link {{ site.data.samplelist.cai_reference }}/2020-10-14-CAIReferenceReadme.html%}"
+              class="btn btn-primary"
+              >Check Out..</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">SAP ABAP Reference</h5>
+            <p class="card-text">Ready Reckoner for ABAP</p>
+            <a
+              href="{% link {{ site.data.samplelist.abap_reference }}/2020-10-14-SAPABAPReference.html%}"
+              class="btn btn-primary"
+              >Check Out..</a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </body>

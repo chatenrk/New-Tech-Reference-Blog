@@ -1,4 +1,651 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-15T10:23:31+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">MF App Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html" rel="alternate" type="text/html" title="MF App Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-15T15:34:49+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Sample Gateway Project</title><link href="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html" rel="alternate" type="text/html" title="Sample Gateway Project" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#create-new-project-in-gateway-builder&quot;
+          &gt;Create new project in Gateway Builder&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#import-ddic-structure&quot;&gt;Import DDIC Structure&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#generate-runtime-objects&quot;&gt;Generate Runtime Objects&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#register-and-test-the-odata-service&quot;
+          &gt;Register and Test the OData service&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#provision-the-get_entityset-method&quot;
+          &gt;Provision the GET_ENTITYSET method&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#add-support-for-filter-to-your-code&quot;
+          &gt;Add support for $filter to your code&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#add-support-for-additional-query-options-to-your-code&quot;
+          &gt;Add support for additional query options to your code&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#provision-the-get_entity-method&quot;
+          &gt;Provision the GET_ENTITY method&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#add-an-additional-entity-set-for-sales-order-items&quot;
+          &gt;Add an additional entity set for Sales Order Items&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;create-new-project-in-gateway-builder&quot;&gt;
+      Create new project in Gateway Builder
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Open transaction &lt;code&gt;SEGW&lt;/code&gt; and click create to create a new
+      gateway project
+    &lt;/p&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;p&gt;Click on the Create Project button&lt;/p&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw2.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;p&gt;Create new project with name &lt;b&gt;ZTEST_SEPM_ISOE&lt;/b&gt;&lt;/p&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw3.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw4.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;h2 id=&quot;import-ddic-structure&quot;&gt;Import DDIC Structure&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;Import DDIC Structure &lt;strong&gt;SEPM_ISOE&lt;/strong&gt;&lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;generate-runtime-objects&quot;&gt;Generate Runtime Objects&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Press the &lt;strong&gt;Generate Runtime Objects&lt;/strong&gt; to generate runtime
+        objects
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/runtime.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/runtime2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;register-and-test-the-odata-service&quot;&gt;
+      Register and Test the OData service
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Expand the node &lt;strong&gt;Service Maintenance&lt;/strong&gt; and right-click on
+        &lt;strong&gt;GW_HUB&lt;/strong&gt; and select &lt;strong&gt;Register&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/register.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/register2.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;p&gt;
+        In the navigation tree right-click on GW_HUB and select SAP Gateway
+        Client.Alternatively click on the SAP Gateway Client button in the
+        detail section
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/test.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        This opens up the SAP Gateway Client in a new screen. The URI of the
+        service document is already
+        defaulted(&lt;code&gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/?$format=xml&lt;/code&gt;).
+        Press the Execute button
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/test2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;Press the Button “Entity Sets” and select SalesOrderSet&lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/ent_sets.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/ent_sets1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        After pressing Execute button, you see an error message that indicates
+        that the method SALESORDERSET_GET_ENTITYSET has not yet been implemented
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/ent_sets2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;provision-the-getentityset-method&quot;&gt;
+      Provision the GET_ENTITYSET method
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Expand the node &lt;strong&gt;Service Implementation&lt;/strong&gt; and expand
+      &lt;strong&gt;SalesOrderSet&lt;/strong&gt;.Now right-click on
+      &lt;strong&gt;GetEntitySet(Query)&lt;/strong&gt; and choose
+      &lt;strong&gt;Go to ABAP Workbench&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+      Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITYSET
+      and make sure to select it.Click on the Redefine Method button
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        Copy the entire coding shown below into the salesorderset_get_entityset
+        method
+      &lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/ce78b19785260e9e48e7db31319b6faa.js&quot;&gt;&lt;/script&gt;
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset4.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;p&gt;
+        Click on Activate. Navigate back to the Service Builder main screen. In
+        the navigation tree right-click on GW_HUB and select SAP Gateway
+        Client.Press the Button “Entity Sets” and select SalesOrderSet
+      &lt;/p&gt;
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset5.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset6.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;p&gt;
+        You can retrieve the number of sales orders by adding
+        &lt;strong&gt;/$count&lt;/strong&gt; to the request URI
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-support-for-filter-to-your-code&quot;&gt;
+      Add support for $filter to your code
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Expand the node Service Implementation and SalesOrderSet and choose the
+        entry &lt;strong&gt;GetEntitySet (Query)&lt;/strong&gt;. Switch to the change mode
+        and replace the code with the code shown below.The code retrieves the
+        $filter statement as an osql statement for the where clause. The data is
+        retrieved and inserted into the return table et_entityset
+      &lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/eaa87afa86d73d12abd99380d78cfbdc.js&quot;&gt;&lt;/script&gt;
+      &lt;p&gt;
+        Open up the SAP Gateway Client, and replace the URI as below. Further
+        execute
+        &lt;code
+          &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency
+          ge
+          100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$format=json&lt;/code
+        &gt;
+      &lt;/p&gt;
+
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/filter_ops.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-support-for-additional-query-options-to-your-code&quot;&gt;
+      Add support for additional query options to your code
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Replace the code with the code shown below. The code retrieves the values
+      for $top and $skip and the $filter statement as an osql statement for the
+      where clause.The data is retrieved and in the end it is checked whether
+      $inlinecount is used (which is a default for SAPUI5)
+    &lt;/p&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/81a448e83f1c9368a2e7a59c257a31e8.js&quot;&gt;&lt;/script&gt;
+    &lt;p&gt;
+      Open up the SAP Gateway Client, and replace the URI as below. Further
+      execute
+      &lt;code
+        &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency
+        ge
+        100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$top=2&amp;amp;$skip=1&amp;amp;$inlinecount=allpages&amp;amp;$format=json&lt;/code
+      &gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/filter_ops2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;provision-the-getentity-method&quot;&gt;Provision the GET_ENTITY method&lt;/h2&gt;
+    &lt;p&gt;
+      Expand the node Service Implementation and SalesOrderSet and choose the
+      entry
+      &lt;strong&gt;GetEntity (Read)&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_ent.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+      Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITY
+      and make sure to select it.Click on the Redefine Method button
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_ent2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Add the following code to the method.&lt;/p&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/55b08f9c3c8e37ace4b417669a181c5a.js&quot;&gt;&lt;/script&gt;
+    &lt;p&gt;
+      Click on Activate. In the navigation tree right-click on GW_HUB and select
+      SAP Gateway Client and use the following URL
+      &lt;code
+        &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet('500000034')​&lt;/code
+      &gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_ent3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-an-additional-entity-set-for-sales-order-items&quot;&gt;
+      Add an additional entity set for Sales Order Items
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Open the Service Builder Project again. We will now create a second entity
+      type for sales order items and entity set.Right-click again on Data Model
+      and select Import –&amp;gt; DDIC Structure. Use the abap structure
+      &lt;strong&gt;SEPM_ISOIE&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-an-association-and-navigation-properties&quot;&gt;
+      Add an association and navigation properties
+    &lt;/h2&gt;
+    &lt;p&gt;Expand Data Model and Right-click on Association and select Create&lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso5.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2
+      id=&quot;provision-the-getentityset-method-of-the-entity-set-salesorderitemset&quot;
+    &gt;
+      Provision the GET_ENTITY_SET method of the entity set SalesOrderItemSet
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/redefine1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/redefine2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;Replace with the following code&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/3ceba1f80c5ca42b5766ca78cbffb0bf.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+      In the navigation tree right-click on GW_HUB and select SAP Gateway
+      Client. Enter the following URI
+      &lt;code
+        &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet('500000034')/ToItems&lt;/code
+      &gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso6.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Create new project in Gateway Builder Import DDIC Structure Generate Runtime Objects Register and Test the OData service Provision the GET_ENTITYSET method Add support for $filter to your code Add support for additional query options to your code Provision the GET_ENTITY method Add an additional entity set for Sales Order Items Create new project in Gateway Builder Open transaction SEGW and click create to create a new gateway project Click on the Create Project button Create new project with name ZTEST_SEPM_ISOE Import DDIC Structure Import DDIC Structure SEPM_ISOE Generate Runtime Objects Press the Generate Runtime Objects to generate runtime objects Register and Test the OData service Expand the node Service Maintenance and right-click on GW_HUB and select Register In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Alternatively click on the SAP Gateway Client button in the detail section This opens up the SAP Gateway Client in a new screen. The URI of the service document is already defaulted(/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/?$format=xml). Press the Execute button Press the Button “Entity Sets” and select SalesOrderSet After pressing Execute button, you see an error message that indicates that the method SALESORDERSET_GET_ENTITYSET has not yet been implemented Provision the GET_ENTITYSET method Expand the node Service Implementation and expand SalesOrderSet.Now right-click on GetEntitySet(Query) and choose Go to ABAP Workbench Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITYSET and make sure to select it.Click on the Redefine Method button Copy the entire coding shown below into the salesorderset_get_entityset method Click on Activate. Navigate back to the Service Builder main screen. In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Press the Button “Entity Sets” and select SalesOrderSet You can retrieve the number of sales orders by adding /$count to the request URI Add support for $filter to your code Expand the node Service Implementation and SalesOrderSet and choose the entry GetEntitySet (Query). Switch to the change mode and replace the code with the code shown below.The code retrieves the $filter statement as an osql statement for the where clause. The data is retrieved and inserted into the return table et_entityset Open up the SAP Gateway Client, and replace the URI as below. Further execute /sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency ge 100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$format=json</summary></entry><entry><title type="html">Postman for gateway</title><link href="/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html" rel="alternate" type="text/html" title="Postman for gateway" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#using-postman-to-query-sap-gateway&quot;
+          &gt;Using postman to query SAP Gateway&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#storing-environment-variables&quot;
+          &gt;Storing environment variables&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;using-postman-to-query-sap-gateway&quot;&gt;
+      Using postman to query SAP Gateway
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;Determine the HTTP Address of the server.&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service&lt;/li&gt;
+        &lt;li&gt;
+          Note the HTTP Port Name and Host name. Ping the host name in Command
+          Prompt to get the IP address
+        &lt;/li&gt;
+        &lt;li&gt;
+          Use the IP Address and port from above to query the gateway system
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanForGateway/metadata-call.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;storing-environment-variables&quot;&gt;Storing environment variables&lt;/h2&gt;
+    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Blog&lt;/th&gt;
+          &lt;th&gt;Reference&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+          &lt;td&gt;Gateway – OData Post using Postman&lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&quot;
+              &gt;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+          &lt;td&gt;
+            Using Postman For OData / Netweaver Gateway Testing CRUD Methods
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&quot;
+              &gt;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Using postman to query SAP Gateway Storing environment variables Blogs Using postman to query SAP Gateway Determine the HTTP Address of the server. Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service Note the HTTP Port Name and Host name. Ping the host name in Command Prompt to get the IP address Use the IP Address and port from above to query the gateway system Storing environment variables Blogs # Blog Reference 1 Gateway – OData Post using Postman https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/ 2 Using Postman For OData / Netweaver Gateway Testing CRUD Methods https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/</summary></entry><entry><title type="html">Install VMWare</title><link href="/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html" rel="alternate" type="text/html" title="Install VMWare" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#installation-reference&quot;&gt;Installation reference&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#start-up-steps&quot;&gt;Start-up steps&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#shut-down-steps&quot;&gt;Shut down steps&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#credentials&quot;&gt;Credentials&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#abap-license-key&quot;&gt;ABAP License Key&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;installation-reference&quot;&gt;Installation reference&lt;/h2&gt;
+    &lt;p&gt;
+      Use the
+      &lt;a
+        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
+        &gt;Link&lt;/a
+      &gt;
+      for information regarding Installation of SAP Gateway on VMWare
+    &lt;/p&gt;
+    &lt;h2 id=&quot;start-up-steps&quot;&gt;Start-up steps&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Open &lt;code&gt;terminal&lt;/code&gt; from activities menu&lt;/li&gt;
+        &lt;li&gt;Run &lt;code&gt;su npladm&lt;/code&gt;&lt;/li&gt;
+        &lt;div&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm1.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;li&gt;Run &lt;code&gt;startsap&lt;/code&gt;&lt;/li&gt;
+        &lt;div&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap1.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap2.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;shut-down-steps&quot;&gt;Shut down steps&lt;/h2&gt;
+    &lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;User Id&lt;/th&gt;
+            &lt;th&gt;Password&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;developer&lt;/td&gt;
+            &lt;td&gt;Down1oad&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;abap-license-key&quot;&gt;ABAP License Key&lt;/h2&gt;
+    &lt;p&gt;
+      Refer the section in
+      &lt;a
+        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
+        &gt;Link&lt;/a
+      &gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry><entry><title type="html">MF App Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html" rel="alternate" type="text/html" title="MF App Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -316,7 +963,231 @@
     &lt;script src=&quot;https://gist.github.com/chatenrk/4e22d613df6737c09b7ddc5a8461142e.js&quot;&gt;&lt;/script&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Gateway Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference.html" rel="alternate" type="text/html" title="SAP Gateway Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference.html"></content><author><name></name></author></entry><entry><title type="html">Restful ABAP Programming</title><link href="/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme.html" rel="alternate" type="text/html" title="Restful ABAP Programming" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Gateway Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference.html" rel="alternate" type="text/html" title="SAP Gateway Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html&quot;
+          &gt;Sample Gateway Project&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#abap-development-via-vscode&quot;&gt;ABAP Development via VSCode&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html&quot;
+          &gt;Install on VMWare&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html&quot;
+          &gt;Postman Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#common-transactions&quot;&gt;Common transactions&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#common-codes-that-can-be-used&quot;
+          &gt;Common codes that can be used&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3 id=&quot;abap-development-via-vscode&quot;&gt;ABAP development via VSCode&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        For ABAP Development via VSCode refer to this
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme.html&quot;
+          &gt;link&lt;/a
+        &gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;common-transactions&quot;&gt;Common transactions&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Functionality&lt;/th&gt;
+            &lt;th&gt;Transaction&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;SAP Gateway Service Builder&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;SEGW&lt;/code&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;Open gateway client&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;/N/IWFND/GW_CLIENT&lt;/code&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+            &lt;td&gt;Error Log&lt;/td&gt;
+            &lt;td&gt;&lt;code&gt;/N/IWFND/ERROR_LOG&lt;/code&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;common-codes-that-can-be-used&quot;&gt;Common codes that can be used&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;h4&gt;Where clause for $filter operations&lt;/h4&gt;
+
+      &lt;script src=&quot;https://gist.github.com/chatenrk/1e7b6dcb013b1f0c2e2c04ce5663379a.js&quot;&gt;&lt;/script&gt;
+
+      &lt;h4&gt;$top operations&lt;/h4&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/8a253eb7549a4018d49a3eccb442acef.js&quot;&gt;&lt;/script&gt;
+
+      &lt;h4&gt;$skip operations&lt;/h4&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/f8d2ac936a6240ac1aa23fd9cf835cdf.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog&lt;/th&gt;
+            &lt;th&gt;Reference&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;SAP Gateway deployment options in a nutshell&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot; https://blogs.sap.com/2013/05/27/sap-netweaver-gateway-deployment-options-in-a-nutshell/&quot;
+              &gt;
+                https://blogs.sap.com/2013/05/27/sap-netweaver-gateway-deployment-options-in-a-nutshell/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;SAP Gateway Deployment Options&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2019/04/23/sap-gateway-deployment-options/&quot;
+                &gt;https://blogs.sap.com/2019/04/23/sap-gateway-deployment-options/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+            &lt;td&gt;Quick Starter Configuration Guide – SAP Gateway&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2013/05/14/quick-starter-configuration-guide-sap-gateway/&quot;
+                &gt;https://blogs.sap.com/2013/05/14/quick-starter-configuration-guide-sap-gateway/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+            &lt;td&gt;SAP Gateway Client – Tips and Tricks&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2017/06/15/sap-gateway-client-tips-and-tricks/&quot;
+                &gt;https://blogs.sap.com/2017/06/15/sap-gateway-client-tips-and-tricks/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
+            &lt;td&gt;
+              Updated tasklist available for SAP Gateway service activation
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2018/04/16/updated-tasklist-available-for-sap-gateway-service-activation/&quot;
+                &gt;https://blogs.sap.com/2018/04/16/updated-tasklist-available-for-sap-gateway-service-activation/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;6&lt;/td&gt;
+            &lt;td&gt;Activate Available OData in SAP Gateway&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/08/05/activate-available-odata-in-sap-gateway/&quot;
+                &gt;https://blogs.sap.com/2020/08/05/activate-available-odata-in-sap-gateway/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;7&lt;/td&gt;
+            &lt;td&gt;SAP Gateway Tracing and Error Checking&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/08/07/sap-gateway-tracing-and-error-checking/&quot;
+                &gt;https://blogs.sap.com/2020/08/07/sap-gateway-tracing-and-error-checking/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;8&lt;/td&gt;
+            &lt;td&gt;Get Full URL &amp;amp; Sample Payload from SAP Gateway&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/08/04/get-full-url-sample-payload-from-sap-gateway/&quot;
+                &gt;https://blogs.sap.com/2020/08/04/get-full-url-sample-payload-from-sap-gateway/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;9&lt;/td&gt;
+            &lt;td&gt;Odata V4 Gateway&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/02/13/implementation-of-sap-odata-v4/&quot;
+                &gt;https://blogs.sap.com/2020/02/13/implementation-of-sap-odata-v4/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;10&lt;/td&gt;
+            &lt;td&gt;
+              Understanding SAP Performance Statistics for SAP Gateway service
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2016/01/28/understanding-sap-performance-statistics-for-sap-netweaver-gateway-service/&quot;
+                &gt;https://blogs.sap.com/2016/01/28/understanding-sap-performance-statistics-for-sap-netweaver-gateway-service/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;11&lt;/td&gt;
+            &lt;td&gt;
+              How to add annotations to an OData service using code based
+              implementation
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2017/04/21/how-to-add-annotations-to-an-odata-service-using-code-based-implementation/&quot;
+                &gt;https://blogs.sap.com/2017/04/21/how-to-add-annotations-to-an-odata-service-using-code-based-implementation/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Sample Gateway Project ABAP Development via VSCode Install on VMWare Postman Related Common transactions Common codes that can be used Blogs</summary></entry><entry><title type="html">Restful ABAP Programming</title><link href="/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme.html" rel="alternate" type="text/html" title="Restful ABAP Programming" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -504,388 +1375,4 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Hana Client Reference MF App Reference</summary></entry><entry><title type="html">ABAP on Hana Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/09/ABAPOnHanaReferenceReadme.html" rel="alternate" type="text/html" title="ABAP on Hana Ready Reckoner" /><published>2020-10-09T00:00:00+05:30</published><updated>2020-10-09T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/09/ABAPOnHanaReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/09/ABAPOnHanaReferenceReadme.html"></content><author><name></name></author></entry><entry><title type="html">Add Entitlements in Cloud Platform</title><link href="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html" rel="alternate" type="text/html" title="Add Entitlements in Cloud Platform" /><published>2020-10-08T00:00:00+05:30</published><updated>2020-10-08T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/08/AddEntitlementsInCP.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#login&quot;&gt;Login and Add entitlement&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#subscribe&quot;&gt;Check and Subscribe&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;login&quot;&gt;Login and Add entitlement&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/EntitlementsInCP/add-entitlement.gif&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/div&gt;
-
-    &lt;h1 id=&quot;subscribe&quot;&gt;Check and Subscribe&lt;/h1&gt;
-    &lt;div&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/EntitlementsInCP/subscribe-and-open.gif&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Login and Add entitlement Check and Subscribe Login and Add entitlement</summary></entry><entry><title type="html">Docker for Cloud Connector</title><link href="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html" rel="alternate" type="text/html" title="Docker for Cloud Connector" /><published>2020-10-06T00:00:00+05:30</published><updated>2020-10-06T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#prep-env&quot;&gt;Prepare environment for Docker Image&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#build-docker&quot;&gt;Build the Docker image&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#instantiate&quot;&gt;Instantiate a container&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#connect&quot;
-          &gt;Connect to perform initial setup of the SAP Cloud Connector&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#backend-sys&quot;&gt;Make the SAP backend system available&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#expose-resources&quot;
-          &gt;Expose a set of resources in the backend system&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;prep-env&quot;&gt;Prepare environment for Docker Image&lt;/h1&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Check if docker is installed&lt;/li&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-setup-check.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;li&gt;
-        Create a new Directory and subdirectory called
-        &lt;code&gt;container-scc/&lt;/code&gt; and &lt;code&gt;sapdownloads/&lt;/code&gt; respectively
-      &lt;/li&gt;
-      &lt;li&gt;
-        Go to the cloud section of the&lt;a
-          href=&quot;https://tools.hana.ondemand.com/#cloud&quot;
-          &gt;SAP Development Tools website&lt;/a
-        &gt;
-        and download the latest Cloud Connector component, placing it into the
-        sapdownloads/ directory. Regardless of your local machine's operating
-        system, you will need to download for Linux, as that is what the
-        container will be running
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download1.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        From the same page, now download the latest SAP Java Virtual Machine
-        (JVM) into the sapdownloads/ directory, again for Linux, and
-        specifically the .rpm component
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download2.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Finally create a new file called Dockerfile in the container-scc/
-        directory (noting the capitalization and lack of extension on this file
-        name)
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-file-creation.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Into this file, copy the contents of the
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/DockerFileSample.txt&quot;
-          &gt;Dockerfile&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;build-docker&quot;&gt;Build the Docker image&lt;/h1&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        Build the image, and after that you can instantiate a container from
-        that image. In the &lt;b&gt;container-scc&lt;/b&gt; directory (where the Dockerfile
-        file is located), build the image as follows in this repository
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image1.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        On successful completion the cloud connector should be installed
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image4.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        Look for the image that's produced, with the following command
-        &lt;img
-          class=&quot;border border-dark m-1&quot;
-          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/show-docker-image.png&quot;
-          alt=&quot;&quot;
-        /&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h1 id=&quot;instantiate&quot;&gt;Instantiate a container&lt;/h1&gt;
-    &lt;li&gt;
-      Now you have an image, it's time to instantiate a container from it. This
-      will have Cloud Connector running inside it. Instantiate the container as
-      follows
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/instantiate-docker-container.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      Briefly, the parameters used here do the following:
-      &lt;ul&gt;
-        &lt;li&gt;
-          &lt;b&gt;-p 8443:8443&lt;/b&gt;: make port 8443 in the container available on the
-          host machine (remember, SAP Cloud Connector listens by default on port
-          8443 and you want to be able to connect to it with your browser on
-          your host machine)
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;b&gt;--name myscc&lt;/b&gt;: this gives a human-friendly name to the container
-          that can be used to refer to it in any subsequent commands
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;b&gt;-d&lt;/b&gt;: run the container in &quot;detached&quot; mode, i.e. in the
-          background
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;b&gt;scc&lt;/b&gt;: this is the name of the image from which the container is
-          to be created
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      Check that the container is running, with another Docker command
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-running-check.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;h1 id=&quot;connect&quot;&gt;
-      Connect to perform initial setup of the SAP Cloud Connector
-    &lt;/h1&gt;
-    &lt;li&gt;
-      Log on to the SAP Cloud Connector in your browser, and use the
-      administration interface to perform some initial setup, in particular,
-      connecting it to the SAP Cloud Platform
-    &lt;/li&gt;
-    &lt;li&gt;
-      Open your browser and go to the SAP Cloud Connector administration UI at
-      &lt;a href=&quot;https://localhost:8443&quot;&gt;https://localhost:8443&lt;/a&gt;. Remember that
-      this is only possible because, with the -p 8443:8443 parameter earlier,
-      you specified that port 8443 in the container (which is where SAP Cloud
-      Connector is actually running and listening) should be exposed to your
-      machine, the container's host (where Docker is running), also on port
-      8443.
-      &lt;blockquote&gt;
-        If this does not work on Chrome, try running on Internet Explorer
-      &lt;/blockquote&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      At the &quot;Cloud Connector Login&quot; page, log in with the default username and
-      password &lt;b&gt;Administrator&lt;/b&gt; and &lt;b&gt;manage&lt;/b&gt;. You're then prompted to
-      change this password which you should do, selecting the &quot;Save&quot; icon on the
-      right hand side to proceed (leave other options as they are)
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login1.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      Next, you're asked to specify an initial subaccount that you want the SAP
-      Cloud Connector to connect to
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;h1 id=&quot;backend-sys&quot;&gt;Make the SAP backend system available&lt;/h1&gt;
-    &lt;li&gt;
-      Now that the connection is established, you can define access to the
-      on-prem backend SAP system that the SAP Cloud Connector will facilitate
-    &lt;/li&gt;
-    &lt;li&gt;
-      Select the &quot;Cloud To On-Premise&quot; item in the navigation menu on the left
-      hand side, and in the &quot;Mapping Virtual To Internal System&quot; section, create
-      a new system mapping entry with the &quot;+&quot; icon. In the dialog that follows,
-      you can specify the details of your backend SAP system, i.e. the ES5
-      system
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem1.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem3.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem4.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem5.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem6.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem7.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem8.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-    &lt;h1 id=&quot;expose-resources&quot;&gt;
-      Expose a set of resources in the backend system
-    &lt;/h1&gt;
-    &lt;li&gt;
-      While you've established a mapping of a virtual host (that is visible at
-      the SAP Cloud Platform level) to an internal (on-prem) host, there are
-      still no accessible resources available on that host. You must specify
-      these explicitly
-    &lt;/li&gt;
-    &lt;li&gt;
-      In the new &quot;Resources of virtuales5:8000&quot; section that is now visible, add
-      a new resource entry with the &quot;+&quot; icon, specifying the following values
-      and finishing with the &quot;Save&quot; button\
-      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;Setting&lt;/th&gt;
-            &lt;th&gt;Value&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-            &lt;td&gt;URL Path&lt;/td&gt;
-            &lt;td&gt;/sap/opu/odata&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-            &lt;td&gt;Active&lt;/td&gt;
-            &lt;td&gt;(checked)&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-            &lt;td&gt;WebSocket Upgrade&lt;/td&gt;
-            &lt;td&gt;(leave unchecked)&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-            &lt;td&gt;Access Policy&lt;/td&gt;
-            &lt;td&gt;Path and all sub-paths&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources2.png&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/li&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Prepare environment for Docker Image Build the Docker image Instantiate a container Connect to perform initial setup of the SAP Cloud Connector Make the SAP backend system available Expose a set of resources in the backend system Prepare environment for Docker Image Check if docker is installed Create a new Directory and subdirectory called container-scc/ and sapdownloads/ respectively Go to the cloud section of theSAP Development Tools website and download the latest Cloud Connector component, placing it into the sapdownloads/ directory. Regardless of your local machine's operating system, you will need to download for Linux, as that is what the container will be running From the same page, now download the latest SAP Java Virtual Machine (JVM) into the sapdownloads/ directory, again for Linux, and specifically the .rpm component Finally create a new file called Dockerfile in the container-scc/ directory (noting the capitalization and lack of extension on this file name) Into this file, copy the contents of the Dockerfile Build the Docker image Build the image, and after that you can instantiate a container from that image. In the container-scc directory (where the Dockerfile file is located), build the image as follows in this repository On successful completion the cloud connector should be installed Look for the image that's produced, with the following command Instantiate a container Now you have an image, it's time to instantiate a container from it. This will have Cloud Connector running inside it. Instantiate the container as follows Briefly, the parameters used here do the following: -p 8443:8443: make port 8443 in the container available on the host machine (remember, SAP Cloud Connector listens by default on port 8443 and you want to be able to connect to it with your browser on your host machine) --name myscc: this gives a human-friendly name to the container that can be used to refer to it in any subsequent commands -d: run the container in &quot;detached&quot; mode, i.e. in the background scc: this is the name of the image from which the container is to be created Check that the container is running, with another Docker command Connect to perform initial setup of the SAP Cloud Connector Log on to the SAP Cloud Connector in your browser, and use the administration interface to perform some initial setup, in particular, connecting it to the SAP Cloud Platform Open your browser and go to the SAP Cloud Connector administration UI at https://localhost:8443. Remember that this is only possible because, with the -p 8443:8443 parameter earlier, you specified that port 8443 in the container (which is where SAP Cloud Connector is actually running and listening) should be exposed to your machine, the container's host (where Docker is running), also on port 8443. If this does not work on Chrome, try running on Internet Explorer At the &quot;Cloud Connector Login&quot; page, log in with the default username and password Administrator and manage. You're then prompted to change this password which you should do, selecting the &quot;Save&quot; icon on the right hand side to proceed (leave other options as they are) Next, you're asked to specify an initial subaccount that you want the SAP Cloud Connector to connect to Make the SAP backend system available Now that the connection is established, you can define access to the on-prem backend SAP system that the SAP Cloud Connector will facilitate Select the &quot;Cloud To On-Premise&quot; item in the navigation menu on the left hand side, and in the &quot;Mapping Virtual To Internal System&quot; section, create a new system mapping entry with the &quot;+&quot; icon. In the dialog that follows, you can specify the details of your backend SAP system, i.e. the ES5 system</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Hana Client Reference MF App Reference</summary></entry></feed>

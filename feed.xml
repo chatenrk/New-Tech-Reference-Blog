@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-20T20:08:45+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Fiori Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html" rel="alternate" type="text/html" title="SAP Fiori Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-20T21:09:20+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Fiori Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html" rel="alternate" type="text/html" title="SAP Fiori Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -115,7 +115,131 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Fiori Launchpad Related Fiori Tools Related VSCode for Fiori</summary></entry><entry><title type="html">VSCode for Fiori</title><link href="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html" rel="alternate" type="text/html" title="VSCode for Fiori" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Fiori Launchpad Related Fiori Tools Related VSCode for Fiori</summary></entry><entry><title type="html">Git Update and Push Automation</title><link href="/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html" rel="alternate" type="text/html" title="Git Update and Push Automation" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#exec-proc-js&quot;&gt;Execute Process Javascript&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#upd-psh-gh-pages&quot;&gt;Update and Push gh-pages branch&lt;/a&gt;&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-gh-pages-upd&quot;&gt;Javascript for gh-pages update&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-gh-pages-upd&quot;&gt;Bash Script for gh-pages update&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-gh-pages-push&quot;&gt;Javascript for gh-pages push&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-gh-pages-push&quot;&gt;Bash Script for gh-pages push&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#upd-psh-master&quot;&gt;Update and Push master branch&lt;/a&gt;&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-master-upd&quot;&gt;Javascript for master update&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-master-upd&quot;&gt;Bash Script for master update&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-master-push&quot;&gt;Javascript for master push&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-master-push&quot;&gt;Bash Script for master push&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#npm-scripts&quot;&gt;Run using npm scripts&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+      This post provides snippets that can be used along with Jekyll and Github
+      pages to automate the task of pushing changes to &lt;code&gt;gh-pages&lt;/code&gt; and
+      &lt;code&gt;master&lt;/code&gt; branches
+    &lt;/p&gt;
+    &lt;p&gt;It performs the following tasks&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        Use the &lt;code&gt;child-process&lt;/code&gt; module of node to call a bash script
+      &lt;/li&gt;
+      &lt;li&gt;Inside the bash script, perform navigation, git adding,committing&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Details of each of these tasks is as below&lt;/p&gt;
+    &lt;h2 id=&quot;exec-proc-js&quot;&gt;Execute Process Javascript&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        This code is responsible executing the command passed by the caller, the
+        bash script in this case. Sample code snippet is shown below
+        &lt;script src=&quot;https://gist.github.com/chatenrk/9226f31d04e908b867fbbf862e17e513.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;upd-psh-gh-pages&quot;&gt;Update and Push gh-pages branch&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        This code is responsible for updating and pushing changes into gh-pages
+        branch
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-gh-pages-upd&quot;&gt;Javascript for gh-pages update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/7c1ab60d1b7e8224cd860b9fed289112.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-gh-pages-upd&quot;&gt;Bash Script for gh-pages update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Sample bash script is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/815c5c345be0bd92cb2fe4162ac74ffe.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-gh-pages-push&quot;&gt;Javascript for gh-pages push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/6f021ed0cb9323c341d31ce37de2d4dc.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-gh-pages-push&quot;&gt;Bash Script for gh-pages push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Sample bash script is shown below
+        &lt;script src=&quot;https://gist.github.com/chatenrk/815c5c345be0bd92cb2fe4162ac74ffe.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;h2 id=&quot;upd-psh-master&quot;&gt;Update and Push master branch&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        This code is responsible for updating and pushing changes into
+        &lt;code&gt;master&lt;/code&gt; branch
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-master-upd&quot;&gt;Javascript for master update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/b926cda94ebdaa7b79ac5e5be522746c.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-master-upd&quot;&gt;Bash Script for master update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Sample bash script is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/1bf5ea0fc616056d92f66b73587254e2.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-master-push&quot;&gt;Javascript for master push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/2acacc56d8d3b4f82ec0cbaa8d88a130.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-master-push&quot;&gt;Bash Script for master push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Sample bash script is shown below
+        &lt;script src=&quot;https://gist.github.com/chatenrk/9d64c47a388e876e492d7f9b1a7cb1ce.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;npm-scripts&quot;&gt;Run using npm scripts&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Following snippet shows sample scripts that can be used to call the
+        above processes
+      &lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/61bda081b78e5f11faadfbf3a4059639.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Execute Process Javascript Update and Push gh-pages branch Javascript for gh-pages update Bash Script for gh-pages update Javascript for gh-pages push Bash Script for gh-pages push Update and Push master branch Javascript for master update Bash Script for master update Javascript for master push Bash Script for master push Run using npm scripts This post provides snippets that can be used along with Jekyll and Github pages to automate the task of pushing changes to gh-pages and master branches It performs the following tasks Use the child-process module of node to call a bash script Inside the bash script, perform navigation, git adding,committing Details of each of these tasks is as below Execute Process Javascript This code is responsible executing the command passed by the caller, the bash script in this case. Sample code snippet is shown below Update and Push gh-pages branch This code is responsible for updating and pushing changes into gh-pages branch Javascript for gh-pages update Javascript sample snippet is shown below Bash Script for gh-pages update Sample bash script is shown below Javascript for gh-pages push Javascript sample snippet is shown below Bash Script for gh-pages push Sample bash script is shown below</summary></entry><entry><title type="html">VSCode for Fiori</title><link href="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html" rel="alternate" type="text/html" title="VSCode for Fiori" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -1355,228 +1479,4 @@
     &lt;script src=&quot;https://gist.github.com/chatenrk/4e22d613df6737c09b7ddc5a8461142e.js&quot;&gt;&lt;/script&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Gateway Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference.html" rel="alternate" type="text/html" title="SAP Gateway Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html&quot;
-          &gt;Sample Gateway Project&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#abap-development-via-vscode&quot;&gt;ABAP Development via VSCode&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html&quot;
-          &gt;Install on VMWare&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html&quot;
-          &gt;Postman Related&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#common-transactions&quot;&gt;Common transactions&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#common-codes-that-can-be-used&quot;
-          &gt;Common codes that can be used&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h3 id=&quot;abap-development-via-vscode&quot;&gt;ABAP development via VSCode&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        For ABAP Development via VSCode refer to this
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme.html&quot;
-          &gt;link&lt;/a
-        &gt;
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;common-transactions&quot;&gt;Common transactions&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;Functionality&lt;/th&gt;
-            &lt;th&gt;Transaction&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-            &lt;td&gt;SAP Gateway Service Builder&lt;/td&gt;
-            &lt;td&gt;&lt;code&gt;SEGW&lt;/code&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-            &lt;td&gt;Open gateway client&lt;/td&gt;
-            &lt;td&gt;&lt;code&gt;/N/IWFND/GW_CLIENT&lt;/code&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-            &lt;td&gt;Error Log&lt;/td&gt;
-            &lt;td&gt;&lt;code&gt;/N/IWFND/ERROR_LOG&lt;/code&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;common-codes-that-can-be-used&quot;&gt;Common codes that can be used&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;h4&gt;Where clause for $filter operations&lt;/h4&gt;
-
-      &lt;script src=&quot;https://gist.github.com/chatenrk/1e7b6dcb013b1f0c2e2c04ce5663379a.js&quot;&gt;&lt;/script&gt;
-
-      &lt;h4&gt;$top operations&lt;/h4&gt;
-      &lt;script src=&quot;https://gist.github.com/chatenrk/8a253eb7549a4018d49a3eccb442acef.js&quot;&gt;&lt;/script&gt;
-
-      &lt;h4&gt;$skip operations&lt;/h4&gt;
-      &lt;script src=&quot;https://gist.github.com/chatenrk/f8d2ac936a6240ac1aa23fd9cf835cdf.js&quot;&gt;&lt;/script&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
-    &lt;div&gt;
-      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;Blog&lt;/th&gt;
-            &lt;th&gt;Reference&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-            &lt;td&gt;SAP Gateway deployment options in a nutshell&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot; https://blogs.sap.com/2013/05/27/sap-netweaver-gateway-deployment-options-in-a-nutshell/&quot;
-              &gt;
-                https://blogs.sap.com/2013/05/27/sap-netweaver-gateway-deployment-options-in-a-nutshell/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-            &lt;td&gt;SAP Gateway Deployment Options&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2019/04/23/sap-gateway-deployment-options/&quot;
-                &gt;https://blogs.sap.com/2019/04/23/sap-gateway-deployment-options/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-            &lt;td&gt;Quick Starter Configuration Guide – SAP Gateway&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2013/05/14/quick-starter-configuration-guide-sap-gateway/&quot;
-                &gt;https://blogs.sap.com/2013/05/14/quick-starter-configuration-guide-sap-gateway/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-            &lt;td&gt;SAP Gateway Client – Tips and Tricks&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2017/06/15/sap-gateway-client-tips-and-tricks/&quot;
-                &gt;https://blogs.sap.com/2017/06/15/sap-gateway-client-tips-and-tricks/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
-            &lt;td&gt;
-              Updated tasklist available for SAP Gateway service activation
-            &lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2018/04/16/updated-tasklist-available-for-sap-gateway-service-activation/&quot;
-                &gt;https://blogs.sap.com/2018/04/16/updated-tasklist-available-for-sap-gateway-service-activation/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;6&lt;/td&gt;
-            &lt;td&gt;Activate Available OData in SAP Gateway&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2020/08/05/activate-available-odata-in-sap-gateway/&quot;
-                &gt;https://blogs.sap.com/2020/08/05/activate-available-odata-in-sap-gateway/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;7&lt;/td&gt;
-            &lt;td&gt;SAP Gateway Tracing and Error Checking&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2020/08/07/sap-gateway-tracing-and-error-checking/&quot;
-                &gt;https://blogs.sap.com/2020/08/07/sap-gateway-tracing-and-error-checking/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;8&lt;/td&gt;
-            &lt;td&gt;Get Full URL &amp;amp; Sample Payload from SAP Gateway&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2020/08/04/get-full-url-sample-payload-from-sap-gateway/&quot;
-                &gt;https://blogs.sap.com/2020/08/04/get-full-url-sample-payload-from-sap-gateway/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;9&lt;/td&gt;
-            &lt;td&gt;Odata V4 Gateway&lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2020/02/13/implementation-of-sap-odata-v4/&quot;
-                &gt;https://blogs.sap.com/2020/02/13/implementation-of-sap-odata-v4/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;10&lt;/td&gt;
-            &lt;td&gt;
-              Understanding SAP Performance Statistics for SAP Gateway service
-            &lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2016/01/28/understanding-sap-performance-statistics-for-sap-netweaver-gateway-service/&quot;
-                &gt;https://blogs.sap.com/2016/01/28/understanding-sap-performance-statistics-for-sap-netweaver-gateway-service/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;11&lt;/td&gt;
-            &lt;td&gt;
-              How to add annotations to an OData service using code based
-              implementation
-            &lt;/td&gt;
-            &lt;td&gt;
-              &lt;a
-                href=&quot;https://blogs.sap.com/2017/04/21/how-to-add-annotations-to-an-odata-service-using-code-based-implementation/&quot;
-                &gt;https://blogs.sap.com/2017/04/21/how-to-add-annotations-to-an-odata-service-using-code-based-implementation/&lt;/a
-              &gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Sample Gateway Project ABAP Development via VSCode Install on VMWare Postman Related Common transactions Common codes that can be used Blogs</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry></feed>

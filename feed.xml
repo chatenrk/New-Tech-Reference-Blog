@@ -1,4 +1,396 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-15T15:34:49+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">Sample Gateway Project</title><link href="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html" rel="alternate" type="text/html" title="Sample Gateway Project" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-20T20:08:45+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Fiori Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html" rel="alternate" type="text/html" title="SAP Fiori Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html&quot;
+          &gt;Fiori Launchpad Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html&quot;
+          &gt;Fiori Tools Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html&quot;
+          &gt;VSCode for Fiori&lt;/a
+        &gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;npm-modules&quot;&gt;NPM Modules&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog Description&lt;/th&gt;
+            &lt;th&gt;Link&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;Introducing SAP Fiori tools&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://www.youtube.com/playlist?list=PLo17W6sWsxWOhVrELW6fqf03HiqpeQ_KB&quot;
+                &gt;https://www.youtube.com/playlist?list=PLo17W6sWsxWOhVrELW6fqf03HiqpeQ_KB&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;List report via fiori tools&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a href=&quot;https://developers.sap.com/group.fiori-tools-lrop.html&quot;
+                &gt;https://developers.sap.com/group.fiori-tools-lrop.html&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+            &lt;td&gt;Getting started with Fiori Elements&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://www.youtube.com/playlist?list=PLo17W6sWsxWP4RMYXd7l824ss5KriAbwm&quot;
+                &gt;https://www.youtube.com/playlist?list=PLo17W6sWsxWP4RMYXd7l824ss5KriAbwm&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+            &lt;td&gt;Developing a Fiori elements app with CAP and Fiori Tools&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot; https://blogs.sap.com/2020/09/06/developing-a-fiori-elements-app-with-cap-and-fiori-tools/&quot;
+              &gt;
+                https://blogs.sap.com/2020/09/06/developing-a-fiori-elements-app-with-cap-and-fiori-tools/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
+            &lt;td&gt;
+              SAP Fiori for SAP S/4HANA – Overview of tools for maintaining
+              custom launchpad content and layout
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/sap-fiori-for-sap-s-4hana-overview-of-tools-for-maintaining-custom-launchpad-content-and-layout/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/sap-fiori-for-sap-s-4hana-overview-of-tools-for-maintaining-custom-launchpad-content-and-layout/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;npm-modules&quot;&gt;NPM Modules&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Module Name&lt;/th&gt;
+          &lt;th&gt;npm path&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+          &lt;td&gt;Fiori Elements Generator&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;npm i -g @sap/generator-fiori-elements &lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Fiori Launchpad Related Fiori Tools Related VSCode for Fiori</summary></entry><entry><title type="html">VSCode for Fiori</title><link href="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html" rel="alternate" type="text/html" title="VSCode for Fiori" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog Description&lt;/th&gt;
+            &lt;th&gt;Link&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;SAP Fiori Tools for VS Code&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/&quot;
+                &gt;https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Blogs to explore # Blog Description Link 1 SAP Fiori Tools for VS Code https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/</summary></entry><entry><title type="html">SAP Fiori Tools Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Tools Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#set-up-sap-fiori-tools-in-your-development-environment&quot;
+          &gt;Set Up SAP Fiori Tools in Your Development Environment&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#npm-modules&quot;&gt;NPM Modules&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+      SAP Fiori tools is an extension pack available for Visual Studio Code and
+      SAP Business Application Studio that is designed to increase the
+      efficiency of SAP Fiori elements app development. SAP Fiori is SAP’s user
+      experience, intended to provide end-users with apps that are role-based,
+      adaptive, coherent, simple, and delightful. SAP Fiori elements provides
+      predefined page types for SAP Fiori development, allowing users to quickly
+      create SAPUI5 apps while taking advantage of the user interface provided
+      by SAP. SAP Fiori tools allows users to easily generate SAP Fiori elements
+      apps, modify the app’s functionality, generate new pages, and preview the
+      application with both backend and mock data
+    &lt;/p&gt;
+    &lt;h2 id=&quot;set-up-sap-fiori-tools-in-your-development-environment&quot;&gt;
+      Set Up SAP Fiori Tools in Your Development Environment
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Install VSCode if using VSCode and Install SAP Fiori tools from VSCode
+        Marketplace. This snippet covers the installation of Fiori tools in SAP
+        Business Application studio. For reference about SAP BAS and setup,
+        refer the
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/06/BASReadme.html&quot;
+          &gt;Link&lt;/a
+        &gt;
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriToolsRelated/bas-workspace.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        Check if the fiori generator is available via the
+        &lt;code&gt;yo&lt;/code&gt; command
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriToolsRelated/yo-fiori.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        Alternatively, the same can be checked by pressing F1 and searching for
+        &lt;code&gt;SAP Fiori Tools - Application generator - Launch&lt;/code&gt;
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriToolsRelated/fiori-tools-generator.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        If the same is not found in workspace run the following command and
+        check again
+      &lt;/p&gt;
+      &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;npm i -g @sap/generator-fiori-elements
+&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;npm-modules&quot;&gt;NPM Modules&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Module Name&lt;/th&gt;
+            &lt;th&gt;npm path&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;Fiori Elements Generator&lt;/td&gt;
+            &lt;td&gt;npm i -g @sap/generator-fiori-elements&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Fiori Launchpad Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Launchpad Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#open-bas&quot;&gt;Open BAS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;open-bas&quot;&gt;Open BAS&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Login into SAP Cloud Platform and open Business Application Studio.
+        Since we would want to create a Fiori Application, open / create a new
+        workspace with SAP Fiori Style
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriLaunchpad/bas-1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog&lt;/th&gt;
+            &lt;th&gt;Link&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;
+              HTML5 Applications Managed by SAP Cloud Platform – The new way of
+              developing HTML5 apps
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;
+              Building a central Launchpad using SAP Cloud Platform Launchpad
+              service – Developing HTML5 apps
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Open BAS Blogs to explore Open BAS Login into SAP Cloud Platform and open Business Application Studio. Since we would want to create a Fiori Application, open / create a new workspace with SAP Fiori Style Blogs to explore # Blog Link 1 HTML5 Applications Managed by SAP Cloud Platform – The new way of developing HTML5 apps https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/ 2 Building a central Launchpad using SAP Cloud Platform Launchpad service – Developing HTML5 apps https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/</summary></entry><entry><title type="html">Sample Gateway Project</title><link href="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html" rel="alternate" type="text/html" title="Sample Gateway Project" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -1187,192 +1579,4 @@
       &lt;/table&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Sample Gateway Project ABAP Development via VSCode Install on VMWare Postman Related Common transactions Common codes that can be used Blogs</summary></entry><entry><title type="html">Restful ABAP Programming</title><link href="/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme.html" rel="alternate" type="text/html" title="Restful ABAP Programming" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Content]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
-    &lt;h3 id=&quot;blogs&quot;&gt;Blogs&lt;/h3&gt;
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Blog&lt;/th&gt;
-          &lt;th&gt;Link&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;&lt;/td&gt;
-          &lt;td&gt;The RAP Generator&lt;/td&gt;
-          &lt;td&gt;https://blogs.sap.com/2020/05/17/the-rap-generator/&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Content] Introduction Blogs Introduction Blogs # Blog Link The RAP Generator https://blogs.sap.com/2020/05/17/the-rap-generator/</summary></entry><entry><title type="html">ABAP Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/SAPABAPReference.html" rel="alternate" type="text/html" title="ABAP Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/SAPABAPReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/SAPABAPReference.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/14/RAPReferenceReadme.html&quot;
-          &gt;Restful ABAP Programming&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/09/ABAPOnHanaReferenceReadme.html&quot;
-          &gt;ABAP on Hana Related&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#abap-programming-via-vscode&quot;&gt;ABAP Programming via VSCode&lt;/a&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#abap-gateway&quot;&gt;ABAP Gateway&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;h3 id=&quot;abap-programming-via-vscode&quot;&gt;ABAP Programming via VSCode&lt;/h3&gt;
-    &lt;p&gt;
-      Refer to the
-      &lt;a
-        href=&quot;/New-Tech-Reference-Blog/2020/10/05/VSCodeReferenceReadme.html&quot;
-        &gt;link
-      &lt;/a&gt;
-      for more details about ABAP Programming via VSCode
-    &lt;/p&gt;
-    &lt;h3 id=&quot;abap-gateway&quot;&gt;ABAP Gateway&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        Refer to
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/14/SAPGatewayReference.html&quot;
-          &gt;link
-        &lt;/a&gt;
-        for more details about SAP Gateway Programming
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;h3 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h3&gt;
-    &lt;div&gt;
-      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;Blog Description&lt;/th&gt;
-            &lt;th&gt;Link&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-            &lt;td&gt;&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Restful ABAP Programming ABAP on Hana Related ABAP Programming via VSCode ABAP Gateway Blogs to explore</summary></entry><entry><title type="html">Conversational AI Ready Reckoner</title><link href="/New-Tech-Reference-Blog/2020/10/14/CAIReferenceReadme.html" rel="alternate" type="text/html" title="Conversational AI Ready Reckoner" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/CAIReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/CAIReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
-
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Blog&lt;/th&gt;
-          &lt;th&gt;Link&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-          &lt;td&gt;
-            How to Create a Skype or Microsoft Teams Chatbot using SAP
-            Conversational AI and Microsoft Azure
-          &lt;/td&gt;
-          &lt;td&gt;
-            https://cai.tools.sap/blog/how-to-create-skype-bot-with-sap-conversational-ai-microsoft-azure/
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-          &lt;td&gt;
-            Building a central Launchpad using SAP Cloud Platform Launchpad
-            service – Integrating Chatbots using Shell Plugins
-          &lt;/td&gt;
-          &lt;td&gt;
-            https://blogs.sap.com/2020/09/18/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-integrating-chatbots-using-shell-plugins/
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
-          &lt;td&gt;Deploy ChatBot to your Android App&lt;/td&gt;
-          &lt;td&gt;
-            https://blogs.sap.com/2020/10/05/deploy-chatbot-to-your-android-app/
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
-          &lt;td&gt;
-            What’s New in SAP Conversational AI in October? – Bot Testing, New
-            Chat Console, Aliases, Enhanced UX and More
-          &lt;/td&gt;
-          &lt;td&gt;
-            https://blogs.sap.com/2020/10/05/whats-new-in-sap-conversational-ai-in-october-bot-testing-new-chat-console-aliases-enhanced-ux-and-more/
-          &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Blogs to explore</summary></entry><entry><title type="html">Native Hana Reference</title><link href="/New-Tech-Reference-Blog/2020/10/10/NativeHanaReferenceReadme.html" rel="alternate" type="text/html" title="Native Hana Reference" /><published>2020-10-10T00:00:00+05:30</published><updated>2020-10-10T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/10/NativeHanaReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/10/NativeHanaReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme.html&quot;
-          &gt;Hana Client Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a
-          href=&quot;/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html&quot;
-          &gt;MF App Reference&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Hana Client Reference MF App Reference</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Sample Gateway Project ABAP Development via VSCode Install on VMWare Postman Related Common transactions Common codes that can be used Blogs</summary></entry></feed>

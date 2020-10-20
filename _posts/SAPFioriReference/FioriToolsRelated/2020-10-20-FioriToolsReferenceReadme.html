@@ -1,0 +1,179 @@
+---
+layout: post
+title: 'SAP Fiori Tools Reference'
+subtitle: 'SAP Fiori Tools Ready Reckoner'
+date: 2020-10-20
+background: '/img/bg-fiori.jpg'
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li>
+        <a href="#set-up-sap-fiori-tools-in-your-development-environment"
+          >Set Up SAP Fiori Tools in Your Development Environment</a
+        >
+      </li>
+      <li><a href="#npm-modules">NPM Modules</a></li>
+    </ul>
+    <p>
+      SAP Fiori tools is an extension pack available for Visual Studio Code and
+      SAP Business Application Studio that is designed to increase the
+      efficiency of SAP Fiori elements app development. SAP Fiori is SAP’s user
+      experience, intended to provide end-users with apps that are role-based,
+      adaptive, coherent, simple, and delightful. SAP Fiori elements provides
+      predefined page types for SAP Fiori development, allowing users to quickly
+      create SAPUI5 apps while taking advantage of the user interface provided
+      by SAP. SAP Fiori tools allows users to easily generate SAP Fiori elements
+      apps, modify the app’s functionality, generate new pages, and preview the
+      application with both backend and mock data
+    </p>
+    <h2 id="set-up-sap-fiori-tools-in-your-development-environment">
+      Set Up SAP Fiori Tools in Your Development Environment
+    </h2>
+    <div>
+      <p>
+        Install VSCode if using VSCode and Install SAP Fiori tools from VSCode
+        Marketplace. This snippet covers the installation of Fiori tools in SAP
+        Business Application studio. For reference about SAP BAS and setup,
+        refer the
+        <a
+          href="{% link {{ site.data.samplelist.bas_ref }}/2020-10-06-BASReadme.html %}"
+          >Link</a
+        >
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/FioriToolsRelated/bas-workspace.png"
+        alt=""
+      />
+      <p>
+        Check if the fiori generator is available via the
+        <code>yo</code> command
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/FioriToolsRelated/yo-fiori.png"
+        alt=""
+      />
+      <p>
+        Alternatively, the same can be checked by pressing F1 and searching for
+        <code>SAP Fiori Tools - Application generator - Launch</code>
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="{{site.baseurl}}{{ site.data.samplelist.image_content }}/FioriToolsRelated/fiori-tools-generator.png"
+        alt=""
+      />
+      <p>
+        If the same is not found in workspace run the following command and
+        check again
+      </p>
+      <pre class="hljs"><code><div>npm i -g @sap/generator-fiori-elements
+</div></code></pre>
+    </div>
+    <h2 id="npm-modules">NPM Modules</h2>
+    <div>
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Module Name</th>
+            <th>npm path</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1</td>
+            <td>Fiori Elements Generator</td>
+            <td>npm i -g @sap/generator-fiori-elements</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -6,6 +6,10 @@ abap_reference: '_posts/SAPABAPReference'
 abap_on_hana_reference: '_posts/SAPABAPReference/ABAPOnHanaReference'
 rap_reference: '_posts/SAPABAPReference/RAPReference'
 
+fiori_tools_ref: '_posts/SAPFioriReference/FioriToolsRelated'
+fiori_launchpad_ref: '_posts/SAPFioriReference/FioriLaunchpadRelated'
+fiori_vscode_ref: '_posts/SAPFioriReference/VSCodeReference'
+
 gateway_reference: '_posts/SAPGatewayReference'
 gateway_proj_ref: '_posts/SAPGatewayReference/GatewayProjects'
 vmware_install_ref: '_posts/SAPGatewayReference/InstallOnVMWare'

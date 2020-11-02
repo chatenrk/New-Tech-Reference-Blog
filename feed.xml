@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-20T21:15:55+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Fiori Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html" rel="alternate" type="text/html" title="SAP Fiori Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html">&lt;!DOCTYPE html&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2020-10-28T12:29:05+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">HDBSQL Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/28/hdbsqlQuickReference.html" rel="alternate" type="text/html" title="HDBSQL Reference" /><published>2020-10-28T00:00:00+05:30</published><updated>2020-10-28T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/28/hdbsqlQuickReference</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/28/hdbsqlQuickReference.html"></content><author><name></name></author></entry><entry><title type="html">SAP Fiori Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html" rel="alternate" type="text/html" title="SAP Fiori Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -115,7 +115,7 @@
       &lt;/tbody&gt;
     &lt;/table&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Fiori Launchpad Related Fiori Tools Related VSCode for Fiori</summary></entry><entry><title type="html">Git Update and Push Automation</title><link href="/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html" rel="alternate" type="text/html" title="Git Update and Push Automation" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Fiori Launchpad Related Fiori Tools Related VSCode for Fiori</summary></entry><entry><title type="html">Git Update and Push Automation</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html" rel="alternate" type="text/html" title="Git Update and Push Automation" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -239,7 +239,7 @@
       &lt;script src=&quot;https://gist.github.com/chatenrk/61bda081b78e5f11faadfbf3a4059639.js&quot;&gt;&lt;/script&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Execute Process Javascript Update and Push gh-pages branch Javascript for gh-pages update Bash Script for gh-pages update Javascript for gh-pages push Bash Script for gh-pages push Update and Push master branch Javascript for master update Bash Script for master update Javascript for master push Bash Script for master push Run using npm scripts This post provides snippets that can be used along with Jekyll and Github pages to automate the task of pushing changes to gh-pages and master branches It performs the following tasks Use the child-process module of node to call a bash script Inside the bash script, perform navigation, git adding,committing Details of each of these tasks is as below Execute Process Javascript This code is responsible executing the command passed by the caller, the bash script in this case. Sample code snippet is shown below Update and Push gh-pages branch This code is responsible for updating and pushing changes into gh-pages branch Javascript for gh-pages update Javascript sample snippet is shown below Bash Script for gh-pages update Sample bash script is shown below Javascript for gh-pages push Javascript sample snippet is shown below Bash Script for gh-pages push Sample bash script is shown below</summary></entry><entry><title type="html">VSCode for Fiori</title><link href="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html" rel="alternate" type="text/html" title="VSCode for Fiori" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Execute Process Javascript Update and Push gh-pages branch Javascript for gh-pages update Bash Script for gh-pages update Javascript for gh-pages push Bash Script for gh-pages push Update and Push master branch Javascript for master update Bash Script for master update Javascript for master push Bash Script for master push Run using npm scripts This post provides snippets that can be used along with Jekyll and Github pages to automate the task of pushing changes to gh-pages and master branches It performs the following tasks Use the child-process module of node to call a bash script Inside the bash script, perform navigation, git adding,committing Details of each of these tasks is as below Execute Process Javascript This code is responsible executing the command passed by the caller, the bash script in this case. Sample code snippet is shown below Update and Push gh-pages branch This code is responsible for updating and pushing changes into gh-pages branch Javascript for gh-pages update Javascript sample snippet is shown below Bash Script for gh-pages update Sample bash script is shown below Javascript for gh-pages push Javascript sample snippet is shown below Bash Script for gh-pages push Sample bash script is shown below</summary></entry><entry><title type="html">VSCode for Fiori</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html" rel="alternate" type="text/html" title="VSCode for Fiori" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -276,7 +276,7 @@
       &lt;/table&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Blogs to explore # Blog Description Link 1 SAP Fiori Tools for VS Code https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/</summary></entry><entry><title type="html">SAP Fiori Tools Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Tools Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Blogs to explore # Blog Description Link 1 SAP Fiori Tools for VS Code https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/</summary></entry><entry><title type="html">SAP Fiori Tools Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Tools Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -446,7 +446,7 @@
       &lt;/table&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Fiori Launchpad Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Launchpad Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Fiori Launchpad Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Launchpad Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -514,7 +514,177 @@
       &lt;/table&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Open BAS Blogs to explore Open BAS Login into SAP Cloud Platform and open Business Application Studio. Since we would want to create a Fiori Application, open / create a new workspace with SAP Fiori Style Blogs to explore # Blog Link 1 HTML5 Applications Managed by SAP Cloud Platform – The new way of developing HTML5 apps https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/ 2 Building a central Launchpad using SAP Cloud Platform Launchpad service – Developing HTML5 apps https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/</summary></entry><entry><title type="html">Sample Gateway Project</title><link href="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html" rel="alternate" type="text/html" title="Sample Gateway Project" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Open BAS Blogs to explore Open BAS Login into SAP Cloud Platform and open Business Application Studio. Since we would want to create a Fiori Application, open / create a new workspace with SAP Fiori Style Blogs to explore # Blog Link 1 HTML5 Applications Managed by SAP Cloud Platform – The new way of developing HTML5 apps https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/ 2 Building a central Launchpad using SAP Cloud Platform Launchpad service – Developing HTML5 apps https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/</summary></entry><entry><title type="html">Postman for gateway</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html" rel="alternate" type="text/html" title="Postman for gateway" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#using-postman-to-query-sap-gateway&quot;
+          &gt;Using postman to query SAP Gateway&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#storing-environment-variables&quot;
+          &gt;Storing environment variables&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;using-postman-to-query-sap-gateway&quot;&gt;
+      Using postman to query SAP Gateway
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;Determine the HTTP Address of the server.&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service&lt;/li&gt;
+        &lt;li&gt;
+          Note the HTTP Port Name and Host name. Ping the host name in Command
+          Prompt to get the IP address
+        &lt;/li&gt;
+        &lt;li&gt;
+          Use the IP Address and port from above to query the gateway system
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanForGateway/metadata-call.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;storing-environment-variables&quot;&gt;Storing environment variables&lt;/h2&gt;
+    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Blog&lt;/th&gt;
+          &lt;th&gt;Reference&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+          &lt;td&gt;Gateway – OData Post using Postman&lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&quot;
+              &gt;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+          &lt;td&gt;
+            Using Postman For OData / Netweaver Gateway Testing CRUD Methods
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&quot;
+              &gt;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Using postman to query SAP Gateway Storing environment variables Blogs Using postman to query SAP Gateway Determine the HTTP Address of the server. Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service Note the HTTP Port Name and Host name. Ping the host name in Command Prompt to get the IP address Use the IP Address and port from above to query the gateway system Storing environment variables Blogs # Blog Reference 1 Gateway – OData Post using Postman https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/ 2 Using Postman For OData / Netweaver Gateway Testing CRUD Methods https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/</summary></entry><entry><title type="html">Install VMWare</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html" rel="alternate" type="text/html" title="Install VMWare" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#installation-reference&quot;&gt;Installation reference&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#start-up-steps&quot;&gt;Start-up steps&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#shut-down-steps&quot;&gt;Shut down steps&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#credentials&quot;&gt;Credentials&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#abap-license-key&quot;&gt;ABAP License Key&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;installation-reference&quot;&gt;Installation reference&lt;/h2&gt;
+    &lt;p&gt;
+      Use the
+      &lt;a
+        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
+        &gt;Link&lt;/a
+      &gt;
+      for information regarding Installation of SAP Gateway on VMWare
+    &lt;/p&gt;
+    &lt;h2 id=&quot;start-up-steps&quot;&gt;Start-up steps&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Open &lt;code&gt;terminal&lt;/code&gt; from activities menu&lt;/li&gt;
+        &lt;li&gt;Run &lt;code&gt;su npladm&lt;/code&gt;&lt;/li&gt;
+        &lt;div&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm1.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;li&gt;Run &lt;code&gt;startsap&lt;/code&gt;&lt;/li&gt;
+        &lt;div&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap1.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap2.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;shut-down-steps&quot;&gt;Shut down steps&lt;/h2&gt;
+    &lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;User Id&lt;/th&gt;
+            &lt;th&gt;Password&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;developer&lt;/td&gt;
+            &lt;td&gt;Down1oad&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;abap-license-key&quot;&gt;ABAP License Key&lt;/h2&gt;
+    &lt;p&gt;
+      Refer the section in
+      &lt;a
+        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
+        &gt;Link&lt;/a
+      &gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry><entry><title type="html">Sample Gateway Project</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html" rel="alternate" type="text/html" title="Sample Gateway Project" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -991,177 +1161,7 @@
       /&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Create new project in Gateway Builder Import DDIC Structure Generate Runtime Objects Register and Test the OData service Provision the GET_ENTITYSET method Add support for $filter to your code Add support for additional query options to your code Provision the GET_ENTITY method Add an additional entity set for Sales Order Items Create new project in Gateway Builder Open transaction SEGW and click create to create a new gateway project Click on the Create Project button Create new project with name ZTEST_SEPM_ISOE Import DDIC Structure Import DDIC Structure SEPM_ISOE Generate Runtime Objects Press the Generate Runtime Objects to generate runtime objects Register and Test the OData service Expand the node Service Maintenance and right-click on GW_HUB and select Register In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Alternatively click on the SAP Gateway Client button in the detail section This opens up the SAP Gateway Client in a new screen. The URI of the service document is already defaulted(/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/?$format=xml). Press the Execute button Press the Button “Entity Sets” and select SalesOrderSet After pressing Execute button, you see an error message that indicates that the method SALESORDERSET_GET_ENTITYSET has not yet been implemented Provision the GET_ENTITYSET method Expand the node Service Implementation and expand SalesOrderSet.Now right-click on GetEntitySet(Query) and choose Go to ABAP Workbench Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITYSET and make sure to select it.Click on the Redefine Method button Copy the entire coding shown below into the salesorderset_get_entityset method Click on Activate. Navigate back to the Service Builder main screen. In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Press the Button “Entity Sets” and select SalesOrderSet You can retrieve the number of sales orders by adding /$count to the request URI Add support for $filter to your code Expand the node Service Implementation and SalesOrderSet and choose the entry GetEntitySet (Query). Switch to the change mode and replace the code with the code shown below.The code retrieves the $filter statement as an osql statement for the where clause. The data is retrieved and inserted into the return table et_entityset Open up the SAP Gateway Client, and replace the URI as below. Further execute /sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency ge 100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$format=json</summary></entry><entry><title type="html">Postman for gateway</title><link href="/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html" rel="alternate" type="text/html" title="Postman for gateway" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#using-postman-to-query-sap-gateway&quot;
-          &gt;Using postman to query SAP Gateway&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#storing-environment-variables&quot;
-          &gt;Storing environment variables&lt;/a
-        &gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h2 id=&quot;using-postman-to-query-sap-gateway&quot;&gt;
-      Using postman to query SAP Gateway
-    &lt;/h2&gt;
-    &lt;div&gt;
-      &lt;p&gt;Determine the HTTP Address of the server.&lt;/p&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service&lt;/li&gt;
-        &lt;li&gt;
-          Note the HTTP Port Name and Host name. Ping the host name in Command
-          Prompt to get the IP address
-        &lt;/li&gt;
-        &lt;li&gt;
-          Use the IP Address and port from above to query the gateway system
-          &lt;img
-            class=&quot;border border-dark m-1&quot;
-            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanForGateway/metadata-call.png&quot;
-            alt=&quot;&quot;
-          /&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;storing-environment-variables&quot;&gt;Storing environment variables&lt;/h2&gt;
-    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
-    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Blog&lt;/th&gt;
-          &lt;th&gt;Reference&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
-          &lt;td&gt;Gateway – OData Post using Postman&lt;/td&gt;
-          &lt;td&gt;
-            &lt;a
-              href=&quot;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&quot;
-              &gt;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&lt;/a
-            &gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
-          &lt;td&gt;
-            Using Postman For OData / Netweaver Gateway Testing CRUD Methods
-          &lt;/td&gt;
-          &lt;td&gt;
-            &lt;a
-              href=&quot;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&quot;
-              &gt;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&lt;/a
-            &gt;
-          &lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Using postman to query SAP Gateway Storing environment variables Blogs Using postman to query SAP Gateway Determine the HTTP Address of the server. Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service Note the HTTP Port Name and Host name. Ping the host name in Command Prompt to get the IP address Use the IP Address and port from above to query the gateway system Storing environment variables Blogs # Blog Reference 1 Gateway – OData Post using Postman https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/ 2 Using Postman For OData / Netweaver Gateway Testing CRUD Methods https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/</summary></entry><entry><title type="html">Install VMWare</title><link href="/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html" rel="alternate" type="text/html" title="Install VMWare" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#installation-reference&quot;&gt;Installation reference&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#start-up-steps&quot;&gt;Start-up steps&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#shut-down-steps&quot;&gt;Shut down steps&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#credentials&quot;&gt;Credentials&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#abap-license-key&quot;&gt;ABAP License Key&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;h2 id=&quot;installation-reference&quot;&gt;Installation reference&lt;/h2&gt;
-    &lt;p&gt;
-      Use the
-      &lt;a
-        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
-        &gt;Link&lt;/a
-      &gt;
-      for information regarding Installation of SAP Gateway on VMWare
-    &lt;/p&gt;
-    &lt;h2 id=&quot;start-up-steps&quot;&gt;Start-up steps&lt;/h2&gt;
-    &lt;div&gt;
-      &lt;ul&gt;
-        &lt;li&gt;Open &lt;code&gt;terminal&lt;/code&gt; from activities menu&lt;/li&gt;
-        &lt;li&gt;Run &lt;code&gt;su npladm&lt;/code&gt;&lt;/li&gt;
-        &lt;div&gt;
-          &lt;img
-            class=&quot;border border-dark m-1&quot;
-            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm.png&quot;
-            alt=&quot;&quot;
-          /&gt;
-          &lt;img
-            class=&quot;border border-dark m-1&quot;
-            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm1.png&quot;
-            alt=&quot;&quot;
-          /&gt;
-        &lt;/div&gt;
-        &lt;li&gt;Run &lt;code&gt;startsap&lt;/code&gt;&lt;/li&gt;
-        &lt;div&gt;
-          &lt;img
-            class=&quot;border border-dark m-1&quot;
-            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap1.png&quot;
-            alt=&quot;&quot;
-          /&gt;
-          &lt;img
-            class=&quot;border border-dark m-1&quot;
-            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap2.png&quot;
-            alt=&quot;&quot;
-          /&gt;
-        &lt;/div&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;shut-down-steps&quot;&gt;Shut down steps&lt;/h2&gt;
-    &lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
-    &lt;div&gt;
-      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
-        &lt;thead&gt;
-          &lt;tr&gt;
-            &lt;th&gt;#&lt;/th&gt;
-            &lt;th&gt;User Id&lt;/th&gt;
-            &lt;th&gt;Password&lt;/th&gt;
-          &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-          &lt;tr&gt;
-            &lt;td scope=&quot;row&quot;&gt;&lt;/td&gt;
-            &lt;td&gt;developer&lt;/td&gt;
-            &lt;td&gt;Down1oad&lt;/td&gt;
-          &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-    &lt;/div&gt;
-    &lt;h2 id=&quot;abap-license-key&quot;&gt;ABAP License Key&lt;/h2&gt;
-    &lt;p&gt;
-      Refer the section in
-      &lt;a
-        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
-        &gt;Link&lt;/a
-      &gt;
-    &lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry><entry><title type="html">MF App Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html" rel="alternate" type="text/html" title="MF App Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html">&lt;!DOCTYPE html&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Create new project in Gateway Builder Import DDIC Structure Generate Runtime Objects Register and Test the OData service Provision the GET_ENTITYSET method Add support for $filter to your code Add support for additional query options to your code Provision the GET_ENTITY method Add an additional entity set for Sales Order Items Create new project in Gateway Builder Open transaction SEGW and click create to create a new gateway project Click on the Create Project button Create new project with name ZTEST_SEPM_ISOE Import DDIC Structure Import DDIC Structure SEPM_ISOE Generate Runtime Objects Press the Generate Runtime Objects to generate runtime objects Register and Test the OData service Expand the node Service Maintenance and right-click on GW_HUB and select Register In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Alternatively click on the SAP Gateway Client button in the detail section This opens up the SAP Gateway Client in a new screen. The URI of the service document is already defaulted(/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/?$format=xml). Press the Execute button Press the Button “Entity Sets” and select SalesOrderSet After pressing Execute button, you see an error message that indicates that the method SALESORDERSET_GET_ENTITYSET has not yet been implemented Provision the GET_ENTITYSET method Expand the node Service Implementation and expand SalesOrderSet.Now right-click on GetEntitySet(Query) and choose Go to ABAP Workbench Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITYSET and make sure to select it.Click on the Redefine Method button Copy the entire coding shown below into the salesorderset_get_entityset method Click on Activate. Navigate back to the Service Builder main screen. In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Press the Button “Entity Sets” and select SalesOrderSet You can retrieve the number of sales orders by adding /$count to the request URI Add support for $filter to your code Expand the node Service Implementation and SalesOrderSet and choose the entry GetEntitySet (Query). Switch to the change mode and replace the code with the code shown below.The code retrieves the $filter statement as an osql statement for the where clause. The data is retrieved and inserted into the return table et_entityset Open up the SAP Gateway Client, and replace the URI as below. Further execute /sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency ge 100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$format=json</summary></entry><entry><title type="html">MF App Reference</title><link href="http://localhost:4000/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html" rel="alternate" type="text/html" title="MF App Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>http://localhost:4000/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme</id><content type="html" xml:base="http://localhost:4000/New-Tech-Reference-Blog/2020/10/14/MFAppRelatedReadme.html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
@@ -1236,247 +1236,4 @@
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry><entry><title type="html">Hana Client Reference</title><link href="/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme.html" rel="alternate" type="text/html" title="Hana Client Reference" /><published>2020-10-14T00:00:00+05:30</published><updated>2020-10-14T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/14/HanaClientReferenceReadme.html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      /* Tomorrow Theme */
-      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-      /* Tomorrow Comment */
-      .hljs-comment,
-      .hljs-quote {
-        color: #8e908c;
-      }
-
-      /* Tomorrow Red */
-      .hljs-variable,
-      .hljs-template-variable,
-      .hljs-tag,
-      .hljs-name,
-      .hljs-selector-id,
-      .hljs-selector-class,
-      .hljs-regexp,
-      .hljs-deletion {
-        color: #c82829;
-      }
-
-      /* Tomorrow Orange */
-      .hljs-number,
-      .hljs-built_in,
-      .hljs-builtin-name,
-      .hljs-literal,
-      .hljs-type,
-      .hljs-params,
-      .hljs-meta,
-      .hljs-link {
-        color: #f5871f;
-      }
-
-      /* Tomorrow Yellow */
-      .hljs-attribute {
-        color: #eab700;
-      }
-
-      /* Tomorrow Green */
-      .hljs-string,
-      .hljs-symbol,
-      .hljs-bullet,
-      .hljs-addition {
-        color: #718c00;
-      }
-
-      /* Tomorrow Blue */
-      .hljs-title,
-      .hljs-section {
-        color: #4271ae;
-      }
-
-      /* Tomorrow Purple */
-      .hljs-keyword,
-      .hljs-selector-tag {
-        color: #8959a8;
-      }
-      .hljs {
-        display: block;
-        overflow-x: auto;
-        color: #4d4d4c;
-        padding: 0.5em;
-      }
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        border-radius: 3px;
-        overflow-x: auto;
-        white-space: pre-wrap;
-        overflow-wrap: break-word;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#download&quot;&gt;Download&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#run-commands&quot;&gt;Run Commands&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#connect-via-hdbsql&quot;&gt;Connect via HDBSQL&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#check-status&quot;&gt;Check Status&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#create-user&quot;&gt;Create User&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#new-schema&quot;&gt;New Schema&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#change-user&quot;&gt;Change User&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;
-        &lt;a href=&quot;#store-connection-details-in-secure-user-store-hdbuserstore&quot;
-          &gt;Store connection details in secure user store (hdbuserstore)&lt;/a
-        &gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;div&gt;
-      &lt;p&gt;
-        The SAP HANA client provides a set of utilities and drivers to connect
-        to and query a SAP HANA database from multiple programming APIs, such as
-        Node.js, Python or Java. For a complete list, see
-        &lt;a
-          href=&quot;https://help.sap.com/viewer/f1b440ded6144a54ada97ff95dac7adf/latest/en-US&quot;
-          &gt;SAP HANA Client Interface Programming Reference&lt;/a
-        &gt;.
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
-      &lt;p&gt;
-        Download the client installer for your platform (Microsoft Windows,
-        Linux, or Mac) from the
-        &lt;a href=&quot;https://tools.hana.ondemand.com/#hanatools&quot;
-          &gt;SAP Development Tools&lt;/a
-        &gt;
-        website under the HANA tab and the SAP HANA Client 2.0 section
-      &lt;/p&gt;
-      &lt;p&gt;
-        Start the graphical installer &lt;code&gt;hdbsetup&lt;/code&gt; or use the command
-        line installer &lt;code&gt;hdbinst&lt;/code&gt;
-      &lt;/p&gt;
-      &lt;p&gt;
-        After the installation process is completed, update your path
-        environment variable so that the SAP HANA client programs such as hdbsql
-        can be found on your path. On Microsoft Windows, click the Start icon
-        and search for environment variables
-      &lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-      &lt;h3 id=&quot;run-commands&quot;&gt;Run Commands&lt;/h3&gt;
-      &lt;p&gt;
-        Run the following command in a newly opened shell to verify the
-        installation succeeded and the path is correct
-        &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;hdbsql -v&lt;/code&gt;&lt;/pre&gt;
-      &lt;/p&gt;
-      &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbsql.jpg&quot;
-        alt=&quot;&quot;
-      /&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-    &lt;h3 id=&quot;connect-via-hdbsql&quot;&gt;Connect via HDBSQL&lt;/h3&gt;
-    &lt;p&gt;Connect to either SAP HANA Cloud or SAP HANA, express edition using host, port, and credentials&lt;/p&gt;
-    &lt;p&gt;The following is a connection example for the SAP HANA Cloud.&lt;/p&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;hdbsql -e -n &amp;lt;host name&amp;gt;:&amp;lt;port&amp;gt; -u &amp;lt;user&amp;gt; -p &amp;lt;password&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/connect-via-hdbsql.png&quot;
-    alt=&quot;&quot;
-    /&gt;   
-    &lt;/div&gt;
-    &lt;div&gt;
-    &lt;h3 id=&quot;check-status&quot;&gt;Check Status&lt;/h3&gt;
-    &lt;p&gt;To check status of connection type &lt;code&gt;\s&lt;/code&gt;&lt;/p&gt;
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbsql-check-status.png&quot;
-    alt=&quot;&quot;
-    /&gt;  
-    &lt;/div&gt;
-    &lt;div&gt;
-    &lt;h3 id=&quot;create-user&quot;&gt;Create User&lt;/h3&gt;
-    &lt;p&gt;Create a new user that will be used to read / write into the hana database tables.&lt;/p&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;CREATE USER USER1 PASSWORD Password1 no force_first_password_change SET USERGROUP DEFAULT;&lt;/code&gt;&lt;/pre&gt;
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/create-user-hdbsql.jpg&quot;
-    alt=&quot;&quot;
-    /&gt;  
-
-    &lt;p&gt;To verify that the user was created, enter the following command&lt;/p&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;SELECT USER_NAME FROM USERS;&lt;/code&gt;&lt;/pre&gt;
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/create-user-hdbsql-2.jpg&quot;
-    alt=&quot;&quot;
-    /&gt;
-    &lt;p&gt;A schema with same name is also created&lt;/p&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;SELECT SCHEMA_NAME FROM SCHEMAS;&lt;/code&gt;&lt;/pre&gt;  
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/create-user-hdbsql-3.jpg&quot;
-    alt=&quot;&quot;
-    /&gt;
-    &lt;/div&gt;
-
-    &lt;div&gt;
-    &lt;h3 id=&quot;new-schema&quot;&gt;New Schema&lt;/h3&gt;
-    &lt;p&gt;Create a new schema and grant &lt;code&gt;USER1&lt;/code&gt; the ability to create new objects in it&lt;/p&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;CREATE SCHEMA mfdata; &lt;br&gt;GRANT CREATE ANY ON SCHEMA mfdata TO USER1;&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/new-schema-hdbsql.jpg&quot;
-    alt=&quot;&quot;
-    /&gt;
-    &lt;/div&gt;
-
-    &lt;div&gt;
-    &lt;h3 id=&quot;change-user&quot;&gt;Change User&lt;/h3&gt;
-    &lt;p&gt;Connect as USER1 and notice that current user changes from DBADMIN or SYSTEM to USER1.&lt;/p&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY; &lt;br&gt;CONNECT USER1 PASSWORD Password1; &lt;br&gt;SELECT CURRENT_USER, CURRENT_SCHEMA FROM DUMMY;
-    &lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/new-schema-hdbsql.jpg&quot;
-    alt=&quot;&quot;
-    /&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-    &lt;h3 id=&quot;store-connection-details-in-secure-user-store-hdbuserstore&quot;&gt;Store connection details in secure user store (hdbuserstore)&lt;/h3&gt;
-    &lt;p&gt;Remembering and entering IP addresses, ports, user IDs and passwords can be difficult. &lt;a href=&quot;https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/latest/en-US/dd95ac9dbb571014a7d7f0234d762fdb.html&quot;&gt;Secure User Store&lt;/a&gt; offers a convenient means of storing this information and making it available to the SAP HANA client interfaces&lt;/p&gt;
-    &lt;p&gt;Type &lt;code&gt;hdbuserstore&lt;/code&gt; to see a list of available commands such as Set, List and Delete
-    &lt;img
-        class=&quot;border border-dark m-1&quot;
-        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbuserstore-key.png&quot;
-        alt=&quot;&quot;
-    /&gt;
-    &lt;p&gt;Connect with &lt;code&gt;USER1&lt;/code&gt; as the username&lt;/p&gt;
-    &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;hdbsql -attemptencrypt -U User1UserKey&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
-    &lt;img
-    class=&quot;border border-dark m-1&quot;
-    style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
-    src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/HanaClientRelated/hdbuserstore-checkuser-key.jpg&quot;
-    alt=&quot;&quot;
-    /&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-    &lt;h3 id=&quot;connect-to-database-from-node-js&quot;&gt;Connect to database from Node JS&lt;/h3&gt;
-    &lt;p&gt;To connect to the database via node.js use the following code inside the route&lt;/p&gt;
-    &lt;script src=&quot;https://gist.github.com/chatenrk/4e22d613df6737c09b7ddc5a8461142e.js&quot;&gt;&lt;/script&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry></feed>
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry></feed>

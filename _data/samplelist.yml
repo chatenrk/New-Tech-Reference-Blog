@@ -1,45 +1,48 @@
 # Custom Variables
 
-cai_reference: "_posts/CAIReference"
+cai_reference: '_posts/CAIReference'
 
-abap_reference: "_posts/SAPABAPReference"
-abap_on_hana_reference: "_posts/SAPABAPReference/ABAPOnHanaReference"
-rap_reference: "_posts/SAPABAPReference/RAPReference"
+abap_reference: '_posts/SAPABAPReference'
+abap_on_hana_reference: '_posts/SAPABAPReference/ABAPOnHanaReference'
+rap_reference: '_posts/SAPABAPReference/RAPReference'
 
-fiori_reference: "_posts/SAPFioriReference"
-fiori_tools_ref: "_posts/SAPFioriReference/FioriToolsRelated"
-fiori_launchpad_ref: "_posts/SAPFioriReference/FioriLaunchpadRelated"
-fiori_vscode_ref: "_posts/SAPFioriReference/VSCodeReference"
-fiori_anno_ref: "_posts/SAPFioriReference/AnnotationsReference"
+fiori_reference: '_posts/SAPFioriReference'
+fiori_tools_ref: '_posts/SAPFioriReference/FioriToolsRelated'
+fiori_launchpad_ref: '_posts/SAPFioriReference/FioriLaunchpadRelated'
+fiori_vscode_ref: '_posts/SAPFioriReference/VSCodeReference'
 
-gateway_reference: "_posts/SAPGatewayReference"
-gateway_proj_ref: "_posts/SAPGatewayReference/GatewayProjects"
-vmware_install_ref: "_posts/SAPGatewayReference/InstallOnVMWare"
-postman_gateway_ref: "_posts/SAPGatewayReference/PostmanForGateway"
+gateway_reference: '_posts/SAPGatewayReference'
+gateway_proj_ref: '_posts/SAPGatewayReference/GatewayProjects'
+vmware_install_ref: '_posts/SAPGatewayReference/InstallOnVMWare'
+postman_gateway_ref: '_posts/SAPGatewayReference/PostmanForGateway'
 
-hana_reference: "_posts/SAPHanaReference"
-native_hana_ref: "_posts/SAPHanaReference/NativeHanaReference"
-mfapp_related: "_posts/SAPHanaReference/NativeHanaReference/MFAppRelated"
-hana_client_reference: "_posts/SAPHanaReference/NativeHanaReference/HANAClientReference"
+hana_reference: '_posts/SAPHanaReference'
+native_hana_ref: '_posts/SAPHanaReference/NativeHanaReference'
+mfapp_related: '_posts/SAPHanaReference/NativeHanaReference/MFAppRelated'
+hana_client_reference: '_posts/SAPHanaReference/NativeHanaReference/HANAClientReference'
 
-tools_reference: "_posts/ToolsReference"
-excel_reference: "_posts/ToolsReference/ExcelReference"
-git_reference: "_posts/ToolsReference/GitAndGithubReference"
-html_reference: "_posts/ToolsReference/HTMLReference"
-bootstrap4_reference: "_posts/ToolsReference/HTMLReference/Bootstrap4Related"
-postman_reference: "_posts/ToolsReference/PostmanReference"
-cptrial_ref: "_posts/ToolsReference/ToolsForSAP/SetupCPTrial"
-hana_cloud_provisioning_ref: "_posts/ToolsReference/ToolsForSAP/HANACloudRelated/ProvisioningRelated"
-bas_setup_reference: "_posts/ToolsReference/ToolsForSAP/SAPBusinessApplicationStudio/SetupRelated"
-add_entitlements_ref: "_posts/ToolsReference/ToolsForSAP/AddEntitlementsCP"
-cpdestination_ref: "_posts/ToolsReference/ToolsForSAP/CreateCPDestination"
-dockerforcc_ref: "_posts/ToolsReference/ToolsForSAP/DockerforCloudConnector"
-toolsforsap_ref: "_posts/ToolsReference/ToolsForSAP"
-hanacloud_ref: "_posts/ToolsReference/ToolsForSAP/HANACloudRelated"
-bas_ref: "_posts/ToolsReference/ToolsForSAP/SAPBusinessApplicationStudio"
-vscode_ref: "_posts/ToolsReference/VSCodeReference"
-jekyll_ref: "_posts/ToolsReference/JekyllReference"
 
-image_content: "/img/ContentRelated"
+
+
+tools_reference: '_posts/ToolsReference'
+excel_reference: '_posts/ToolsReference/ExcelReference'
+git_reference: '_posts/ToolsReference/GitAndGithubReference'
+html_reference: '_posts/ToolsReference/HTMLReference'
+bootstrap4_reference: '_posts/ToolsReference/HTMLReference/Bootstrap4Related'
+postman_reference: '_posts/ToolsReference/PostmanReference'
+cptrial_ref: '_posts/ToolsReference/ToolsForSAP/SetupCPTrial'
+hana_cloud_provisioning_ref: '_posts/ToolsReference/ToolsForSAP/HANACloudRelated/ProvisioningRelated'
+bas_setup_reference: '_posts/ToolsReference/ToolsForSAP/SAPBusinessApplicationStudio/SetupRelated'
+add_entitlements_ref: '_posts/ToolsReference/ToolsForSAP/AddEntitlementsCP'
+cpdestination_ref: '_posts/ToolsReference/ToolsForSAP/CreateCPDestination'
+dockerforcc_ref: '_posts/ToolsReference/ToolsForSAP/DockerforCloudConnector'
+toolsforsap_ref: '_posts/ToolsReference/ToolsForSAP'
+hanacloud_ref: '_posts/ToolsReference/ToolsForSAP/HANACloudRelated'
+bas_ref: '_posts/ToolsReference/ToolsForSAP/SAPBusinessApplicationStudio'
+vscode_ref: '_posts/ToolsReference/VSCodeReference'
+jekyll_ref: '_posts/ToolsReference/JekyllReference'
+
+image_content: '/img/ContentRelated'
+
 #{{ site.data.samplelist.abap_on_hana_reference }}
 #{{ site.data.samplelist.image_content }}

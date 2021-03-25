@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Git Update and Push Automation - New Technologies Reckoner
+    
+  </title>
+
+  <meta name="description" content="Document [Table of Contents] Execute Process Javascript Update and Push gh-pages branch Javascript for gh-pages update Bash Script for gh-pages update Javasc...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
+  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html">
+  <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="/New-Tech-Reference-Blog/">New Technologies Reckoner</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="/New-Tech-Reference-Blog/about">About</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/posts">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/search">Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+
+<header
+  class="masthead"
+  style="background-image: url('/New-Tech-Reference-Blog/img/bg-nodejs.png')"
+>
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Git Update and Push Automation</h1>
+            
+            <h2 class="subheading">Automation makes life easy</h2>
+            
+            <span class="meta"
+              >Posted by
+              <a href="#"
+                ></a
+              >
+              on October 20, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   2 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li><a href="#exec-proc-js">Execute Process Javascript</a></li>
+      <li><a href="#upd-psh-gh-pages">Update and Push gh-pages branch</a></li>
+      <ul>
+        <li><a href="#js-gh-pages-upd">Javascript for gh-pages update</a></li>
+        <li>
+          <a href="#bash-gh-pages-upd">Bash Script for gh-pages update</a>
+        </li>
+        <li><a href="#js-gh-pages-push">Javascript for gh-pages push</a></li>
+        <li>
+          <a href="#bash-gh-pages-push">Bash Script for gh-pages push</a>
+        </li>
+      </ul>
+      <li><a href="#upd-psh-master">Update and Push master branch</a></li>
+      <ul>
+        <li><a href="#js-master-upd">Javascript for master update</a></li>
+        <li>
+          <a href="#bash-master-upd">Bash Script for master update</a>
+        </li>
+        <li><a href="#js-master-push">Javascript for master push</a></li>
+        <li>
+          <a href="#bash-master-push">Bash Script for master push</a>
+        </li>
+      </ul>
+      <li><a href="#npm-scripts">Run using npm scripts</a></li>
+    </ul>
+    <p>
+      This post provides snippets that can be used along with Jekyll and Github
+      pages to automate the task of pushing changes to <code>gh-pages</code> and
+      <code>master</code> branches
+    </p>
+    <p>It performs the following tasks</p>
+    <ul>
+      <li>
+        Use the <code>child-process</code> module of node to call a bash script
+      </li>
+      <li>Inside the bash script, perform navigation, git adding,committing</li>
+    </ul>
+    <p>Details of each of these tasks is as below</p>
+    <h2 id="exec-proc-js">Execute Process Javascript</h2>
+    <div>
+      <p>
+        This code is responsible executing the command passed by the caller, the
+        bash script in this case. Sample code snippet is shown below
+        <script src="https://gist.github.com/chatenrk/9226f31d04e908b867fbbf862e17e513.js"></script>
+      </p>
+    </div>
+    <h2 id="upd-psh-gh-pages">Update and Push gh-pages branch</h2>
+    <div>
+      <p>
+        This code is responsible for updating and pushing changes into gh-pages
+        branch
+      </p>
+    </div>
+    <h3 id="js-gh-pages-upd">Javascript for gh-pages update</h3>
+    <div>
+      <p>Javascript sample snippet is shown below</p>
+      <script src="https://gist.github.com/chatenrk/7c1ab60d1b7e8224cd860b9fed289112.js"></script>
+    </div>
+    <h3 id="bash-gh-pages-upd">Bash Script for gh-pages update</h3>
+    <div>
+      <p>Sample bash script is shown below</p>
+      <script src="https://gist.github.com/chatenrk/815c5c345be0bd92cb2fe4162ac74ffe.js"></script>
+    </div>
+    <h3 id="js-gh-pages-push">Javascript for gh-pages push</h3>
+    <div>
+      <p>Javascript sample snippet is shown below</p>
+      <script src="https://gist.github.com/chatenrk/6f021ed0cb9323c341d31ce37de2d4dc.js"></script>
+    </div>
+    <h3 id="bash-gh-pages-push">Bash Script for gh-pages push</h3>
+    <div>
+      <p>
+        Sample bash script is shown below
+        <script src="https://gist.github.com/chatenrk/815c5c345be0bd92cb2fe4162ac74ffe.js"></script>
+      </p>
+    </div>
+
+    <h2 id="upd-psh-master">Update and Push master branch</h2>
+    <div>
+      <p>
+        This code is responsible for updating and pushing changes into
+        <code>master</code> branch
+      </p>
+    </div>
+    <h3 id="js-master-upd">Javascript for master update</h3>
+    <div>
+      <p>Javascript sample snippet is shown below</p>
+      <script src="https://gist.github.com/chatenrk/b926cda94ebdaa7b79ac5e5be522746c.js"></script>
+    </div>
+    <h3 id="bash-master-upd">Bash Script for master update</h3>
+    <div>
+      <p>Sample bash script is shown below</p>
+      <script src="https://gist.github.com/chatenrk/1bf5ea0fc616056d92f66b73587254e2.js"></script>
+    </div>
+    <h3 id="js-master-push">Javascript for master push</h3>
+    <div>
+      <p>Javascript sample snippet is shown below</p>
+      <script src="https://gist.github.com/chatenrk/2acacc56d8d3b4f82ec0cbaa8d88a130.js"></script>
+    </div>
+    <h3 id="bash-master-push">Bash Script for master push</h3>
+    <div>
+      <p>
+        Sample bash script is shown below
+        <script src="https://gist.github.com/chatenrk/9d64c47a388e876e492d7f9b1a7cb1ce.js"></script>
+      </p>
+    </div>
+    <h2 id="npm-scripts">Run using npm scripts</h2>
+    <div>
+      <p>
+        Following snippet shows sample scripts that can be used to call the
+        above processes
+      </p>
+      <script src="https://gist.github.com/chatenrk/61bda081b78e5f11faadfbf3a4059639.js"></script>
+    </div>
+  </body>
+</html>
+
+
+        <hr />
+
+        <!-- <div class="clearfix">
+          
+          <a
+            class="btn btn-primary float-left"
+            href="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="VSCode for Fiori"
+            >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
+          >
+           
+          <a
+            class="btn btn-primary float-right"
+            href="/New-Tech-Reference-Blog/2020/10/28/hdbsqlQuickReference.html"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="HDBSQL Reference"
+            >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
+          >
+          
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:chaitanya.rayabharam@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy;  2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/New-Tech-Reference-Blog/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/New-Tech-Reference-Blog/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
+
+</body>
+
+</html>

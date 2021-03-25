@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/New-Tech-Reference-Blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/New-Tech-Reference-Blog/" rel="alternate" type="text/html" /><updated>2021-03-25T17:05:01+05:30</updated><id>/New-Tech-Reference-Blog/feed.xml</id><title type="html">New Technologies Reckoner</title><subtitle>Ready Reckoner for new technologies</subtitle><entry><title type="html">SAP Fiori Elements Reference</title><link href="/New-Tech-Reference-Blog/2021/03/25/FioriElementsReadme.html" rel="alternate" type="text/html" title="SAP Fiori Elements Reference" /><published>2021-03-25T00:00:00+05:30</published><updated>2021-03-25T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2021/03/25/FioriElementsReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2021/03/25/FioriElementsReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#open-bas&quot;&gt;Open BAS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;open-bas&quot;&gt;Open BAS&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Login into SAP Cloud Platform and open Business Application Studio.
+        Since we would want to create a Fiori Application, open / create a new
+        workspace with SAP Fiori Style
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriLaunchpad/bas-1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog&lt;/th&gt;
+            &lt;th&gt;Link&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;
+              HTML5 Applications Managed by SAP Cloud Platform – The new way of
+              developing HTML5 apps
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;
+              Building a central Launchpad using SAP Cloud Platform Launchpad
+              service – Developing HTML5 apps
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Open BAS Blogs to explore Open BAS Login into SAP Cloud Platform and open Business Application Studio. Since we would want to create a Fiori Application, open / create a new workspace with SAP Fiori Style Blogs to explore # Blog Link 1 HTML5 Applications Managed by SAP Cloud Platform – The new way of developing HTML5 apps https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/ 2 Building a central Launchpad using SAP Cloud Platform Launchpad service – Developing HTML5 apps https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/</summary></entry><entry><title type="html">HDBSQL Reference</title><link href="/New-Tech-Reference-Blog/2020/10/28/hdbsqlQuickReference.html" rel="alternate" type="text/html" title="HDBSQL Reference" /><published>2020-10-28T00:00:00+05:30</published><updated>2020-10-28T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/28/hdbsqlQuickReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/28/hdbsqlQuickReference.html"></content><author><name></name></author></entry><entry><title type="html">SAP Fiori Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html" rel="alternate" type="text/html" title="SAP Fiori Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/SAPFioriReference.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html&quot;
+          &gt;Fiori Launchpad Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html&quot;
+          &gt;Fiori Tools Related&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html&quot;
+          &gt;VSCode for Fiori&lt;/a
+        &gt;
+      &lt;/li&gt;
+
+      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;npm-modules&quot;&gt;NPM Modules&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog Description&lt;/th&gt;
+            &lt;th&gt;Link&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;Introducing SAP Fiori tools&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://www.youtube.com/playlist?list=PLo17W6sWsxWOhVrELW6fqf03HiqpeQ_KB&quot;
+                &gt;https://www.youtube.com/playlist?list=PLo17W6sWsxWOhVrELW6fqf03HiqpeQ_KB&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;List report via fiori tools&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a href=&quot;https://developers.sap.com/group.fiori-tools-lrop.html&quot;
+                &gt;https://developers.sap.com/group.fiori-tools-lrop.html&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;3&lt;/td&gt;
+            &lt;td&gt;Getting started with Fiori Elements&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://www.youtube.com/playlist?list=PLo17W6sWsxWP4RMYXd7l824ss5KriAbwm&quot;
+                &gt;https://www.youtube.com/playlist?list=PLo17W6sWsxWP4RMYXd7l824ss5KriAbwm&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;4&lt;/td&gt;
+            &lt;td&gt;Developing a Fiori elements app with CAP and Fiori Tools&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot; https://blogs.sap.com/2020/09/06/developing-a-fiori-elements-app-with-cap-and-fiori-tools/&quot;
+              &gt;
+                https://blogs.sap.com/2020/09/06/developing-a-fiori-elements-app-with-cap-and-fiori-tools/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;5&lt;/td&gt;
+            &lt;td&gt;
+              SAP Fiori for SAP S/4HANA – Overview of tools for maintaining
+              custom launchpad content and layout
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/sap-fiori-for-sap-s-4hana-overview-of-tools-for-maintaining-custom-launchpad-content-and-layout/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/sap-fiori-for-sap-s-4hana-overview-of-tools-for-maintaining-custom-launchpad-content-and-layout/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;npm-modules&quot;&gt;NPM Modules&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Module Name&lt;/th&gt;
+          &lt;th&gt;npm path&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+          &lt;td&gt;Fiori Elements Generator&lt;/td&gt;
+          &lt;td&gt;&lt;code&gt;npm i -g @sap/generator-fiori-elements &lt;/code&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Fiori Launchpad Related Fiori Tools Related VSCode for Fiori</summary></entry><entry><title type="html">Git Update and Push Automation</title><link href="/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html" rel="alternate" type="text/html" title="Git Update and Push Automation" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/AutomateGitTasks.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#exec-proc-js&quot;&gt;Execute Process Javascript&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#upd-psh-gh-pages&quot;&gt;Update and Push gh-pages branch&lt;/a&gt;&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-gh-pages-upd&quot;&gt;Javascript for gh-pages update&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-gh-pages-upd&quot;&gt;Bash Script for gh-pages update&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-gh-pages-push&quot;&gt;Javascript for gh-pages push&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-gh-pages-push&quot;&gt;Bash Script for gh-pages push&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#upd-psh-master&quot;&gt;Update and Push master branch&lt;/a&gt;&lt;/li&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-master-upd&quot;&gt;Javascript for master update&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-master-upd&quot;&gt;Bash Script for master update&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#js-master-push&quot;&gt;Javascript for master push&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;
+          &lt;a href=&quot;#bash-master-push&quot;&gt;Bash Script for master push&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#npm-scripts&quot;&gt;Run using npm scripts&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+      This post provides snippets that can be used along with Jekyll and Github
+      pages to automate the task of pushing changes to &lt;code&gt;gh-pages&lt;/code&gt; and
+      &lt;code&gt;master&lt;/code&gt; branches
+    &lt;/p&gt;
+    &lt;p&gt;It performs the following tasks&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        Use the &lt;code&gt;child-process&lt;/code&gt; module of node to call a bash script
+      &lt;/li&gt;
+      &lt;li&gt;Inside the bash script, perform navigation, git adding,committing&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Details of each of these tasks is as below&lt;/p&gt;
+    &lt;h2 id=&quot;exec-proc-js&quot;&gt;Execute Process Javascript&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        This code is responsible executing the command passed by the caller, the
+        bash script in this case. Sample code snippet is shown below
+        &lt;script src=&quot;https://gist.github.com/chatenrk/9226f31d04e908b867fbbf862e17e513.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;upd-psh-gh-pages&quot;&gt;Update and Push gh-pages branch&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        This code is responsible for updating and pushing changes into gh-pages
+        branch
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-gh-pages-upd&quot;&gt;Javascript for gh-pages update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/7c1ab60d1b7e8224cd860b9fed289112.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-gh-pages-upd&quot;&gt;Bash Script for gh-pages update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Sample bash script is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/815c5c345be0bd92cb2fe4162ac74ffe.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-gh-pages-push&quot;&gt;Javascript for gh-pages push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/6f021ed0cb9323c341d31ce37de2d4dc.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-gh-pages-push&quot;&gt;Bash Script for gh-pages push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Sample bash script is shown below
+        &lt;script src=&quot;https://gist.github.com/chatenrk/815c5c345be0bd92cb2fe4162ac74ffe.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;h2 id=&quot;upd-psh-master&quot;&gt;Update and Push master branch&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        This code is responsible for updating and pushing changes into
+        &lt;code&gt;master&lt;/code&gt; branch
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-master-upd&quot;&gt;Javascript for master update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/b926cda94ebdaa7b79ac5e5be522746c.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-master-upd&quot;&gt;Bash Script for master update&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Sample bash script is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/1bf5ea0fc616056d92f66b73587254e2.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;js-master-push&quot;&gt;Javascript for master push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;Javascript sample snippet is shown below&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/2acacc56d8d3b4f82ec0cbaa8d88a130.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;h3 id=&quot;bash-master-push&quot;&gt;Bash Script for master push&lt;/h3&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Sample bash script is shown below
+        &lt;script src=&quot;https://gist.github.com/chatenrk/9d64c47a388e876e492d7f9b1a7cb1ce.js&quot;&gt;&lt;/script&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;npm-scripts&quot;&gt;Run using npm scripts&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Following snippet shows sample scripts that can be used to call the
+        above processes
+      &lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/61bda081b78e5f11faadfbf3a4059639.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Execute Process Javascript Update and Push gh-pages branch Javascript for gh-pages update Bash Script for gh-pages update Javascript for gh-pages push Bash Script for gh-pages push Update and Push master branch Javascript for master update Bash Script for master update Javascript for master push Bash Script for master push Run using npm scripts This post provides snippets that can be used along with Jekyll and Github pages to automate the task of pushing changes to gh-pages and master branches It performs the following tasks Use the child-process module of node to call a bash script Inside the bash script, perform navigation, git adding,committing Details of each of these tasks is as below Execute Process Javascript This code is responsible executing the command passed by the caller, the bash script in this case. Sample code snippet is shown below Update and Push gh-pages branch This code is responsible for updating and pushing changes into gh-pages branch Javascript for gh-pages update Javascript sample snippet is shown below Bash Script for gh-pages update Sample bash script is shown below Javascript for gh-pages push Javascript sample snippet is shown below Bash Script for gh-pages push Sample bash script is shown below</summary></entry><entry><title type="html">VSCode for Fiori</title><link href="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html" rel="alternate" type="text/html" title="VSCode for Fiori" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/VSCodeForFiori.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog Description&lt;/th&gt;
+            &lt;th&gt;Link&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;SAP Fiori Tools for VS Code&lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/&quot;
+                &gt;https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Blogs to explore Blogs to explore # Blog Description Link 1 SAP Fiori Tools for VS Code https://blogs.sap.com/2020/06/22/sap-fiori-tools-is-generally-available.-increase-the-efficiency-of-developing-sap-fiori-elements-apps/</summary></entry><entry><title type="html">SAP Fiori Tools Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Tools Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/FioriToolsReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      /* Tomorrow Theme */
+      /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+      /* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+      /* Tomorrow Comment */
+      .hljs-comment,
+      .hljs-quote {
+        color: #8e908c;
+      }
+
+      /* Tomorrow Red */
+      .hljs-variable,
+      .hljs-template-variable,
+      .hljs-tag,
+      .hljs-name,
+      .hljs-selector-id,
+      .hljs-selector-class,
+      .hljs-regexp,
+      .hljs-deletion {
+        color: #c82829;
+      }
+
+      /* Tomorrow Orange */
+      .hljs-number,
+      .hljs-built_in,
+      .hljs-builtin-name,
+      .hljs-literal,
+      .hljs-type,
+      .hljs-params,
+      .hljs-meta,
+      .hljs-link {
+        color: #f5871f;
+      }
+
+      /* Tomorrow Yellow */
+      .hljs-attribute {
+        color: #eab700;
+      }
+
+      /* Tomorrow Green */
+      .hljs-string,
+      .hljs-symbol,
+      .hljs-bullet,
+      .hljs-addition {
+        color: #718c00;
+      }
+
+      /* Tomorrow Blue */
+      .hljs-title,
+      .hljs-section {
+        color: #4271ae;
+      }
+
+      /* Tomorrow Purple */
+      .hljs-keyword,
+      .hljs-selector-tag {
+        color: #8959a8;
+      }
+      .hljs {
+        display: block;
+        overflow-x: auto;
+        color: #4d4d4c;
+        padding: 0.5em;
+      }
+      pre {
+        background-color: #f8f8f8;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        overflow-wrap: break-word;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#set-up-sap-fiori-tools-in-your-development-environment&quot;
+          &gt;Set Up SAP Fiori Tools in Your Development Environment&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#npm-modules&quot;&gt;NPM Modules&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+      SAP Fiori tools is an extension pack available for Visual Studio Code and
+      SAP Business Application Studio that is designed to increase the
+      efficiency of SAP Fiori elements app development. SAP Fiori is SAP’s user
+      experience, intended to provide end-users with apps that are role-based,
+      adaptive, coherent, simple, and delightful. SAP Fiori elements provides
+      predefined page types for SAP Fiori development, allowing users to quickly
+      create SAPUI5 apps while taking advantage of the user interface provided
+      by SAP. SAP Fiori tools allows users to easily generate SAP Fiori elements
+      apps, modify the app’s functionality, generate new pages, and preview the
+      application with both backend and mock data
+    &lt;/p&gt;
+    &lt;h2 id=&quot;set-up-sap-fiori-tools-in-your-development-environment&quot;&gt;
+      Set Up SAP Fiori Tools in Your Development Environment
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Install VSCode if using VSCode and Install SAP Fiori tools from VSCode
+        Marketplace. This snippet covers the installation of Fiori tools in SAP
+        Business Application studio. For reference about SAP BAS and setup,
+        refer the
+        &lt;a
+          href=&quot;/New-Tech-Reference-Blog/2020/10/06/BASReadme.html&quot;
+          &gt;Link&lt;/a
+        &gt;
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriToolsRelated/bas-workspace.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        Check if the fiori generator is available via the
+        &lt;code&gt;yo&lt;/code&gt; command
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriToolsRelated/yo-fiori.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        Alternatively, the same can be checked by pressing F1 and searching for
+        &lt;code&gt;SAP Fiori Tools - Application generator - Launch&lt;/code&gt;
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriToolsRelated/fiori-tools-generator.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        If the same is not found in workspace run the following command and
+        check again
+      &lt;/p&gt;
+      &lt;pre class=&quot;hljs&quot;&gt;&lt;code&gt;&lt;div&gt;npm i -g @sap/generator-fiori-elements
+&lt;/div&gt;&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;npm-modules&quot;&gt;NPM Modules&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Module Name&lt;/th&gt;
+            &lt;th&gt;npm path&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;Fiori Elements Generator&lt;/td&gt;
+            &lt;td&gt;npm i -g @sap/generator-fiori-elements&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document /* Tomorrow Theme */ /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */ /* Original theme - https://github.com/chriskempson/tomorrow-theme */</summary></entry><entry><title type="html">SAP Fiori Launchpad Reference</title><link href="/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html" rel="alternate" type="text/html" title="SAP Fiori Launchpad Reference" /><published>2020-10-20T00:00:00+05:30</published><updated>2020-10-20T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/20/FioriLaunchpadReferenceReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#open-bas&quot;&gt;Open BAS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs-to-explore&quot;&gt;Blogs to explore&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;open-bas&quot;&gt;Open BAS&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Login into SAP Cloud Platform and open Business Application Studio.
+        Since we would want to create a Fiori Application, open / create a new
+        workspace with SAP Fiori Style
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/FioriLaunchpad/bas-1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;blogs-to-explore&quot;&gt;Blogs to explore&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Blog&lt;/th&gt;
+            &lt;th&gt;Link&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+            &lt;td&gt;
+              HTML5 Applications Managed by SAP Cloud Platform – The new way of
+              developing HTML5 apps
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+            &lt;td&gt;
+              Building a central Launchpad using SAP Cloud Platform Launchpad
+              service – Developing HTML5 apps
+            &lt;/td&gt;
+            &lt;td&gt;
+              &lt;a
+                href=&quot;https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/&quot;
+                &gt;https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/&lt;/a
+              &gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Open BAS Blogs to explore Open BAS Login into SAP Cloud Platform and open Business Application Studio. Since we would want to create a Fiori Application, open / create a new workspace with SAP Fiori Style Blogs to explore # Blog Link 1 HTML5 Applications Managed by SAP Cloud Platform – The new way of developing HTML5 apps https://blogs.sap.com/2020/09/11/html5-applications-managed-by-sap-cloud-platform-the-new-way-of-developing-html5-apps/ 2 Building a central Launchpad using SAP Cloud Platform Launchpad service – Developing HTML5 apps https://blogs.sap.com/2020/09/11/building-a-central-launchpad-using-sap-cloud-platform-launchpad-service-developing-html5-apps/</summary></entry><entry><title type="html">Postman for gateway</title><link href="/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html" rel="alternate" type="text/html" title="Postman for gateway" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/PostmanForGatewayReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#using-postman-to-query-sap-gateway&quot;
+          &gt;Using postman to query SAP Gateway&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#storing-environment-variables&quot;
+          &gt;Storing environment variables&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;using-postman-to-query-sap-gateway&quot;&gt;
+      Using postman to query SAP Gateway
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;Determine the HTTP Address of the server.&lt;/p&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service&lt;/li&gt;
+        &lt;li&gt;
+          Note the HTTP Port Name and Host name. Ping the host name in Command
+          Prompt to get the IP address
+        &lt;/li&gt;
+        &lt;li&gt;
+          Use the IP Address and port from above to query the gateway system
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/PostmanForGateway/metadata-call.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;storing-environment-variables&quot;&gt;Storing environment variables&lt;/h2&gt;
+    &lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+    &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;#&lt;/th&gt;
+          &lt;th&gt;Blog&lt;/th&gt;
+          &lt;th&gt;Reference&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;1&lt;/td&gt;
+          &lt;td&gt;Gateway – OData Post using Postman&lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&quot;
+              &gt;https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td scope=&quot;row&quot;&gt;2&lt;/td&gt;
+          &lt;td&gt;
+            Using Postman For OData / Netweaver Gateway Testing CRUD Methods
+          &lt;/td&gt;
+          &lt;td&gt;
+            &lt;a
+              href=&quot;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&quot;
+              &gt;https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/&lt;/a
+            &gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document Using postman to query SAP Gateway Storing environment variables Blogs Using postman to query SAP Gateway Determine the HTTP Address of the server. Open T-Code – SMICM – &amp;gt; in the menu Go To-&amp;gt; Service Note the HTTP Port Name and Host name. Ping the host name in Command Prompt to get the IP address Use the IP Address and port from above to query the gateway system Storing environment variables Blogs # Blog Reference 1 Gateway – OData Post using Postman https://blogs.sap.com/2019/07/18/gateway-odata-post-using-postman/ 2 Using Postman For OData / Netweaver Gateway Testing CRUD Methods https://blogs.sap.com/2020/03/27/using-postman-for-odata-netweaver-gateway-testing-crud-methods/</summary></entry><entry><title type="html">Install VMWare</title><link href="/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html" rel="alternate" type="text/html" title="Install VMWare" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/InstallOnVMWareReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#installation-reference&quot;&gt;Installation reference&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#start-up-steps&quot;&gt;Start-up steps&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#shut-down-steps&quot;&gt;Shut down steps&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#credentials&quot;&gt;Credentials&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#abap-license-key&quot;&gt;ABAP License Key&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;installation-reference&quot;&gt;Installation reference&lt;/h2&gt;
+    &lt;p&gt;
+      Use the
+      &lt;a
+        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
+        &gt;Link&lt;/a
+      &gt;
+      for information regarding Installation of SAP Gateway on VMWare
+    &lt;/p&gt;
+    &lt;h2 id=&quot;start-up-steps&quot;&gt;Start-up steps&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Open &lt;code&gt;terminal&lt;/code&gt; from activities menu&lt;/li&gt;
+        &lt;li&gt;Run &lt;code&gt;su npladm&lt;/code&gt;&lt;/li&gt;
+        &lt;div&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/su-npladm1.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+        &lt;li&gt;Run &lt;code&gt;startsap&lt;/code&gt;&lt;/li&gt;
+        &lt;div&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap1.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+          &lt;img
+            class=&quot;border border-dark m-1&quot;
+            style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+            src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/startsap2.png&quot;
+            alt=&quot;&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;shut-down-steps&quot;&gt;Shut down steps&lt;/h2&gt;
+    &lt;h2 id=&quot;credentials&quot;&gt;Credentials&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;table class=&quot;table table-sm table-bordered&quot;&gt;
+        &lt;thead&gt;
+          &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;User Id&lt;/th&gt;
+            &lt;th&gt;Password&lt;/th&gt;
+          &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+          &lt;tr&gt;
+            &lt;td scope=&quot;row&quot;&gt;&lt;/td&gt;
+            &lt;td&gt;developer&lt;/td&gt;
+            &lt;td&gt;Down1oad&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;abap-license-key&quot;&gt;ABAP License Key&lt;/h2&gt;
+    &lt;p&gt;
+      Refer the section in
+      &lt;a
+        href=&quot;/New-Tech-Reference-Blog/img/ContentRelated/InstallVMWare/InstallVMWare.pdf&quot;
+        &gt;Link&lt;/a
+      &gt;
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents]</summary></entry><entry><title type="html">Sample Gateway Project</title><link href="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html" rel="alternate" type="text/html" title="Sample Gateway Project" /><published>2020-10-15T00:00:00+05:30</published><updated>2020-10-15T00:00:00+05:30</updated><id>/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme</id><content type="html" xml:base="/New-Tech-Reference-Blog/2020/10/15/GatewayProjectsReadme.html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;strong&gt;[Table of Contents]&lt;/strong&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#create-new-project-in-gateway-builder&quot;
+          &gt;Create new project in Gateway Builder&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#import-ddic-structure&quot;&gt;Import DDIC Structure&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#generate-runtime-objects&quot;&gt;Generate Runtime Objects&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#register-and-test-the-odata-service&quot;
+          &gt;Register and Test the OData service&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#provision-the-get_entityset-method&quot;
+          &gt;Provision the GET_ENTITYSET method&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#add-support-for-filter-to-your-code&quot;
+          &gt;Add support for $filter to your code&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#add-support-for-additional-query-options-to-your-code&quot;
+          &gt;Add support for additional query options to your code&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#provision-the-get_entity-method&quot;
+          &gt;Provision the GET_ENTITY method&lt;/a
+        &gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;a href=&quot;#add-an-additional-entity-set-for-sales-order-items&quot;
+          &gt;Add an additional entity set for Sales Order Items&lt;/a
+        &gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;h2 id=&quot;create-new-project-in-gateway-builder&quot;&gt;
+      Create new project in Gateway Builder
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Open transaction &lt;code&gt;SEGW&lt;/code&gt; and click create to create a new
+      gateway project
+    &lt;/p&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;p&gt;Click on the Create Project button&lt;/p&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw2.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;p&gt;Create new project with name &lt;b&gt;ZTEST_SEPM_ISOE&lt;/b&gt;&lt;/p&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw3.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;img
+      class=&quot;border border-dark m-1&quot;
+      style=&quot;object-fit: contain&quot;
+      src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/segw4.png&quot;
+      alt=&quot;&quot;
+    /&gt;
+    &lt;h2 id=&quot;import-ddic-structure&quot;&gt;Import DDIC Structure&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;Import DDIC Structure &lt;strong&gt;SEPM_ISOE&lt;/strong&gt;&lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/DDIC_IMP4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;generate-runtime-objects&quot;&gt;Generate Runtime Objects&lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Press the &lt;strong&gt;Generate Runtime Objects&lt;/strong&gt; to generate runtime
+        objects
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/runtime.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/runtime2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;register-and-test-the-odata-service&quot;&gt;
+      Register and Test the OData service
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Expand the node &lt;strong&gt;Service Maintenance&lt;/strong&gt; and right-click on
+        &lt;strong&gt;GW_HUB&lt;/strong&gt; and select &lt;strong&gt;Register&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/register.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/register2.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;p&gt;
+        In the navigation tree right-click on GW_HUB and select SAP Gateway
+        Client.Alternatively click on the SAP Gateway Client button in the
+        detail section
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/test.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        This opens up the SAP Gateway Client in a new screen. The URI of the
+        service document is already
+        defaulted(&lt;code&gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/?$format=xml&lt;/code&gt;).
+        Press the Execute button
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/test2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;Press the Button “Entity Sets” and select SalesOrderSet&lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/ent_sets.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/ent_sets1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        After pressing Execute button, you see an error message that indicates
+        that the method SALESORDERSET_GET_ENTITYSET has not yet been implemented
+      &lt;/p&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/ent_sets2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;provision-the-getentityset-method&quot;&gt;
+      Provision the GET_ENTITYSET method
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Expand the node &lt;strong&gt;Service Implementation&lt;/strong&gt; and expand
+      &lt;strong&gt;SalesOrderSet&lt;/strong&gt;.Now right-click on
+      &lt;strong&gt;GetEntitySet(Query)&lt;/strong&gt; and choose
+      &lt;strong&gt;Go to ABAP Workbench&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+      Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITYSET
+      and make sure to select it.Click on the Redefine Method button
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;
+        Copy the entire coding shown below into the salesorderset_get_entityset
+        method
+      &lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/ce78b19785260e9e48e7db31319b6faa.js&quot;&gt;&lt;/script&gt;
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset4.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;p&gt;
+        Click on Activate. Navigate back to the Service Builder main screen. In
+        the navigation tree right-click on GW_HUB and select SAP Gateway
+        Client.Press the Button “Entity Sets” and select SalesOrderSet
+      &lt;/p&gt;
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset5.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_entset6.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+      &lt;p&gt;
+        You can retrieve the number of sales orders by adding
+        &lt;strong&gt;/$count&lt;/strong&gt; to the request URI
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-support-for-filter-to-your-code&quot;&gt;
+      Add support for $filter to your code
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;p&gt;
+        Expand the node Service Implementation and SalesOrderSet and choose the
+        entry &lt;strong&gt;GetEntitySet (Query)&lt;/strong&gt;. Switch to the change mode
+        and replace the code with the code shown below.The code retrieves the
+        $filter statement as an osql statement for the where clause. The data is
+        retrieved and inserted into the return table et_entityset
+      &lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/eaa87afa86d73d12abd99380d78cfbdc.js&quot;&gt;&lt;/script&gt;
+      &lt;p&gt;
+        Open up the SAP Gateway Client, and replace the URI as below. Further
+        execute
+        &lt;code
+          &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency
+          ge
+          100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$format=json&lt;/code
+        &gt;
+      &lt;/p&gt;
+
+      &lt;div&gt;
+        &lt;img
+          class=&quot;border border-dark m-1&quot;
+          style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+          src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/filter_ops.png&quot;
+          alt=&quot;&quot;
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-support-for-additional-query-options-to-your-code&quot;&gt;
+      Add support for additional query options to your code
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Replace the code with the code shown below. The code retrieves the values
+      for $top and $skip and the $filter statement as an osql statement for the
+      where clause.The data is retrieved and in the end it is checked whether
+      $inlinecount is used (which is a default for SAPUI5)
+    &lt;/p&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/81a448e83f1c9368a2e7a59c257a31e8.js&quot;&gt;&lt;/script&gt;
+    &lt;p&gt;
+      Open up the SAP Gateway Client, and replace the URI as below. Further
+      execute
+      &lt;code
+        &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency
+        ge
+        100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$top=2&amp;amp;$skip=1&amp;amp;$inlinecount=allpages&amp;amp;$format=json&lt;/code
+      &gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/filter_ops2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;provision-the-getentity-method&quot;&gt;Provision the GET_ENTITY method&lt;/h2&gt;
+    &lt;p&gt;
+      Expand the node Service Implementation and SalesOrderSet and choose the
+      entry
+      &lt;strong&gt;GetEntity (Read)&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_ent.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+      Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITY
+      and make sure to select it.Click on the Redefine Method button
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_ent2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Add the following code to the method.&lt;/p&gt;
+    &lt;script src=&quot;https://gist.github.com/chatenrk/55b08f9c3c8e37ace4b417669a181c5a.js&quot;&gt;&lt;/script&gt;
+    &lt;p&gt;
+      Click on Activate. In the navigation tree right-click on GW_HUB and select
+      SAP Gateway Client and use the following URL
+      &lt;code
+        &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet(&apos;500000034&apos;)​&lt;/code
+      &gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/get_ent3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-an-additional-entity-set-for-sales-order-items&quot;&gt;
+      Add an additional entity set for Sales Order Items
+    &lt;/h2&gt;
+    &lt;p&gt;
+      Open the Service Builder Project again. We will now create a second entity
+      type for sales order items and entity set.Right-click again on Data Model
+      and select Import –&amp;gt; DDIC Structure. Use the abap structure
+      &lt;strong&gt;SEPM_ISOIE&lt;/strong&gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/soitem4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2 id=&quot;add-an-association-and-navigation-properties&quot;&gt;
+      Add an association and navigation properties
+    &lt;/h2&gt;
+    &lt;p&gt;Expand Data Model and Right-click on Association and select Create&lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso3.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso4.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso5.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+    &lt;h2
+      id=&quot;provision-the-getentityset-method-of-the-entity-set-salesorderitemset&quot;
+    &gt;
+      Provision the GET_ENTITY_SET method of the entity set SalesOrderItemSet
+    &lt;/h2&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/redefine1.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/redefine2.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+      &lt;p&gt;Replace with the following code&lt;/p&gt;
+      &lt;script src=&quot;https://gist.github.com/chatenrk/3ceba1f80c5ca42b5766ca78cbffb0bf.js&quot;&gt;&lt;/script&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+      In the navigation tree right-click on GW_HUB and select SAP Gateway
+      Client. Enter the following URI
+      &lt;code
+        &gt;/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet(&apos;500000034&apos;)/ToItems&lt;/code
+      &gt;
+    &lt;/p&gt;
+    &lt;div&gt;
+      &lt;img
+        class=&quot;border border-dark m-1&quot;
+        style=&quot;height: 100%; width: 100%; object-fit: contain&quot;
+        src=&quot;/New-Tech-Reference-Blog/img/ContentRelated/GatewayProject/asso6.png&quot;
+        alt=&quot;&quot;
+      /&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content><author><name></name></author><summary type="html">Document [Table of Contents] Create new project in Gateway Builder Import DDIC Structure Generate Runtime Objects Register and Test the OData service Provision the GET_ENTITYSET method Add support for $filter to your code Add support for additional query options to your code Provision the GET_ENTITY method Add an additional entity set for Sales Order Items Create new project in Gateway Builder Open transaction SEGW and click create to create a new gateway project Click on the Create Project button Create new project with name ZTEST_SEPM_ISOE Import DDIC Structure Import DDIC Structure SEPM_ISOE Generate Runtime Objects Press the Generate Runtime Objects to generate runtime objects Register and Test the OData service Expand the node Service Maintenance and right-click on GW_HUB and select Register In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Alternatively click on the SAP Gateway Client button in the detail section This opens up the SAP Gateway Client in a new screen. The URI of the service document is already defaulted(/sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/?$format=xml). Press the Execute button Press the Button “Entity Sets” and select SalesOrderSet After pressing Execute button, you see an error message that indicates that the method SALESORDERSET_GET_ENTITYSET has not yet been implemented Provision the GET_ENTITYSET method Expand the node Service Implementation and expand SalesOrderSet.Now right-click on GetEntitySet(Query) and choose Go to ABAP Workbench Switch to edit mode, scroll down to the method SALESORDERSET_GET_ENTITYSET and make sure to select it.Click on the Redefine Method button Copy the entire coding shown below into the salesorderset_get_entityset method Click on Activate. Navigate back to the Service Builder main screen. In the navigation tree right-click on GW_HUB and select SAP Gateway Client.Press the Button “Entity Sets” and select SalesOrderSet You can retrieve the number of sales orders by adding /$count to the request URI Add support for $filter to your code Expand the node Service Implementation and SalesOrderSet and choose the entry GetEntitySet (Query). Switch to the change mode and replace the code with the code shown below.The code retrieves the $filter statement as an osql statement for the where clause. The data is retrieved and inserted into the return table et_entityset Open up the SAP Gateway Client, and replace the URI as below. Further execute /sap/opu/odata/SAP/ZTEST_SEPM_ISOE_SRV/SalesOrderSet?$filter=Grossamountintransaccurrency ge 100000&amp;amp;$select=Salesorder,Grossamountintransaccurrency,Transactioncurrency&amp;amp;$format=json</summary></entry></feed>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Docker for Cloud Connector - New Technologies Reckoner
+    
+  </title>
+
+  <meta name="description" content="Document [Table of Contents] Prepare environment for Docker Image Build the Docker image Instantiate a container Connect to perform initial setup of the SAP ...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
+  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html">
+  <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="/New-Tech-Reference-Blog/">New Technologies Reckoner</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="/New-Tech-Reference-Blog/about">About</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/posts">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/search">Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+
+<header
+  class="masthead"
+  style="background-image: url('/New-Tech-Reference-Blog/img/bg-docker.png')"
+>
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Docker for Cloud Connector</h1>
+            
+            <span class="meta"
+              >Posted by
+              <a href="#"
+                ></a
+              >
+              on October 06, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   8 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li><a href="#prep-env">Prepare environment for Docker Image</a></li>
+      <li><a href="#build-docker">Build the Docker image</a></li>
+      <li><a href="#instantiate">Instantiate a container</a></li>
+      <li>
+        <a href="#connect"
+          >Connect to perform initial setup of the SAP Cloud Connector</a
+        >
+      </li>
+      <li><a href="#backend-sys">Make the SAP backend system available</a></li>
+      <li>
+        <a href="#expose-resources"
+          >Expose a set of resources in the backend system</a
+        >
+      </li>
+    </ul>
+    <h1 id="prep-env">Prepare environment for Docker Image</h1>
+    <ul>
+      <li>Check if docker is installed</li>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-setup-check.png"
+        alt=""
+      />
+      <li>
+        Create a new Directory and subdirectory called
+        <code>container-scc/</code> and <code>sapdownloads/</code> respectively
+      </li>
+      <li>
+        Go to the cloud section of the<a
+          href="https://tools.hana.ondemand.com/#cloud"
+          >SAP Development Tools website</a
+        >
+        and download the latest Cloud Connector component, placing it into the
+        sapdownloads/ directory. Regardless of your local machine's operating
+        system, you will need to download for Linux, as that is what the
+        container will be running
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download1.png"
+          alt=""
+        />
+      </li>
+      <li>
+        From the same page, now download the latest SAP Java Virtual Machine
+        (JVM) into the sapdownloads/ directory, again for Linux, and
+        specifically the .rpm component
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/sap-cc-download2.png"
+          alt=""
+        />
+      </li>
+      <li>
+        Finally create a new file called Dockerfile in the container-scc/
+        directory (noting the capitalization and lack of extension on this file
+        name)
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-file-creation.png"
+          alt=""
+        />
+      </li>
+      <li>
+        Into this file, copy the contents of the
+        <a
+          href="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/DockerFileSample.txt"
+          >Dockerfile</a
+        >
+      </li>
+    </ul>
+    <h1 id="build-docker">Build the Docker image</h1>
+    <ul>
+      <li>
+        Build the image, and after that you can instantiate a container from
+        that image. In the <b>container-scc</b> directory (where the Dockerfile
+        file is located), build the image as follows in this repository
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image.png"
+          alt=""
+        />
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image1.png"
+          alt=""
+        />
+      </li>
+      <li>
+        On successful completion the cloud connector should be installed
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/build-docker-image4.png"
+          alt=""
+        />
+      </li>
+      <li>
+        Look for the image that's produced, with the following command
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/show-docker-image.png"
+          alt=""
+        />
+      </li>
+    </ul>
+    <h1 id="instantiate">Instantiate a container</h1>
+    <li>
+      Now you have an image, it's time to instantiate a container from it. This
+      will have Cloud Connector running inside it. Instantiate the container as
+      follows
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/instantiate-docker-container.png"
+        alt=""
+      />
+    </li>
+    <li>
+      Briefly, the parameters used here do the following:
+      <ul>
+        <li>
+          <b>-p 8443:8443</b>: make port 8443 in the container available on the
+          host machine (remember, SAP Cloud Connector listens by default on port
+          8443 and you want to be able to connect to it with your browser on
+          your host machine)
+        </li>
+        <li>
+          <b>--name myscc</b>: this gives a human-friendly name to the container
+          that can be used to refer to it in any subsequent commands
+        </li>
+        <li>
+          <b>-d</b>: run the container in "detached" mode, i.e. in the
+          background
+        </li>
+        <li>
+          <b>scc</b>: this is the name of the image from which the container is
+          to be created
+        </li>
+      </ul>
+    </li>
+    <li>
+      Check that the container is running, with another Docker command
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/docker-running-check.png"
+        alt=""
+      />
+    </li>
+    <h1 id="connect">
+      Connect to perform initial setup of the SAP Cloud Connector
+    </h1>
+    <li>
+      Log on to the SAP Cloud Connector in your browser, and use the
+      administration interface to perform some initial setup, in particular,
+      connecting it to the SAP Cloud Platform
+    </li>
+    <li>
+      Open your browser and go to the SAP Cloud Connector administration UI at
+      <a href="https://localhost:8443">https://localhost:8443</a>. Remember that
+      this is only possible because, with the -p 8443:8443 parameter earlier,
+      you specified that port 8443 in the container (which is where SAP Cloud
+      Connector is actually running and listening) should be exposed to your
+      machine, the container's host (where Docker is running), also on port
+      8443.
+      <blockquote>
+        If this does not work on Chrome, try running on Internet Explorer
+      </blockquote>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login.png"
+        alt=""
+      />
+    </li>
+    <li>
+      At the "Cloud Connector Login" page, log in with the default username and
+      password <b>Administrator</b> and <b>manage</b>. You're then prompted to
+      change this password which you should do, selecting the "Save" icon on the
+      right hand side to proceed (leave other options as they are)
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/local-docker-cc-login1.png"
+        alt=""
+      />
+    </li>
+    <li>
+      Next, you're asked to specify an initial subaccount that you want the SAP
+      Cloud Connector to connect to
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/define-sub-accnt2.png"
+        alt=""
+      />
+    </li>
+    <h1 id="backend-sys">Make the SAP backend system available</h1>
+    <li>
+      Now that the connection is established, you can define access to the
+      on-prem backend SAP system that the SAP Cloud Connector will facilitate
+    </li>
+    <li>
+      Select the "Cloud To On-Premise" item in the navigation menu on the left
+      hand side, and in the "Mapping Virtual To Internal System" section, create
+      a new system mapping entry with the "+" icon. In the dialog that follows,
+      you can specify the details of your backend SAP system, i.e. the ES5
+      system
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem1.png"
+        alt=""
+      />
+
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem2.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem3.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem4.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem5.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem6.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem7.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/cloud-to-on-prem8.png"
+        alt=""
+      />
+    </li>
+    <h1 id="expose-resources">
+      Expose a set of resources in the backend system
+    </h1>
+    <li>
+      While you've established a mapping of a virtual host (that is visible at
+      the SAP Cloud Platform level) to an internal (on-prem) host, there are
+      still no accessible resources available on that host. You must specify
+      these explicitly
+    </li>
+    <li>
+      In the new "Resources of virtuales5:8000" section that is now visible, add
+      a new resource entry with the "+" icon, specifying the following values
+      and finishing with the "Save" button\
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Setting</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1</td>
+            <td>URL Path</td>
+            <td>/sap/opu/odata</td>
+          </tr>
+          <tr>
+            <td scope="row">2</td>
+            <td>Active</td>
+            <td>(checked)</td>
+          </tr>
+          <tr>
+            <td scope="row">3</td>
+            <td>WebSocket Upgrade</td>
+            <td>(leave unchecked)</td>
+          </tr>
+          <tr>
+            <td scope="row">4</td>
+            <td>Access Policy</td>
+            <td>Path and all sub-paths</td>
+          </tr>
+        </tbody>
+      </table>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/DockerForCC/add-resources2.png"
+        alt=""
+      />
+    </li>
+  </body>
+</html>
+
+
+        <hr />
+
+        <!-- <div class="clearfix">
+          
+          <a
+            class="btn btn-primary float-left"
+            href="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Setup Cloud Platform Destination"
+            >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
+          >
+           
+          <a
+            class="btn btn-primary float-right"
+            href="/New-Tech-Reference-Blog/2020/10/06/HanaCloudReadme.html"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Hana Cloud Reference"
+            >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
+          >
+          
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:chaitanya.rayabharam@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy;  2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/New-Tech-Reference-Blog/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/New-Tech-Reference-Blog/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
+
+</body>
+
+</html>

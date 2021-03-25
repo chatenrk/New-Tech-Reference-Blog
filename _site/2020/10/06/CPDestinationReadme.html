@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Setup Cloud Platform Destination - New Technologies Reckoner
+    
+  </title>
+
+  <meta name="description" content="Document [Table of Contents] Check the data source Create a new destination definition Deploy a simple app to test the destination connection Explore the Pro...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/vendor/fontawesome-free/css/all.min.css">
+
+  <link rel="stylesheet" href="/New-Tech-Reference-Blog/assets/main.css">
+  <link rel="canonical" href="/New-Tech-Reference-Blog/2020/10/06/CPDestinationReadme.html">
+  <link rel="alternate" type="application/rss+xml" title="New Technologies Reckoner" href="/New-Tech-Reference-Blog/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="/New-Tech-Reference-Blog/">New Technologies Reckoner</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="/New-Tech-Reference-Blog/about">About</a> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/posts">Posts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/New-Tech-Reference-Blog/search">Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+
+<header
+  class="masthead"
+  style="background-image: url('/New-Tech-Reference-Blog/img/bg-sap-cp.jpg')"
+>
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Setup Cloud Platform Destination</h1>
+            
+            <h2 class="subheading">Cloud is the future</h2>
+            
+            <span class="meta"
+              >Posted by
+              <a href="#"
+                ></a
+              >
+              on October 06, 2020 &middot; <span class="reading-time" title="Estimated read time">
+  
+   8 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><strong>[Table of Contents]</strong></p>
+    <ul>
+      <li><a href="#data-source">Check the data source</a></li>
+      <li><a href="#new-dest-def">Create a new destination definition</a></li>
+      <li>
+        <a href="#testapp"
+          >Deploy a simple app to test the destination connection</a
+        >
+      </li>
+      <li><a href="explore">Explore the Products entityset</a></li>
+    </ul>
+    <h3 id="data-source">Check the data source</h3>
+    <div>
+      <p>
+        Before creating the destination, which is effectively a pointer to a
+        data source, it's worth checking that data source manually and directly.
+        First, so you can see for yourself what you're aiming to get to from
+        within the SAP Cloud Platform, and second, so you know what you're
+        looking for when you access that data source indirectly (through the
+        destination). Open up the
+        <a
+          href="https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/?sap-client=002"
+          >OData</a
+        >
+        service, taking care to specify client 002 in the URL
+        <img
+          class="border border-dark m-1"
+          style="height: 100%; width: 100%; object-fit: contain"
+          src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/check-es5-gateway-service.png"
+          alt=""
+        />
+      </p>
+    </div>
+    <h3 id="new-dest-def">Create a new destination definition</h3>
+
+    <div>
+      <p>
+        Go to your "Trial Subaccount Home" page, and select the "Destinations"
+        menu item within the "Connectivity" item
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest.png"
+        alt=""
+      />
+
+      <p>
+        Select the "New Destination" option, and in the configuration specify
+        values for the appropriate parameters
+      </p>
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Property</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1</td>
+            <td>Name</td>
+            <td>shopinfo</td>
+          </tr>
+          <tr>
+            <td scope="row">2</td>
+            <td>Type</td>
+            <td>HTTP</td>
+          </tr>
+          <tr>
+            <td scope="row">3</td>
+            <td>Description</td>
+            <td>Virtual Event Shop Info</td>
+          </tr>
+          <tr>
+            <td scope="row">4</td>
+            <td>URL</td>
+            <td>
+              <a
+                href="http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/"
+                >http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td scope="row">5</td>
+            <td>Proxy Type</td>
+            <td>OnPremise</td>
+          </tr>
+          <tr>
+            <td scope="row">6</td>
+            <td>Location ID</td>
+            <td>(leave blank)</td>
+          </tr>
+          <tr>
+            <td scope="row">7</td>
+            <td>Authentication</td>
+            <td>Basic Authentication</td>
+          </tr>
+          <tr>
+            <td scope="row">8</td>
+            <td>User</td>
+            <td>(your ES5 username)</td>
+          </tr>
+          <tr>
+            <td scope="row">9</td>
+            <td>Password</td>
+            <td>(your ES5 password)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Add the following property / value pair in the "Additional Properties"
+        section using the "New Property" button, and then save the entire
+        destination definition with the "Save" button
+      </p>
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Property</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1</td>
+            <td>sap-client</td>
+            <td>002</td>
+          </tr>
+        </tbody>
+      </table>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest1.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/create-dest2.png"
+        alt=""
+      />
+    </div>
+    <h3 id="testapp">Deploy a simple app to test the destination connection</h3>
+    <div>
+      <p>
+        At this stage you have the destination definition set up. But will
+        everything work when everything is wired up, including from the workflow
+        definition you'll define later? It's worth testing that new destination
+        with a small app that just routes incoming requests via that destination
+        to the data source (the OData service in ES5) using the Connectivity
+        service
+      </p>
+      <p>
+        You will do that in this step, by deploying the simplest app definition
+        (and its corresponding manifest file), and then testing the destination
+        via that app's routing. While you would normally deploy applications
+        from your editor or IDE, you can actually deploy an application archive,
+        along with its corresponding descriptor file (the "manifest") manually
+        from within the SAP Cloud Platform Cockpit
+      </p>
+      <p>
+        For reference, the entire app and configuration is in the
+        <a
+          href="https://github.com/chatenrk/New-Tech-App-Developed/tree/master/cpDestinationTestApp"
+          >Github</a
+        >
+        repo, as follows
+      </p>
+      <table class="table table-sm table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>File</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">1</td>
+            <td>manifest.yml</td>
+            <td>
+              the descriptor file describing how the application is to be
+              deployed, and upon which services it relies
+            </td>
+          </tr>
+          <tr>
+            <td scope="row">2</td>
+            <td>package.json</td>
+            <td>
+              the Node.js package description for the app, describing
+              essentially what the app relies upon (the
+              <code>@sap/approuter</code> package) and how to start it up
+            </td>
+          </tr>
+          <tr>
+            <td scope="row">3</td>
+            <td>xs-app.json</td>
+            <td>
+              The approuter configuration, in the form of a single route that
+              uses the <code>shopinfo</code> destination
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        The files <code>package.json</code> and <code>xs-app.json</code> have
+        been bundled together into the archive file <code>app.zip</code> (also
+        in the same <code>dest-test-app</code> ). There's also an
+        <code>xs-security.json</code> file which describes how the
+        <code>xsuaa</code> service should be configured, a service upon which
+        the app relies
+      </p>
+      <p>
+        Download the
+        <a
+          href="https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/app.zip"
+          >app.zip</a
+        >
+        and
+        <a
+          href="https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/manifest.yml"
+          >manifest.yml</a
+        >
+        files. Download the <code>xsuaa</code> service parameter file
+        <a
+          href="https://github.com/chatenrk/New-Tech-App-Developed/blob/master/cpDestinationTestApp/xs-security.json"
+          >xs-security.json</a
+        >
+        file too
+      </p>
+
+      <p>
+        In fact, the successful operation of the app relies on not one but three
+        services:
+      </p>
+
+      <ul>
+        <li>Authorization & Trust Management (<code>xsuaa</code>)</li>
+        <li>Connectivity (<code>connectivity</code>)</li>
+        <li>Destination (<code>destination</code>)</li>
+      </ul>
+      <p>
+        Set up two of these (<code>xsuaa</code> and <code>destination</code>)
+        manually, now, before deploying the app Navigate to the "dev" space in
+        your Cloud Foundry (CF) organization.
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/dev-space.png"
+        alt=""
+      />
+      <p>
+        Setup the services in Cloud Platform. Next to deploy the app, navigate
+        to dev space and select the "Applications" menu item and use the "Deploy
+        Application" button.
+      </p>
+      <p>
+        For the "File Location", browse to and select the app.zip archive that
+        you previously downloaded. Ensure that the "Use Manifest" checkbox is
+        selected, then browse to and select the manifest.yml file that you also
+        previously downloaded for the "Manifest Location". Then use the "Deploy"
+        button
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app1.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app2.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app3.png"
+        alt=""
+      />
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app4.png"
+        alt=""
+      />
+
+      <p>
+        Select its name ("my-dest-test") and select the URL in the "Application
+        Routes" section of the app's "Overview" page; the URL will contain a
+        random string in the first part, to ensure that each of your apps
+        deployed have unique hostnames
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app5.png"
+        alt=""
+      />
+      <p>
+        After authenticating with your trial user email address and password,
+        you'll be presented with the resource you saw at the start of this
+        exercise. But this time, you're accessing it through the SAP Cloud
+        Platform, via the Connectivity service and a destination definition,
+        instead of directly. Moreover, if you've set up the Cloud Connector,
+        this access is going through that too.
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/deploy-app6.png"
+        alt=""
+      />
+    </div>
+    <h3 id="explore">Explore the Products entityset</h3>
+
+    <div>
+      <p>
+        You'll be using data from the Products entityset in the OData service
+        you've just exposed, so use this step to explore the data in that
+        entityset, so you're at least a little bit familiar with it
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/entity-products.png"
+        alt=""
+      />
+
+      <p>
+        Explore the data that is returned - you should see a list of products,
+        with the sort of properties you'd expect from a product database, such
+        as an ID, name, description, information about stock quantity, and so
+        on.
+      </p>
+      <p>
+        If you prefer looking at JSON rather than XML, append the query
+        parameter $format=json to the URL
+      </p>
+      <img
+        class="border border-dark m-1"
+        style="height: 100%; width: 100%; object-fit: contain"
+        src="/New-Tech-Reference-Blog/img/ContentRelated/CPDestinationRelated/entity-products2.png"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
+
+
+        <hr />
+
+        <!-- <div class="clearfix">
+          
+          <a
+            class="btn btn-primary float-left"
+            href="/New-Tech-Reference-Blog/2020/10/06/HanaCLIReadme.html"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Hana CLI Reference"
+            >&larr; Previous<span class="d-none d-md-inline"> Post</span></a
+          >
+           
+          <a
+            class="btn btn-primary float-right"
+            href="/New-Tech-Reference-Blog/2020/10/06/DockerForCCReadme.html"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Docker for Cloud Connector"
+            >Next<span class="d-none d-md-inline"> Post</span> &rarr;</a
+          >
+          
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:chaitanya.rayabharam@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy;  2021</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/New-Tech-Reference-Blog/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/New-Tech-Reference-Blog/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js"></script>
+
+<script src="/New-Tech-Reference-Blog/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
+
+</body>
+
+</html>

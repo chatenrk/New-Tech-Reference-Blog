@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "update-gh-pages": "node update-gh-pages.js",
+    "push-gh-pages": "node push-gh-pages.js",
+    "update-master": "node update-master.js",
+    "push-master": "node push-master.js",
+    "update-push-gh-pages": "npm run update-gh-pages && npm run push-gh-pages",
+    "update-push-master": "npm run update-master && npm run push-master",
+    "start": "bundle exec jekyll serve"
+  }
+}
